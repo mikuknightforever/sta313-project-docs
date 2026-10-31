@@ -1,32 +1,38 @@
-# Project Pitch
+# 项目提案展示 / Project Pitch
 
-当前阶段：准备中，未记录完成或提交状态。任务二由 Alice 牵头，Shengyang 支持，其他成员共同提供内容。
+当前阶段：准备中，未记录完成或提交状态。Alice 牵头，Shengyang 支持，其他成员共同提供内容。
 
-## 讲述内容
+Current stage: preparation; completion and submission have not been confirmed. Alice leads, Shengyang supports, and other members contribute content.
 
-- 小组名称、成员和项目标题。
-- 一个主要目标受众。
-- 项目主题为何对该受众重要。
-- 可视化帮助受众探索或回答的 3—4 个问题。
-- 拟使用的数据、相关维度和外部数据来源。
+## 展示内容 / Presentation Content
 
-研究问题与数据选择见[工作表](../research/RESEARCH_QUESTIONS.md)。
+- 小组名称、成员和项目标题。<br>Group name, members, and project title.
+- 一个主要目标受众。<br>One primary target audience.
+- 主题为何对受众重要。<br>Why the topic matters to that audience.
+- 可视化帮助受众探索或回答的 3—4 个问题。<br>Three to four questions the visualization will help the audience explore or answer.
+- 拟用数据、相关维度和外部数据来源。<br>Planned datasets, relevant dimensions, and sources of external data.
 
-## 文件与提交
+研究问题与数据选择见[工作表](../research/RESEARCH_QUESTIONS.md)。<br>See the [research worksheet](../research/RESEARCH_QUESTIONS.md) for questions and data selection.
 
-| 文件 | 规定名称 | 当前状态 |
+## 文件与提交 / Files and Submission
+
+| 文件 / File | 规定名称 / Required filename | 状态 / Status |
 | --- | --- | --- |
-| PowerPoint 幻灯片 | `slides.ppt` 或 `slides.pptx` | 待准备 |
-| 幻灯片及 speaker notes / 对应页码的讲稿 PDF | `script.pdf` | 待准备 |
-| 覆盖会议、研究、数据准备、制作与演讲等实际贡献的报告 PDF | `contribution.pdf` | 待准备 |
+| PowerPoint 幻灯片 / PowerPoint slides | `slides.ppt` / `slides.pptx` | 待准备 / To prepare |
+| 含讲稿或 speaker notes 的 PDF，注明对应幻灯片 / PDF with speaker notes or a script indicating slide numbers | `script.pdf` | 待准备 / To prepare |
+| 覆盖会议、研究、数据准备、制作与演讲等实际贡献的报告 / Report of actual contributions, including meetings, research, data preparation, production, and presenting | `contribution.pdf` | 待准备 / To prepare |
 
-课程资料规定于 **11 月 4 日 23:59（多伦多时间）**前，由一名成员把实际文件上传 MarkUs；全体成员核查可读且为最终版本。不能以云文件链接替代实际文件。会议设置的内部完成节点为 **11 月 3 日**。
+课程资料规定于 **11 月 4 日 23:59（多伦多时间）**前，由一名成员将实际文件上传 MarkUs；全体成员核查可读且为最终版本。不能用云文件链接替代文件。内部完成节点为 **11 月 3 日**。
 
-## 现场安排
+Course records specify submission of the actual files to MarkUs by **November 4, 11:59 p.m. (Toronto time)**. One member uploads them; all members verify readability and the final versions. Cloud links cannot replace the files. The team's internal completion deadline is **November 3**.
 
-- 3 分钟展示，另有约 2 分钟问答及换组时间。
-- LEC0101：11 月 9 日；LEC5101：11 月 6 日；须参加本人正式 lecture section。
-- 课程建议 1—2 名主讲，至少两名组员须线下出席以获得展示成绩。
-- 主讲人、排练时间及其他成员出席安排：待团队确认。
+## 现场安排 / Live Presentation
 
-来源：工作区已整理的课程 Pitch 说明。若课程通知更新，以最新说明为准。
+- 展示 3 分钟，另有约 2 分钟问答及换组时间。<br>Three minutes to present, followed by approximately two minutes for feedback, questions, and group transition.
+- LEC0101：11 月 9 日；LEC5101：11 月 6 日。须参加正式 lecture section。<br>LEC0101 presents on November 9; LEC5101 on November 6. Attend your official lecture section.
+- 课程建议 1—2 名主讲；至少两名组员须线下出席以获得展示成绩。<br>The course recommends one or two presenters. At least two group members must attend in person to receive presentation credit.
+- 主讲、排练时间和出席安排：待确认。<br>Presenters, rehearsal time, and attendance arrangements: to be confirmed.
+
+来源：工作区已有课程 Pitch 说明。若课程通知更新，以最新说明为准。
+
+Source: the course pitch instructions already recorded in the workspace. Follow the latest course instructions if updated.
