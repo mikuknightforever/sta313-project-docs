@@ -37,4 +37,4 @@ Tasks 3 and 4, and tasks 5 and 6, require close collaboration. November 13, 15, 
 
 | 子任务 / Subtask | 负责人 / Lead | 截止日期 / Deadline | 状态 / Status | 成果或证据链接 / Output or evidence |
 | --- | --- | --- | --- | --- |
-| 待填写 / To be added | 待填写 / TBD | 待填写 / TBD | 待开始 / Not started | 待填写 / TBD |
+| 提交家庭类型与援助领取率候选问题 / Submit a candidate question on family type and assistance receipt rates | Yongjun Du（Richard） | 11 月 1 日 / Nov 1 | 2026-11-01 提案已记录；团队筛选及外部分母核对待完成 / Proposal recorded on 2026-11-01; group selection and external-denominator checks pending | [Q1 研究问题及可行性 / Q1 question and feasibility](research/RESEARCH_QUESTIONS.md) |
