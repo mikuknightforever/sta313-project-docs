@@ -9,6 +9,7 @@ This dedicated folder contains bilingual Chinese–English meeting minutes for t
 | 日期 / Date | 主题 / Topic | 文件 / File |
 | --- | --- | --- |
 | 2026-10-31 | 项目分工与协作安排 / Project roles and collaboration | [会议摘要 / Meeting summary](2026-10-31_kickoff_v1.md) |
+| 2026-11-02 | 研究选题与 Pitch 准备；组名 Newtown's group / Research questions and pitch preparation; group name Newtown's group | [会议纪要 / Meeting minutes](2026-11-02_research_pitch_v1.md) |
 
 ## 后续记录 / Future Records
 
