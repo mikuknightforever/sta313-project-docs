@@ -14,6 +14,16 @@ At the October 31 meeting, each member was asked to propose at least one questio
 | 数据主题、时间范围、分析层级 / Data topic, time span, and analytical level | 待确定 / TBD |
 | 背景资料及支持链接 / Background and supporting references | 待补充 / To be added |
 
+## 研究方向归类 / Research Direction Grouping
+
+2026-11-02，Richard 将 Eric 的方向归入“地区差异与变化”，作为当前项目结构的整理方案；最终问题与研究范围仍待小组确认。<br>On November 2, 2026, Richard grouped Eric's direction under “Regional Differences and Change” in the working project structure. The final question and scope remain subject to group confirmation.
+
+| 模块 / Module | 成员 / Member | 分析重点 / Analytical focus | 待明确 / To clarify |
+| --- | --- | --- | --- |
+| 地区差异与变化 / Regional Differences and Change | Eric | 比较不同 CMA 的 OW 与 ODSP 比例及长期变化，识别具有不同趋势的地区 / Compare OW and ODSP proportions and their long-term changes across CMAs, identifying regions with distinctive trends | 研究时间跨度、比例的分母定义及地区覆盖 / Study period, denominator definition, and geographic coverage |
+
+此方向依据[11 月 2 日会议纪要](../meetings/2026-11-02_research_pitch_v1.md)整理，侧重地区之间的比较；Alice 的现有 Q2 侧重全省案件总量在疫情前、期间与之后的变化。<br>This direction is drawn from the [November 2 minutes](../meetings/2026-11-02_research_pitch_v1.md) and emphasizes comparisons between regions. Alice's existing Q2 focuses on province-wide caseload changes before, during, and after the pandemic.
+
 ## 候选问题 / Candidate Questions
 
 | 编号 / ID | 提出者 / Author | 研究问题 / Question | 对受众的价值 / Audience value | 数据、字段、层级 / Data, fields, level | 局限与可行性 / Limitations and feasibility | 团队结论 / Decision |
