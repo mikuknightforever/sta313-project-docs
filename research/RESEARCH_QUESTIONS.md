@@ -33,6 +33,11 @@ At the October 31 meeting, each member was asked to propose at least one questio
 | 编号 / ID | 提出者 / Author | 研究问题 / Question | 对受众的价值 / Audience value | 数据、字段、层级 / Data, fields, level | 局限与可行性 / Limitations and feasibility | 团队结论 / Decision |
 | --- | --- | --- | --- | --- | --- | --- |
 | Q2 | Jingyi Ruan（Alice） | COVID-19 疫情前、疫情期间及疫情后，Ontario Works 和 ODSP 的社会援助案件数量变化趋势有何不同？ / How did Ontario Works (OW) and Ontario Disability Support Program (ODSP) caseload trends change before, during, and after the COVID-19 pandemic? | 帮助政策分析人员了解不同阶段社会援助案件数量的变化，并比较两个项目的趋势 / Help Ontario social policy analysts understand changes in social assistance caseloads across different periods and compare trends between programs.  Target Audience: Ontario government policy analysts working on social assistance programs| OW 和 ODSP 省级月度案件数据；`year`, `month`, `cases`；拟比较 2017–2025 年 / Monthly Ontario-level OW and ODSP case counts, 2017–2025 | 疫情同期还存在其他经济和政策变化，因此无法将案件数量变化直接归因于疫情；需检查数据完整性 / Other economic and policy changes occurred during the pandemic period, so changes cannot be attributed solely to COVID-19; data completeness must be checked | Proposed on November 1, 2026; pending group discussion |
+
+| 编号 / ID | 提出者 / Author | 研究问题 / Question | 可能受众及其价值 / Potential Audience and Value | 数据、字段、层级 / Data, fields, level | 局限与可行性 / Limitations and feasibility | 团队结论 / Decision |
+| --- | --- | --- | --- | --- | --- | --- |
+| Q3 | Eric | 2003 年 3 月至 2026 年 3 月，安省 15 个都市区中，Ontario Works（OW）和 Ontario Disability Support Program（ODSP）的单人无子女个案占比如何变化？两个项目之间的占比差距在哪些地区缩小最多？ / How did the share of cases involving a single person without children change in Ontario Works (OW) and the Ontario Disability Support Program (ODSP) across 15 Ontario metropolitan areas from March 2003 to March 2026? Where did the gap between the two programs narrow the most? | 建议的主要受众：安省社会援助政策分析人员。帮助他们比较各都市区的受助个案构成，找出与整体趋势不同、值得进一步调查的地区。其他可能受众：地方社会服务规划人员，可查看本地区的个案数量与构成变化。 / Suggested primary audience: Ontario social assistance policy analysts who want to compare caseload composition across metropolitan areas and identify local trends that merit further investigation. Local social service planners could also use the charts to track changes in the size and composition of their area's caseload. | 课程提供的 OW 和 ODSP CMA 数据，覆盖 15 个都市区、93 个季度观测时点。字段：`year`、`month`、`cma_code`、`cma`、`cases`、`fts`。分析层级为项目 × 都市区 × 季度。用 `fts / cases` 计算占比，再用 ODSP 占比减去 OW 占比得到百分点差距。 / Course-provided OW and ODSP CMA data covering 15 metropolitan areas and 93 quarterly observation dates. Calculate `fts / cases` within each program, area, and quarter, then subtract the OW share from the ODSP share to obtain the percentage-point gap. | 可延续 A1，用课程数据完成主要分析。分母是同一项目、地区和季度的受助总个案数。结果描述受助构成，覆盖范围限于数据中的 15 个都市区。结合个案数量解读比例变化，并对趋势作描述性解释。 / The analysis builds on A1 and can be completed with the course data. The denominator is total assistance cases within the same program, area, and quarter. Results describe caseload composition in the 15 covered areas. Counts provide context for changes in shares, and findings are descriptive. | Eric 提出，归入“地区差异与变化”，待小组确认。 / Proposed by Eric under “Regional Differences and Change,” pending group confirmation. |
+
 ### Q1 家庭类型与社会援助领取率 / Family Type and Assistance Receipt Rates
 
 **提出者与状态 / Author and status：** Yongjun Du（Richard），2026-11-01。已同意为此问题补充外部数据；作为候选问题提交，主要受众、时间范围、地区层级及最终选题由小组讨论确定。<br>Proposed by Yongjun Du (Richard) on November 1, 2026, with supplementary external data planned. This remains a candidate question; the group will determine the primary audience, time span, geographic level, and final selection.
@@ -105,6 +110,28 @@ Use interactive line charts with program and time-period filters to explore and 
 - 主要分析可以使用课程提供的数据完成，最终时间范围和缺失值处理将在数据检查后确定。
 
 Caseload changes may reflect economic conditions, policy changes, and other factors rather than COVID-19 alone. Monthly counts may include repeated cases and should not be interpreted as unique annual recipients. The proposed analysis is feasible using the course datasets, subject to data validation.
+
+### Q3 都市区单人个案占比的变化 / Changes in Single-Person Case Shares Across Metropolitan Areas
+
+**提出者与状态 / Author and status**  
+Eric。此问题归入“地区差异与变化”，最终研究范围和主要受众待小组确认。  
+Eric. This candidate question falls under “Regional Differences and Change.” The group will confirm the final scope and primary audience.
+
+**可能受众及其价值 / Potential Audience and Value**  
+建议以安省社会援助政策分析人员为主要受众。用户可以选定一个都市区，查看当地 OW 和 ODSP 的个案构成如何变化，再与其他地区比较，找出值得进一步调查的差异。地方社会服务规划人员也可以用这些图表查看本地个案规模和构成的变化。  
+The suggested primary audience is Ontario policy analysts working on social assistance. They could select a metropolitan area, examine how its OW and ODSP caseload composition has changed, and compare it with other areas to identify differences worth investigating. Local service planners could also use the charts to track changes in their area's caseload size and composition.
+
+**拟比较的指标 / Proposed measures**  
+对每个项目、都市区和季度，用 `fts ÷ cases × 100` 计算单人无子女个案的百分比，再用 ODSP 的百分比减去 OW 的百分比，得到两者相差多少个百分点。例如，ODSP 为 80%，OW 为 60%，差距就是 20 个百分点。  
+For each program, metropolitan area, and quarter, divide `fts` by `cases` and multiply by 100. Subtract the OW percentage from the ODSP percentage to calculate the gap in percentage points. For example, an ODSP share of 80% and an OW share of 60% give a gap of 20 percentage points.
+
+**拟采用的交互式可视化 / Proposed interactive visualization**  
+用户先选择两个季度，比较各都市区的差距缩小或扩大了多少。点击某个地区后，折线图展示当地两个项目的完整季度趋势。再切换到个案数量，查看占比上升时，单人个案是否增加、其他个案是否减少，或两者是否同时发生。  
+Users can select two quarters to compare how much the gap narrowed or widened in each metropolitan area. Clicking an area opens its quarterly trends for both programs. A switch to case counts lets users examine whether a rising share coincided with more single-person cases, fewer other cases, or both.
+
+**与其他候选问题的关系 / Relationship to other candidate questions**  
+Q1 比较不同家庭类型的援助领取率，需要各类家庭的可比分母。Q2 追踪全省个案总量。Q3 使用各项目的受助总个案作为分母，展示都市区层面的个案构成。如果小组采用 Q1 的备选构成问题，可以将 Q3 作为其中专门比较单人个案和地区趋势的视图。  
+Q1 compares assistance receipt rates by family type and requires comparable population denominators. Q2 tracks province-wide caseload totals. Q3 uses total assistance cases within each program to show caseload composition across metropolitan areas. If the group adopts Q1's fallback question on composition, Q3 could become its view for single-person cases and regional trends.
 
 **团队结论 / Team decision：** 2026-11-01 提出，待小组讨论。
 
