@@ -21,8 +21,9 @@ Tasks 3 and 4, and tasks 5 and 6, require close collaboration. November 13, 15, 
 
 ## 近期行动 / Immediate Actions
 
-- [ ] 全体成员：11 月 1 日前各提出至少一个研究问题，填写[候选表](research/RESEARCH_QUESTIONS.md)，并在群内同步。<br>All members: propose at least one research question by November 1, add it to the [candidate table](research/RESEARCH_QUESTIONS.md), and share it in the group.
-- [ ] 任务一负责人：提出主要受众和背景依据，组织筛选约四个问题。<br>Task 1 lead: propose the primary audience and supporting background, and coordinate selection of approximately four questions.
+- [x] 团队：已确定总体标题及三个核心问题。Richard 于 2026-11-03 确认全员同意，见[研究框架](research/RESEARCH_QUESTIONS.md)。<br>Team: the overall title and three core questions are agreed. Richard confirmed unanimous agreement on November 3, 2026; see the [research framework](research/RESEARCH_QUESTIONS.md).
+- [ ] 全体成员：在研究框架中确认填写分工，补充三个问题的数据范围、指标、可视化与交互设计；原提案可从文档末尾的历史版本链接取回。<br>All members: confirm writing assignments and complete the data scope, measures, visualization, and interaction entries for the three questions. Earlier proposals remain available through the history link at the end of the framework.
+- [ ] 任务一负责人组织全组：统一确认整个项目的一个主要目标受众及整体受众价值，填写研究框架第 2 节；各问题不再分别选择主要受众。<br>Task 1 lead, with the team: confirm one primary audience and the overall audience value in Section 2 of the research framework, rather than selecting separate primary audiences for individual questions.
 - [ ] 全体成员：补齐私有正式计划中的手写签名。会议要求 10 月 31 日完成，实际状态待确认。<br>All members: add handwritten signatures to the private official plan. The meeting requested completion on October 31; actual completion is unconfirmed.
 - [ ] Richard：与缺席成员确认任务六及分工意见。<br>Richard: confirm task 6 and the proposed assignments with the absent member.
 - [ ] Richard：向组员分享文书仓库入口，另行建立网站代码仓库。<br>Richard: share the documentation repository with teammates and create a separate website code repository.
@@ -37,6 +38,7 @@ Tasks 3 and 4, and tasks 5 and 6, require close collaboration. November 13, 15, 
 
 | 子任务 / Subtask | 负责人 / Lead | 截止日期 / Deadline | 状态 / Status | 成果或证据链接 / Output or evidence |
 | --- | --- | --- | --- | --- |
-| 提交家庭类型与援助领取率候选问题 / Submit a candidate question on family type and assistance receipt rates | Yongjun Du（Richard） | 11 月 1 日 / Nov 1 | 2026-11-01 提案已记录；团队筛选及外部分母核对待完成 / Proposal recorded on 2026-11-01; group selection and external-denominator checks pending | [Q1 研究问题及可行性 / Q1 question and feasibility](research/RESEARCH_QUESTIONS.md) |
+| 提交家庭类型与援助领取率候选问题 / Submit a candidate question on family type and assistance receipt rates | Yongjun Du（Richard） | 11 月 1 日 / Nov 1 | 原提案已记录；按 2026-11-03 确认的方案，已移出当前核心范围 / Original proposal recorded; excluded from the current core scope agreed on 2026-11-03 | [方案记录与原提案链接 / Decision record and earlier proposals](research/RESEARCH_QUESTIONS.md) |
 | 归档 11 月 2 日研究选题与 Pitch 准备会议纪要 / Archive the November 2 research and pitch meeting minutes | 会议记录 / Meeting record | 2026-11-02 | 纪要已归档，包含后续组名决定；行动项完成情况待各负责人确认 / Minutes archived, including the subsequent group-name decision; action completion remains to be confirmed by owners | [会议纪要与待办 / Minutes and action items](meetings/2026-11-02_research_pitch_v1.md) |
-| 将 Eric 的研究方向归入“地区差异与变化” / Group Eric's research direction under Regional Differences and Change | Richard | — | 2026-11-02 已记录当前归类；时间跨度与比例分母待确认 / Working classification recorded on 2026-11-02; study period and denominator remain to be confirmed | [研究方向归类 / Research direction grouping](research/RESEARCH_QUESTIONS.md) |
+| 将 Eric 的研究方向归入“地区差异与变化” / Group Eric's research direction under Regional Differences and Change | Richard | — | 已纳入 2026-11-03 确认框架的现 Q2；具体研究范围由组员填写 / Included as current Q2 in the framework agreed on 2026-11-03; members will complete the detailed scope | [三个核心问题 / Three core questions](research/RESEARCH_QUESTIONS.md) |
+| 将研究问题页重构为三个已确认问题及统一受众章节 / Restructure the worksheet into three agreed questions and one shared audience section | Richard（整理） / Richard (coordination) | 2026-11-03 | 框架已更新；受众及研究细节留待组员填写 / Framework updated; audience and research details remain for members to complete | [研究问题框架 / Research framework](research/RESEARCH_QUESTIONS.md) |
