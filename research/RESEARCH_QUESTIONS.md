@@ -72,14 +72,14 @@ How did OW and ODSP caseload trends differ before, during, and after the COVID-1
 
 | 项目 / Item | 待填写内容 / Entry |
 | --- | --- |
-| 填写负责人、协作者、内部完成日期 / Writing lead, contributors, internal deadline | [待填写 / To fill in] |
-| 研究范围：时间、疫情阶段划分、地理层级 / Scope: dates, pandemic-period definitions, geographic level | [待填写 / To fill in] |
-| 数据来源、文件名、版本或访问日期 / Sources, filenames, version or access date | [待填写 / To fill in] |
-| 所需字段与指标定义 / Required fields and measure definitions | [待填写 / To fill in] |
-| 数据准备、缺失值处理与可比性检查 / Data preparation, missing values, comparability checks | [待填写 / To fill in] |
-| 可视化草案：图表、编码与比较方式 / Visualization draft: charts, encodings, comparisons | [待填写 / To fill in] |
-| 交互草案：用户操作及图表如何响应 / Interaction draft: user actions and chart responses | [待填写 / To fill in] |
-| 局限、解释边界与待解决事项 / Limitations, interpretation boundaries, open issues | [待填写 / To fill in] |
+| 填写负责人、协作者、内部完成日期 / Writing lead, contributors, internal deadline | 由 Alice 牵头撰写 Q1 研究部分，截止日期11月2日 / The Q1 research section was drafted by Alice, with the deadline set for November 2nd. |
+| 研究范围：时间、疫情阶段划分、地理层级 / Scope: dates, pandemic-period definitions, geographic level | 研究范围为安大略省全省，暂定使用 2017—2025 年的月度数据，将 2020 年 3 月至 2022 年 12 月作为疫情期间，其前后分别作为疫情前和疫情后阶段，比较 OW 与 ODSP 的案件数量及变化趋势 / The study will examine monthly Ontario-wide data from 2017 to 2025, provisionally defining March 2020 to December 2022 as the pandemic period, with earlier and later months representing the pre- and post-pandemic periods. OW and ODSP caseload trends will be compared across these periods. |
+| 数据来源、文件名、版本或访问日期 / Sources, filenames, version or access date | 数据来源为 STA313 课程提供的 Ontario Works 和 ODSP 数据集，主要使用 ont-sa-characteristic-ow-ont.csv 与 ont-sa-characteristic-odsp-ont.csv，并记录数据版本或访问日期，以确保分析可复现 / Data will come from the STA313 course datasets, primarily ont-sa-characteristic-ow-ont.csv and ont-sa-characteristic-odsp-ont.csv. Dataset versions or access dates will be recorded to ensure reproducibility. |
+| 所需字段与指标定义 / Required fields and measure definitions | 主要使用 year、month 和 cases 字段，以每月 OW 和 ODSP 的总案件数量为核心指标，并计算月度或年度百分比变化，以比较两个项目的变化趋势 / The analysis will use year, month, and cases to measure monthly OW and ODSP caseloads, with monthly or annual percentage changes calculated to compare trends between the programs. |
+| 数据准备、缺失值处理与可比性检查 / Data preparation, missing values, comparability checks | 整理并统一 OW 和 ODSP 的月度数据，检查缺失值、重复记录及时间范围是否一致，确保两个项目在相同月份和统计口径下进行比较 / Clean and align monthly OW and ODSP data, check for missing values, duplicate records, and differences in time coverage, and ensure comparisons use consistent reporting periods and definitions. |
+| 可视化草案：图表、编码与比较方式 / Visualization draft: charts, encodings, comparisons |  使用双折线图展示 OW 和 ODSP 的月度案件数量变化，通过不同颜色区分两个项目，并标注疫情阶段，帮助用户直观比较变化趋势及增长幅度 / Use a two-series line chart to display monthly OW and ODSP caseload trends, with distinct colours for each program and shaded pandemic periods to highlight changes and differences in growth patterns. |
+| 交互草案：用户操作及图表如何响应 / Interaction draft: user actions and chart responses | 用户可以选择不同时间范围、切换 OW 或 ODSP 数据，并查看具体月份的案件数量。图表将根据用户选择更新，方便比较不同疫情阶段的变化趋势 / Users can select time ranges, toggle between OW and ODSP, and hover over data points to view monthly caseloads. Charts will update based on user selections to support comparisons across pandemic periods. |
+| 局限、解释边界与待解决事项 / Limitations, interpretation boundaries, open issues | 案件数量变化可能受到经济环境、政策调整及资格规则等多种因素影响，因此不能将变化直接归因于 COVID-19。研究还需确认数据完整性、疫情阶段划分及两个项目的统计口径是否一致 / Caseload changes may reflect economic conditions, policy changes, and eligibility rules, so observed trends cannot be attributed solely to COVID-19. Data completeness, pandemic-period definitions, and comparability between the two programs require further verification. |
 
 ## 4. Q2 填写区：家庭构成与地区差异 / Q2 Workspace: Family Composition and Regional Differences
 
