@@ -106,14 +106,14 @@ How has the duration composition of OW cases changed over time, and which region
 
 | 项目 / Item | 待填写内容 / Entry |
 | --- | --- |
-| 填写负责人、协作者、内部完成日期 / Writing lead, contributors, internal deadline | [待填写 / To fill in] |
-| 研究范围：时间、观测频率与地区覆盖 / Scope: dates, observation frequency, geographic coverage | [待填写 / To fill in] |
-| 数据来源、文件名、版本或访问日期 / Sources, filenames, version or access date | [待填写 / To fill in] |
-| 所需字段、受助时长分类、长期受助定义与占比分母 / Fields, duration categories, long-term definition, share denominator | [待填写 / To fill in] |
-| 数据准备、缺失值处理与可比性检查 / Data preparation, missing values, comparability checks | [待填写 / To fill in] |
-| 可视化草案：图表、编码与比较方式 / Visualization draft: charts, encodings, comparisons | [待填写 / To fill in] |
-| 交互草案：用户操作及图表如何响应 / Interaction draft: user actions and chart responses | [待填写 / To fill in] |
-| 局限、解释边界与待解决事项 / Limitations, interpretation boundaries, open issues | [待填写 / To fill in] |
+| 填写负责人、协作者、内部完成日期 / Writing lead, contributors, internal deadline | Q3 整合了 David 和 Steven 提出的研究问题截止日期11月2日 / Q3 integrates the research questions proposed by David and Steven. The deadline for submission is November 2nd. |
+| 研究范围：时间、观测频率与地区覆盖 / Scope: dates, observation frequency, geographic coverage | 研究安大略省不同 CMA 的 Ontario Works（OW）受助案件，使用课程数据覆盖的共同时间范围及月度观测值，比较不同受助时长类别的案件占比及其随时间变化的趋势 / The study will examine Ontario Works (OW) cases across CMAs, using monthly observations over the available common reporting period to compare assistance-duration categories and changes in their shares over time. |
+| 数据来源、文件名、版本或访问日期 / Sources, filenames, version or access date | 数据来源为 STA313 课程提供的 Ontario Works 案件特征数据，主要使用 `ont-sa-characteristic-ow-cma.csv`，必要时参考 `ont-sa-characteristic-ow-ont.csv` 进行全省层面的比较，并记录数据版本或访问日期以确保研究可复现 / Data will come from the STA313 course-provided Ontario Works case-characteristics datasets, primarily `ont-sa-characteristic-ow-cma.csv`, with `ont-sa-characteristic-ow-ont.csv` used for province-wide comparisons if needed. Dataset versions or access dates will be recorded for reproducibility. |
+| 所需字段、受助时长分类、长期受助定义与占比分母 / Fields, duration categories, long-term definition, share denominator | 使用 `year`、`month`、CMA 地区字段、`cases` 及受助时长分类字段，包括 `moa04`、`moa512`、`moa1318` 和 `moa19`。暂将连续领取援助 19 个月及以上的案件定义为长期受助案件，并以 `moa19 / cases × 100%` 计算其占比 / Use `year`, `month`, CMA geographic fields, `cases`, and assistance-duration variables including `moa04`, `moa512`, `moa1318`, and `moa19`. Long-term assistance is provisionally defined as cases receiving assistance for 19 months or longer, with the share calculated as `moa19 / cases × 100%`. |
+| 数据准备、缺失值处理与可比性检查 / Data preparation, missing values, comparability checks | 按 CMA 和月份整理 OW 数据，检查缺失值、重复记录、地区代码和时间覆盖范围，并确认受助时长分类及总案件数的统计口径一致。对于数据缺失或分类不完整的记录，将进行标记并避免直接比较 / Organize OW data by CMA and month, check missing values, duplicates, geographic codes, and time coverage, and verify consistency between duration categories and total caseloads. Records with missing or incomplete classifications will be flagged and excluded from direct comparisons where necessary. |
+| 可视化草案：图表、编码与比较方式 / Visualization draft: charts, encodings, comparisons | 使用堆叠柱状图展示 OW 不同受助时长类别的案件构成，通过折线图比较长期受助案件占比随时间的变化，并使用排序柱状图展示不同 CMA 之间的差异 / Use stacked bar charts to show the composition of OW cases across assistance-duration categories, line charts to track changes in long-term assistance shares over time, and ranked bar charts to compare differences across CMAs. |
+| 交互草案：用户操作及图表如何响应 / Interaction draft: user actions and chart responses | 用户可以选择不同 CMA、时间范围及受助时长类别，查看各类案件占比及变化趋势。图表将根据用户选择更新，并支持不同地区之间的直接比较 / Users can select CMAs, time periods, and assistance-duration categories to explore caseload shares and trends. Charts will update based on user selections and allow direct comparisons between regions. |
+| 局限、解释边界与待解决事项 / Limitations, interpretation boundaries, open issues | 长期受助案件占比反映的是当前受助案件的持续时间构成，并不代表个人未来长期依赖援助的概率。地区差异可能受到就业环境、人口结构及政策因素影响，不能仅凭描述性数据判断项目效果或因果关系。实际数据覆盖范围、分类定义及统计口径仍需核查 / The share of long-term cases reflects the duration composition of current assistance caseloads, not the probability that an individual will remain on assistance in the future. Regional differences may reflect employment conditions, population characteristics, and policy factors, so descriptive data alone cannot establish program effectiveness or causation. Data coverage, category definitions, and reporting consistency still require verification. |
 
 ## 6. 共同口径与整合 / Shared Definitions and Integration
 
