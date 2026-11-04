@@ -8,7 +8,7 @@ This tracker is based on the October 31 meeting. Assignments are preliminary: le
 
 | 编号 / No. | 任务 / Task | 负责人 / Lead | 支持成员 / Support | 内部节点 / Internal deadline | 状态 / Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 受众、研究范围、背景与研究问题 / Audience, scope, background, and research questions | 王同学，姓名待核对 / Wang, full name to be verified | Steven | 11 月 2 日 / Nov 2 | 初步分工，成果待确认 / Assigned provisionally; output unconfirmed |
+| 1 | 受众、研究范围、背景与研究问题 / Audience, scope, background, and research questions | David | Steven | 11 月 2 日 / Nov 2 | 初步分工，成果待确认 / Assigned provisionally; output unconfirmed |
 | 2 | 项目叙事、图表解释、Pitch PPT、讲稿及演示脚本 / Project narrative, chart explanations, pitch slides, notes, and demo script | Alice | Shengyang | 11 月 3 日 / Nov 3 | 初步分工，成果待确认 / Assigned provisionally; output unconfirmed |
 | 3 | 数据筛选、清洗与局限评估 / Data selection, cleaning, and limitations | Steven | Alice 可协助 / Alice may assist | 待核对最终计划 / Check final plan | 初步分工，成果待确认 / Assigned provisionally; output unconfirmed |
 | 4 | 数据分析与可视化设计 / Data analysis and visualization design | Shengyang | Richard | 待核对最终计划 / Check final plan | 初步分工，成果待确认 / Assigned provisionally; output unconfirmed |
