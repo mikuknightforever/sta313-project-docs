@@ -46,12 +46,12 @@ Complete this section once for the overall theme and all three questions. The en
 
 | 项目 / Item | 待填写内容 / Entry |
 | --- | --- |
-| 为什么这个主题对主要受众重要 / Why the overall topic matters to the primary audience | [待填写 / To fill in] |
-| 网站希望帮助受众获得的整体认识 / Overall understanding the website should support | [待填写 / To fill in] |
-| 用户探索后可以完成什么具体任务 / Concrete task users should be able to complete after exploring | [待填写 / To fill in] |
-| 交互相比固定图表增加的价值 / Added value of interaction compared with fixed charts | [待填写 / To fill in] |
-| 可支持的判断及不能支持的结论 / Judgments the evidence can support and conclusions it cannot support | [待填写 / To fill in] |
-| 可用于 Pitch 的整体受众价值陈述 / Overall audience-value statement for the pitch | [待填写 / To fill in] |
+| 为什么这个主题对主要受众重要 / Why the overall topic matters to the primary audience | 研究 OW 和 ODSP 的案件变化、家庭结构及地区差异，可以帮助安省政策分析人员了解社会援助需求的变化，识别值得进一步关注的地区，并为政策规划和资源配置提供数据参考 / Examining OW and ODSP caseload trends, family composition, and regional differences helps Ontario policy analysts understand changing social assistance patterns, identify areas requiring attention, and support policy planning and resource allocation. |
+| 网站希望帮助受众获得的整体认识 / Overall understanding the website should support | 网站旨在帮助用户全面了解 OW 和 ODSP 案件数量的时间趋势、不同地区的家庭构成差异，以及 OW 长期受助情况，从而更清晰地认识安省社会援助的整体变化 / The website aims to provide a clear understanding of OW and ODSP caseload trends, regional differences in family composition, and patterns of long-term OW assistance across Ontario. |
+| 用户探索后可以完成什么具体任务 / Concrete task users should be able to complete after exploring | 用户可以识别案件数量变化明显的时期、比较不同 CMA 的家庭结构差异，并找出长期 OW 受助案件占比较高或增长较快的地区，为后续政策调查确定重点 / Users can identify periods of significant caseload changes, compare family composition across CMAs, and locate regions with higher or increasing shares of long-term OW cases to prioritize further policy investigation. |
+| 交互相比固定图表增加的价值 / Added value of interaction compared with fixed charts | 相比固定图表，交互式网站允许用户自主选择时间段、地区和援助项目，实时比较不同趋势与指标，更容易发现地区差异和随时间变化的规律 / Unlike static charts, the interactive website allows users to select time periods, regions, and assistance programs to compare trends and indicators, making regional differences and changes over time easier to explore. |
+| 可支持的判断及不能支持的结论 / Judgments the evidence can support and conclusions it cannot support | 数据可以支持对案件数量、家庭结构和受助时长的趋势及地区差异进行描述性比较，但不能直接证明疫情或特定政策造成这些变化，也不能单独判断政策效果或资源分配是否合理 / The data can support descriptive comparisons of caseload trends, family composition, and assistance duration across regions, but cannot establish whether COVID-19 or specific policies caused these changes or independently determine policy effectiveness or appropriate resource allocation. |
+| 可用于 Pitch 的整体受众价值陈述 / Overall audience-value statement for the pitch | 本项目通过交互式数据可视化，帮助安省社会援助政策分析人员探索 OW 和 ODSP 的长期变化、家庭结构及地区差异，识别值得进一步调查的趋势，为更有针对性的政策研究和规划提供依据 / Through interactive data visualization, this project helps Ontario social assistance policy analysts explore OW and ODSP trends, family composition, and regional differences, identify patterns requiring further investigation, and support more targeted policy research and planning. |
 
 ### 2.3 三个问题如何共同服务这一受众 / How the Questions Serve the Same Audience
 
