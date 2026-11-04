@@ -11,7 +11,7 @@ This repository holds meeting minutes, task assignments, research questions, pre
 | 会议纪要 / Meeting minutes | [meetings/](meetings/README.md) |
 | 任务分工与进度 / Tasks and progress | [TASKS.md](TASKS.md) |
 | 贡献计划与团队规则 / Contribution plan and team agreement | [planning/TEAM_AGREEMENT.md](planning/TEAM_AGREEMENT.md) |
-| 备选研究问题 / Candidate research questions | [research/RESEARCH_QUESTIONS.md](research/RESEARCH_QUESTIONS.md) |
+| 已确认研究框架与整体受众 / Agreed research framework and project audience | [research/RESEARCH_QUESTIONS.md](research/RESEARCH_QUESTIONS.md) |
 | Pitch 材料与提交清单 / Pitch materials and submission checklist | [pitch/README.md](pitch/README.md) |
 | 设计决策与迭代 / Design decisions and iterations | [design/DESIGN_LOG.md](design/DESIGN_LOG.md) |
 | 成员贡献记录 / Member contributions | [contributions/CONTRIBUTION_LOG.md](contributions/CONTRIBUTION_LOG.md) |
