@@ -38,7 +38,7 @@ Complete this section once for the overall theme and all three questions. The en
 | 项目 / Item | 待填写内容 / Entry |
 | --- | --- |
 | 一个具体的主要受众：岗位、职责与机构场景 / One specific primary audience: role, responsibilities, and organizational context | 安大略省儿童 社区和社会服务厅的社会政策分析师/Social assistance policy analysts at Ontario's Ministry of Children, Community and Social Services |
-| 使用场景：何时、为何打开这个网站 / Use scenario: when and why they would use the website | [在准备政策报告或评估社会援助项目时可能会打开该网站，交互式的网站可以快速帮助他们了解情况 / This website might be accessed when they are preparing policy reports or evaluating social assistance programs; its interactive nature helps users quickly gain an understanding of the situation.] |
+| 使用场景：何时、为何打开这个网站 / Use scenario: when and why they would use the website | 在准备政策报告或评估社会援助项目时可能会打开该网站，交互式的网站可以快速帮助他们了解情况 / This website might be accessed when they are preparing policy reports or evaluating social assistance programs; its interactive nature helps users quickly gain an understanding of the situation. |
 | 既有知识与需要解释的概念 / Existing knowledge and concepts requiring explanation | [待填写 / To fill in] |
 | 需要完成的探索或比较任务 / Exploration or comparison tasks they need to complete | [待填写 / To fill in] |
 
