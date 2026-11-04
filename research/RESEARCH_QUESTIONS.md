@@ -55,14 +55,20 @@ This section defines the audience and value for the project as a whole. On Novem
 
 ### 2.3 三个问题如何共同服务这一受众 / How the Questions Serve the Same Audience
 
-此表说明各问题对整体价值的贡献，不另设三个目标受众。  
-Explain each question's contribution to the overall value without defining three separate audiences.
+三个问题共同服务于上述政策分析员，分别提供总体背景、案件构成的地区比较及 OW 受助时长的结构信息。  
+All three questions serve the policy analysts described above, providing overall context, regional comparisons of caseload composition, and information about the duration composition of OW cases.
 
-| 问题 / Question | 帮助同一受众理解什么 / What it helps the shared audience understand | 用户可完成的探索任务 / User exploration task |
+| 问题 / Question | 对同一受众的具体价值 / Specific value to the shared audience | 用户可完成的探索任务 / User exploration task |
 | --- | --- | --- |
-| Q1 总体趋势 / Overall trends | 了解 COVID-19 疫情前，中，后 OW 和 ODSP 的案件数量如何变化，以及两个项目的趋势有何不同。/ Understand how the number of cases in OW and ODSP changes before, during, and after the COVID-19 pandemic, and how the trends for the two programs differed. | 比较不同时期 OW 和 ODSP 的案件数量变化，并识别案件数量增加或减少的时间段。/ Compare the changes in OW and ODSP cases over different periods and identify the time marked by significant increases or decreases in caseloads. |
-| Q2 家庭构成与地区差异 / Family composition and regional differences | 了解各 CMA 中单人无子女案件占比如何变化，以及 OW 与 ODSP 的占比差距在不同地区有何不同。/ Examine how the proportion of single-person and no-child cases has shifted across various CMAs, and how the differences in these proportions varies by region. | 选择不同 CMA 和时间段，比较两个项目的单人无子女案件占比，找出占比差距缩小最多的地区。/ Select different CMAs and time periods to compare the proportion of cases involving single individuals without children across the two programs, and identify the region where the differences in these proportions has narrowed the most.|
-| Q3 受助时长与地区差异 / Assistance duration and regional differences | 了解 OW 案件在不同受助时长中的构成如何随时间变化，以及哪些 CMA 的长期受助案件占比较高。/ Understand how different OW cases varies over time based on the duration of assistance received, and identify which CMAs have a higher proportion of long-term assistance cases. | 探索不同受助时长类别的变化，比较各 CMA 长期 OW 案件占比。/ Explore variations across categories defined by the duration of assistance received, and compare the proportion of long-term OW cases for each CMA. |
+| Q1 总体趋势 / Overall trends | 为社会援助情况简报提供全省背景，帮助分析员识别疫情前、中、后 OW 与 ODSP 案件规模走势相似或不同的时期。 / Provide province-wide context for social assistance briefings and help analysts identify periods when OW and ODSP caseload trends moved together or diverged before, during, and after the pandemic. | 选择时间范围和援助项目，比较案件数量及变化趋势，并查看具体时期的数值。 / Select time ranges and programs, compare caseload levels and trends, and inspect values for specific periods. |
+| Q2 家庭构成与地区差异 / Family composition and regional differences | 帮助分析员了解不同 CMA 的单人无子女案件构成，以及两个项目之间的构成差距如何变化，识别值得进一步调查的地区。 / Help analysts understand the composition of single-person-without-children cases across CMAs and changes in the gap between the two programs, identifying areas that warrant further investigation. | 选择起止季度，比较各 CMA 的占比差距缩小或扩大的程度；选择一个 CMA 查看两个项目的完整趋势。 / Select start and end quarters to compare how much the share gap narrowed or widened across CMAs, then select an area to inspect the trends for both programs. |
+| Q3 受助时长与地区差异 / Assistance duration and regional differences | 帮助分析员了解 OW 受助时长构成的变化，识别长期受助案件占比较高的地区，为后续政策研究和服务规划提供描述性依据。 / Help analysts understand changes in OW assistance-duration composition and identify areas with higher long-term case shares, providing descriptive evidence for subsequent policy research and service planning. | 选择 CMA、时期和时长类别，比较案件构成，并查看长期受助案件占比的地区差异及时间变化。 / Select CMAs, periods, and duration categories to compare caseload composition and examine regional differences and time trends in long-term case shares. |
+
+### 2.4 可用于 Pitch 的受众与价值介绍 / Audience and Value Statement for the Pitch
+
+本项目面向安大略省儿童、社区与社会服务厅中负责社会援助案件监测与政策研究的分析员。交互式网站帮助他们比较 OW 与 ODSP 的案件趋势、各 CMA 的单人无子女案件占比，以及 OW 的受助时长构成。用户可以选择时期和地区，识别值得进一步调查的变化，为政策简报、后续研究与服务规划提供描述性依据。
+
+Our primary audience is policy analysts at Ontario's Ministry of Children, Community and Social Services who monitor social assistance caseloads. Our interactive website helps them compare OW and ODSP caseload trends, single-person-without-children case shares across CMAs, and OW assistance-duration composition. By exploring periods and regions, they can identify patterns for further investigation and use descriptive evidence to inform policy briefings, research, and service planning.
 
 ## 3. Q1 填写区：总体趋势 / Q1 Workspace: Overall Trends
 
