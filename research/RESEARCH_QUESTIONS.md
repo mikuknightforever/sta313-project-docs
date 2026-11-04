@@ -5,8 +5,8 @@
 **安大略省社会援助：家庭结构、地区差异与时间变化**  
 **Social Assistance in Ontario: Family Composition, Regional Differences, and Change Over Time**
 
-2026-11-03，Richard 确认全体成员已同意上述主题及下列三个核心问题。本页由候选问题收集表改为共同填写的研究框架；具体研究范围、指标定义、数据与交互设计仍由组员补充。  
-On November 3, 2026, Richard confirmed that all members agreed to this theme and the three core questions below. This page now serves as a shared research framework. Members will complete the study scope, measure definitions, data, and interaction design.
+2026-11-03，Richard 确认全体成员已同意上述主题及下列三个核心问题。本页由候选问题收集表改为共同填写的研究框架；具体研究范围、指标定义、数据与交互设计已补充初稿，仍需核查及定稿。  
+On November 3, 2026, Richard confirmed that all members agreed to this theme and the three core questions below. This page now serves as a shared research framework. Initial entries for the study scope, measure definitions, data, and interaction design have been added and remain subject to verification and final review.
 
 **填写约定 / How to complete this document**
 
@@ -30,28 +30,28 @@ The abbreviations above refer to the two assistance programs and the geographic 
 
 ## 2. 项目整体受众与价值 / Project-Level Target Audience and Value
 
-本节服务于整个标题及三个问题，集中完成一次；以下内容尚待填写和确认。  
-Complete this section once for the overall theme and all three questions. The entries below remain to be written and confirmed.
+本节统一说明整个项目的主要受众及价值。2026-11-04，按 Richard 确认的受众定位整理为当前稿，供三个研究问题及 Pitch 共用。  
+This section defines the audience and value for the project as a whole. On November 4, 2026, it was refined using the audience positioning confirmed by Richard, for use across the three questions and the pitch.
 
 ### 2.1 主要目标受众 / Primary Target Audience
 
-| 项目 / Item | 待填写内容 / Entry |
+| 项目 / Item | 当前表述 / Current wording |
 | --- | --- |
-| 一个具体的主要受众：岗位、职责与机构场景 / One specific primary audience: role, responsibilities, and organizational context | 安大略省儿童 社区和社会服务厅的社会政策分析师/Social assistance policy analysts at Ontario's Ministry of Children, Community and Social Services |
-| 使用场景：何时、为何打开这个网站 / Use scenario: when and why they would use the website | 在准备政策报告或评估社会援助项目时可能会打开该网站，交互式的网站可以快速帮助他们了解情况 / This website might be accessed when they are preparing policy reports or evaluating social assistance programs; its interactive nature helps users quickly gain an understanding of the situation. |
-| 既有知识与需要解释的概念 / Existing knowledge and concepts requiring explanation | 目标用户已熟悉 OW 和 ODSP 的基本政策及案件统计。网站主要解释案件数量、家庭类型占比、受助时长及 CMA 地区划分等关键指标 / The target audience is familiar with OW and ODSP policies and basic statistics. The website will clarify key measures, including caseloads, family composition, assistance duration, and CMA boundaries. |
-| 需要完成的探索或比较任务 / Exploration or comparison tasks they need to complete | 用户可以比较 OW 和 ODSP 在疫情前后的案件变化、不同 CMA 的家庭结构差异，以及 OW 长期受助趋势，从而识别需要进一步政策关注的地区 / Users can compare OW and ODSP caseload trends before and after COVID-19, examine family composition across CMAs, and identify regions with higher rates of long-term OW assistance for further policy investigation. |
+| 一个具体的主要受众：岗位、职责与机构场景 / One specific primary audience: role, responsibilities, and organizational context | 安大略省儿童、社区与社会服务厅中，负责社会援助案件监测与政策研究的分析员。 / Policy analysts at Ontario's Ministry of Children, Community and Social Services who monitor social assistance caseloads and prepare evidence for policy research. |
+| 使用场景：何时、为何打开这个网站 / Use scenario: when and why they would use the website | 在准备社会援助情况简报或确定后续研究重点时，比较案件规模、受助案件构成及地区差异，找出值得进一步调查的时期和地区。 / When preparing a social assistance briefing or identifying research priorities, analysts compare caseload size, composition, and regional differences to identify periods and areas that warrant further investigation. |
+| 既有知识与需要解释的概念 / Existing knowledge and concepts requiring explanation | 预期用户熟悉 OW 与 ODSP 的基本政策背景。网站仍需解释案件与人数的区别、各指标的分母、百分点差距、CMA 覆盖及受助时长分类。标题中的“家庭结构”指受助案件的家庭构成，当前重点是单人无子女案件占比。 / Users are expected to know the basic policy context of OW and ODSP. The website should still explain cases versus people, measure denominators, percentage-point gaps, CMA coverage, and assistance-duration categories. “Family composition” in the title refers to assistance cases, with the current focus on cases involving a single person without children. |
+| 需要完成的探索或比较任务 / Exploration or comparison tasks they need to complete | 比较疫情前、中、后两个项目的总体案件趋势；比较各 CMA 的单人无子女案件占比及项目差距变化；查看 OW 的时长构成和长期受助案件占比，选出值得进一步调查的地区。 / Compare overall OW and ODSP caseload trends before, during, and after the pandemic; compare single-person-without-children shares and changes in program gaps across CMAs; and examine OW duration composition and long-term case shares to identify areas for further investigation. |
 
 ### 2.2 整体受众价值 / Overall Audience Value
 
-| 项目 / Item | 待填写内容 / Entry |
+| 项目 / Item | 当前表述 / Current wording |
 | --- | --- |
-| 为什么这个主题对主要受众重要 / Why the overall topic matters to the primary audience | 研究 OW 和 ODSP 的案件变化、家庭结构及地区差异，可以帮助安省政策分析人员了解社会援助需求的变化，识别值得进一步关注的地区，并为政策规划和资源配置提供数据参考 / Examining OW and ODSP caseload trends, family composition, and regional differences helps Ontario policy analysts understand changing social assistance patterns, identify areas requiring attention, and support policy planning and resource allocation. |
-| 网站希望帮助受众获得的整体认识 / Overall understanding the website should support | 网站旨在帮助用户全面了解 OW 和 ODSP 案件数量的时间趋势、不同地区的家庭构成差异，以及 OW 长期受助情况，从而更清晰地认识安省社会援助的整体变化 / The website aims to provide a clear understanding of OW and ODSP caseload trends, regional differences in family composition, and patterns of long-term OW assistance across Ontario. |
-| 用户探索后可以完成什么具体任务 / Concrete task users should be able to complete after exploring | 用户可以识别案件数量变化明显的时期、比较不同 CMA 的家庭结构差异，并找出长期 OW 受助案件占比较高或增长较快的地区，为后续政策调查确定重点 / Users can identify periods of significant caseload changes, compare family composition across CMAs, and locate regions with higher or increasing shares of long-term OW cases to prioritize further policy investigation. |
-| 交互相比固定图表增加的价值 / Added value of interaction compared with fixed charts | 相比固定图表，交互式网站允许用户自主选择时间段、地区和援助项目，实时比较不同趋势与指标，更容易发现地区差异和随时间变化的规律 / Unlike static charts, the interactive website allows users to select time periods, regions, and assistance programs to compare trends and indicators, making regional differences and changes over time easier to explore. |
-| 可支持的判断及不能支持的结论 / Judgments the evidence can support and conclusions it cannot support | 数据可以支持对案件数量、家庭结构和受助时长的趋势及地区差异进行描述性比较，但不能直接证明疫情或特定政策造成这些变化，也不能单独判断政策效果或资源分配是否合理 / The data can support descriptive comparisons of caseload trends, family composition, and assistance duration across regions, but cannot establish whether COVID-19 or specific policies caused these changes or independently determine policy effectiveness or appropriate resource allocation. |
-| 可用于 Pitch 的整体受众价值陈述 / Overall audience-value statement for the pitch | 本项目通过交互式数据可视化，帮助安省社会援助政策分析人员探索 OW 和 ODSP 的长期变化、家庭结构及地区差异，识别值得进一步调查的趋势，为更有针对性的政策研究和规划提供依据 / Through interactive data visualization, this project helps Ontario social assistance policy analysts explore OW and ODSP trends, family composition, and regional differences, identify patterns requiring further investigation, and support more targeted policy research and planning. |
+| 为什么这个主题对主要受众重要 / Why the overall topic matters to the primary audience | 案件总量的变化不能完整体现受助案件内部的构成和地区差异。结合总体趋势、家庭构成和 OW 受助时长，能为社会援助情况简报、后续政策研究及服务规划提供更具体的描述性依据。 / Changes in total caseloads do not fully describe differences in caseload composition or between regions. Combining overall trends, family composition, and OW assistance duration provides more specific descriptive evidence for briefings, subsequent policy research, and service planning. |
+| 网站希望帮助受众获得的整体认识 / Overall understanding the website should support | 理解社会援助案件规模、受助案件家庭构成及 OW 受助时长如何随时间与地区变化，并区分全省总体趋势和数据覆盖 CMA 的地区特征。 / Understand how caseload size, family composition, and OW assistance duration vary over time and across regions, while distinguishing province-wide trends from the characteristics of the CMAs covered by the data. |
+| 用户探索后可以完成什么具体任务 / Concrete task users should be able to complete after exploring | 选择关注的时期和地区，识别案件规模变化、项目构成差距缩小或扩大、长期 OW 案件占比较高的现象，并说明比较所用的项目、时期、地区及指标，为进一步调查确定重点。 / Select periods and areas of interest; identify changes in caseload size, narrowing or widening composition gaps between programs, and high long-term OW case shares; and state the programs, dates, areas, and measures underlying each comparison to guide further investigation. |
+| 交互相比固定图表增加的价值 / Added value of interaction compared with fixed charts | 用户可按研究需要选择时期、地区及适用的援助项目，比较地区排名与完整时间趋势，并查看相应数量或占比，理解总体趋势背后的具体变化。各视图的筛选范围应与其数据一致，例如受助时长视图仅涉及 OW。 / Users can select periods, areas, and applicable programs, compare regional rankings with full time trends, and inspect relevant counts or shares to understand specific changes behind broader patterns. Filters should reflect each view's coverage; for example, the duration view concerns OW only. |
+| 可支持的判断及不能支持的结论 / Judgments the evidence can support and conclusions it cannot support | 数据支持案件规模、构成及地区差异的描述性比较，可用于提出后续调查问题。受助案件内的占比不是当地人口领取援助的概率；案件数量不能单独衡量全部或未满足的援助需求。数据不能直接证明疫情或政策造成变化，也不能据长期受助占比判断个人未来经历、政策效果或资源配置是否合理。 / The data support descriptive comparisons of caseload size, composition, and regional differences and can motivate further research. Shares within assistance cases are not receipt probabilities in the local population, and caseloads alone do not measure total or unmet need. The data cannot establish that the pandemic or a policy caused a change, or use long-term case shares to determine individual future outcomes, policy effectiveness, or appropriate resource allocation. |
+| 可用于 Pitch 的整体受众价值陈述 / Overall audience-value statement for the pitch | 本项目通过交互式可视化，帮助安省社会援助政策分析员比较案件规模、家庭构成及 OW 受助时长的时空变化，识别值得进一步调查的时期和地区，为政策研究与服务规划提供描述性依据。 / Our interactive visualization helps Ontario social assistance policy analysts compare changes in caseload size, family composition, and OW assistance duration across time and regions, and identify patterns that warrant further investigation to inform policy research and service planning. |
 
 ### 2.3 三个问题如何共同服务这一受众 / How the Questions Serve the Same Audience
 
@@ -133,8 +133,8 @@ How has the duration composition of OW cases changed over time, and which region
   Adopt this title and three questions. Alice's former Q2 becomes Q1; Eric's former Q3 becomes Q2; David's and Steven's former Q4 and Q5 are combined as Q3.
 - **当前核心范围之外 / Outside the current core scope:** Richard 原先需要额外可比人口或家庭分母的“不同家庭类型领取率”问题。  
   Richard's original question on receipt rates by family type, which requires additional comparable population or family denominators.
-- **仍待填写 / Still to complete:** 项目整体受众及价值、各问题的具体研究与设计细节。  
-  Project-level audience and value, plus each question's detailed research and design entries.
+- **当前稿与待核查事项 / Current draft and checks remaining:** 2026-11-04 已整理项目整体受众及价值；三个问题和共同口径已有初稿。后续需核查各文件实际时间覆盖与观测频率，明确各问题采用的研究窗口及共同章节的对应关系，补齐数据版本或访问日期，并确认填写分工与最终表述。  
+  As of November 4, 2026, the project-level audience and value have been refined, and drafts exist for all three questions and the shared definitions. Verify each file's actual coverage and observation frequency, clarify each question's study window and its relationship to the shared section, add dataset versions or access dates, and confirm writing assignments and final wording.
 
 完整原提案保留在 [重构前版本 / pre-restructure version](https://github.com/mikuknightforever/sta313-project-docs/blob/b8f26edecc1d2e766535c435991ac96f24205681/research/RESEARCH_QUESTIONS.md)，供组员取回已写内容。历史版本中的 Q1–Q5 是旧编号，不代表当前范围或状态。  
 The linked version preserves the complete earlier proposals for reuse. Its Q1–Q5 labels are historical and do not represent the current scope or status.
