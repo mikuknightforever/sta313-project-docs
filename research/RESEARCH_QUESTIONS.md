@@ -121,11 +121,11 @@ How has the duration composition of OW cases changed over time, and which region
 
 | 项目 / Item | 待填写内容 / Entry |
 | --- | --- |
-| 案件、人数、家庭构成、受助时长等共同术语 / Shared terms: cases, people, family composition, assistance duration | [待填写 / To fill in] |
-| 三个问题各自的数据时间范围与地理覆盖，以及可比较的交集 / Each question's temporal and geographic coverage and the comparable overlap | [待填写 / To fill in] |
+| 案件、人数、家庭构成、受助时长等共同术语 / Shared terms: cases, people, family composition, assistance duration | Case 指一个社会援助案件单位，不等于实际受助人数。Family Composition 指案件的家庭类型。Assistance Duration 指当前案件已连续领取援助的时长，其中 OW 长期案件定义为 19 个月及以上。/ A "case" refers to a single unit of social assistance, it does not necessarily equal the actual number of individuals receiving aid. "Family composition" denotes the type of household within a case. "Assistance duration" refers to the length of time for which the current case has continuously received assistance; for Ontario Works (OW), a "long-term" case is defined as one that has received assistance for 19 months or more. |
+| 三个问题各自的数据时间范围与地理覆盖，以及可比较的交集 / Each question's temporal and geographic coverage and the comparable overlap | Q1 使用全省 OW、ODSP 数据；Q2 使用 CMA 的 OW、ODSP 数据；Q3 使用全省和 CMA 的 OW 数据。三者均可使用 2003 年至 2026 年 3 月的季度数据, 但需要区分全省总量和 CMA 统计范围。/ Q1 uses province-wide OW and ODSP data; Q2 uses OW and ODSP data for CMAs; Q3 uses OW data for both the province and the CMAs. All three can utilize quarterly data spanning from 2003 to March 2026, however, it is necessary to distinguish between the provincial total and the scope of CMA statistics. |
 | 数量、占比、百分点差距与时间汇总的统一规则 / Consistent rules for counts, shares, percentage-point gaps, and temporal aggregation | [待填写 / To fill in] |
-| 网站内容顺序与跨视图交互 / Website sequence and interactions across views | [待填写 / To fill in] |
-| 网站说明、数据来源引用与解释边界 / Website guidance, source citations, interpretation boundaries | [待填写 / To fill in] |
+| 网站内容顺序与跨视图交互 / Website sequence and interactions across views | 网站按照总体趋势、家庭构成、受助时长三个部分组织。用户应该可以选择时间、援助项目和 CMA，从而比较不同数据视图中的趋势和差异。/ Organized into three sections: overall trends, household composition, and duration of assistance. Users should be able to select time periods, assistance programs, and CMAs to compare trends and variations across different data views. |
+| 网站说明、数据来源引用与解释边界 / Website guidance, source citations, interpretation boundaries | 网站应清楚说明数据来源（待定）、变量含义及其计算方式。同时应该表明数据只能支持描述性比较，不能证明疫情或其他因素导致了某种变化，也不能直接衡量总体人口的援助领取率。/ The website should clearly explain the data sources, the meanings of the variables, and how they are calculated. It should also indicate that the data can only support descriptive comparisons; they cannot prove that the pandemic or other factors caused specific changes, nor can they directly measure the rate at which the general population receives aid. |
 
 ## 7. 方案记录与原提案 / Decision Record and Earlier Proposals
 
