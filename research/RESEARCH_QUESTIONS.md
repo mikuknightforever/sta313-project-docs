@@ -60,9 +60,9 @@ Explain each question's contribution to the overall value without defining three
 
 | 问题 / Question | 帮助同一受众理解什么 / What it helps the shared audience understand | 用户可完成的探索任务 / User exploration task |
 | --- | --- | --- |
-| Q1 总体趋势 / Overall trends | [待填写 / To fill in] | [待填写 / To fill in] |
-| Q2 家庭构成与地区差异 / Family composition and regional differences | [待填写 / To fill in] | [待填写 / To fill in] |
-| Q3 受助时长与地区差异 / Assistance duration and regional differences | [待填写 / To fill in] | [待填写 / To fill in] |
+| Q1 总体趋势 / Overall trends | 了解 COVID-19 疫情前，中，后 OW 和 ODSP 的案件数量如何变化，以及两个项目的趋势有何不同。/ Understand how the number of cases in OW and ODSP changes before, during, and after the COVID-19 pandemic, and how the trends for the two programs differed. | 比较不同时期 OW 和 ODSP 的案件数量变化，并识别案件数量增加或减少的时间段。/ Compare the changes in OW and ODSP cases over different periods and identify the time marked by significant increases or decreases in caseloads. |
+| Q2 家庭构成与地区差异 / Family composition and regional differences | 了解各 CMA 中单人无子女案件占比如何变化，以及 OW 与 ODSP 的占比差距在不同地区有何不同。/ Examine how the proportion of single-person and no-child cases has shifted across various CMAs, and how the differences in these proportions varies by region. | 选择不同 CMA 和时间段，比较两个项目的单人无子女案件占比，找出占比差距缩小最多的地区。/ Select different CMAs and time periods to compare the proportion of cases involving single individuals without children across the two programs, and identify the region where the differences in these proportions has narrowed the most.|
+| Q3 受助时长与地区差异 / Assistance duration and regional differences | 了解 OW 案件在不同受助时长中的构成如何随时间变化，以及哪些 CMA 的长期受助案件占比较高。/ Understand how different OW cases varies over time based on the duration of assistance received, and identify which CMAs have a higher proportion of long-term assistance cases. | 探索不同受助时长类别的变化，比较各 CMA 长期 OW 案件占比。/ Explore variations across categories defined by the duration of assistance received, and compare the proportion of long-term OW cases for each CMA. |
 
 ## 3. Q1 填写区：总体趋势 / Q1 Workspace: Overall Trends
 
