@@ -52,13 +52,13 @@ This provides province-wide context and helps analysts identify periods when the
 
 **建议时间 / Suggested timing:** 1:34–1:53
 
-Second, how have single-person-without-children case shares changed across CMAs, and how has the gap between OW and ODSP changed? Each share divides single-person cases by total cases for the same program, CMA, and quarter.
+Next, we look at what percentage of OW and ODSP cases involve one person without children. We track how those percentages and the gap between them changed over time across metropolitan areas.
 
 ## Slide 9 — Why Question 2 Matters
 
 **建议时间 / Suggested timing:** 1:53–2:10
 
-Users will compare two quarters, rank regions by gap changes, and select a CMA to inspect its trends. This highlights where gaps narrowed, widened, or remained large, guiding further investigation.
+Policy analysts can compare two quarters to see where the gap narrowed, widened, or stayed steady. They can then check local trends and flag areas with persistent gaps or sharp changes for follow-up.
 
 ## Slide 10 — Question 3
 
