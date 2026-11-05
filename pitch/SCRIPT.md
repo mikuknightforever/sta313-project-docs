@@ -132,5 +132,5 @@ All four files have observations only in months 3, 6, 9, and 12. The presence of
 
 ## 交付状态 / Delivery Status
 
-逐页英文讲稿已准备，PDF 名称为 `script.pdf`，并有可编辑 Word 版本；尚未提交到 MarkUs。若用两名主讲，可考虑第 7 页之后交接，具体人选由小组决定。  
-The numbered English script has been prepared as `script.pdf`, with an editable Word version. It has not been submitted to MarkUs. If two people present, a possible handover is after slide 7; the group decides the speakers.
+逐页英文讲稿已上传本目录：[PDF（script.pdf）](script.pdf)、[可编辑 Word](script.docx)；尚未提交到 MarkUs。若用两名主讲，可考虑第 7 页之后交接，具体人选由小组决定。  
+The numbered English script is stored here as [script.pdf](script.pdf), with an [editable Word version](script.docx). It has not been submitted to MarkUs. If two people present, a possible handover is after slide 7; the group decides the speakers.
