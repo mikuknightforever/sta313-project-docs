@@ -14,12 +14,21 @@ Current stage: preparation; completion and submission have not been confirmed. A
 
 研究问题与数据选择见[工作表](../research/RESEARCH_QUESTIONS.md)。<br>See the [research worksheet](../research/RESEARCH_QUESTIONS.md) for questions and data selection.
 
+## 工作文件 / Working Files
+
+- [共享 Canva 幻灯片 / Shared Canva slides](https://canva.link/17f75p7oj6cd5qs)
+- [12 页逐页讲稿与 PPT 同步说明 / 12-slide script and slide alignment notes](SCRIPT.md)
+
+讲稿按 Richard 确认的 12 张有效内容页编写，英文约 319 词，建议用时 2 分 52 秒。已生成 `script.pdf` 和可编辑 Word；本仓库保存可协作文本。第 4 页受众名称、第 5 页数据频率与地理范围需要在 Canva 中同步，具体替换文字见讲稿文末。  
+The script follows the 12 content slides confirmed by Richard, with approximately 319 spoken words and a suggested duration of 2:52. A PDF named `script.pdf` and an editable Word version have been generated; this repository holds the collaborative text. Align the audience wording on slide 4 and the data frequency and geographic coverage on slide 5 in Canva using the replacement text at the end of the script.
+
+
 ## 文件与提交 / Files and Submission
 
 | 文件 / File | 规定名称 / Required filename | 状态 / Status |
 | --- | --- | --- |
-| PowerPoint 幻灯片 / PowerPoint slides | `slides.ppt` / `slides.pptx` | 待准备 / To prepare |
-| 含讲稿或 speaker notes 的 PDF，注明对应幻灯片 / PDF with speaker notes or a script indicating slide numbers | `script.pdf` | 待准备 / To prepare |
+| PowerPoint 幻灯片 / PowerPoint slides | `slides.ppt` / `slides.pptx` | 已有 Canva 草案；文字同步、导出与提交待确认 / Canva draft available; wording alignment, export, and submission to confirm |
+| 含讲稿或 speaker notes 的 PDF，注明对应幻灯片 / PDF with speaker notes or a script indicating slide numbers | `script.pdf` | 12 页逐页讲稿及 PDF 已准备；排练与提交待确认 / Numbered script and PDF prepared for 12 slides; rehearsal and submission to confirm |
 | 覆盖会议、研究、数据准备、制作与演讲等实际贡献的报告 / Report of actual contributions, including meetings, research, data preparation, production, and presenting | `contribution.pdf` | 待准备 / To prepare |
 
 课程资料规定于 **11 月 4 日 23:59（多伦多时间）**前，由一名成员将实际文件上传 MarkUs；全体成员核查可读且为最终版本。不能用云文件链接替代文件。内部完成节点为 **11 月 3 日**。
