@@ -70,7 +70,7 @@ Third, how has the duration composition of OW cases changed, and which regions h
 
 **建议时间 / Suggested timing:** 2:29–2:44
 
-This helps analysts locate higher or increasing long-term shares and prioritize follow-up research, including employment-support needs. These aggregate data do not track individual outcomes or establish policy effectiveness.
+This helps policymakers identify regions with higher rates of long-term assistance and decide where further research into employment barriers may be needed. However, our data can only show these patterns, not whether existing support programs are effective.
 
 ## Slide 12 — Thank You
 
