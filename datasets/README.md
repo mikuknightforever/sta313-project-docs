@@ -40,6 +40,16 @@ Row counts exclude the header. Time spans and dimensions were read from these ex
 | 社会援助整理脚本 / Social-assistance preparation script | [prep-ONT-SA.R](ONT-SA/prep-ONT-SA.R) |
 | 学校数据整理脚本 / School-data preparation script | [prep-ONT-SCHOOL.R](ONT-SCHOOL/prep-ONT-SCHOOL.R) |
 
+## 外部数据 / External Data
+
+以下数据不属于上述教师数据快照，由小组另行获取，也不计入 `manifest.json`。
+
+The following data are not part of the instructor's snapshot above. The group obtained them separately, and they are not listed in `manifest.json`.
+
+| 数据 / Data | 用途 / Use | 位置 / Location |
+| --- | --- | --- |
+| 2021 年普查 CMA 边界（Statistics Canada）/ 2021 Census CMA boundaries (Statistics Canada) | Q2 地图；按 `cma_code` 与 CMA 特征表连接 / Q2 map; joins to the CMA characteristics tables on `cma_code` | [EXTERNAL/CMA-BOUNDARIES/](EXTERNAL/CMA-BOUNDARIES/README.md) |
+
 ## 读取示例 / Loading Examples
 
 从仓库根目录运行 / Run from the repository root:
