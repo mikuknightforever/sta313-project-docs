@@ -16,6 +16,7 @@ This repository holds meeting minutes, task assignments, research questions, pre
 | 设计决策与迭代 / Design decisions and iterations | [design/DESIGN_LOG.md](design/DESIGN_LOG.md) |
 | 成员贡献记录 / Member contributions | [contributions/CONTRIBUTION_LOG.md](contributions/CONTRIBUTION_LOG.md) |
 | 课程数据：9 个 CSV、原始文件、字典与整理脚本 / Course datasets: 9 CSVs, originals, dictionaries, and preparation scripts | [datasets/](datasets/README.md) |
+| 网页源码、五套 Demo 与本地启动 / Website source, five demos, and local startup | [sta313-project-web](https://github.com/mikuknightforever/sta313-project-web) |
 
 ## 协作方式 / How to Collaborate
 
@@ -49,4 +50,4 @@ These dates come from the course-page records already available in the workspace
 
 This is a public repository for project working documents and a course-data snapshot from the instructor's public repository. Keep contact details, signature pages, raw meeting transcripts, and anonymous peer assessments in the team's private workspace. Submit the official `plan.pdf`, including signatures and contact details, through the designated course platform.
 
-网站源代码仓库及最终展示网址：待确定。<br>Website source repository and final website URL: to be determined.
+网站源代码仓库 / Website source repository：[sta313-project-web](https://github.com/mikuknightforever/sta313-project-web)。当前保存五种建站路线 Demo、共享合成数据及本地启动器；最终展示网址待确定。<br>The website source repository contains five framework demos, shared synthetic data, and local launch tools. The final project website URL is still to be determined.
