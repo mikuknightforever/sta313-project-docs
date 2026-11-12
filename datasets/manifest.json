@@ -1,0 +1,917 @@
+{
+  "source_repository": "https://github.com/mjmoon/sta313-project-datasets",
+  "source_commit": "064cf60c13e7ddfbd20c5cbfd1ec220bec200d92",
+  "source_tree": "175e8bd74d3038c644e3fc67cccbe1b75bf65167",
+  "retrieved_on": "2026-11-12",
+  "file_count": 66,
+  "total_bytes": 28381453,
+  "primary_csv_count": 9,
+  "files": [
+    {
+      "source_path": "ONT-SA/ont-sa-characteristic-odsp-cma.csv",
+      "path": "ONT-SA/ont-sa-characteristic-odsp-cma.csv",
+      "bytes": 148875,
+      "git_blob_sha": "2a0761eda6d802f96287d92c3e2dcbf27b86ca0d",
+      "sha256": "12a76110f4500a890106048e21c934c1e02766c2a33d68939c014e9e91ba34ee",
+      "rows": 1395,
+      "columns": 19,
+      "column_names": [
+        "year",
+        "month",
+        "cma_code",
+        "cma",
+        "cases",
+        "fts",
+        "ftsp",
+        "ftc",
+        "fs1",
+        "fs2",
+        "fs3",
+        "age24",
+        "age2554",
+        "age55",
+        "male",
+        "female",
+        "moa035",
+        "moa3659",
+        "moa60"
+      ],
+      "year_values": [
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "month_values": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "source_path": "ONT-SA/ont-sa-characteristic-odsp-ont.csv",
+      "path": "ONT-SA/ont-sa-characteristic-odsp-ont.csv",
+      "bytes": 10014,
+      "git_blob_sha": "0150b41b1806505688882e88b75fa2227e4a8d93",
+      "sha256": "a9a343b5af6a23a52e5c1ba6d315f7254c235f6431400a25e1870ee58da92ed8",
+      "rows": 93,
+      "columns": 17,
+      "column_names": [
+        "year",
+        "month",
+        "cases",
+        "fts",
+        "ftsp",
+        "ftc",
+        "fs1",
+        "fs2",
+        "fs3",
+        "age24",
+        "age2554",
+        "age55",
+        "male",
+        "female",
+        "moa035",
+        "moa3659",
+        "moa60"
+      ],
+      "year_values": [
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "month_values": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "source_path": "ONT-SA/ont-sa-characteristic-ow-cma.csv",
+      "path": "ONT-SA/ont-sa-characteristic-ow-cma.csv",
+      "bytes": 152190,
+      "git_blob_sha": "f9355830b7ce8106ecc85465e010815f99866a1a",
+      "sha256": "a03956bc47a391886182e1a741b83137807c2b924d8d1f53e1d6a6fca8c62931",
+      "rows": 1395,
+      "columns": 20,
+      "column_names": [
+        "year",
+        "month",
+        "cma_code",
+        "cma",
+        "cases",
+        "fts",
+        "ftsp",
+        "ftc",
+        "fs1",
+        "fs2",
+        "fs3",
+        "age24",
+        "age2554",
+        "age55",
+        "male",
+        "female",
+        "moa04",
+        "moa512",
+        "moa1318",
+        "moa19"
+      ],
+      "year_values": [
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "month_values": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "source_path": "ONT-SA/ont-sa-characteristic-ow-ont.csv",
+      "path": "ONT-SA/ont-sa-characteristic-ow-ont.csv",
+      "bytes": 25263,
+      "git_blob_sha": "af0f8d81b18d3c79ad5712752510c8b4f248c457",
+      "sha256": "596b0d1437770456f95b6c4d8f2a7be87819583dd10eae86f8fc6cadbce05770",
+      "rows": 93,
+      "columns": 18,
+      "column_names": [
+        "year",
+        "month",
+        "cases",
+        "fts",
+        "ftsp",
+        "ftc",
+        "fs1",
+        "fs2",
+        "fs3",
+        "age24",
+        "age2554",
+        "age55",
+        "male",
+        "female",
+        "moa04",
+        "moa512",
+        "moa1318",
+        "moa19"
+      ],
+      "year_values": [
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "month_values": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "source_path": "ONT-SA/ont-sa-historical.csv",
+      "path": "ONT-SA/ont-sa-historical.csv",
+      "bytes": 19917,
+      "git_blob_sha": "34c6c932187008cc4662e7b528e4a9fa8a889824",
+      "sha256": "af68a1771ebf41880347616456d8c32eff8c9a07c408f793f7d6d9490f733ea8",
+      "rows": 687,
+      "columns": 4,
+      "column_names": [
+        "year",
+        "month",
+        "cases",
+        "beneficiaries"
+      ],
+      "year_values": [
+        "1969",
+        "1970",
+        "1971",
+        "1972",
+        "1973",
+        "1974",
+        "1975",
+        "1976",
+        "1977",
+        "1978",
+        "1979",
+        "1980",
+        "1981",
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "month_values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "source_path": "ONT-SA/original/characteristics_data_dictionary_en.xlsx",
+      "path": "ONT-SA/original/characteristics_data_dictionary_en.xlsx",
+      "bytes": 23349,
+      "git_blob_sha": "abdf551d678ce04d5711afdea64c7b42d5ccd4b8",
+      "sha256": "6da44db22c67f50a0d8a9f83c2f139cfd9eda3c1e108eef9c03a080614e8502c"
+    },
+    {
+      "source_path": "ONT-SA/original/historical_sa_recipients_data_dictionary_1969_to_current.xlsx",
+      "path": "ONT-SA/original/historical_sa_recipients_data_dictionary_1969_to_current.xlsx",
+      "bytes": 10280,
+      "git_blob_sha": "3cb32fb33385bff08281b47d24600ad790490fef",
+      "sha256": "e57cf360e0408068aa07888771f1f46396578cfc887af045ea8332590996a2f5"
+    },
+    {
+      "source_path": "ONT-SA/original/historical_sa_recipients_dataset_en.xlsx",
+      "path": "ONT-SA/original/historical_sa_recipients_dataset_en.xlsx",
+      "bytes": 61237,
+      "git_blob_sha": "ebabc5e32ed88d4c3118cdd35b8b3e47555d341b",
+      "sha256": "d2c2910cf750bdf8ab6c86e60d24e1eb9885194be1a588f207569a54984a626f"
+    },
+    {
+      "source_path": "ONT-SA/original/sa_characteristics_by_cma_dataset_en.xlsx",
+      "path": "ONT-SA/original/sa_characteristics_by_cma_dataset_en.xlsx",
+      "bytes": 568783,
+      "git_blob_sha": "e1e99538046c02a8ccd4a1896813db5e77874c58",
+      "sha256": "1c540a15119023a7664823eb66915d789b8dc3bbe52b419f3ae8b5442ff8bc2a"
+    },
+    {
+      "source_path": "ONT-SA/prep-ONT-SA.R",
+      "path": "ONT-SA/prep-ONT-SA.R",
+      "bytes": 3213,
+      "git_blob_sha": "69b972862db93ea95ba1ea36f88b9de83aea6f11",
+      "sha256": "367561b1647d51a050fcf584bc5b79421e51ef31956bd765b498b18d678c8d5a"
+    },
+    {
+      "source_path": "ONT-SCHOOL/ont-school-demo-info.csv",
+      "path": "ONT-SCHOOL/ont-school-demo-info.csv",
+      "bytes": 11639897,
+      "git_blob_sha": "6828615f56136d9183c86ed1286a0c30d8338655",
+      "sha256": "d48a0de01bf3ba7120f9b498028f26d2724b3730ff83c09f8ff0e026ff12439b",
+      "rows": 39072,
+      "columns": 36,
+      "column_names": [
+        "year",
+        "board_number",
+        "board_name",
+        "board_type",
+        "school_number",
+        "school_name",
+        "school_type",
+        "school_special_condition_code",
+        "school_level",
+        "school_language",
+        "grade_range",
+        "street",
+        "municipality",
+        "city",
+        "postal_code",
+        "enrolment",
+        "latitude",
+        "longitude",
+        "percentage_of_students_whose_first_language_is_not_english",
+        "percentage_of_students_whose_first_language_is_not_french",
+        "percentage_of_students_who_are_new_to_canada_from_a_non_english_speaking_country",
+        "percentage_of_students_who_are_new_to_canada_from_a_non_french_speaking_country",
+        "percentage_of_students_receiving_special_education_services",
+        "percentage_of_students_identified_as_gifted",
+        "percentage_of_grade_3_students_achieving_the_provincial_standard_in_reading",
+        "percentage_of_grade_3_students_achieving_the_provincial_standard_in_writing",
+        "percentage_of_grade_3_students_achieving_the_provincial_standard_in_mathematics",
+        "percentage_of_grade_6_students_achieving_the_provincial_standard_in_reading",
+        "percentage_of_grade_6_students_achieving_the_provincial_standard_in_writing",
+        "percentage_of_grade_6_students_achieving_the_provincial_standard_in_mathematics",
+        "percentage_of_grade_9_students_achieving_the_provincial_standard_in_academic_mathematics",
+        "percentage_of_grade_9_students_achieving_the_provincial_standard_in_applied_mathematics",
+        "percentage_of_students_that_passed_the_grade_10_osslt_on_their_first_attempt",
+        "percentage_of_school_aged_children_who_live_in_low_income_households",
+        "percentage_of_students_whose_parents_have_no_degree_diploma_or_certificate",
+        "percentage_of_grade_9_students_achieving_the_provincial_standard_in_mathematics"
+      ],
+      "year_values": [
+        "2017-2018",
+        "2018-2019",
+        "2019-2020",
+        "2020-2021",
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025"
+      ],
+      "month_values": []
+    },
+    {
+      "source_path": "ONT-SCHOOL/ont-school-enrlmnt-elementary.csv",
+      "path": "ONT-SCHOOL/ont-school-enrlmnt-elementary.csv",
+      "bytes": 124990,
+      "git_blob_sha": "39fe01639103a3266117a004e7084c6b5b732cab",
+      "sha256": "59d08a794f11aa31ad42bdacfad853e597e884927afde2b0bbe0c6ee749dbad8",
+      "rows": 1056,
+      "columns": 15,
+      "column_names": [
+        "year",
+        "board_number",
+        "board_name",
+        "board_type",
+        "junior_kindergarten_enrolment",
+        "kindergarten_enrolment",
+        "grade_1_enrolment",
+        "grade_2_enrolment",
+        "grade_3_enrolment",
+        "grade_4_enrolment",
+        "grade_5_enrolment",
+        "grade_6_enrolment",
+        "grade_7_enrolment",
+        "grade_8_enrolment",
+        "total_enrolment"
+      ],
+      "year_values": [
+        "2011-2012",
+        "2012-2013",
+        "2013-2014",
+        "2014-2015",
+        "2015-2016",
+        "2016-2017",
+        "2017-2018",
+        "2018-2019",
+        "2019-2020",
+        "2020-2021",
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025"
+      ],
+      "month_values": []
+    },
+    {
+      "source_path": "ONT-SCHOOL/ont-school-enrlmnt-secondary-courses.csv",
+      "path": "ONT-SCHOOL/ont-school-enrlmnt-secondary-courses.csv",
+      "bytes": 2146396,
+      "git_blob_sha": "fc167a1e84eb54b9cef85d9c85bc44ff52695577",
+      "sha256": "c4f25491aada9e3acdaa6d262425616ded5c7c4a9ef179eca08f654c1e7a65cc",
+      "rows": 20240,
+      "columns": 6,
+      "column_names": [
+        "year",
+        "course_code",
+        "course_description",
+        "grade",
+        "pathway_or_destination",
+        "enrolment"
+      ],
+      "year_values": [
+        "2011-2012",
+        "2012-2013",
+        "2013-2014",
+        "2014-2015",
+        "2015-2016",
+        "2016-2017",
+        "2017-2018",
+        "2018-2019",
+        "2019-2020",
+        "2020-2021",
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025"
+      ],
+      "month_values": []
+    },
+    {
+      "source_path": "ONT-SCHOOL/ont-school-enrlmnt-secondary.csv",
+      "path": "ONT-SCHOOL/ont-school-enrlmnt-secondary.csv",
+      "bytes": 91749,
+      "git_blob_sha": "63587a72af6e5386d3cf92995cc3e46b9c7e1893",
+      "sha256": "723008edbcdbcfa3c47ffa791df84b3b778ca7ec7660ede793769aba7e6b17d0",
+      "rows": 1001,
+      "columns": 9,
+      "column_names": [
+        "year",
+        "board_number",
+        "board_name",
+        "board_type",
+        "grade_9_enrolment",
+        "grade_10_enrolment",
+        "grade_11_enrolment",
+        "grade_12_enrolment",
+        "total_enrolment"
+      ],
+      "year_values": [
+        "2011-2012",
+        "2012-2013",
+        "2013-2014",
+        "2014-2015",
+        "2015-2016",
+        "2016-2017",
+        "2017-2018",
+        "2018-2019",
+        "2019-2020",
+        "2020-2021",
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025"
+      ],
+      "month_values": []
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2017-2018.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2017-2018.xlsx",
+      "bytes": 1565910,
+      "git_blob_sha": "4f9ee8e132300f05595e3b908f98814e86810edf",
+      "sha256": "d5050bf5d848d021e88a2cacac2acf1362267089ef8759a2bd9b85bdcd78e9ed"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2018-2019.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2018-2019.xlsx",
+      "bytes": 1550796,
+      "git_blob_sha": "f3538cf99f1e7a35f4bbdeb42615d8bca5067ea2",
+      "sha256": "436e229c11b48bf9153f55ef54360db05fe1e708fd3b508ad3893c12305296fd"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2019-2020.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2019-2020.xlsx",
+      "bytes": 1567330,
+      "git_blob_sha": "fce2adf2cd57191eec4685e69d871b34f0d3ba49",
+      "sha256": "7491816f1ae73b5a38c0e657053a282d3be39b409e1b55e32310da54f433aa76"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2020-2021.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2020-2021.xlsx",
+      "bytes": 1547704,
+      "git_blob_sha": "787d4abbfa1e60d2b9ddf26594a464b393e7f049",
+      "sha256": "e66994db3f2202b858a030615c8557669ccfdca62a9772429f1d25f8b4190723"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2021-2022.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2021-2022.xlsx",
+      "bytes": 1462006,
+      "git_blob_sha": "845cc3da2dc38b5d053d5c737db106f9c357c5b5",
+      "sha256": "b0807a5a9ac93ce4da745ddaedf540db8431178086b751d574a543ebc72b1789"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2022-2023.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2022-2023.xlsx",
+      "bytes": 1460659,
+      "git_blob_sha": "4eb4f4735bf0a0cf42c28328838fdd6766554ae8",
+      "sha256": "fa4ab8bcd4fa68c0d5667a954bedb640f9f7646edd7d680c85d2230f8494bd90"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2023-2024.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2023-2024.xlsx",
+      "bytes": 1539549,
+      "git_blob_sha": "25dec55b06c590d2a764b0744878f03c7ee43de2",
+      "sha256": "d29759ac93ff1e8dd992d39bc922fd69e4b8960caf95fca4e50481713fcf6f10"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/demographic/2024-2025.xlsx",
+      "path": "ONT-SCHOOL/original/demographic/2024-2025.xlsx",
+      "bytes": 1523524,
+      "git_blob_sha": "a1b74da6e65e2972d48d9f7575ce451c56a36ddb",
+      "sha256": "92fc18c3716bd322135b9d52459e7b4abe67ebaf7a3756684032c711e74f007f"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2011-2012.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2011-2012.txt",
+      "bytes": 6395,
+      "git_blob_sha": "4e4cb16051556d8efed8cf11d7f9a28214c59f0d",
+      "sha256": "6b3c2dfe80a1793dd24e51062196f7f75f50c88f11bb4333d213732abd9a06d2"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2012-2013.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2012-2013.txt",
+      "bytes": 6394,
+      "git_blob_sha": "c689e45d96de919ab5fd26dca30b358c7203fff2",
+      "sha256": "e626803dc4f17002193f8cfc0055c2591ab2a582d296396ef006a4196f5a4aa5"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2013-2014.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2013-2014.txt",
+      "bytes": 5962,
+      "git_blob_sha": "2be76239952e46a09c0b0bcc300a9f0e2aa4ba4d",
+      "sha256": "a3c905cf726d3c4c32ace0cd829f60ea0b605ba39e7803ec59bf8aa2424a4b1e"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2014-2015.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2014-2015.txt",
+      "bytes": 6062,
+      "git_blob_sha": "a4910a5c49b8722a4e7be7950a5249ef8ace56a5",
+      "sha256": "b3269d093539c931257a6034285bb71db4397295c304b1506a46307eca92cb2f"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2015-2016.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2015-2016.txt",
+      "bytes": 5869,
+      "git_blob_sha": "0945437e1e06dd6a289a7caf4311b2d5d0993be8",
+      "sha256": "018f42f25df4063c65742efe4dcb43a48f4eecf59eae15d19042ba11fd745446"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2016-2017.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2016-2017.txt",
+      "bytes": 6720,
+      "git_blob_sha": "cb7af63e8fbb52a609dda8c17381a91964168653",
+      "sha256": "5af812efe74d2c06fd00a5810a0afd1a3e4b4510de2f545a09eef65e56050550"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2017-2018.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2017-2018.txt",
+      "bytes": 6821,
+      "git_blob_sha": "d29c2fe1117fa9afa76d9d5047488fea1cfafb48",
+      "sha256": "4c0e17384d7f9011832c86ee4045d3a54fc6329a6dd07b62c61014f434a5988d"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2018-2019.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2018-2019.txt",
+      "bytes": 6081,
+      "git_blob_sha": "2c61151b21578787849ae07b02ae7a948148202e",
+      "sha256": "c16bac03efee07459d3747d33c5e2c6efdc2b5c17272318fd5087c57b196a03e"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2019-2020.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2019-2020.txt",
+      "bytes": 6146,
+      "git_blob_sha": "c64a0d5bc33c6d5b771806294a8455e6ae4d4f1c",
+      "sha256": "31c29f9f2ca585599887ef28139eb93b475c65f5cf3fe5a5330b0042952b3732"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2020-2021.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2020-2021.txt",
+      "bytes": 6165,
+      "git_blob_sha": "8ace503891ef1afe4d1709a145185c4cce46f238",
+      "sha256": "c767b7724e4057641edbc878e878a68ae02b3353935e780c84e22329777bdf16"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2021-2022.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2021-2022.txt",
+      "bytes": 6164,
+      "git_blob_sha": "c992dfdec0adf740fc694d0e3816367411df6ce6",
+      "sha256": "d4edd8fc2721d9464add59cbf9086be0f5c54dcc0ce1317614f72c0ac351d2e4"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2022-2023.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2022-2023.txt",
+      "bytes": 6170,
+      "git_blob_sha": "ecebf891e0e07ac2f29402e373a5be1d622cbbdb",
+      "sha256": "b740f6f67ef6c1c020cd7e64a06217270dbb34cba60039b9303d8de2e96593a1"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2023-2024.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2023-2024.txt",
+      "bytes": 6165,
+      "git_blob_sha": "6941dab5210c5ceff55b8fd78001cde6131ab4bd",
+      "sha256": "1ccdacba8506552d62b4668028cb5f99d2a8367b35da0a23c24d8197056b3ebc"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-elementary/2024-2025.txt",
+      "path": "ONT-SCHOOL/original/enrollment-elementary/2024-2025.txt",
+      "bytes": 6166,
+      "git_blob_sha": "26e257b7e42a52c64aa48ba0f0d9a7f0baef180e",
+      "sha256": "99e202f2683f6d84c12dce45cd443673b0bbb6931abbb81d02f56be5fd11cddf"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2011-2012.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2011-2012.xlsx",
+      "bytes": 70806,
+      "git_blob_sha": "13ba9c7ab18eaf539767fdd4fc00a48bdb2cf82c",
+      "sha256": "431f2f941a810be5dfc186427aaa662df878ec3a555445133fbb3d7806698a11"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2012-2013.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2012-2013.xlsx",
+      "bytes": 73018,
+      "git_blob_sha": "af58ea3dc676e4a2bbe567800cba8572eac7422b",
+      "sha256": "10a7d3a3ddba3e673970c82f328d05b42eac1e66898fdb19a567c4f691d50f8b"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2013-2014.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2013-2014.xlsx",
+      "bytes": 72885,
+      "git_blob_sha": "7c910d60a3e9dae4c533ca0525a2d07b58a97c0d",
+      "sha256": "1d8ba54e1123a2a56ff0ad2be257ed5a3f245424f233362d7728b0ce36957b32"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2014-2015.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2014-2015.xlsx",
+      "bytes": 78175,
+      "git_blob_sha": "3b4b305135e842a40c0df74b7ecc9f36c0d699a2",
+      "sha256": "d5e93c544d7eee93f9bdcd7c452ae318c2c273359466475b6209887abf4136a3"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2015-2016.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2015-2016.xlsx",
+      "bytes": 76961,
+      "git_blob_sha": "365fb599c74fccd9c6f5163e4fe89d50fe17e440",
+      "sha256": "fc0391d9a0dd19299b007ff2dec06fa012445b13b0ce3fe594210ee0dc9b8967"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2016-2017.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2016-2017.xlsx",
+      "bytes": 69902,
+      "git_blob_sha": "df72e78493975d4e572d5679514712d9e835f76d",
+      "sha256": "d3ce66440899a854306a3753006c4154d512963b239380125cf20a59a0a4e6d4"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2017-2018.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2017-2018.xlsx",
+      "bytes": 67331,
+      "git_blob_sha": "be8f95471143e17d36afd225b0604e0655c1fcd5",
+      "sha256": "62f1f1370dad390622f270eec3315f33792613929f70ffe66c7e88601365ebde"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2018-2019.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2018-2019.xlsx",
+      "bytes": 66746,
+      "git_blob_sha": "abd7189faeb6d448ee7b0f8545e35e4428f0ae5a",
+      "sha256": "9579c987ceb386ef9a2cb089d38b22d48e3e50f4a65e8777c8e288fec62909af"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2019-2020.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2019-2020.xlsx",
+      "bytes": 65317,
+      "git_blob_sha": "24e84153a717c702b2a54cc4ccc1bf3669235c32",
+      "sha256": "af578718797cc5281a38c29d3640cb562e34e12fa96fd01e5f8aeabae866151a"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2020-2021.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2020-2021.xlsx",
+      "bytes": 62764,
+      "git_blob_sha": "a339aa9391e3935a1d6a27784031b02f455d8937",
+      "sha256": "45809d2ce42d9fa57cacbf6e50a7c57ebd5982cf4f6cbd4692608246ebd9b377"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2021-2022.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2021-2022.xlsx",
+      "bytes": 63340,
+      "git_blob_sha": "e0e0f29d2fa1aa313e13a361fa60480a8d3a260b",
+      "sha256": "db531b9e546ee6a9e087e8f4745c00019244a54b029d1484da2bb97ccb95c94f"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2022-2023.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2022-2023.xlsx",
+      "bytes": 75827,
+      "git_blob_sha": "eb2a6a49616865f2d51f6a0bd8a40b2e080c134b",
+      "sha256": "5c4bf7fc921842d45277423b10f6ed66ea60447e9437cc8fcd3c1663e4a464f6"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2023-2024.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2023-2024.xlsx",
+      "bytes": 65380,
+      "git_blob_sha": "485e002f6b2911d6118d0bd8001eb23fecee3e30",
+      "sha256": "47c45bd2a60c98131118e1b083e299efd3be40c6625f4ab753ddd2a450d9f5c7"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary-course/2024-2025.xlsx",
+      "path": "ONT-SCHOOL/original/enrollment-secondary-course/2024-2025.xlsx",
+      "bytes": 65589,
+      "git_blob_sha": "9e6ceb22717f5cc81fe9337ad17947580a757a2c",
+      "sha256": "c2cc5bcc0b8698a83910b984d2baef67eb467e14bbb567bf9998e428c89097ad"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2011-2012.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2011-2012.txt",
+      "bytes": 3898,
+      "git_blob_sha": "620d813a5c733ef202df7a67d17079d672cea260",
+      "sha256": "92eab432fd4271d118ebbd8e95a51571204e4bd449154fbe72ed68dd5ec1201b"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2012-2013.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2012-2013.txt",
+      "bytes": 3894,
+      "git_blob_sha": "e76b1bb328e23a71a6b2bd5b831bd5b68c906fb4",
+      "sha256": "ff924caaa0485cdcef3a60c7085373a3a7cd0cd79b468aacf18e22f1d6ec200c"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2013-2014.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2013-2014.txt",
+      "bytes": 3668,
+      "git_blob_sha": "89c4bfb2595ea5b88d444e3b02baa0856d739a04",
+      "sha256": "5a7d21e443aa434f3ae9b24a94164a51ef99f0070fdf974f7f8520afbf5272a0"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2014-2015.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2014-2015.txt",
+      "bytes": 3714,
+      "git_blob_sha": "25508a29ae3a2b95923f0d6586ec1cecf15526bf",
+      "sha256": "cda8ad4cb7a456fc2f6c9c70f7c5f29461f2a6bd30bcbb4aacfab45259f1f8ca"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2015-2016.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2015-2016.txt",
+      "bytes": 3736,
+      "git_blob_sha": "b916c503d0cdda26ea8c3badb096503faff34197",
+      "sha256": "467206bfe123510e72add4a5cabe76dac0c35de150f2eb19b40fcc57263deb2b"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2016-2017.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2016-2017.txt",
+      "bytes": 5182,
+      "git_blob_sha": "6d8c433ea92b141c24ee9ddd0bd1d7ce9f892a8a",
+      "sha256": "20ea78a83d2dd851889293dcfff77be28e2f72790e9ca69ebab0abc36346b96a"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2017-2018.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2017-2018.txt",
+      "bytes": 5182,
+      "git_blob_sha": "d4612b85e355e4c686b092f6868c90c420772622",
+      "sha256": "df224871a987176d51f7902c58de813892256b688268d59cba3aa3aa7c5ef0ec"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2018-2019.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2018-2019.txt",
+      "bytes": 3726,
+      "git_blob_sha": "8b4cca16164acad7b96c1c79c92e5b5adc194df6",
+      "sha256": "40e22c01f78ef53e9096b56c4e3e014dbc9ede41988fc64840c911645a7cf522"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2019-2020.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2019-2020.txt",
+      "bytes": 3806,
+      "git_blob_sha": "21d1bf03ff1f1f558de42298149a229e0c33b5c5",
+      "sha256": "9489666b5f693f397bce6ee96b43e650b73cd3dd6af1f9ec0df595434c5f4b67"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2020-2021.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2020-2021.txt",
+      "bytes": 3811,
+      "git_blob_sha": "c413b5e50a5bb6bfdaa5f7caa82af30f76b4e997",
+      "sha256": "e99c686b96ec58a4ed9f5f9b82dfe967764292f2357568581350b0986854d7ed"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2021-2022.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2021-2022.txt",
+      "bytes": 3808,
+      "git_blob_sha": "fe78769fb216aa4b6d8fc925ce25ff65ff3ae9e7",
+      "sha256": "962590144009a5b91c79109648ad937ca9d0550118a7b4cb509e9ad1a2be95f9"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2022-2023.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2022-2023.txt",
+      "bytes": 3819,
+      "git_blob_sha": "522e3a02198514d7a45b970bd367b6035dd79b42",
+      "sha256": "633d620ddcb479e02e29d6cdfb63220d542919dbfb3ce97e68d712bb10268549"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2023-2024.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2023-2024.txt",
+      "bytes": 3822,
+      "git_blob_sha": "4d84b04629d7c758566a836a7ffdb39f52c96831",
+      "sha256": "9294a1353ef7aeec1b01d3caa552ebf1b2ef23d000d5f7ab5f61a44581fedd01"
+    },
+    {
+      "source_path": "ONT-SCHOOL/original/enrollment-secondary/2024-2025.txt",
+      "path": "ONT-SCHOOL/original/enrollment-secondary/2024-2025.txt",
+      "bytes": 3823,
+      "git_blob_sha": "4de2c32d51e6a86e7dad08334d5ab56786997931",
+      "sha256": "a617dfdb9f95ea5657bee12dee80ec8b24fba151019bbefee1c555dc19eb75e3"
+    },
+    {
+      "source_path": "ONT-SCHOOL/prep-ONT-SCHOOL.R",
+      "path": "ONT-SCHOOL/prep-ONT-SCHOOL.R",
+      "bytes": 8255,
+      "git_blob_sha": "7b55a6557fc447aaf88f92810142672ec5698465",
+      "sha256": "48489f583fead8c72a94e33ba36fa84d50ace38bac8ef0e4541dd33a5dad0796"
+    },
+    {
+      "source_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "bytes": 12357,
+      "git_blob_sha": "a1f2d36f68011f479d2ec7db1910c3fc9e292eca",
+      "sha256": "68d7b70e61e4d62c65069f3a6eeaa517ce2c02daec3bf90497140afd68a9b0d0"
+    }
+  ]
+}

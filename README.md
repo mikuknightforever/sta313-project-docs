@@ -1,8 +1,8 @@
 # STA313 项目文书 / Project Documentation
 
-STA313 小组项目的文书协作仓库，保存会议纪要、任务分工、研究问题、展示材料和贡献记录。文档采用中英双语，会议纪要统一放在独立的 `meetings/` 文件夹。
+STA313 小组项目的文书协作仓库，保存会议纪要、任务分工、研究问题、展示材料、贡献记录及教师公开课程数据快照。文档采用中英双语，会议纪要统一放在独立的 `meetings/` 文件夹。
 
-This repository holds meeting minutes, task assignments, research questions, presentation materials, and contribution records for the STA313 group project. Documents are bilingual in Chinese and English. All meeting minutes are kept in the dedicated `meetings/` folder.
+This repository holds meeting minutes, task assignments, research questions, presentation materials, contribution records, and a snapshot of the instructor's public course datasets for the STA313 group project. Documents are bilingual in Chinese and English. All meeting minutes are kept in the dedicated `meetings/` folder.
 
 ## 文档入口 / Document Index
 
@@ -15,6 +15,7 @@ This repository holds meeting minutes, task assignments, research questions, pre
 | Pitch 材料与提交清单 / Pitch materials and submission checklist | [pitch/README.md](pitch/README.md) |
 | 设计决策与迭代 / Design decisions and iterations | [design/DESIGN_LOG.md](design/DESIGN_LOG.md) |
 | 成员贡献记录 / Member contributions | [contributions/CONTRIBUTION_LOG.md](contributions/CONTRIBUTION_LOG.md) |
+| 课程数据：9 个 CSV、原始文件、字典与整理脚本 / Course datasets: 9 CSVs, originals, dictionaries, and preparation scripts | [datasets/](datasets/README.md) |
 
 ## 协作方式 / How to Collaborate
 
@@ -44,8 +45,8 @@ These dates come from the course-page records already available in the workspace
 
 ## 文件范围 / Repository Scope
 
-本仓库公开，仅保存项目工作文档。成员联系方式、签名页、原始会议转录及匿名互评内容保存在团队私有空间。含签名和联系方式的正式 `plan.pdf` 通过课程指定渠道提交。
+本仓库公开，保存项目工作文档及教师公开数据仓库的课程数据快照。成员联系方式、签名页、原始会议转录及匿名互评内容保存在团队私有空间。含签名和联系方式的正式 `plan.pdf` 通过课程指定渠道提交。
 
-This is a public repository for project working documents. Keep contact details, signature pages, raw meeting transcripts, and anonymous peer assessments in the team's private workspace. Submit the official `plan.pdf`, including signatures and contact details, through the designated course platform.
+This is a public repository for project working documents and a course-data snapshot from the instructor's public repository. Keep contact details, signature pages, raw meeting transcripts, and anonymous peer assessments in the team's private workspace. Submit the official `plan.pdf`, including signatures and contact details, through the designated course platform.
 
 网站源代码仓库及最终展示网址：待确定。<br>Website source repository and final website URL: to be determined.
