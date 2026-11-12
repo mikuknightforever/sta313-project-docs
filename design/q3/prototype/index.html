@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
 <title>Q3 · How long have OW cases been open?</title>
 <link rel="stylesheet" href="q3.css">
 </head>
@@ -64,19 +65,28 @@
   <section class="block" id="s2">
     <div class="block-head">
       <span class="step-no">2</span>
-      <div><h2>Regions: which CMAs have the highest long-term share, and does that last?</h2>
-      <p class="sub">Choose a period. Rows re-sort by that period. Click any CMA to inspect it in Figure 4.</p></div>
+      <div><h2>Regions: where is the long-term share higher than Ontario's, and does that last?</h2>
+      <p class="sub">Choose a period, then hover, tap or Tab to a circle to read that CMA's analysis. Click a circle (or a row in Figure 3) to select it for Figures 3 and 4.</p></div>
     </div>
 
-    <div class="toolbar">
-      <div class="seg" id="periodSeg" role="group" aria-label="Period"></div>
-      <span class="hint">or drag on the timeline strip to choose any range</span>
+    <div class="period-panel" role="group" aria-label="Period for Step 2">
+      <div class="toolbar tight">
+        <div class="seg" id="periodSeg" role="group" aria-label="Period"></div>
+        <span class="hint" id="periodNow"></span>
+      </div>
+      <p class="strip-label">Ontario long-term share, 2003–2026. Drag across the strip to choose any range of quarters; Figures 2–4 all follow it.</p>
+      <div class="chart" id="periodStrip"></div>
     </div>
 
-    <figure class="fig">
-      <figcaption><b>Figure 2.</b> Each CMA's long-term share minus Ontario's, every quarter (percentage points)</figcaption>
-      <div class="div-legend" id="divLegend"></div>
-      <div class="scroll-x"><div class="chart" id="f2"></div></div>
+    <figure class="fig" id="fig2">
+      <figcaption><b>Figure 2a.</b> Long-term share compared with Ontario, <span id="f2Period">selected period</span></figcaption>
+      <div class="map-legend" id="mapLegend"></div>
+      <div class="map-grid">
+        <div class="chart" id="f2map"></div>
+        <aside class="card-panel" id="card" aria-live="polite" aria-label="Figure 2b, analysis of one CMA"></aside>
+      </div>
+      <p class="note">One circle per CMA at the centre of its 2021 Census boundary. Where two circles would overlap they are nudged apart (a few pixels at most); if a circle moves noticeably, a thin line leads back to its true centre. Grey shapes are CMA boundaries (2021 Census), shown for location only: they do not reflect each year's reporting geography. Thunder Bay is shown in the inset.</p>
+      <p class="takeaway" id="mapTakeaway"></p>
     </figure>
 
     <div class="two-col">
