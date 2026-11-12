@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Q3 · How long have OW cases been open?</title>
+<link rel="stylesheet" href="q3.css">
+</head>
+<body>
+<div class="page">
+  <p role="note" style="margin:0 0 14px;padding:6px 10px;border:1px solid var(--ring);border-radius:6px;background:var(--btn);color:var(--ink2);font-size:12.5px">Archived version v1 (2026-11-12, commit 55e5870): Figure 2 was a CMA × quarter heatmap. <a href="../../../prototype/" style="color:var(--ink);font-weight:600">Current version →</a></p>
+
+  <header class="q3-head">
+    <p class="eyebrow">Part 3 of 3 · Ontario Works (OW) only · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>How long have Ontario Works cases been open, and where is the long-term share highest?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools">
+      <button type="button" class="ghost" id="themeBtn" aria-label="Switch light or dark theme">Dark theme</button>
+    </div>
+  </header>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Duration = time on assistance so far</h3><p>Each quarter counts the OW cases open at that moment, grouped by how long each case has received assistance continuously <em>so far</em>. It is a snapshot of the current caseload, not how long a new case will last, and not the chance that a person stays on assistance.</p></div>
+        <div><h3>Long-term = 19 months or more</h3><p>Long-term share = cases open 19+ months ÷ all OW cases in the same area and quarter. The 0–4 month group is not the same as new applications.</p></div>
+        <div><h3>A case is not a person</h3><p>A case (benefit unit) can include a spouse and children. All counts on this page are cases.</p></div>
+        <div><h3>CMA ≠ Ontario</h3><p>Regional figures cover 15 census metropolitan areas (CMAs). They do not add up to the Ontario total, which also includes areas outside CMAs. Ontario values are shown as published.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ STEP 1 · Ontario ============ -->
+  <section class="block" id="s1">
+    <div class="block-head">
+      <span class="step-no">1</span>
+      <div><h2>Ontario: what changed in the duration mix?</h2>
+      <p class="sub">Follow the three highlighted periods, then hover anywhere for exact values.</p></div>
+    </div>
+
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+
+    <div class="toolbar">
+      <div class="seg" id="modeSeg" role="group" aria-label="Measure for Figure 1a">
+        <button type="button" data-mode="count">Number of cases</button>
+        <button type="button" data-mode="share">Share of cases</button>
+      </div>
+      <div class="legend" id="bandLegend" role="group" aria-label="Duration bands. Click to isolate a band on the baseline."></div>
+    </div>
+
+    <figure class="fig">
+      <figcaption><b>Figure 1a.</b> <span id="f1aTitle">OW cases by time on assistance, Ontario</span></figcaption>
+      <div class="chart" id="f1a"></div>
+      <figcaption><b>Figure 1b.</b> Long-term share (19+ months), Ontario — same time axis</figcaption>
+      <div class="chart" id="f1b"></div>
+      <p class="note">Grey band: pandemic period (Mar 2020 – May 2023; the last quarterly observation inside it is 2023 Q1). Click a duration band in the legend to move it onto the baseline so it can be compared on its own.</p>
+    </figure>
+  </section>
+
+  <!-- ============ STEP 2 · Regions ============ -->
+  <section class="block" id="s2">
+    <div class="block-head">
+      <span class="step-no">2</span>
+      <div><h2>Regions: which CMAs have the highest long-term share, and does that last?</h2>
+      <p class="sub">Choose a period. Rows re-sort by that period. Click any CMA to inspect it in Figure 4.</p></div>
+    </div>
+
+    <div class="toolbar">
+      <div class="seg" id="periodSeg" role="group" aria-label="Period"></div>
+      <span class="hint">or drag on the timeline strip to choose any range</span>
+    </div>
+
+    <figure class="fig">
+      <figcaption><b>Figure 2.</b> Each CMA's long-term share minus Ontario's, every quarter (percentage points)</figcaption>
+      <div class="div-legend" id="divLegend"></div>
+      <div class="scroll-x"><div class="chart" id="f2"></div></div>
+    </figure>
+
+    <div class="two-col">
+      <figure class="fig">
+        <figcaption><b>Figure 3.</b> Long-term share <span id="f3Period">in the selected period</span></figcaption>
+        <div class="toolbar tight">
+          <label class="sel">Sort by
+            <select id="sortSel">
+              <option value="share">Long-term share</option>
+              <option value="cases">Average caseload</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <button type="button" class="ghost" id="tableBtn" aria-expanded="false">Show as table</button>
+        </div>
+        <div class="chart" id="f3"></div>
+        <p class="note">The axis rescales with the period. Dot = share for the whole period (all long-term cases ÷ all cases across its quarters). Line = lowest to highest single quarter. Smaller CMAs swing more from quarter to quarter.</p>
+        <div id="tableWrap" hidden></div>
+      </figure>
+
+      <figure class="fig">
+        <figcaption><b>Figure 4.</b> <span id="f4Title">Selected CMA</span></figcaption>
+        <div class="toolbar tight">
+          <div class="seg" id="detailSeg" role="group" aria-label="Measure for Figure 4">
+            <button type="button" data-d="share">Long-term share</button>
+            <button type="button" data-d="mix">Full duration mix</button>
+          </div>
+        </div>
+        <div class="chart" id="f4"></div>
+        <p class="note" id="f4Note"></p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ STEP 3 · Takeaways ============ -->
+  <section class="block" id="s3">
+    <div class="block-head">
+      <span class="step-no">3</span>
+      <div><h2>What this supports, and what it does not</h2></div>
+    </div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works case characteristics (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="q3.js"></script>
+</body>
+</html>

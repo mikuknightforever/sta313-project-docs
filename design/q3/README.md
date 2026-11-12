@@ -52,5 +52,10 @@ URL 参数可以直接打开某个状态 / URL parameters open a specific state:
 
 ## 版本 / Versions
 
-- v1（`55e5870`）：图 2 为 CMA × 季度热力图。/ Figure 2 was a CMA × quarter heatmap.
-- v2：图 2 改为比例符号地图 + 悬停分析卡片，时期刷选移到第 2 步顶部。/ Figure 2 is a proportional-symbol map with a hover analysis card; the period brush moved to the top of Step 2.
+**版本规则（Q1、Q2、Q3 通用）**：当前工作版本始终放在稳定路径（如 `design/q3/prototype/`）。**大版本**指视图形式、编码方式、页面结构或叙事有明显变化；修 bug、改文字、调间距不算。开始新的大版本之前，先把当前版本复制到 `archive/<任务名>_<YYYY-MM-DD>_v<N>/`，打附注 tag（`q1-v1`、`q2-v1`、`q3-v1`……），再开始修改；存档内只允许改相对路径和加一行存档横幅。
+
+**Versioning rule (applies to Q1, Q2 and Q3)**: the current working version always lives at a stable path (e.g. `design/q3/prototype/`). A **major version** is a clear change in view form, encoding, page structure or narrative; bug fixes, wording and spacing do not count. Before starting a new major version, copy the current one to `archive/<task>_<YYYY-MM-DD>_v<N>/` and add an annotated tag (`q1-v1`, `q2-v1`, `q3-v1`, …), then start editing; inside an archive, only relative paths and a one-line archive banner may change.
+
+- v1（`55e5870`，tag `q3-v1`）：图 2 为 CMA × 季度热力图。可运行存档 / runnable archive: [archive/q3-prototype_2026-11-12_v1/](archive/q3-prototype_2026-11-12_v1/README.md)。/ Figure 2 was a CMA × quarter heatmap.
+- v2（`a336f1a`，tag `q3-v2`，当前 / current）：图 2 改为比例符号地图 + 悬停分析卡片，时期刷选移到第 2 步顶部。/ Figure 2 is a proportional-symbol map with a hover analysis card; the period brush moved to the top of Step 2.
+- 版本索引 / Version index: [archive/README.md](archive/README.md)
