@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · A · Dumbbell and lines</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 candidate <b>A of 3 · Ranked dumbbell + linked lines</b> (the group's agreed baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>Where has the gap between OW and ODSP narrowed the most?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> The "where" question is a ranking task, and a ranked dumbbell puts every CMA's start and end gap on one common scale. The linked lines then answer "when, and which program".</p>
+    <p><b>Appeal.</b> One glance: every end dot sits left of its start dot. The sorted list is easy to drop into a briefing.</p>
+    <p><b>Cost.</b> Familiar rather than novel. It drops geography, and the dumbbell shows the size of the gap but not which program moved; that needs the second chart.</p>
+  </div>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Share of cases</h3><p>Single-person cases without children ÷ all cases × 100, for one program, one CMA, one quarter. It describes who is on the caseload, not how many single residents receive assistance.</p></div>
+        <div><h3>Gap</h3><p>ODSP share − OW share, in percentage points (pp). ODSP's share is higher in every CMA and every quarter, so the gap is always positive and never reverses.</p></div>
+        <div><h3>Narrowed by</h3><p>Gap at the start quarter − gap at the end quarter of the period you choose (default 2003 Q1 → 2026 Q1). Positive means narrower. Smaller at the end does not mean smaller every quarter.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter, so hover shows the counts. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Ranked by how much the gap narrowed</h2>
+      <p class="sub">Follow the four steps, then choose "Explore" and pick any period or CMA. Click a row to show that CMA in Figure 2.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar">
+      <div class="period" id="period" role="group" aria-label="Start and end quarter"></div>
+    </div>
+    <div class="split">
+      <figure class="fig">
+        <figcaption><b>Figure 1.</b> <span id="f1Title"></span></figcaption>
+        <div class="toolbar tight"><span class="lab-t">Sort by</span><div class="seg" id="sortSeg" role="group" aria-label="Sort rows"></div></div>
+        <div class="key" id="f1Key"></div>
+        <div class="chart" id="f1"></div>
+        <p class="note">Rows are CMAs; the top row is Ontario as a whole, for reference. Hover or tap a row for exact values.</p>
+      </figure>
+      <figure class="fig">
+        <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+        <div class="key"><span><svg width="18" height="4"><line x1="0" x2="18" y1="2" y2="2" style="stroke:var(--odsp);stroke-width:2.5"/></svg>ODSP share</span><span><svg width="18" height="4"><line x1="0" x2="18" y1="2" y2="2" style="stroke:var(--ow);stroke-width:2.5"/></svg>OW share</span><span id="hatchKey"></span></div>
+        <div class="chart" id="f2"></div>
+        <p class="readout" id="f2Read" aria-live="polite"></p>
+        <p class="note">Grey band: pandemic. Dashed lines: the start and end quarter of the selected period. Hover or tap for exact shares and case counts.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Exact values for every CMA</h2><p class="sub">Same period as above. Click a row to select it in both figures.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> Shares, gaps and case counts for the selected period</figcaption><div id="tbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA) and for Ontario, quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="a.js"></script>
+</body>
+</html>

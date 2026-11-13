@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · B · Who moved</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 candidate <b>B of 3 · Arrows in share space + decomposition</b> (an alternative to the baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>The gap narrowed everywhere. Which program moved?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> A gap can shrink when one share rises or when the other falls. Placing each CMA in OW-share × ODSP-share space shows both shares and the gap in one mark, and the decomposition bars say how much each program contributed.</p>
+    <p><b>Appeal.</b> Fifteen arrows all running toward the "equal shares" line, almost flat: an image that says "OW moved, ODSP barely did" without a sentence.</p>
+    <p><b>Cost.</b> Less familiar: readers must learn the diagonal reference lines. The time path between start and end is only seen by moving the slider, and arrows overlap in the crowded middle.</p>
+  </div>
+  <p class="challenge" role="note"><b>This version does not use the agreed dumbbell baseline</b>, because a dumbbell shows only the size of the gap; it cannot show whether the OW share rose or the ODSP share fell. Here the arrow's direction and the split bars answer "which program" directly, while the ranking is kept in Figure 2.</p>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Share of cases</h3><p>Single-person cases without children ÷ all cases × 100, for one program, one CMA, one quarter. It describes who is on the caseload, not how many single residents receive assistance.</p></div>
+        <div><h3>Gap</h3><p>ODSP share − OW share, in percentage points (pp). ODSP's share is higher in every CMA and every quarter, so every arrow stays above the "equal shares" line.</p></div>
+        <div><h3>Narrowed by</h3><p>Gap at the start quarter − gap at the end quarter (default 2003 Q1 → 2026 Q1) = OW share change − ODSP share change. Positive means narrower; it does not mean narrower every quarter.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter, so hover shows the counts. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Every CMA moved toward equal shares, mostly sideways</h2>
+      <p class="sub">Follow the four steps, then choose "Explore". Drag the end-quarter slider or press Play to grow the arrows through time.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar">
+      <div class="period" id="period" role="group" aria-label="Start and end quarter"></div>
+    </div>
+    <div>
+      <figure class="fig">
+        <figcaption><b>Figure 1.</b> <span id="f1Title"></span></figcaption>
+        <div class="toolbar tight">
+          <button type="button" class="ghost play" id="playBtn">Play</button>
+          <label class="lab-t" for="tSlider" style="flex:1;min-width:200px;display:flex;align-items:center;gap:8px;white-space:nowrap">End quarter <input type="range" id="tSlider" step="1"><output id="tOut" style="min-width:190px"></output></label>
+        </div>
+        <div class="key" id="f1Key"></div>
+        <div class="chart" id="f1"></div>
+        <p class="readout" id="f1Read" aria-live="polite"></p>
+        <p class="note" id="f1Note"></p>
+      </figure>
+      <figure class="fig">
+        <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+        <div class="key" id="f2Key"></div>
+        <div class="chart" id="f2" style="max-width:860px"></div>
+        <p class="note">Narrowed by = OW share change − ODSP share change. A rising OW share narrows the gap (drawn right); a rising ODSP share widens it (drawn left). Click a row to select it.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Exact values for every CMA</h2><p class="sub">Same period as above. Click a row to select it in both figures.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> Shares, gaps and case counts for the selected period</figcaption><div id="tbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA) and for Ontario, quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="b.js"></script>
+</body>
+</html>
