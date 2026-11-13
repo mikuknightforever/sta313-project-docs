@@ -1,6 +1,6 @@
 # Q1 设计说明：OW 与 ODSP 的总体趋势（v1 候选 A–D）/ Q1 Design Rationale: OW and ODSP Overall Trends (v1 candidates A–D)
 
-状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
+状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v2：图 1a 增加可选的 3D 时空路径视图（§7.1），v1 存档在 `archive/`。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
 Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
@@ -125,9 +125,9 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 
 ## 7. 候选 D：一条路径，两个项目（连接散点图）/ Candidate D: one path, two programs
 
-- **Motivation**：问题是两个序列"相对彼此"怎么动；把一个画成另一个的函数，"一起还是分开"就变成一条路径的方向。
-- **Appeal**：最容易记住、也最容易在简报里复述的形状：疫情前长期向右漂移，疫情中近乎垂直下降再回升。
-- **代价 / Cost**：读者不熟悉；时间沿路径而不是沿坐标轴，Haroz 等（2016）发现读者更容易弄错顺序和方向；疫情期间下降和回升的两段几乎重叠（ODSP 基本不动），需要滑块才能分开。
+- **Motivation**：问题是两个序列"相对彼此"怎么动；把一个画成另一个的函数，"一起还是分开"就变成一条路径的方向。可选的 3D 视图把时间作为纵深，说明路径图和两张时间图是同一个立方体的三个面（§7.1）。
+- **Appeal**：最容易记住、也最容易在简报里复述的形状：疫情前长期向右漂移，疫情中近乎垂直下降再回升；在 3D 中，同一条曲线随着立方体旋转变成每一张熟悉的图。
+- **代价 / Cost**：读者不熟悉；时间沿路径而不是沿坐标轴，Haroz 等（2016）发现读者更容易弄错顺序和方向；疫情期间下降和回升的两段几乎重叠（ODSP 基本不动），需要滑块才能分开。3D 视图增加遮挡和旋转成本，所以数值只在正视图中读。
 - **视图与编码**
   - 图 1a：横向位置 = ODSP，纵向位置 = OW，每季一点，按时间连线；两轴**每个指数点使用相同像素**，所以 45° 虚点线表示"同等相对增长"，路径与它的夹角可以直接比较。数量 / 指数切换只改坐标刻度（几何不变），刻度取整数案件数。线段按疫情阶段用有序中性色阶（浅 → 深）分段，不占用项目色。只标起点、2019 Q4、OW 最低点、最新一期和滑块当前季度（当前标签自动避让）。
   - 阅读说明：方向键（右 = 只有 ODSP 增长，上 = 只有 OW 增长，对角 = 两者都增长，下 = 只有 OW 下降）+ 阶段图例 + 当前季度读数面板。
@@ -136,6 +136,53 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 - **交互**：滑块（`<input type=range>`，键盘原生可用）+ Play = **navigation**（时间）；叙事步骤 = selection（其他阶段变淡）；悬停散点（Delaunay 最近点）↔ 时间线竖线和读数面板联动；点击时间线把滑块移到该季度。`prefers-reduced-motion` 时播放步进放慢、无补间动画。
 - **放弃的方案**：动画气泡图（Gapminder 式的气泡大小和颜色会编码多余变量）；不等比例坐标（45° 失去意义）；不加阅读说明直接展示（研究证据显示误读风险高）。
 
+### 7.1 3D 时空路径（D 的 v2）/ 3D space-time path (D v2)
+
+D 的 v1（只有 2D 连接散点图）已存档在 [archive/q1-d-paths_2026-11-12_v1/](archive/q1-d-paths_2026-11-12_v1/index.html)（tag `q1-v1`）。v2 只改了图 1a：加入一个可选的 3D 视图和两个由它"压平"得到的时间视图，其余视图、编码和联动不变。
+D v1 (2D only) is archived (tag `q1-v1`). v2 changes only Figure 1a: an optional 3D view and two time views obtained by flattening it.
+
+**为什么用 3D / Why 3D**
+- 三个变量里有一个是时间：X = ODSP、Y（向上）= OW、Z（纵深）= 时间，93 个季度连成一条空间曲线（L7 的 space-time cube）。
+- 沿三个轴正视这个立方体，正好得到三张熟悉的 2D 图：沿时间轴看 = 连接散点图（OW 对 ODSP），沿 ODSP 轴看 = OW 随时间变化，沿 OW 轴看 = ODSP 随时间变化。这就是 Bach 等（2014）总结的时空立方体"压平"（flattening）操作。
+- 所以 3D 的作用是**把三张 2D 图连起来**，让分析员看清它们是同一份数据的三个侧面；它是过渡，**不是读数用的**。读数一律在正视（2D）状态或读数面板中进行（L3 effectiveness：数值用共同尺度上的位置来读）。
+- 交互对应 L5：视图切换 = change mapping（视角改变 visual mapping 层），旋转和预设 = navigation（视图层），3D 中的当前点、悬停和滑块与图 1b/1c 联动 = linked views。
+Three variables, one of them time; the three axis-aligned projections are exactly three familiar 2D charts. 3D links them; values are read only in flat views (L3), and the interactions map to L5 change mapping, navigation and linked views; L7 space-time cube flattening.
+
+**设计 / Design**
+- **默认 2D**：页面打开时图 1a 仍是 v1 的 2D 连接散点图（刻度、标签、点的位置与 v1 完全一致，见 §10.5）。3D 通过分段按钮 `Path (OW vs ODSP) | 3D | OW over time | ODSP over time` 进入；另有"Show how the views connect"导览，自动依次转到 3D → OW over time → 3D → ODSP over time → 3D → Path，每一步一句说明。
+- **正交投影**：先绕竖轴转 yaw、再转 pitch，没有透视，平行线保持平行。预设：Path（yaw 0°, pitch 0°）、OW over time（90°, 0°）、ODSP over time（90°, 90°，从下方看）、斜视 3D（38°, 24°）。
+- **动画**：预设之间摄像机平滑旋转 700 ms（easeCubicInOut），`prefers-reduced-motion` 时直接切换。转到正视角的最后一帧，渲染器换成 2D 坐标轴（同样的刻度、标签、网格、疫情灰带、2019 Q4 参考线），用户看到"它转成了一张普通的图"。
+- **一个渲染器**：2D 路径、3D 和两个时间视图都由同一个投影函数绘制，所以正视图在构造上就与 3D 的同一视角一致；两轴仍用"每个指数点相同像素"，45° 等速增长在 3D 中是 OW 指数 = ODSP 指数的**平面**，在时间墙上画成 45° 虚点线（与 2D 中的含义相同）。
+- **斜视时帮助判断深度**：三面"远墙"（随视角自动选取离观者较远的一面）上画淡色网格和路径的投影（shadow projection）；当前季度画出到三面墙的垂直引线（drop lines），数值显示在旁边的读数面板；坐标轴和刻度标签始终正对屏幕（billboard）；线段按深度从远到近绘制（painter's order），近处遮住远处。
+- **标签防碰撞**：3D 中刻度和轴标题在某些角度会挤在一起，所以每次渲染后：轴标题被推离刻度，仍有冲突的刻度标签被隐藏（贪心保留），轴标题之间也互相避让，超出图框的文字被推回框内。全部允许角度扫描通过（见 §10.5）。
+- **自由旋转是辅助**：鼠标或手指拖动旋转，聚焦图后用方向键每次 5°，双击、Home 或"Reset 3D view"回到斜视预设。角度限制 yaw −20°–110°、pitch −15°–85°，不会上下颠倒。拖动和点击区分开（移动 > 3 px 才算拖动），拖动不会改变滑块。
+- **沿用 D 的编码和联动**：疫情前、中、后用有序中性色阶（浅 → 深）；滑块、Play、悬停读数、和图 1b/1c 的联动竖线在所有视图中都可用；"Axes in cases / Axes as index"在 3D 和时间视图中也有效（只改刻度）。
+- **技术**：D3 + SVG 自写正交投影（93 个点、三面墙和三条轴，每帧几百个元素），沿用全站 CSS 变量和深浅主题，不需要 WebGL 或 three.js。
+- **手机**：400 px 下 3D 可用（触摸拖动旋转、预设按钮、导览），页面无横向滚动，所以手机上不隐藏 3D 按钮；3D 图较小，读数仍以正视图和读数面板为准。
+- **可访问性**：所有按钮可用键盘操作；图 1a 可聚焦，`aria-label` 说明可以用方向键旋转、Home 复位、数值在旁边面板；读数面板和导览说明是 `aria-live`。
+
+**代价与应对 / Costs and mitigations**（对照 Munzner "No unjustified 3D"）
+
+| 3D 的代价 / Cost | 应对 / Mitigation | 是否抵消 / Offset? |
+| --- | --- | --- |
+| 深度位置难以准确判断（排名很低的通道）/ Depth is a weak channel | 不在 3D 中读数；三个正视图 + 读数面板；墙面投影把三个变量各自"摊"到一面墙上；引线标出当前点 / No reading in 3D; flat views, readout, wall shadows, drop lines | 基本抵消 / Largely |
+| 点和线互相遮挡 / Occlusion | 细线、按深度绘制、墙面投影；但疫情期下降和回升两段在部分角度仍重叠 / Thin lines, painter's order, shadows; pandemic legs still overlap at some angles | 部分 / Partly |
+| 透视让长度和斜率变形 / Perspective distortion | 正交投影，平行线保持平行 / Orthographic | 抵消（同一方向内）/ Yes, within one direction |
+| 必须旋转才能看清 / Interaction cost | 默认 2D；四个预设一键到达；导览自动演示；Reset / Default 2D, presets, tour, reset | 部分 / Partly |
+| 斜看时文字难读 / Slanted text | 标签始终正对屏幕，自动防碰撞 / Billboard labels, decluttering | 抵消 / Yes |
+| 静态截图（`report.pdf`）难读 / Static images | 报告用"一张斜视图 + 三个正视投影"的小图组 / One oblique image plus three projections | 部分 / Partly |
+
+**考虑过但放弃的方案 / Rejected**
+- 透视 3D：远近大小不同，长度和斜率无法比较。/ Perspective: lengths and slopes become incomparable.
+- 只能自由旋转、没有预设：用户要自己找到能读的角度，交互成本高，也无法和 2D 图一一对应。/ Free rotation only: high cost, no link to the 2D charts.
+- Plotly 等现成 3D 库：体积大，WebGL 依赖，风格和深浅主题难统一，标签不能按本站规则防碰撞。/ Plotly etc.: heavy, WebGL, hard to theme.
+- 直接用 3D 替代 2D：违反 L3（数值要在共同尺度的位置上读）和 "No unjustified 3D"。/ Replacing 2D with 3D violates L3.
+- 3D 柱状图、曲面、光照或阴影特效：只增加装饰，不增加信息。/ 3D bars, surfaces, lighting: decoration only.
+
+**对报告的影响 / Impact on `report.pdf`**
+mock design 报告是静态的，3D 只能截图。如果小组选 D，建议用一个小图组：左边一张斜视 3D（约半栏宽），右边竖排三个正视投影（Path、OW over time、ODSP over time），共约半页；截图见 `screenshots/d3d-*.png`（浅色、深色各一套）。在"插图 1–3 页"的限制下，Q1 只有在选了 D 时才需要这半页；若 Q1 选 A 或 A+B，3D 不进报告。
+The report is static. If D is chosen, use one oblique image plus three projections (about half a page); otherwise 3D stays out of the report.
+
 ## 8. 版本比较 / Comparison
 
 | 维度 / Criterion | A · 时间线 | B · 变化 | C · 长时段 | D · 路径 |
@@ -143,16 +190,16 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 | 清楚程度（第一次看）/ Clarity | 高：最熟悉的形式 | 中：需要理解同比定义 | 中高：两个序列要解释 | 低中：依赖阅读说明 |
 | 分析深度 / Analytical depth | 中：水平、指数、阶段表 | 高：方向、速度、同向季度、年均变化 | 中高：历史尺度 + 详图 | 中：只看相对运动 |
 | 创意（R10）/ Creativity | 低 | 中 | 中 | 高 |
-| 剩余开发量 / Remaining effort | 低 | 中 | 中（要处理口径说明）| 高（读者测试、可访问性）|
+| 剩余开发量 / Remaining effort | 低 | 中 | 中（要处理口径说明）| 高（读者测试、可访问性；3D 已实现但需要读者测试）|
 | 与 Q2/Q3 一致 / Consistency | 高：与 Q3 第 1 步同一套模式 | 中：主指标不同 | 高：刷选 + 详图同 Q3 第 2 步 | 中：独特形式 |
 | 已定决定 / Settled decisions | 全部保留 | 改变"默认案件数" | 全部保留 | 保留（失业率对齐同步时间线）|
-| 最大风险 / Main risk | 被评为"缺乏创意" | 读者忽略规模 | 历史序列被误读为同口径 | 读者弄错顺序或方向 |
+| 最大风险 / Main risk | 被评为"缺乏创意" | 读者忽略规模 | 历史序列被误读为同口径 | 读者弄错顺序或方向；3D 被当成读数视图 |
 
 ## 9. 推荐（最终由小组决定）/ Recommendation (the group decides)
 
 **以 A 为底，加入 B 的图 2（分阶段年均变化）。** A 最清楚、保留全部已定决定、与 Q3 一致；B 的分阶段图补上 A 缺少的一点——在长度相差很大的阶段之间公平地比较变化速度。两者合并后，创意分仍不算高，所以可选地：
 - 如果小组同意使用历史文件并接受口径说明，把 C 的概览缩成 A 上方的一条背景带（"放在长时段里看"）；
-- D 作为"换一种方式看"的附加视图，而不是主图，除非组内快速测试显示读者能正确读出顺序和方向。
+- D 作为"换一种方式看"的附加视图，而不是主图，除非组内快速测试显示读者能正确读出顺序和方向。D 的 3D 视图只作为可选的过渡视图和导览保留，不作默认，也不用来读数。
 
 **Use A as the base and add B's Figure 2 (average annual change per period).** Optionally add C's overview as a compact context strip if the historical file is approved, and keep D as an extra view rather than the main one unless a quick reader test shows it is read correctly.
 
@@ -165,17 +212,17 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 | 要求 / Requirement | A | B | C | D |
 | --- | --- | --- | --- | --- |
 | R1 可视化为核心 | 满足：图 1a/1b/2 | 满足 | 满足 | 满足 |
-| R2 交互支持探索 | 满足：步骤、切换、范围、高亮、悬停、表格联动 | 满足：另有年均/总变化切换、阶段点击 | 满足：刷选 + 按钮 + 联动竖线 | 满足：滑块、播放、散点↔时间线联动 |
+| R2 交互支持探索 | 满足：步骤、切换、范围、高亮、悬停、表格联动 | 满足：另有年均/总变化切换、阶段点击 | 满足：刷选 + 按钮 + 联动竖线 | 满足：滑块、播放、散点↔时间线联动；v2 另有四个视图、旋转、导览 |
 | R3 在线发布 | 未：未部署 | 未 | 未 | 未 |
 | R4 自包含 | 满足：定义卡、副标题、图注 | 满足：另有变化定义 | 满足：口径说明在图下 | 部分：依赖阅读说明，未做读者测试 |
 | R5 课程数据为主 | 满足 | 满足 | 满足（历史序列也是课程数据） | 满足 |
 | R6 单一受众 | 满足 | 满足 | 满足 | 满足 |
-| **R7 编码合理** | 满足：共同尺度位置、色相 = 类别、无双纵轴 | 满足：共轴小倍数、形状+颜色 | 满足：不同序列分图、中性色 | 满足：等比例坐标、阶段有序色阶 |
+| **R7 编码合理** | 满足：共同尺度位置、色相 = 类别、无双纵轴 | 满足：共轴小倍数、形状+颜色 | 满足：不同序列分图、中性色 | 满足：等比例坐标、阶段有序色阶；3D 只作过渡，读数在正视图（与 v1 持平，另多两张有效的时间图） |
 | **R8 分析能力** | 部分：水平与阶段，变化速度只能读斜率 | 满足：方向、速度、同向、年均 | 满足：历史尺度 + 详图 | 部分：只有相对运动 |
-| **R9 清楚可导航** | 满足 | 满足 | 满足 | 部分：形式陌生 |
-| **R10 创意** | 未/部分：常规双折线 | 部分：同向条带、年均点图 | 部分：focus + context 常见但有口径处理 | 满足：连接散点图 + 引导阅读 |
+| **R9 清楚可导航** | 满足 | 满足 | 满足 | 部分：形式陌生；3D 增加控件，但默认 2D 不变、有导览（与 v1 持平） |
+| **R10 创意** | 未/部分：常规双折线 | 部分：同向条带、年均点图 | 部分：focus + context 常见但有口径处理 | 满足：连接散点图 + 引导阅读 + 可解释的时空立方体（变好） |
 | R11 文字清楚 | 满足 | 满足 | 满足 | 满足 |
-| **R12 理由深入** | 满足：§4 | 满足：§5 | 满足：§6 | 满足：§7 |
+| **R12 理由深入** | 满足：§4 | 满足：§5 | 满足：§6 | 满足：§7、§7.1 |
 | **R13 交互理由** | 满足：Card 流程逐项 | 满足 | 满足 | 满足 |
 | **R14 课堂词汇** | 满足 | 满足 | 满足 | 满足 |
 | R15 与主题和受众对齐 | 满足 | 满足 | 满足 | 满足 |
@@ -195,7 +242,8 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 | L3 共同尺度位置 | 满足 | 满足（共轴） | 满足 | 满足（两轴等比例） |
 | L3 量级差异不用双纵轴 | 满足：指数切换 | 满足：小倍数 + 变化率 | 满足：分图 | 满足：指数等比例 |
 | L3 expressiveness | 满足：色相 = 项目 | 满足：另加形状 | 满足：中性色 = 不同序列 | 满足：阶段用亮度 |
-| L3 discriminability | 满足：2 色 | 满足 | 满足 | 部分：93 点，下降与回升两段重叠 |
+| L3 discriminability | 满足：2 色 | 满足 | 满足 | 部分：93 点，下降与回升两段重叠（3D 中部分角度也重叠） |
+| L3 No unjustified 3D | 不适用 | 不适用 | 不适用 | 基本满足：3D 只连接三个正视投影、正交、不读数；代价表见 §7.1 |
 | L3 popout | 满足：图例高亮 | 满足：阶段框 | 满足：刷选框 | 满足：当前点黑描边 |
 | L4-1 对齐、接近 | 满足 | 满足 | 满足 | 满足（时间线对齐失业率） |
 | L4-1 similarity | 满足 | 满足 | 满足 | 满足 |
@@ -203,15 +251,16 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 | L4-2 分类色经工具验证 | 满足（§3） | 满足 | 满足 | 满足（另验证有序色阶） |
 | L4-2 正负用发散色阶 | 不适用 | 不适用（正负用位置） | 不适用 | 不适用 |
 | L4-2 无彩虹 | 满足 | 满足 | 满足 | 满足 |
-| L5 change mapping | 满足：数量/指数 | 满足：同比/相对基准、年均/总 | 满足 | 满足（只改刻度） |
-| L5 navigation / filtering | 满足：范围按钮 | 满足 | 满足：刷选 + 按钮 | 满足：滑块 |
+| L5 change mapping | 满足：数量/指数 | 满足：同比/相对基准、年均/总 | 满足 | 满足（只改刻度；视角切换改变 visual mapping） |
+| L5 navigation / filtering | 满足：范围按钮 | 满足 | 满足：刷选 + 按钮 | 满足：滑块、旋转、预设视角 |
 | L5 selection + details on demand | 满足 | 满足 | 满足 | 满足：读数面板 |
-| L5 linked views | 满足：1a↔1b 十字线 | 满足：贯穿全部面板 | 满足：详图↔概览 | 满足：散点↔时间线 |
-| L6 叙事结构 | 满足：martini glass | 满足 | 满足：先远后近 | 满足：步骤 + 播放 |
+| L5 linked views | 满足：1a↔1b 十字线 | 满足：贯穿全部面板 | 满足：详图↔概览 | 满足：散点/3D/时间视图↔时间线 |
+| L6 叙事结构 | 满足：martini glass | 满足 | 满足：先远后近 | 满足：步骤 + 播放 + 视图导览 |
 | L6 annotated chart | 满足 | 满足 | 满足 | 满足 |
 | L6 contrast | 满足：三阶段 | 满足：年均对比 | 满足：历史 vs 疫情 | 满足：方向对比 |
 | L6 开头/中间/结尾 | 满足 | 满足 | 满足 | 满足 |
 | L7 不用地图的理由 | 满足（§3） | 满足 | 满足 | 满足 |
+| L7 space-time cube | 不适用 | 不适用 | 不适用 | 满足：3D 是时空立方体，三个预设是 flattening 投影 |
 
 ### 10.3 数字复核 / Number recomputation
 方法：每个候选在浏览器里计算的全部事实（`window.__facts`）导出为 JSON，用 pandas 从原始 CSV 独立重算，逐字段比较（相对误差 1e-9）。再从每个页面的全部可见文字和 SVG 文字中提取数字，与 pandas 结果按页面的格式（千分位、一位小数、带符号百分比）比对。
@@ -222,12 +271,12 @@ Method: export every fact each page computes, recompute independently in pandas 
 | A | 0 | 115 | 0（235,501 是 235,500.5 在 JS 中四舍五入，Python 银行家舍入为 235,500） |
 | B | 0 | 105 | 0（16.75 = 疫情前阶段年数 67 ÷ 4） |
 | C | 0 | 117 | 0（"1998,"、"2026,"、"692,871," 只是正则多抓了逗号） |
-| D | 0 | 101 | 0 |
+| D | 0 | 105 | 0（v2：读数面板、注释和三种视图的标签） |
 
 坐标刻度、年份、"2019 Q4 = 100"、45° 不计入。页面上的覆盖范围标签（如 "Jan 2017 – Dec 2025"、"2003 Q1 – 2026 Q1"）是静态文字，与 Q3 相同做法，已核对与数据一致。
 
 ### 10.4 常见错误检查 / Anti-pattern check
-双纵轴：四个都没有（A/C 指数切换，B 小倍数，D 等比例散点）。彩虹色阶、3D、饼图：无。截断的柱状图坐标轴：不用柱状图；A/C 的数量模式从 0 开始，指数模式以 100 为参考并在标题中写明。只靠颜色区分：每个候选都有图例 + 直接标签，B 另加形状。每个点都标数字：无（selective labels）。因果或价值判断措辞：已搜索 caus / because / due to / improve / worsen / recover 等，只出现在"The data do not show"卡片的否定句和 A 的"Context, not cause"标题中。历史序列与 OW/ODSP 混成一条线：无（只在 C 中单独成图）。
+双纵轴：四个都没有（A/C 指数切换，B 小倍数，D 等比例散点）。彩虹色阶、饼图：无。3D：只有 D v2 的**可选**视图，按 §7.1 的理由使用（正交、默认 2D、不读数、无透视、无 3D 柱或曲面、无光照阴影）。截断的柱状图坐标轴：不用柱状图；A/C 的数量模式从 0 开始，指数模式以 100 为参考并在标题中写明。只靠颜色区分：每个候选都有图例 + 直接标签，B 另加形状。每个点都标数字：无（selective labels）。因果或价值判断措辞：已搜索 caus / because / due to / improve / worsen / recover 等，只出现在"The data do not show"卡片的否定句和 A 的"Context, not cause"标题中。历史序列与 OW/ODSP 混成一条线：无（只在 C 中单独成图）。
 
 ### 10.5 渲染检查 / Rendering check
 用 Chrome DevTools Protocol 驱动无头 Edge（精确 1360 px 和 400 px 视口、真实鼠标和键盘事件）：
@@ -237,20 +286,26 @@ Method: export every fact each page computes, recompute independently in pandas 
 - 控制台：无错误。
 - 键盘：Tab 可到达每个可聚焦控件（A 16、B 16、C 11、D 13 个，另加"Read this first"折叠）；每组分段按钮用 Enter 切换成功；D 的滑块用方向键移动到 2021 Q1，路径和读数面板同步；表格行（A、D）和 B 图 2 的行都可 Tab 到达并用 Enter 选择，重绘后焦点留在同一行。
 - 交互：真实鼠标悬停四个候选主图时提示出现、失业率条带的十字线同步；C 拖动刷选得到 2015 Q4 – 2022 Q3（28 个季度），详图更新。
+- **D v2 的 3D**：
+  - 投影一致性：三个正视预设在数量和指数两种模式下，93 个点与坐标轴刻度推出的位置相差 ≤ 0.5 px（d3 坐标轴的半像素偏移），刻度拟合残差 0；Path 预设与存档的 v1 2D 图刻度标签、坐标范围完全相同（数量：ODSP 189,507.5–416,916.5、OW 164,850–306,151；指数：50–110、70–130）；从 3D 经动画转到 "OW over time" 与直接打开的结果完全一致（标签相同，点位移 0 px）。时间视图与图 1b 共用 2003-03 至 2026-03 的时间轴和年份刻度；纵轴不同是有意的（图 1b 同时显示两个项目，范围 50–130）。截图：`screenshots/d3d-{3d,path,ow,odsp}-{light,dark}.png`、`d3d-3d-mobile-{light,dark}.png`。
+  - 交互：拖动 60 px → yaw +24°、pitch −9°，滑块不变；极端拖动停在 110° / 85°；Home 复位到 38° / 24°；方向键每次 5°；3D 中 Play 推进当前点；悬停显示提示并联动图 1b 竖线；切换视图时动画中间帧为斜视、最后一帧为正视 2D；导览依次经过 3D、OW、ODSP、Path 并停在 Path；`prefers-reduced-motion` 时直接切换；手机触摸拖动旋转。
+  - 全部允许角度扫描：yaw −20°–110°、pitch −15°–85°（每 10°），1360 px 和 400 px 共 308 个角度，文字重叠、文字出界、横向滚动均为 0（修复过：起点标签压住刻度、手机上轴标题出界、斜视时刻度互相挤压）。
+  - 键盘：D 共 19 个可聚焦控件全部可 Tab 到达，视图按钮可用 Enter 切换；存档版 D v1 独立打开无错误。
 
 ### 10.6 受众检查 / Audience check（MCCSS 政策分析员 / an MCCSS analyst）
 - **A**：能判断疫情期间 OW 下降而 ODSP 基本平稳、之后 OW 回升并超过 2019 Q4 水平；能把带注释的图和阶段表直接放进简报并查任意季度的数值；不能判断变化的原因，也看不出两项目变化速度的精确差别。
 - **B**：能判断两个项目在哪些季度同向、哪些反向，以及疫情后 OW 的年均增长远快于此前；能按阶段比较年均变化并选出值得调查的季度；不能直接看到案件规模（要看提示或图 2），也不能判断增长"好不好"。
 - **C**：能判断疫情期间全部社会援助的下降幅度在 1969 年以来的记录中有多大，以及最新水平高于 1994 年峰值；能在长时段里任选年份细看 OW 和 ODSP；不能判断案件占人口的比例是否创新高，也不能跨 1998 年做同口径比较。
-- **D**：能判断疫情前 ODSP 增长远多于 OW、疫情中几乎只有 OW 在变；能逐季移动、对照普通时间线核实；不能精确读出某段时间的变化幅度（要看读数面板），而且第一次看可能误读方向。
+- **D**：能判断疫情前 ODSP 增长远多于 OW、疫情中几乎只有 OW 在变；能逐季移动、对照普通时间线核实，并在 3D 中看到路径和两张时间图是同一条曲线；不能精确读出某段时间的变化幅度（要看读数面板或正视图），而且第一次看可能误读方向，3D 中还可能误判远近。
+- **D 的 3D 冷启动（5 秒）**：能看出一条曲线在盒子里从后左走到前右，前右有一段很深的下探后升到最高，三条轴的名字。可能误读：把墙上的淡色投影当成另外几条数据线；把伸向远墙的引线当成路径的一部分；分不清下探那段在早期路径的前面还是后面（深度模糊）；把高低差误读为时间趋势，或不确定时间是朝向观者还是远离。页面的图注、引线说明和"Read values in the flat views"提示针对这些误读，但没有做过真人测试。
 
 ### 10.7 版本之间 / Across variants
-- **是否真的不同**：A = 时间轴上的水平（双折线）；B = 时间轴上的变化率（共轴小倍数 + 同向条带 + 阶段点图）；C = 两个尺度的时间轴（概览 + 详图，另一个序列）；D = 无时间轴的二维路径（散点连线）。视图形式、叙事结构和主要编码各不相同，不只是换颜色或布局。
+- **是否真的不同**：A = 时间轴上的水平（双折线）；B = 时间轴上的变化率（共轴小倍数 + 同向条带 + 阶段点图）；C = 两个尺度的时间轴（概览 + 详图，另一个序列）；D = 无时间轴的二维路径（散点连线），v2 另可展开为时空立方体。视图形式、叙事结构和主要编码各不相同，不只是换颜色或布局。
 - **是否与 Q3 风格一致**：四个都使用同一份 `shared/q1.css`（复制自 Q3 v2 的变量和骨架）、相同的字体、eyebrow、编号步骤、"Read this first"、结论卡片、Source 行、疫情灰带、选中期包围框、悬停提示和主题切换。
 
 ## 11. 待小组决定 / Open questions for the group
 
-1. **选哪个版本**，或按 §9 组合；选定后放入稳定路径 `design/q1/prototype/`，并在之后任何大改动之前给这批候选打 tag `q1-v1`。/ Which variant or combination; tag this batch `q1-v1` before further major changes.
+1. **选哪个版本**，或按 §9 组合；选定后放入稳定路径 `design/q1/prototype/`。四个候选的 v1 已打 tag `q1-v1`（`a193c19`）。/ Which variant or combination; the v1 batch is tagged `q1-v1`.
 2. **增长率定义**：同比变化、阶段年均变化、还是相对 2019 Q4 的变化？/ Growth-rate definition.
 3. **是否使用历史序列**，以及是否允许写"1969 年以来最多"（案件数、未按人口调整、1998 年口径变化）。/ Whether to use the historical series and the "most since 1969" wording.
 4. **疫情期定义**：更新 `RESEARCH_QUESTIONS.md` 第 3 节，使其与数据的 2020-03 至 2023-05 一致。/ Update the Q1 draft's pandemic period.
@@ -258,3 +313,5 @@ Method: export every fact each page computes, recompute independently in pandas 
 6. **全站共用样式**：是否把 Q1/Q3 共用的 CSS 变量和工具函数抽成一个全站文件（目前 Q1 是复制的，以免改动 Q3）。/ Extract a site-wide stylesheet and helpers?
 7. **D 的读者测试**：如果考虑 D，先找 2–3 位组外同学试读。/ Reader test before choosing D.
 8. 全省 OW `cases` 带小数的原因仍未核实。/ Decimal OW counts still unverified.
+9. **D 的 3D 视图**：保留为可选视图和导览（我的建议），还是撤掉以保持 D 简单？如果保留，是否把它也做进组内读者测试（重点看 §10.6 列出的误读）？/ Keep D's 3D as an optional view (recommended) or drop it; include it in the reader test?
+10. **报告**：如果选 D，是否在 `report.pdf` 中用"斜视 3D + 三个正视投影"的半页小图组？/ Use the half-page 3D figure group in the report if D is chosen?

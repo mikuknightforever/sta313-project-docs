@@ -19,6 +19,11 @@
   .readout dt{color:var(--ink2)} .readout dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
   .slider{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;margin:8px 0 4px}
   .slider output{font-weight:600;min-width:6.5em}
+  #f1a{outline:none;border-radius:6px}
+  #f1a:focus-visible{outline:2px solid var(--d512);outline-offset:2px}
+  #f1a.spatial svg{touch-action:none;cursor:grab}
+  .viewbar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:4px 0 6px}
+  .tourtext{font-size:13px;color:var(--ink);min-height:1.4em;margin:2px 0 0}
 </style>
 </head>
 <body>
@@ -33,16 +38,16 @@
   </header>
 
   <div class="pitch" aria-label="Why this candidate">
-    <p><b>Motivation.</b> The question is about how two series moved <i>relative to each other</i>. Plotting one against the other turns "together or apart" into the direction of a single path.</p>
-    <p><b>Appeal.</b> A long rightward drift before 2020, then a sharp drop straight down and back up: a shape that is easy to remember and to retell in a briefing.</p>
-    <p><b>Cost.</b> Unfamiliar; time runs along the path, not an axis, so readers confuse order and direction more often (Haroz et al., 2016). It needs the reading key and the companion timeline.</p>
+    <p><b>Motivation.</b> The question is about how two series moved <i>relative to each other</i>. Plotting one against the other turns "together or apart" into the direction of a single path; an optional 3D view adds time as depth and shows that the path and the two time charts are three faces of one cube.</p>
+    <p><b>Appeal.</b> A long rightward drift before 2020, then a sharp drop and climb; in 3D, the same curve turning into each familiar chart as the cube rotates.</p>
+    <p><b>Cost.</b> Unfamiliar; readers confuse order and direction more often (Haroz et al., 2016). The 3D view adds occlusion and rotation, so values are read only in the flat views; it needs the reading key and the companion timeline.</p>
   </div>
 
   <section class="defs" aria-label="Definitions">
     <details open>
       <summary>Read this first: how to read the path</summary>
       <div class="def-grid">
-        <div><h3>One dot per quarter</h3><p>Across = ODSP cases, up = OW cases. Dots are joined in time order, from 2003 Q1 to the latest quarter. The slider and the timeline below show where you are in time.</p></div>
+        <div><h3>One dot per quarter</h3><p>Across = ODSP cases, up = OW cases. Dots are joined in time order, from 2003 Q1 to the latest quarter. The optional 3D view adds time as depth; read exact values in the flat views or the panel on the right.</p></div>
         <div><h3>Direction means something</h3><p>Moving right = ODSP grew; moving up = OW grew. Both axes use the same scale per index point (2019 Q4 = 100), so the dotted 45° line marks equal relative growth.</p></div>
         <div><h3>A case is not a person</h3><p>A case can include a spouse and children. Counts are not adjusted for population. Province-wide OW counts include decimals in the source and are shown as published.</p></div>
         <div><h3>Pandemic period and context</h3><p>March 2020 – May 2023 (2020 Q1 – 2023 Q1). Segments are shaded light → dark: before, during, after. Unemployment (Jan 2017 – Dec 2025) is context only.</p></div>
@@ -62,13 +67,19 @@
     <div class="toolbar"><div class="seg" id="modeSeg" role="group" aria-label="Axis labels"></div></div>
     <figure class="fig">
       <figcaption><b>Figure 1a.</b> <span id="f1aTitle"></span></figcaption>
+      <div class="viewbar">
+        <div class="seg" id="viewSeg" role="group" aria-label="View of Figure 1a"></div>
+        <button type="button" class="ghost" id="resetBtn" hidden>Reset 3D view</button>
+        <button type="button" class="ghost" id="tourBtn">Show how the views connect</button>
+      </div>
+      <p class="tourtext" id="tourText" aria-live="polite"></p>
       <div class="slider">
         <label for="tSlider" class="lab-t">Path up to</label>
         <input type="range" id="tSlider" min="0" max="92" step="1" value="92" aria-describedby="tOut">
         <span><output id="tOut" for="tSlider"></output> <button type="button" class="ghost" id="playBtn">Play</button></span>
       </div>
       <div class="d-grid">
-        <div class="chart" id="f1a"></div>
+        <div class="chart" id="f1a" tabindex="0" aria-describedby="viewHint"></div>
         <aside class="key" aria-label="Reading key and current quarter">
           <h3>Reading key</h3>
           <div id="dirKey"></div>
@@ -77,6 +88,7 @@
           <div class="readout" id="readout" aria-live="polite"></div>
         </aside>
       </div>
+      <p class="note" id="viewHint"></p>
       <figcaption><b>Figure 1b.</b> The same two series over time (index, 2019 Q4 = 100) and the Ontario unemployment rate (monthly, context only) — the vertical line follows the slider</figcaption>
       <div class="chart" id="f1b"></div>
       <div class="chart" id="f1c"></div>

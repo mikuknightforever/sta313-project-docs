@@ -59,6 +59,16 @@ Every work was confirmed by web search (existence, author, link). Some originals
 - 借鉴 / Borrowed: 研究证据，而不是视觉设计。结论：读者看连接散点图时**更容易弄错顺序和方向**，但这种形式更能吸引读者。D 因此加了阅读说明（方向键）、按时期分段的明暗、时间滑块和同步的普通时间线。/ Evidence: readers confuse order and direction more often, but are drawn in; hence the reading key, phase shading, slider and companion timeline.
 - 刻意没有借鉴 / Not borrowed: 不适用（是研究论文）。它也是 D 在页面上"Cost"一栏的依据。/ N/A; it is cited as D's cost on the page.
 
+### A Review of Temporal Data Visualizations Based on Space-Time Cube Operations — Benjamin Bach, Pierre Dragicevic, Daniel Archambault, Christophe Hurter, Sheelagh Carpendale, EuroVis 2014 (STAR), pp. 23–41
+- 链接 / Links: Eurographics Digital Library（DOI 10.2312/eurovisstar.20141171）<https://diglib.eg.org/handle/10.2312/eurovisstar.20141171.023-041>；University of Edinburgh 记录 / record <https://www.research.ed.ac.uk/en/publications/a-review-of-temporal-data-visualizations-based-on-space-time-cube/>
+- 核实 / Checked: 2026-11-12 网络搜索确认作者、会议、页码和 DOI；论文全文未打开。/ Authors, venue, pages and DOI confirmed by search; full text not opened.
+- 借鉴 / Borrowed: 把时间数据看作一个时空立方体，各种 2D 图是对它的基本操作，其中"压平"（flattening）沿某个轴投影得到 2D 图；论文把随时间变化的散点图（time-evolving scatterplots）也纳入这一框架。D v2 的三个正视预设就是三个 flattening：沿时间轴 = 连接散点图，沿 ODSP 轴 = OW 随时间，沿 OW 轴 = ODSP 随时间。/ Treat temporal data as a space-time cube; 2D charts are operations on it, flattening being an axis-aligned projection. D v2's three presets are three flattenings.
+- 为什么适合 / Why it fits: 给 3D 一个功能性的理由：它不是装饰，而是让分析员看到三张 2D 图来自同一条曲线。/ It gives 3D a functional reason.
+- 刻意没有借鉴 / Not borrowed: 论文综述的其他操作（切片、钻取、几何变形等）和沉浸式或透视的立方体显示；D 只用正交投影和三个压平预设，读数仍在 2D 中。/ Other cube operations and immersive or perspective displays.
+
+### Visualization Analysis and Design — Tamara Munzner, CRC Press, 2014（课程教材来源 / the course's source text）
+- 借鉴 / Borrowed: "No unjustified 3D" 的经验规则和对深度通道、遮挡、透视变形、旋转成本、斜看文字的分析；Q1_DESIGN.md §7.1 的代价表逐条对照这些代价。/ The "No unjustified 3D" rule of thumb and its costs, checked one by one in §7.1.
+
 ### Are connected scatterplots so bad? — Datawrapper blog
 - 链接 / Link: <https://www.datawrapper.de/blog/connected-scatterplots>
 - 借鉴 / Borrowed: 实用建议：标出关键点、引导读者沿时间阅读、不要让读者自己猜方向。/ Practical guidance: label key points and guide the reading order.

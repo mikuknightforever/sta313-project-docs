@@ -23,7 +23,7 @@ python -m http.server 8000
 | A · Annotated timeline | 双折线 + 数量/指数切换 + 叙事步骤 + 对齐的失业率条带 / two lines, cases-index toggle, story steps, aligned unemployment strip | [variants/a-timeline/](variants/a-timeline/index.html) | 否 / No |
 | B · Change, not level | 同比变化小倍数（共用纵轴）+ 同向条带 + 分阶段对比 / YoY small multiples on one axis, same-direction strip, per-period comparison | [variants/b-change/](variants/b-change/index.html) | **是：主图不显示案件数 / Yes: main view is not case counts** |
 | C · The long view | 1969 年以来全部社会援助的可刷选概览 + OW/ODSP 详图 / brushable all-programs overview since 1969 + OW/ODSP detail | [variants/c-longview/](variants/c-longview/index.html) | 否 / No |
-| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线 / connected scatterplot with slider, reading key, companion timeline | [variants/d-paths/](variants/d-paths/index.html) | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
+| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线；v2 可切换到正交 3D 时空路径和两个时间视图 / connected scatterplot with slider, reading key, companion timeline; v2 adds an optional orthographic 3D space-time view | [variants/d-paths/](variants/d-paths/index.html) | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
 
 按版本规则（见 [design/DESIGN_LOG.md](../DESIGN_LOG.md)），这批候选是 Q1 v1。小组选定后，入选版本放到稳定路径 `design/q1/prototype/`（尚未建立）；在之后任何大改动之前，先给这批候选打 tag `q1-v1`。
 Under the versioning rule, these candidates are Q1 v1. Once the group chooses, the selected version moves to the stable path `design/q1/prototype/` (not created yet); tag this commit `q1-v1` before any further major change.
@@ -37,9 +37,9 @@ Under the versioning rule, these candidates are Q1 v1. Once the group chooses, t
 | A | `step=1\|2\|3\|0`（0 = Explore all）, `mode=count\|index`, `range=all\|2015\|zoom`, `focus=ow\|odsp` |
 | B | `step=1\|2\|3\|0`, `mode=yoy\|base`, `range=all\|2015\|zoom`, `ann=ann\|total` |
 | C | `step=1\|2\|3\|0`, `mode=count\|index`, `range=all\|2015\|zoom` |
-| D | `step=1\|2\|3\|0`, `mode=count\|index`, `t=2021Q3`（滑块位置 / slider position） |
+| D | `step=1\|2\|3\|0`, `mode=count\|index`, `t=2021Q3`（滑块位置 / slider position）, `view=path\|3d\|ow\|odsp`（图 1a 视图 / Figure 1a view）, `yaw=…&pitch=…`（仅 3D 的自由角度 / free angle, 3D only） |
 
-例 / Examples: `variants/a-timeline/index.html?step=2&mode=index&range=zoom`, `variants/d-paths/index.html?t=2021Q3`
+例 / Examples: `variants/a-timeline/index.html?step=2&mode=index&range=zoom`, `variants/d-paths/index.html?t=2021Q3`, `variants/d-paths/index.html?view=3d`
 
 ## 文件 / Files
 
@@ -49,4 +49,11 @@ Under the versioning rule, these candidates are Q1 v1. Once the group chooses, t
 - `variants/<候选>/index.html` + `<a|b|c|d>.js`：各候选 / each candidate
 - `screenshots/`：每个候选的 `-desktop-light`、`-desktop-dark`（1360px）、`-mobile-light`、`-mobile-dark`（400px）、`-state`（关键交互状态）、`-thumb`（总览卡片缩略图），以及总览页截图 / per-candidate desktop, phone, interaction-state and thumbnail screenshots, plus the overview page
 
-交互状态截图对应的 URL / State screenshots: A `step=2&mode=index&range=zoom` · B `step=0&mode=base&range=zoom&ann=total` · C `step=2&mode=index` · D `step=2&mode=index`
+交互状态截图对应的 URL / State screenshots: A `step=2&mode=index&range=zoom` · B `step=0&mode=base&range=zoom&ann=total` · C `step=2&mode=index` · D `view=3d`
+
+D v2 的 3D 截图 / D v2 3D screenshots: `d3d-3d-{light,dark}.png`（斜视 / oblique）, `d3d-path-…`, `d3d-ow-…`, `d3d-odsp-…`（三个正视预设 / the three front presets）, `d3d-3d-mobile-{light,dark}.png`（400px）。
+
+## 版本 / Versions
+
+候选 A–D 的 v1 已打 tag `q1-v1`（`a193c19`）。D 已更新为 v2（可选 3D 视图），D v1 存档在 [`archive/q1-d-paths_2026-11-12_v1/`](archive/q1-d-paths_2026-11-12_v1/index.html)。版本索引见 [`archive/README.md`](archive/README.md)。
+The v1 candidates are tagged `q1-v1`. D is now v2 (optional 3D view); D v1 is archived. See the version index.
