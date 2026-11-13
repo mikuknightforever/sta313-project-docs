@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q1 · C · The long view</title>
+<link rel="stylesheet" href="../../shared/q1.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q1 candidate <b>C of 4 · The long view (focus + context)</b> — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 1 of 3 · OW and ODSP, all of Ontario · Quarterly, 2003 Q1 – 2026 Q1, with monthly context from 1969</p>
+    <h1>How did OW and ODSP caseloads move before, during and after the pandemic, seen against the long record since 1969?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> Analysts writing a briefing need to know whether the pandemic movement was large or small by historical standards; a long overview answers that before the detail.</p>
+    <p><b>Appeal.</b> The whole record since 1969 on one screen: the pandemic dip as a small notch, and the latest level above the 1994 peak.</p>
+    <p><b>Cost.</b> Adds a series with a different coverage that must be explained; more vertical space; depends on the group agreeing to use the historical file.</p>
+  </div>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Two different series</h3><p>The long series (Figure 1) counts <i>all</i> social assistance cases: since April 1998 OW, ODSP, Temporary Care Assistance and Assistance for Children with Severe Disabilities; before 1998 the programs that preceded them. It is never added to or joined with OW and ODSP.</p></div>
+        <div><h3>A case is not a person</h3><p>A case can include a spouse and children. Counts are not adjusted for population, so a record number of cases is not a record share of the population.</p></div>
+        <div><h3>Pandemic period</h3><p>March 2020 – May 2023 (2020 Q1 – 2023 Q1 in the quarterly data).</p></div>
+        <div><h3>Shown as published</h3><p>Some provincial counts include decimals in the source; they are shown as published, rounded to whole cases. The unemployment rate (Jan 2017 – Dec 2025) is context only.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>The long view</h2>
+      <p class="sub">Drag across Figure 1 (or use the buttons) to choose the years shown in Figure 2.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 1.</b> All social assistance cases in Ontario, monthly, 1969–2026 (context; different coverage from OW and ODSP)</figcaption>
+      <div class="chart" id="f1"></div>
+      <p class="note" id="f1note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>OW and ODSP in the chosen years</h2>
+      <p class="sub">Hover for exact values; the crosshair also marks the date in Figure 1.</p></div>
+    </div>
+    <div class="toolbar">
+      <div class="seg" id="modeSeg" role="group" aria-label="Measure"></div>
+      <div class="seg" id="rangeSeg" role="group" aria-label="Years shown"></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 2a.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2a"></div>
+      <figcaption><b>Figure 2b.</b> Ontario unemployment rate, monthly (context only; Jan 2017 – Dec 2025) — same time axis as 2a</figcaption>
+      <div class="chart" id="f2b"></div>
+      <p class="note" id="f2note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario's social assistance cases and beneficiaries (1969 to current) and OW / ODSP case characteristics; Statistics Canada, Labour Force Survey table 14-10-0287 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q1-common.js"></script>
+<script src="c.js"></script>
+</body>
+</html>

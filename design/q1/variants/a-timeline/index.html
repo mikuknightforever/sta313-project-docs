@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q1 · A · Annotated timeline</title>
+<link rel="stylesheet" href="../../shared/q1.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q1 candidate <b>A of 4 · Annotated timeline</b> — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 1 of 3 · OW and ODSP, all of Ontario · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>How did OW and ODSP caseloads move before, during and after the pandemic?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> The question is about trends in levels over time; two aligned lines on a common scale are the most accurate way to compare them.</p>
+    <p><b>Appeal.</b> One annotated picture an analyst can lift into a briefing: OW's dip and rebound against a flat ODSP line.</p>
+    <p><b>Cost.</b> The most familiar form; little novelty, and change rates must be read from slopes.</p>
+  </div>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>A case is not a person</h3><p>A case (benefit unit) can include a spouse and children. Every count on this page is cases, not people, and is not adjusted for population.</p></div>
+        <div><h3>Two programs, two sizes</h3><p>Ontario Works (OW) and the Ontario Disability Support Program (ODSP) are counted separately. Switch to the index (2019 Q4 = 100) to compare their relative change on one scale.</p></div>
+        <div><h3>Pandemic period</h3><p>March 2020 – May 2023 (dataset definition). In these quarterly data that is 2020 Q1 – 2023 Q1. Quarters are labelled by their last month.</p></div>
+        <div><h3>Context, not cause</h3><p>The unemployment rate (Ontario, monthly, Jan 2017 – Dec 2025) is shown for context only. Province-wide OW counts include decimals in the source and are shown as published.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Two programs, three periods</h2>
+      <p class="sub">Follow the three periods, then choose "Explore all" and hover anywhere for exact values.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar">
+      <div class="seg" id="modeSeg" role="group" aria-label="Measure"></div>
+      <div class="seg" id="rangeSeg" role="group" aria-label="Time range"></div>
+      <div class="legend" id="legend" role="group" aria-label="Highlight a program"></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 1a.</b> <span id="f1aTitle"></span></figcaption>
+      <div class="chart" id="f1a"></div>
+      <figcaption><b>Figure 1b.</b> Ontario unemployment rate, monthly (context only; data cover Jan 2017 – Dec 2025) — same time axis</figcaption>
+      <div class="chart" id="f1b"></div>
+      <p class="note">Grey band: pandemic period. Hover either chart: the crosshair and tooltip are shared. Click a program in the legend to highlight it.</p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Period by period</h2>
+      <p class="sub">First and last quarter of each period. Click a row to highlight that period in Figure 1.</p></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 2.</b> Cases at the start and end of each period, and the change between them</figcaption>
+      <div id="phaseTable"></div>
+      <p class="note">Change = (last quarter ÷ first quarter − 1) × 100. The periods have different lengths, so compare changes within a row, not down a column.</p>
+    </figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics; Statistics Canada, Labour Force Survey table 14-10-0287 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q1-common.js"></script>
+<script src="a.js"></script>
+</body>
+</html>

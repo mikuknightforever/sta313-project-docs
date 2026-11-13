@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q1 candidates · v1</title>
+<link rel="stylesheet" href="shared/q1.css">
+<style>
+  .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:18px;margin-top:8px}
+  .vcard{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+  .vcard img{width:100%;height:auto;border:1px solid var(--grid);border-radius:6px;background:#fff}
+  .vcard h2{font-size:20px}
+  .vcard .one{font-size:14.5px;color:var(--ink);margin:0}
+  .vcard dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:13px}
+  .vcard dt{font-weight:600;color:var(--ink)} .vcard dd{margin:0;color:var(--ink2)}
+  .vcard .links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin-top:auto}
+  .tag{display:inline-block;font-size:11.5px;border:1px dashed var(--ink2);border-radius:5px;padding:1px 6px;color:var(--ink);margin-left:6px;vertical-align:2px}
+  .cmp td,.cmp th{text-align:left;vertical-align:top}
+  .rec{background:var(--surface);border:1px solid var(--ring);border-left:4px solid var(--d19);border-radius:8px;padding:12px 16px;font-size:14px}
+  .rec p{margin:6px 0}
+  ol.open{font-size:14px;color:var(--ink2)} ol.open li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q1 · candidate variants v1 (2026-11-12) — for the group to compare and choose. Design rationale: <a href="Q1_DESIGN.md">Q1_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
+  <header class="q-head">
+    <p class="eyebrow">Part 1 of 3 · Overall trends · OW and ODSP, all of Ontario</p>
+    <h1>Q1: four candidate designs to choose from</h1>
+    <p class="lead">All four answer the same question for the same audience — <i>How did OW and ODSP caseload trends differ before, during, and after the COVID-19 pandemic?</i> — with the same data, colours and page skeleton as Part 3. They differ in view form, narrative and main encoding. Every number on every candidate is computed from the course CSVs in the browser.</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <section class="vgrid" aria-label="Candidates">
+    <article class="vcard">
+      <img src="screenshots/a-thumb.png" alt="Candidate A: two lines, OW and ODSP, 2003 to 2026, with the pandemic band and an aligned unemployment strip">
+      <h2>A · Annotated timeline</h2>
+      <p class="one">Two lines on one scale, a cases / index toggle, three story steps, then free exploration.</p>
+      <dl>
+        <dt>Motivation</dt><dd>The question is about levels over time; position on a common scale is the most accurate channel (L3).</dd>
+        <dt>Appeal</dt><dd>One annotated picture for a briefing: OW's dip and rebound against a flat ODSP line.</dd>
+        <dt>Cost</dt><dd>Familiar form, little novelty; rates of change must be read from slopes.</dd>
+        <dt>Course basis</dt><dd>L3 effectiveness · L4-1 alignment and enclosure · L5 change mapping, navigation, linked crosshair · L6 martini glass, annotation.</dd>
+      </dl>
+      <p class="links"><a href="variants/a-timeline/index.html"><b>Open A →</b></a> <a href="screenshots/a-desktop-light.png">desktop</a> <a href="screenshots/a-desktop-dark.png">dark</a> <a href="screenshots/a-mobile-light.png">phone</a> <a href="screenshots/a-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/b-thumb.png" alt="Candidate B: year-over-year change of OW and ODSP as two panels on one shared scale, with a same-direction strip">
+      <h2>B · Change, not level <span class="tag">changes a settled decision</span></h2>
+      <p class="one">Year-over-year change as small multiples on one shared axis, a "same direction" strip, and a per-period comparison.</p>
+      <dl>
+        <dt>Motivation</dt><dd>"Differ" is about direction and speed; change rates put both programs on one scale without an index.</dd>
+        <dt>Appeal</dt><dd>OW plunging below zero in 2021 while ODSP hugs the zero line.</dd>
+        <dt>Cost</dt><dd>The main view drops case counts (the settled default); needs a growth-rate definition; noisier.</dd>
+        <dt>Course basis</dt><dd>L2 derived data · L3 small multiples instead of dual axes, shape + colour redundancy · L5 change mapping · L6 contrast.</dd>
+      </dl>
+      <p class="links"><a href="variants/b-change/index.html"><b>Open B →</b></a> <a href="screenshots/b-desktop-light.png">desktop</a> <a href="screenshots/b-desktop-dark.png">dark</a> <a href="screenshots/b-mobile-light.png">phone</a> <a href="screenshots/b-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/c-thumb.png" alt="Candidate C: all social assistance cases since 1969 as a brushable overview">
+      <h2>C · The long view</h2>
+      <p class="one">A brushable overview of all social assistance since 1969 sets the years shown in the OW / ODSP detail below.</p>
+      <dl>
+        <dt>Motivation</dt><dd>A briefing needs to say whether the pandemic movement was large by historical standards.</dd>
+        <dt>Appeal</dt><dd>The whole record on one screen: the pandemic as a small notch, the latest level above the 1994 peak.</dd>
+        <dt>Cost</dt><dd>Adds a series with different coverage (and a 1998 definition break) that must be explained; more space; needs group sign-off on the historical file.</dd>
+        <dt>Course basis</dt><dd>L5 overview + detail, navigation by brushing · L4-1 enclosure · L3 separate scales instead of mixing series.</dd>
+      </dl>
+      <p class="links"><a href="variants/c-longview/index.html"><b>Open C →</b></a> <a href="screenshots/c-desktop-light.png">desktop</a> <a href="screenshots/c-desktop-dark.png">dark</a> <a href="screenshots/c-mobile-light.png">phone</a> <a href="screenshots/c-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/d-thumb.png" alt="Candidate D: connected scatterplot of OW against ODSP by quarter, with a time slider and reading key">
+      <h2>D · One path, two programs</h2>
+      <p class="one">A connected scatterplot (ODSP across, OW up), a time slider with Play, a reading key and a companion timeline.</p>
+      <dl>
+        <dt>Motivation</dt><dd>"Together or apart" becomes the direction of one path; equal scaling makes 45° mean equal growth.</dd>
+        <dt>Appeal</dt><dd>The most memorable shape: a long rightward drift, then a near-vertical drop and climb.</dd>
+        <dt>Cost</dt><dd>Unfamiliar; readers confuse order and direction more often (Haroz et al., 2016); the pandemic down and up legs overlap.</dd>
+        <dt>Course basis</dt><dd>L2 derived index · L3 position for both series · L5 navigation (slider), linked views · L6 novel form with guided reading.</dd>
+      </dl>
+      <p class="links"><a href="variants/d-paths/index.html"><b>Open D →</b></a> <a href="screenshots/d-desktop-light.png">desktop</a> <a href="screenshots/d-desktop-dark.png">dark</a> <a href="screenshots/d-mobile-light.png">phone</a> <a href="screenshots/d-state.png">interaction</a></p>
+    </article>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Side by side</h2><p class="sub">A starting point for the meeting; details and evidence in Q1_DESIGN.md §8.</p></div></div>
+    <div class="tbl-wrap"><table class="cmp">
+      <thead><tr><th>Criterion</th><th>A · Timeline</th><th>B · Change</th><th>C · Long view</th><th>D · Path</th></tr></thead>
+      <tbody>
+        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (needs the change definition)</td><td>Medium–high (two series to explain)</td><td>Low–medium (needs the reading key)</td></tr>
+        <tr><td>Analytical depth</td><td>Medium: levels, index, periods</td><td>High: direction, speed, agreement, per-year rates</td><td>Medium–high: historical scale + detail</td><td>Medium: relative movement only</td></tr>
+        <tr><td>Creativity (R10)</td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
+        <tr><td>Development effort left</td><td>Low</td><td>Medium</td><td>Medium</td><td>High (testing and accessibility)</td></tr>
+        <tr><td>Consistency with Q2 / Q3</td><td>High (same patterns as Q3 Step 1)</td><td>Medium (different main measure)</td><td>High (brush + detail like Q3 Step 2)</td><td>Medium (unique form)</td></tr>
+        <tr><td>Settled decisions</td><td>All kept</td><td>Changes "counts by default"</td><td>All kept</td><td>All kept (unemployment aligned to the companion timeline)</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Recommendation (the group decides)</h2></div></div>
+    <div class="rec">
+      <p><b>Use A as the base and add B's period comparison (Figure 2, average annual change).</b> A answers the question most clearly and keeps the settled decisions; B's per-period chart adds the one thing A lacks — a fair comparison of how fast each program changed in periods of very different length.</p>
+      <p><b>Optional:</b> add C's long-view overview as a compact context strip above A, only if the group agrees to use the historical file and the 1998 break is explained on the page. Keep D as a possible "how to read the path" extra, not the main view, unless a quick reader test shows people read it correctly.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Decisions the group needs to make</h2></div></div>
+    <ol class="open">
+      <li>Which candidate (or combination) moves to the stable path <code>design/q1/prototype/</code> as the working version (these candidates are Q1 v1; tag <code>q1-v1</code> before any further major change).</li>
+      <li>Growth-rate definition: year-over-year, average annual change per period, or change since 2019 Q4.</li>
+      <li>Whether to use the historical all-programs series at all, and whether the site may say "most cases since 1969" (counts, not a rate; coverage changed in 1998).</li>
+      <li>Pandemic period: the Q1 draft in RESEARCH_QUESTIONS.md says Mar 2020 – Dec 2022 with monthly data; the course data and these candidates use Mar 2020 – May 2023 with quarterly data.</li>
+      <li>Whether to move the shared CSS and helpers for all three parts into one site-wide file.</li>
+    </ol>
+  </section>
+</div>
+<script>
+  (() => { const tb = document.getElementById("themeBtn");
+    const dark = () => (document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")) === "dark";
+    const t = new URLSearchParams(location.search).get("theme"); if (t) document.documentElement.dataset.theme = t;
+    const lab = () => (tb.textContent = dark() ? "Light theme" : "Dark theme");
+    tb.onclick = () => { document.documentElement.dataset.theme = dark() ? "light" : "dark"; lab(); }; lab();
+    document.body.dataset.ready = "1"; })();
+</script>
+</body>
+</html>
