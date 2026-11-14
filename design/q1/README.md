@@ -37,7 +37,7 @@ Under the versioning rule, these candidates are Q1 v1. Once the group chooses, t
 | A | `step=1\|2\|3\|0`（0 = Explore all）, `mode=count\|index`, `range=all\|2015\|zoom`, `focus=ow\|odsp` |
 | B | `step=1\|2\|3\|0`, `mode=yoy\|base`, `range=all\|2015\|zoom`, `ann=ann\|total` |
 | C | `step=1\|2\|3\|0`, `mode=count\|index`, `range=all\|2015\|zoom` |
-| D | `step=1\|2\|3\|0`, `mode=count\|index`, `t=2021Q3`（滑块位置 / slider position）, `view=path\|3d\|ow\|odsp`（图 1a 视图 / Figure 1a view）, `yaw=…&pitch=…`（仅 3D 的自由角度 / free angle, 3D only） |
+| D | `step=1\|2\|3\|0`, `mode=count\|index`, `t=2021Q3`（滑块位置 / slider position）, `view=path\|3d\|ow\|odsp\|diff`（图 1a 视图；`diff` = OW − ODSP over time / Figure 1a view）, `yaw=…&pitch=…`（仅 3D 的自由角度，pitch −50° 到 85° / free angle, 3D only） |
 
 例 / Examples: `variants/a-timeline/index.html?step=2&mode=index&range=zoom`, `variants/d-paths/index.html?t=2021Q3`, `variants/d-paths/index.html?view=3d`
 
@@ -51,9 +51,9 @@ Under the versioning rule, these candidates are Q1 v1. Once the group chooses, t
 
 交互状态截图对应的 URL / State screenshots: A `step=2&mode=index&range=zoom` · B `step=0&mode=base&range=zoom&ann=total` · C `step=2&mode=index` · D `view=3d`
 
-D v2 的 3D 截图 / D v2 3D screenshots: `d3d-3d-{light,dark}.png`（斜视 / oblique）, `d3d-path-…`, `d3d-ow-…`, `d3d-odsp-…`（三个正视预设 / the three front presets）, `d3d-3d-mobile-{light,dark}.png`（400px）。
+D 的 3D 截图 / D 3D screenshots: `d3d-3d-{light,dark}.png`（斜视 / oblique）, `d3d-path-…`, `d3d-ow-…`, `d3d-odsp-…`, `d3d-diff-…`（四个正视预设，`diff` 为 v3 新增 / the four front presets, `diff` new in v3）, `d3d-3d-mobile-{light,dark}.png`（400px）。
 
 ## 版本 / Versions
 
-候选 A–D 的 v1 已打 tag `q1-v1`（`a193c19`）。D 已更新为 v2（可选 3D 视图），D v1 存档在 [`archive/q1-d-paths_2026-11-12_v1/`](archive/q1-d-paths_2026-11-12_v1/index.html)。版本索引见 [`archive/README.md`](archive/README.md)。
-The v1 candidates are tagged `q1-v1`. D is now v2 (optional 3D view); D v1 is archived. See the version index.
+候选 A–D 的 v1 已打 tag `q1-v1`（`a193c19`）。D 现在是 v3（v2 加了可选 3D 视图，v3 加了 OW − ODSP 视图）；D v1 存档在 [`archive/q1-d-paths_2026-11-12_v1/`](archive/q1-d-paths_2026-11-12_v1/index.html)，D v2 存档在 [`archive/q1-d-paths_2026-11-14_v2/`](archive/q1-d-paths_2026-11-14_v2/index.html)（tag `q1-v2`）。版本索引见 [`archive/README.md`](archive/README.md)。
+The v1 candidates are tagged `q1-v1`. D is now v3 (v2 added the 3D view, v3 the OW − ODSP view); D v1 and D v2 (tag `q1-v2`) are archived. See the version index.

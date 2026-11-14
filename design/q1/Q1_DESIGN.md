@@ -1,6 +1,6 @@
 # Q1 设计说明：OW 与 ODSP 的总体趋势（v1 候选 A–D）/ Q1 Design Rationale: OW and ODSP Overall Trends (v1 candidates A–D)
 
-状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v2：图 1a 增加可选的 3D 时空路径视图（§7.1），v1 存档在 `archive/`。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
+状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v3：v2 在图 1a 增加了可选的 3D 时空路径视图（§7.1），v3 再加了第四个正视图 "OW − ODSP over time"（§7.2）；D v1、D v2 存档在 `archive/`。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
 Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
@@ -183,6 +183,30 @@ Three variables, one of them time; the three axis-aligned projections are exactl
 mock design 报告是静态的，3D 只能截图。如果小组选 D，建议用一个小图组：左边一张斜视 3D（约半栏宽），右边竖排三个正视投影（Path、OW over time、ODSP over time），共约半页；截图见 `screenshots/d3d-*.png`（浅色、深色各一套）。在"插图 1–3 页"的限制下，Q1 只有在选了 D 时才需要这半页；若 Q1 选 A 或 A+B，3D 不进报告。
 The report is static. If D is chosen, use one oblique image plus three projections (about half a page); otherwise 3D stays out of the report.
 
+### 7.2 第四个正视图：OW − ODSP（D 的 v3）/ Fourth flat view: OW − ODSP (D v3)
+
+D v2 已存档在 [archive/q1-d-paths_2026-11-14_v2/](archive/q1-d-paths_2026-11-14_v2/index.html)（提交 `e836bb9`，tag `q1-v2`）。v3 只在图 1a 的视图按钮里加了 "OW − ODSP over time"，其余视图、编码和联动不变。
+D v2 is archived (commit `e836bb9`, tag `q1-v2`). v3 only adds an "OW − ODSP over time" button to Figure 1a's view buttons.
+
+**为什么 / Why**
+- yaw 为 90° 时，pitch 让摄像机绕时间轴旋转，屏幕纵轴显示 OW·cos(pitch) + ODSP·sin(pitch)（单位：指数点）。0° 是 OW over time，90° 是 ODSP over time；**−45° 时是 (OW − ODSP)/√2**：等增长平面（OW 指数 = ODSP 指数）正好侧对观者，曲线的高度就是 OW 指数 − ODSP 指数。这样 3D 不只是"把三张已有的图连起来"，还能从同一个立方体里得到一张页面上原本没有、而且直接回答 Q1 问题（两个项目的走势如何不同）的派生图。
+- 读法：0 = 两个项目处在各自 2019 Q4 水平的同一百分比；正值 = OW 相对更高。数据（pandas 复核）：2003 Q1 +31.1（即 2003–2019 年 ODSP 的增长远多于 OW）、2010 Q1 最高 +36.0、2019 Q4 按定义为 0、2021 Q3 最低 −22.3、2023 Q1 由负转正（+1.4）、2026 Q1 +23.8。
+- 诚实地说：这张图用 2D 也能直接画（就是 A 指数模式里两条线的竖直距离）。3D 的贡献是说明它从哪里来，以及它和另外几个视图是连续的。
+At yaw 90° the pitch rotates the camera about the time axis and the screen's vertical shows OW·cos(pitch) + ODSP·sin(pitch); at −45° that is (OW − ODSP)/√2, so the equal-growth plane is seen edge-on. The same chart could be drawn in 2D; the 3D shows where it comes from.
+
+**设计 / Design**
+- 按钮放在视图分段按钮的最后；预设 yaw 90°、pitch −45°；动画最后一帧换成 2D 坐标轴：横轴时间（同样的年份刻度和疫情灰带），纵轴 "OW index − ODSP index"，带符号刻度（−20、0、+20 …），0 处虚线注明 "0 = equal growth since 2019 Q4"，上下角注明 "OW relatively higher ↑ / lower ↓"。
+- 纵轴范围是立方体在这个方向上的投影（−40 到 +80），和其他正视图一样由同一个投影决定，所以动画到达和直接打开完全一致；代价是 +40 以上是空的。
+- **始终用指数点**：在 "Axes in cases" 模式下也不显示"案件数之差"，因为 OW 和 ODSP 的案件数相减会混合两个不同的基数；标题和提示都写明 "always in index points"。
+- 自由旋转的 pitch 下限从 −15° 放宽到 −50°，手动也能转到这个视角；立方体仍不会上下颠倒。
+- 导览增加一步：3D → OW − ODSP → 3D，最后仍停在 Path。读数面板在所有视图中增加一行 "OW index − ODSP index"。
+- One button, preset (90°, −45°), a flat 2D axis with signed ticks and a dashed zero line; the vertical range is the cube's projection, so animated and direct arrival match; always in index points; pitch limit widened to −50°; one more tour step; one more readout row.
+
+**放弃的方案 / Rejected**
+- pitch +45° 的"合并趋势"视图（OW 和 ODSP 指数的平均）：政策含义弱，不加预设。/ The +45° "average index" view: weak meaning.
+- 只缩放到数据范围，让图更大：动画最后一帧会跳变，也破坏"同一个投影"。/ Zooming to the data: the last animation frame would jump.
+- 在数量模式下显示案件数之差：两个基数不同，没有意义。/ A difference of cases mixes two scales.
+
 ## 8. 版本比较 / Comparison
 
 | 维度 / Criterion | A · 时间线 | B · 变化 | C · 长时段 | D · 路径 |
@@ -291,6 +315,11 @@ Method: export every fact each page computes, recompute independently in pandas 
   - 交互：拖动 60 px → yaw +24°、pitch −9°，滑块不变；极端拖动停在 110° / 85°；Home 复位到 38° / 24°；方向键每次 5°；3D 中 Play 推进当前点；悬停显示提示并联动图 1b 竖线；切换视图时动画中间帧为斜视、最后一帧为正视 2D；导览依次经过 3D、OW、ODSP、Path 并停在 Path；`prefers-reduced-motion` 时直接切换；手机触摸拖动旋转。
   - 全部允许角度扫描：yaw −20°–110°、pitch −15°–85°（每 10°），1360 px 和 400 px 共 308 个角度，文字重叠、文字出界、横向滚动均为 0（修复过：起点标签压住刻度、手机上轴标题出界、斜视时刻度互相挤压）。
   - 键盘：D 共 19 个可聚焦控件全部可 Tab 到达，视图按钮可用 Enter 切换；存档版 D v1 独立打开无错误。
+- **D v3 的 OW − ODSP 视图**（2026-11-14）：
+  - 投影一致性：数量和指数两种模式、1360 px 和 400 px 下，93 个点与坐标轴刻度推出的位置相差 ≤ 0.5 px，刻度拟合残差 0；从 3D 经动画到达与直接打开完全一致（点位移 0 px，相机停在 90° / −45°）。
+  - 读数面板的差值与 pandas 一致（抽查 2003 Q1 +31.1、2010 Q1 +36.0、2021 Q3 −22.3、2023 Q1 +1.4、2026 Q1 +23.8）；原有数字复核 0 处不一致。
+  - 新放开的角度 pitch −50°–−20°（每 10°）× yaw −20°–110°，两种宽度共 112 个角度，文字重叠、出界、横向滚动均为 0；差值视图 6 个状态 × 1360 / 820 / 400 px 无问题；五个视图浅色、深色均无文字重叠（修复过：0 线说明压住 "2019 Q4" 标签）。
+  - 交互：导览依次经过 3D、OW、ODSP、OW − ODSP、Path 并停在 Path；拖动、Home、方向键、Play、悬停联动、减少动画、手机触摸旋转与 v2 相同；Tab 可到达 20 个控件，视图按钮可用 Enter 切换；无控制台错误。截图：`screenshots/d3d-diff-{light,dark}.png`。存档版 D v2 独立打开无错误。
 
 ### 10.6 受众检查 / Audience check（MCCSS 政策分析员 / an MCCSS analyst）
 - **A**：能判断疫情期间 OW 下降而 ODSP 基本平稳、之后 OW 回升并超过 2019 Q4 水平；能把带注释的图和阶段表直接放进简报并查任意季度的数值；不能判断变化的原因，也看不出两项目变化速度的精确差别。
@@ -315,3 +344,4 @@ Method: export every fact each page computes, recompute independently in pandas 
 8. 全省 OW `cases` 带小数的原因仍未核实。/ Decimal OW counts still unverified.
 9. **D 的 3D 视图**：保留为可选视图和导览（我的建议），还是撤掉以保持 D 简单？如果保留，是否把它也做进组内读者测试（重点看 §10.6 列出的误读）？/ Keep D's 3D as an optional view (recommended) or drop it; include it in the reader test?
 10. **报告**：如果选 D，是否在 `report.pdf` 中用"斜视 3D + 三个正视投影"的半页小图组？/ Use the half-page 3D figure group in the report if D is chosen?
+11. **OW − ODSP 视图**（D v3）：保留吗？另外，是否把同一张差值图作为普通 2D 图也加进 A（它直接回答"走势如何不同"，不依赖 3D）？/ Keep D v3's difference view, and add the same chart to A as a plain 2D figure?

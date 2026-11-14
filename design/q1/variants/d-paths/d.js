@@ -79,9 +79,13 @@
   // ---------- Figure 1a: one orthographic renderer for the 2D path, the 3D space-time path and the two time views ----------
   // World axes: X = ODSP index, Y (up) = OW index, Z (depth) = time. Looking along Z gives the connected scatterplot,
   // along X gives OW over time, along Y gives ODSP over time (space-time cube "flattening", Bach et al. 2014).
-  const VIEWS = [{ id: "path", label: "Path (OW vs ODSP)" }, { id: "3d", label: "3D" }, { id: "ow", label: "OW over time" }, { id: "odsp", label: "ODSP over time" }];
-  const PRESET = { path: { yaw: 0, pitch: 0 }, "3d": { yaw: 38, pitch: 24 }, ow: { yaw: 90, pitch: 0 }, odsp: { yaw: 90, pitch: 90 } };
-  const LIM = { yaw: [-20, 110], pitch: [-15, 85] }; // free rotation never turns the cube upside down
+  // v3: a fourth flat view. At yaw 90° the pitch turns the camera about the time axis and the screen's vertical shows
+  // OW·cos(pitch) + ODSP·sin(pitch); at pitch −45° that is (OW − ODSP)/√2: the equal-growth plane is seen edge-on and
+  // the height of the curve is OW index − ODSP index.
+  const VIEWS = [{ id: "path", label: "Path (OW vs ODSP)" }, { id: "3d", label: "3D" }, { id: "ow", label: "OW over time" }, { id: "odsp", label: "ODSP over time" },
+    { id: "diff", label: "OW − ODSP over time" }];
+  const PRESET = { path: { yaw: 0, pitch: 0 }, "3d": { yaw: 38, pitch: 24 }, ow: { yaw: 90, pitch: 0 }, odsp: { yaw: 90, pitch: 90 }, diff: { yaw: 90, pitch: -45 } };
+  const LIM = { yaw: [-20, 110], pitch: [-50, 85] }; // free rotation reaches the diagonal view but never turns the cube upside down
   let G = null, FIG = null;
   const rad = d => (d * Math.PI) / 180, clamp = (v, [a, b]) => Math.max(a, Math.min(b, v));
   function geom() {
@@ -127,12 +131,13 @@
     const pt = (a, val) => { const q = [G.B.x[0], G.B.y[0], G.B.z[0]]; q[V[a].i] = V[a].toWorld(val); return q; };
     const titles = { path: S.mode === "index" ? "OW index (up) against ODSP index (across), 2019 Q4 = 100, one dot per quarter" : "OW cases (up) against ODSP cases (across), one dot per quarter (axes use the same scale per index point)",
       "3d": "3D space-time path: ODSP across, OW up, time in depth (orthographic projection; read values in the flat views)",
-      ow: `${V.y.title} over time: the same path seen along the ODSP axis`, odsp: `${V.x.title} over time: the same path seen along the OW axis` };
+      ow: `${V.y.title} over time: the same path seen along the ODSP axis`, odsp: `${V.x.title} over time: the same path seen along the OW axis`,
+      diff: "OW index − ODSP index over time (2019 Q4 = 100, always in index points): the same path seen along the diagonal between the OW and ODSP axes" };
     document.getElementById("f1aTitle").textContent = S.anim ? "Rotating…" : titles[S.view];
     host.attr("aria-label", S.view === "3d" ? "3D space-time path of OW against ODSP over time. Use the arrow keys to rotate and Home to reset; values are listed in the panel beside the chart."
       : `${titles[S.view]}. Choose 3D in the view buttons to rotate the cube.`);
     const svg = Q1.svgIn("f1a", w, h, titles[S.view]), g = svg.append("g");
-    if (flat) flatAxes(g, P, V, pt); else { const titles = spatialFrame(g, P, V, n); keepInside(g, w); declutter(g, titles, w); }
+    if (flat) (S.view === "diff" ? diffAxes(g, P, V) : flatAxes(g, P, V, pt)); else { const titles = spatialFrame(g, P, V, n); keepInside(g, w); declutter(g, titles, w); }
     // the path: segments coloured by period (ordinal neutral ramp); in 3D, far segments are drawn first (painter's order)
     const pts = Q.map(d => P(G.w3(d)));
     const segs = Q.slice(1).map((d, i) => ({ a: pts[i], b: pts[i + 1], i: i + 1, ph: d.phase, z: (pts[i][2] + pts[i + 1][2]) / 2 }));
@@ -149,7 +154,9 @@
     if (S.hover) { const i = Q.indexOf(S.hover); FIG.hov.attr("cx", pts[i][0]).attr("cy", pts[i][1]).style("display", null); }
     document.getElementById("viewHint").textContent = S.view === "3d"
       ? "3D view: drag (or click the chart and use the arrow keys) to rotate; double-click or press Home to reset. Faint lines on the back walls are the path's shadows; thin lines drop from the current dot to each wall. Read values in the flat views or in the panel."
-      : "Flat view: positions can be read against the axes. Choose 3D to see how this chart and the two time views are faces of one cube.";
+      : S.view === "diff"
+        ? "Flat view: the height of the curve is OW index minus ODSP index (2019 Q4 = 100). 0 = both programs at the same percentage of their 2019 Q4 level; above 0 = OW relatively higher. Always in index points, because a difference of cases would mix two scales. Choose 3D to see where this view comes from."
+        : "Flat view: positions can be read against the axes. Choose 3D to see how this chart and the other flat views are faces of one cube.";
     readout(S.hover || c);
   }
   function flatAxes(g, P, V, pt) {
@@ -180,6 +187,28 @@
       g.append("line").attr("x1", a[0]).attr("y1", a[1]).attr("x2", b[0]).attr("y2", b[1]).style("stroke", "var(--ink2)").style("stroke-dasharray", "2 4").style("stroke-width", 1.2);
       g.append("text").attr("class", "lbl").attr("x", a[0] + 6).attr("y", a[1] - 6).style("font-size", "11px").text("equal growth");
     } else g.append("text").attr("class", "lbl").attr("x", x0 + 4).attr("y", ys(ref(vk)) - 5).attr("text-anchor", "start").style("font-size", "11px").text("2019 Q4 level");
+  }
+  // the fourth flat view: time across, OW index − ODSP index up (both read off the same projection P as the curve)
+  function diffAxes(g, P, V) {
+    const dd = [G.yd[0] - G.xd[1], G.yd[1] - G.xd[0]]; // the cube's extent in this direction, in difference points
+    const sx = dt => P([0, 0, G.zt(dt) - G.c[2]])[0], sy = d => P([0, d - (G.c[1] - G.c[0]), 0])[1];
+    const xs = d3.scaleTime().domain(V.z.disp).range(V.z.disp.map(sx)), ys = d3.scaleLinear().domain(dd).range(dd.map(sy));
+    const [x0, x1] = xs.range(), [yb, yt] = ys.range();
+    const ht = ticksOf(V.z, 5), vt = ys.ticks(6).filter(v => v > dd[0]), sgn = v => (v > 0 ? `+${v}` : v < 0 ? `−${-v}` : "0");
+    const a = xs(Q1.COVID[0]), b = xs(Q1.COVID[1]); // pandemic band, as on every time axis of the site
+    g.append("rect").attr("x", a).attr("width", b - a).attr("y", yt).attr("height", yb - yt).style("fill", "var(--covid)");
+    g.append("text").attr("class", "lbl").attr("x", a + 4).attr("y", yt + 11).style("font-size", "11px").text("Pandemic");
+    g.append("g").selectAll("line").data(ht).join("line").attr("x1", xs).attr("x2", xs).attr("y1", yt).attr("y2", yb).style("stroke", "var(--grid)");
+    g.append("g").selectAll("line").data(vt).join("line").attr("x1", x0).attr("x2", x1).attr("y1", ys).attr("y2", ys).style("stroke", "var(--grid)");
+    g.append("g").attr("class", "axis").attr("transform", `translate(0,${yb})`).call(d3.axisBottom(xs).tickValues(ht).tickFormat(V.z.fmt).tickSizeOuter(0));
+    g.append("g").attr("class", "axis").attr("transform", `translate(${x0},0)`).call(d3.axisLeft(ys).tickValues(vt).tickFormat(sgn).tickSizeOuter(0));
+    g.append("text").attr("class", "lbl-strong").attr("x", x1).attr("y", yb + 36).attr("text-anchor", "end").text("Time →");
+    g.append("text").attr("class", "lbl-strong").attr("transform", "rotate(-90)").attr("x", -yt).attr("y", x0 - 50).attr("text-anchor", "end").text("OW index − ODSP index →");
+    // 0 = equal relative change since 2019 Q4 (the equal-growth plane, seen edge-on)
+    g.append("line").attr("x1", x0).attr("x2", x1).attr("y1", ys(0)).attr("y2", ys(0)).style("stroke", "var(--ink2)").style("stroke-dasharray", "2 4").style("stroke-width", 1.2);
+    g.append("text").attr("class", "lbl").attr("x", x0 + 4).attr("y", ys(0) + 14).style("font-size", "11px").text("0 = equal growth since 2019 Q4"); // left: the curve is far above 0 there
+    g.append("text").attr("class", "lbl").attr("x", x0 + 4).attr("y", ys(vt[vt.length - 1]) + 14).style("font-size", "11px").text("OW relatively higher ↑");
+    g.append("text").attr("class", "lbl").attr("x", x0 + 4).attr("y", yb - 6).style("font-size", "11px").text("OW relatively lower ↓");
   }
   function farFaces(P) { // for each axis, the face (min or max) further from the viewer
     const B = G.B, out = {};
@@ -322,6 +351,7 @@
   const TOUR = [["3d", "The path, the two time charts and the slider all describe one curve in a cube: ODSP across, OW up, time in depth."],
     ["ow", "Looking along the ODSP axis, the cube flattens into OW over time."], ["3d", "Back to the cube."],
     ["odsp", "Looking along the OW axis (from below), it flattens into ODSP over time."], ["3d", "Back to the cube."],
+    ["diff", "Looking along the diagonal between the two axes, the equal-growth plane is seen edge-on: the height is OW index − ODSP index over time."], ["3d", "Back to the cube."],
     ["path", "Looking along time, it flattens into the connected scatterplot: OW against ODSP."]];
   function tour() {
     endTour(); let i = 0; S.tour = true; document.getElementById("tourBtn").textContent = "Stop the tour";
@@ -341,7 +371,8 @@
     const i = Q.indexOf(d), p = Q[i - 1], ch = (k) => (p ? fmt.sp((d[k] / p[k] - 1) * 100) : "n/a");
     document.getElementById("readout").innerHTML = `<div class="q">${d.label}</div><div>${Q1.cap(Q1.phaseOf(d).long)}</div><dl>` +
       `<dt>OW cases</dt><dd style="color:var(--ow)">${fmt.int(d.ow)}</dd><dt>OW index</dt><dd>${fmt.f1(d.iow)}</dd><dt>OW vs previous quarter</dt><dd>${ch("ow")}</dd>` +
-      `<dt>ODSP cases</dt><dd style="color:var(--odsp)">${fmt.int(d.odsp)}</dd><dt>ODSP index</dt><dd>${fmt.f1(d.iod)}</dd><dt>ODSP vs previous quarter</dt><dd>${ch("odsp")}</dd></dl>`;
+      `<dt>ODSP cases</dt><dd style="color:var(--odsp)">${fmt.int(d.odsp)}</dd><dt>ODSP index</dt><dd>${fmt.f1(d.iod)}</dd><dt>ODSP vs previous quarter</dt><dd>${ch("odsp")}</dd>` +
+      `<dt>OW index − ODSP index</dt><dd>${fmt.spp(d.iow - d.iod)}</dd></dl>`;
   }
   function keys() {
     const arrow = (dx, dy) => `<svg width="34" height="22" aria-hidden="true"><defs><marker id="ah${dx}${dy}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>` +
