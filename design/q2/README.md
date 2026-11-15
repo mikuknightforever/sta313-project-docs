@@ -9,8 +9,10 @@ Q2 (family composition and regional differences) v1 consists of three candidate 
 The pages read four CSVs in `datasets/ONT-SA/selected/`. Browsers block this from `file://`, so start a server from the **repository root**:
 
 ```bash
-python -m http.server 8000
+python serve.py
 ```
+
+[`serve.py`](../../serve.py) 用法和 `python -m http.server 8000` 一样，但让浏览器每次都读取最新文件（不缓存）；以前用 `python -m http.server` 打开过的页面，换用后按一次 Ctrl+F5。/ Works like `python -m http.server 8000` but disables browser caching, so every load reads the latest files; press Ctrl+F5 once on pages opened before with `python -m http.server`.
 
 然后打开总览页 / Then open the overview: <http://localhost:8000/design/q2/>
 

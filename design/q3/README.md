@@ -9,8 +9,10 @@ Prototype for OW assistance duration and regional differences. See [Q3_DESIGN.md
 The prototype reads the CSVs in `datasets/ONT-SA/selected/` and the GeoJSON boundaries in `datasets/EXTERNAL/CMA-BOUNDARIES/`. Browsers block this from `file://`, so start a local server from the **repository root**:
 
 ```bash
-python -m http.server 8000
+python serve.py
 ```
+
+[`serve.py`](../../serve.py) 用法和 `python -m http.server 8000` 一样，但让浏览器每次都读取最新文件（不缓存）；以前用 `python -m http.server` 打开过的页面，换用后按一次 Ctrl+F5。/ Works like `python -m http.server 8000` but disables browser caching, so every load reads the latest files; press Ctrl+F5 once on pages opened before with `python -m http.server`.
 
 然后打开 / Then open: <http://localhost:8000/design/q3/prototype/>
 

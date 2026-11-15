@@ -30,13 +30,16 @@ Start the local server from the repository root (see "Run" below), then use the 
 The pages read four CSVs in `datasets/ONT-SA/selected/`. Browsers block this from `file://`, so start a server from the **repository root**:
 
 ```bash
-python -m http.server 8000
+python serve.py
 ```
+
+[`serve.py`](../../serve.py) 在仓库根目录，用法和 `python -m http.server 8000` 一样，但会告诉浏览器不要缓存，**每次都读取最新文件**：`git pull` 之后普通刷新就能看到最新版本。端口被占用时，先在原来的终端按 Ctrl+C 关掉旧的服务器，或运行 `python serve.py 8001`（链接里的 8000 也换成 8001）。
+[`serve.py`](../../serve.py) (repository root) works like `python -m http.server 8000` but tells the browser not to cache, so **every load reads the latest files** and a normal refresh after `git pull` shows the latest version. If the port is busy, stop the old server with Ctrl+C, or run `python serve.py 8001` (and use 8001 in the links).
 
 然后打开上方 [页面入口](#页面入口--page-links) 表里的链接，例如总览页 <http://localhost:8000/design/q1/>。/ Then use the links in [Page links](#页面入口--page-links) above, e.g. the overview <http://localhost:8000/design/q1/>.
 
-这些本地链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。`python -m http.server` 不告诉浏览器"不要缓存"，所以 `git pull` 之后如果页面还是旧的（例如总览顶部不是 "D v3"、D 没有 "OW − ODSP over time" 按钮），按 **Ctrl+F5**（Mac：Cmd+Shift+R）强制刷新。
-The local links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. `python -m http.server` sends no cache headers, so if a page still looks old after `git pull` (the overview banner does not say "D v3", or D has no "OW − ODSP over time" button), hard-refresh with **Ctrl+F5** (Mac: Cmd+Shift+R).
+这些本地链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。如果以前用 `python -m http.server` 打开过这些页面，浏览器里可能还存着旧文件：换成 `serve.py` 后，在每个打开过的页面上按一次 **Ctrl+F5**（Mac：Cmd+Shift+R），以后就不用再按了。
+The local links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. If you opened these pages before with `python -m http.server`, your browser may still hold old copies: after switching to `serve.py`, press **Ctrl+F5** (Mac: Cmd+Shift+R) once on each page you had opened; after that it is not needed.
 
 需要联网加载 D3 7.9.0（cdnjs）。/ D3 7.9.0 loads from cdnjs.
 
