@@ -12,7 +12,10 @@ The pages read four CSVs in `datasets/ONT-SA/selected/`. Browsers block this fro
 python -m http.server 8000
 ```
 
-然后打开总览页 / Then open the overview: <http://localhost:8000/design/q1/>
+然后打开总览页 / Then open the overview: <http://localhost:8000/design/q1/>（候选 D 当前 v3 / candidate D, now v3: <http://localhost:8000/design/q1/variants/d-paths/>）
+
+这两个链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。`python -m http.server` 不告诉浏览器"不要缓存"，所以 `git pull` 之后如果页面还是旧的（例如总览顶部不是 "D v3"、D 没有 "OW − ODSP over time" 按钮），按 **Ctrl+F5**（Mac：Cmd+Shift+R）强制刷新。
+These links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. `python -m http.server` sends no cache headers, so if a page still looks old after `git pull` (the overview banner does not say "D v3", or D has no "OW − ODSP over time" button), hard-refresh with **Ctrl+F5** (Mac: Cmd+Shift+R).
 
 需要联网加载 D3 7.9.0（cdnjs）。/ D3 7.9.0 loads from cdnjs.
 
