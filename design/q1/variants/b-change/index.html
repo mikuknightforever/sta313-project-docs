@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q1 · B · Change, not level</title>
+<link rel="stylesheet" href="../../shared/q1.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q1 candidate <b>B of 4 · Change, not level</b> — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 1 of 3 · OW and ODSP, all of Ontario · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>When did OW and ODSP caseloads move together, and when did they move apart?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <p class="challenge" role="note"><b>This candidate changes one settled decision:</b> the main view shows how fast each caseload changed (year-over-year %), not the number of cases. Reason: the question asks how the trends <i>differed</i>; change rates put both programs on one scale without an index. Case counts stay in the tooltips and in Figure 2.</p>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> "Differ" is about direction and speed. Two change panels on one shared axis show where the programs agree and where they split.</p>
+    <p><b>Appeal.</b> OW's plunge below zero in 2021 next to ODSP hugging the zero line; a strip that marks every quarter the two moved the same way.</p>
+    <p><b>Cost.</b> Readers lose the size of each caseload in the main view; year-over-year change is noisier and needs a definition.</p>
+  </div>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Year-over-year change</h3><p>Cases in a quarter compared with the same quarter one year earlier, in percent. Above zero = more cases than a year before; below zero = fewer. The first value is 2004 Q1.</p></div>
+        <div><h3>Average annual change</h3><p>For a whole period: (last ÷ first)<sup>1/years</sup> − 1. It makes periods of different lengths comparable. The group has not yet chosen a single growth-rate definition.</p></div>
+        <div><h3>A case is not a person</h3><p>A case can include a spouse and children. Counts are not adjusted for population. Province-wide OW counts include decimals in the source and are shown as published.</p></div>
+        <div><h3>Pandemic period and context</h3><p>March 2020 – May 2023 (2020 Q1 – 2023 Q1 in these data). The unemployment rate (monthly, Jan 2017 – Dec 2025) is context only.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Same direction, or opposite?</h2>
+      <p class="sub">Both panels share one vertical scale. Hover anywhere: the crosshair runs through every panel.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar">
+      <div class="seg" id="modeSeg" role="group" aria-label="Change measure"></div>
+      <div class="seg" id="rangeSeg" role="group" aria-label="Time range"></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 1a.</b> <span id="f1aTitle"></span></figcaption>
+      <div class="chart" id="f1a"></div>
+      <figcaption><b>Figure 1b.</b> Ontario unemployment rate, monthly (context only; Jan 2017 – Dec 2025) — same time axis</figcaption>
+      <div class="chart" id="f1b"></div>
+      <p class="note" id="f1note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Period by period</h2>
+      <p class="sub">Click a row (or press Enter on it) to mark that period in Figure 1.</p></div>
+    </div>
+    <div class="toolbar"><div class="seg" id="annSeg" role="group" aria-label="Period measure"></div></div>
+    <figure class="fig">
+      <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2"></div>
+      <p class="note" id="f2note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics; Statistics Canada, Labour Force Survey table 14-10-0287 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q1-common.js"></script>
+<script src="b.js"></script>
+</body>
+</html>

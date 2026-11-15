@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 candidates · v1</title>
+<link rel="stylesheet" href="shared/q2.css">
+<style>
+  .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:18px;margin-top:8px}
+  .vcard{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+  .vcard img{width:100%;height:auto;border:1px solid var(--grid);border-radius:6px;background:#fff}
+  .vcard h2{font-size:20px}
+  .vcard .one{font-size:14.5px;color:var(--ink);margin:0}
+  .vcard dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:13px}
+  .vcard dt{font-weight:600;color:var(--ink)} .vcard dd{margin:0;color:var(--ink2)}
+  .vcard .links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin-top:auto}
+  .tag{display:inline-block;font-size:11.5px;border:1px dashed var(--ink2);border-radius:5px;padding:1px 6px;color:var(--ink);margin-left:6px;vertical-align:2px}
+  .cmp td,.cmp th{text-align:left;vertical-align:top}
+  .rec{background:var(--surface);border:1px solid var(--ring);border-left:4px solid var(--d19);border-radius:8px;padding:12px 16px;font-size:14px}
+  .rec p{margin:6px 0}
+  ol.open{font-size:14px;color:var(--ink2)} ol.open li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition · OW and ODSP, 15 CMAs</p>
+    <h1>Q2: three candidate designs, no chart type repeated</h1>
+    <p class="lead">All three answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <section class="vgrid" aria-label="Candidates">
+    <article class="vcard">
+      <img src="screenshots/a-thumb.png" alt="Candidate A: a ranked dumbbell of the gap at the start and end for each CMA, next to OW and ODSP share lines with the gap hatched">
+      <h2>A · Ranked dumbbell + linked lines</h2>
+      <p class="one">Start and end gap for every CMA on one scale, sorted by narrowing; click a row for its two share lines with the gap hatched between them.</p>
+      <dl>
+        <dt>Motivation</dt><dd>"Where" is a ranking task; a common-scale dumbbell answers it, and the linked lines answer "when, and which program".</dd>
+        <dt>Appeal</dt><dd>Every end dot sits left of its start dot; a sorted list ready for a briefing.</dd>
+        <dt>Cost</dt><dd>Familiar, little novelty; no geography; the dual lines repeat Part 1's chart type.</dd>
+        <dt>Course basis</dt><dd>L3 position on a common scale, sort, popout · L4-1 proximity, connectedness · L5 sort, selection, linked views · L6 martini glass, annotation.</dd>
+      </dl>
+      <p class="links"><a href="variants/a-dumbbell/index.html"><b>Open A →</b></a> <a href="screenshots/a-desktop-light.png">desktop</a> <a href="screenshots/a-desktop-dark.png">dark</a> <a href="screenshots/a-mobile-light.png">phone</a> <a href="screenshots/a-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/b-thumb.png" alt="Candidate B: one comet per CMA in OW-share by ODSP-share space, moving toward the equal-shares line">
+      <h2>B · Arrows in share space <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Each CMA is a comet from its start to its end position (OW share across, ODSP share up); bars split each change in the gap into its OW and ODSP parts.</p>
+      <dl>
+        <dt>Motivation</dt><dd>A gap can shrink when one share rises or when the other falls; the comet's direction and the split bars show which.</dd>
+        <dt>Appeal</dt><dd>Fifteen nearly flat comets heading for the equal-shares line: "OW moved, ODSP barely did".</dd>
+        <dt>Cost</dt><dd>Unfamiliar diagonal reference lines; the path in between is seen only with the slider; comets overlap in the middle.</dd>
+        <dt>Course basis</dt><dd>L2 derived contributions · L3 equal scales, direction by position · L5 navigation (slider, Play), linked views · L6 contrast.</dd>
+      </dl>
+      <p class="links"><a href="variants/b-arrows/index.html"><b>Open B →</b></a> <a href="screenshots/b-desktop-light.png">desktop</a> <a href="screenshots/b-desktop-dark.png">dark</a> <a href="screenshots/b-mobile-light.png">phone</a> <a href="screenshots/b-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/c-thumb.png" alt="Candidate C: equal tiles in rough map positions, each with yearly columns from the OW share up to the ODSP share">
+      <h2>C · Tile grid map + waterfall <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Equal tiles in rough map positions, each with yearly columns from the OW share up to the ODSP share; a waterfall splits the selected CMA's change by period.</p>
+      <dl>
+        <dt>Motivation</dt><dd>Analysts look for regions to investigate; equal tiles keep geography without area bias and carry the full record.</dd>
+        <dt>Appeal</dt><dd>Ontario as sixteen panels of shrinking columns; Guelph's single upward step during the pandemic.</dd>
+        <dt>Cost</dt><dd>Less precision per panel; approximate positions; a second map on the site; the most work.</dd>
+        <dt>Course basis</dt><dd>L7 equal-area tile grid instead of a choropleth · L3 shared-scale small multiples · L5 spatial arrangement · L6 contrast.</dd>
+      </dl>
+      <p class="links"><a href="variants/c-tilemap/index.html"><b>Open C →</b></a> <a href="screenshots/c-desktop-light.png">desktop</a> <a href="screenshots/c-desktop-dark.png">dark</a> <a href="screenshots/c-mobile-light.png">phone</a> <a href="screenshots/c-state.png">interaction</a></p>
+    </article>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Chart-type inventory</h2><p class="sub">Chart type = mark + spatial layout. Shared components (story steps, period selector, read-outs, Table 1, take-away cards, tooltips) are not charts. Details in Q2_DESIGN.md §7.</p></div></div>
+    <div class="tbl-wrap"><table class="cmp">
+      <thead><tr><th>Version</th><th>Figure</th><th>Chart type</th><th>Marks</th><th>Channels</th><th>Answers</th><th>Same type in Part 1 or 3?</th></tr></thead>
+      <tbody>
+        <tr><td>A</td><td>1</td><td>Ranked dumbbell</td><td>Two dots (hollow, filled) + rule</td><td>x = gap; y = CMA sorted by narrowing; fill = start / end</td><td>Where (and start / end levels)</td><td>Close to Part 3's ranked dot plot with ranges (kept: agreed baseline)</td></tr>
+        <tr><td>A</td><td>2</td><td>Dual lines with a hatched gap band</td><td>2 lines + textured area</td><td>x = time; y = share; hue = program; band width = gap</td><td>How shares changed</td><td>Yes: Part 1 A's dual lines (kept: agreed baseline)</td></tr>
+        <tr><td>B</td><td>1</td><td>Comet (arrow) plot in share space</td><td>Tapered comets + start dots; 45° and constant-gap lines</td><td>x = OW share; y = ODSP share (equal scales); direction = which program; distance to 45° = gap; time = slider</td><td>Both</td><td>No; shares the "two measures as axes" idea with Part 1 D, but no time path</td></tr>
+        <tr><td>B</td><td>2</td><td>Diverging stacked bars (decomposition)</td><td>Two-part bars + net tick</td><td>length from zero; hue = program; side of zero = widens / narrows</td><td>Where + which program</td><td>No</td></tr>
+        <tr><td>C</td><td>1</td><td>Tile grid map of floating-column small multiples</td><td>Equal tiles + yearly floating columns with end caps</td><td>tile position = rough geography; column bottom / top = OW / ODSP share; length = gap; x in tile = year</td><td>Both</td><td>Both are maps, different marks from Part 3's proportional-symbol map (open question: one site-wide map panel?)</td></tr>
+        <tr><td>C</td><td>2</td><td>Waterfall</td><td>Floating bars + connectors</td><td>vertical position / length; step up = widened, down = narrowed</td><td>When it narrowed</td><td>No</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Side by side</h2><p class="sub">A starting point for the meeting; details and evidence in Q2_DESIGN.md §8 and §10.</p></div></div>
+    <div class="tbl-wrap"><table class="cmp">
+      <thead><tr><th>Criterion</th><th>A · Dumbbell + lines</th><th>B · Comets + decomposition</th><th>C · Tile map + waterfall</th></tr></thead>
+      <tbody>
+        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (diagonal reference lines)</td><td>Medium–high (many small panels, one structure)</td></tr>
+        <tr><td>Analytical depth</td><td>Medium: ranking + one area's full trend</td><td>High: both shares, gap, contributions, quarter slider</td><td>Medium–high: every area's full trend, geography, phases</td></tr>
+        <tr><td>Creativity (R10)</td><td>Low</td><td>High</td><td>High</td></tr>
+        <tr><td>Development effort left</td><td>Low</td><td>Medium (reader test, overlap)</td><td>Medium–high (second map decision, grid sign-off)</td></tr>
+        <tr><td>Consistency with Parts 1 and 3</td><td>High</td><td>Medium (new form, same colours and skeleton)</td><td>Medium (a second map)</td></tr>
+        <tr><td>Visual diversity for the site</td><td>Low (repeats Part 1 lines)</td><td>High</td><td>Medium–high</td></tr>
+        <tr><td>Agreed baseline</td><td>Used</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Recommendation (the group decides)</h2></div></div>
+    <div class="rec">
+      <p><b>Use B as the main view and add C's waterfall as the "when" view for the selected CMA.</b> B is the only candidate that shows which program moved — the OW share rose in every CMA while the ODSP share changed far less — and its Figure 2 still ranks the CMAs. Its form is new to the site and every novelty has a function (45° = no gap, direction = which program). C's waterfall covers B's weak spot, time, using the same before / during / after periods as Parts 1 and 3.</p>
+      <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><div><h2>Decisions the group needs to make</h2></div></div>
+    <ol class="open">
+      <li>Which candidate (or combination) moves to the stable path <code>design/q2/prototype/</code>; this batch is Q2 v1, tagged <code>q2-v1</code>.</li>
+      <li>Whether the site gets one shared map panel (Part 3 already has a proportional-symbol map; C would add a tile grid map).</li>
+      <li>Update the research draft: it says "ranked bar chart", the agreed baseline is a dumbbell; it also lists a program filter, which none of the candidates offers.</li>
+      <li>Default period (2003 Q1 → 2026 Q1) and phase cut points (2019 Q4, 2023 Q1).</li>
+      <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
+      <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
+    </ol>
+  </section>
+</div>
+<script>
+  (() => { const tb = document.getElementById("themeBtn");
+    const dark = () => (document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")) === "dark";
+    const t = new URLSearchParams(location.search).get("theme"); if (t) document.documentElement.dataset.theme = t;
+    const lab = () => (tb.textContent = dark() ? "Light theme" : "Dark theme");
+    tb.onclick = () => { document.documentElement.dataset.theme = dark() ? "light" : "dark"; lab(); }; lab();
+    document.body.dataset.ready = "1"; })();
+</script>
+</body>
+</html>

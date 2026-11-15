@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · C · Where and when</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 candidate <b>C of 3 · Tile grid map + phase waterfall</b> (an alternative to the baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>Where, and in which period, did the OW–ODSP gap close?</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this candidate">
+    <p><b>Motivation.</b> Analysts look for regions worth a closer look. Equal tiles in rough map positions keep geography without letting Toronto's or Thunder Bay's land area dominate, and each tile carries the full 2003–2026 record. The waterfall answers "when" for one CMA.</p>
+    <p><b>Appeal.</b> Ontario drawn as sixteen small panels, all with columns shrinking from left to right. The waterfall's single upward step for a CMA that widened during the pandemic is easy to remember.</p>
+    <p><b>Cost.</b> Small panels give less precision than one large chart; tile positions are approximate (Thunder Bay is far farther north-west than shown). It is a second map on the site next to Part 3's map, and it costs the most to build.</p>
+  </div>
+  <p class="challenge" role="note"><b>This version does not use the agreed dumbbell baseline</b>, because a ranked list removes geography and shows only two moments in time. Here every CMA keeps its approximate place and its full time series; the ranking is still available ("Ranked" arrangement and Table 1), and the waterfall replaces the dual lines with an explicit before / during / after breakdown.</p>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Share of cases</h3><p>Single-person cases without children ÷ all cases × 100, for one program, one CMA, one quarter. It describes who is on the caseload, not how many single residents receive assistance.</p></div>
+        <div><h3>Gap</h3><p>ODSP share − OW share, in percentage points (pp). ODSP's share is higher in every CMA and every quarter, so every column runs from the OW share up to the ODSP share.</p></div>
+        <div><h3>Narrowed by</h3><p>Gap at the start quarter − gap at the end quarter (default 2003 Q1 → 2026 Q1). Positive means narrower. The waterfall splits it at 2019 Q4 and 2023 Q1, the last quarters before and during the pandemic.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter, so hover shows the counts. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Fifteen CMAs, each in its place</h2>
+      <p class="sub">Follow the four steps, then choose "Explore". Click a tile to break its change down by period in Figure 2.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar">
+      <div class="period" id="period" role="group" aria-label="Start and end quarter"></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 1.</b> <span id="f1Title"></span></figcaption>
+      <div class="toolbar tight"><span class="lab-t">Arrange tiles</span><div class="seg" id="arrSeg" role="group" aria-label="Arrange tiles"></div></div>
+      <div class="key" id="f1Key"></div>
+      <div class="chart" id="f1"></div>
+      <p class="note" id="f1Note"></p>
+    </figure>
+    <figure class="fig">
+      <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2" style="max-width:820px"></div>
+      <p class="readout" id="f2Read" aria-live="polite"></p>
+      <p class="note">Each step is the change in the gap within one period. A step down means the gap narrowed; a step up means it widened. Hover or tap a bar for the OW and ODSP share changes behind it.</p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Exact values for every CMA</h2><p class="sub">Same period as above. Click a row to select it in both figures.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> Shares, gaps and case counts for the selected period</figcaption><div id="tbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA) and for Ontario, quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot). Tile positions approximate the 2021 CMA locations (Statistics Canada, 2021 Census cartographic boundary files). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="c.js"></script>
+</body>
+</html>
