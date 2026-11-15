@@ -3,6 +3,27 @@
 Q1（总体趋势）的 v1 是四个候选版本，供小组比较、选择。设计理由见 [Q1_DESIGN.md](Q1_DESIGN.md)，参考案例见 [REFERENCES.md](REFERENCES.md)。
 Q1 (overall trends) v1 consists of four candidate variants for the group to compare. See [Q1_DESIGN.md](Q1_DESIGN.md) for the rationale and [REFERENCES.md](REFERENCES.md) for reference works.
 
+**所有页面的链接见下方 [页面入口](#页面入口--page-links)。/ All page links are in [Page links](#页面入口--page-links) below.**
+
+## 页面入口 / Page links
+
+先在仓库根目录启动本地服务器（见下方"运行"），再点下表的本地链接。"直达"链接会直接打开最能看出这个版本特点的视图。
+Start the local server from the repository root (see "Run" below), then use the local links. "Direct" links open the view that shows each version best.
+
+| 页面 / Page | 本地链接 / Local link | 直达 / Direct | 源代码 / Source |
+| --- | --- | --- | --- |
+| 总览（所有候选的卡片）/ Overview (all candidates) | <http://localhost:8000/design/q1/> | — | [index.html](index.html) |
+| A · Annotated timeline | <http://localhost:8000/design/q1/variants/a-timeline/> | — | [a-timeline/index.html](variants/a-timeline/index.html) |
+| B · Change, not level | <http://localhost:8000/design/q1/variants/b-change/> | — | [b-change/index.html](variants/b-change/index.html) |
+| C · The long view | <http://localhost:8000/design/q1/variants/c-longview/> | — | [c-longview/index.html](variants/c-longview/index.html) |
+| D v3 · One path, two programs（含 3D 和 OW − ODSP 视图 / with 3D and OW − ODSP views） | <http://localhost:8000/design/q1/variants/d-paths/> | [?view=3d](http://localhost:8000/design/q1/variants/d-paths/?view=3d) | [d-paths/index.html](variants/d-paths/index.html) |
+| D + plane 1 · OW-share planes（OW 占比面） | <http://localhost:8000/design/q1/variants/d-plane-share/> | [?view=3d](http://localhost:8000/design/q1/variants/d-plane-share/?view=3d) | [d-plane-share/index.html](variants/d-plane-share/index.html) |
+| D + plane 2 · Time slice（时间切面） | <http://localhost:8000/design/q1/variants/d-plane-slice/> | [?view=3d&t=2021Q3](http://localhost:8000/design/q1/variants/d-plane-slice/?view=3d&t=2021Q3) | [d-plane-slice/index.html](variants/d-plane-slice/index.html) |
+| D + plane 3 · Constant-total plane（合计不变面） | <http://localhost:8000/design/q1/variants/d-plane-total/> | [?view=sum](http://localhost:8000/design/q1/variants/d-plane-total/?view=sum) | [d-plane-total/index.html](variants/d-plane-total/index.html) |
+| D + plane 4 · Back-to-2019 Q4 planes（2019 Q4 水平面） | <http://localhost:8000/design/q1/variants/d-plane-level/> | [?view=3d](http://localhost:8000/design/q1/variants/d-plane-level/?view=3d) | [d-plane-level/index.html](variants/d-plane-level/index.html) |
+| 存档 / Archive: D v1（只有 2D / 2D only） | <http://localhost:8000/design/q1/archive/q1-d-paths_2026-11-12_v1/> | — | [q1-d-paths_2026-11-12_v1/index.html](archive/q1-d-paths_2026-11-12_v1/index.html) |
+| 存档 / Archive: D v2（3D，没有 OW − ODSP 视图 / 3D, no OW − ODSP view） | <http://localhost:8000/design/q1/archive/q1-d-paths_2026-11-14_v2/> | — | [q1-d-paths_2026-11-14_v2/index.html](archive/q1-d-paths_2026-11-14_v2/index.html) |
+
 ## 运行 / Run
 
 页面直接读取 `datasets/ONT-SA/selected/` 中的 4 个 CSV。浏览器不允许 `file://` 页面读取本地文件，所以要在**仓库根目录**启动本地服务器：
@@ -12,10 +33,10 @@ The pages read four CSVs in `datasets/ONT-SA/selected/`. Browsers block this fro
 python -m http.server 8000
 ```
 
-然后打开总览页 / Then open the overview: <http://localhost:8000/design/q1/>（候选 D 当前 v3 / candidate D, now v3: <http://localhost:8000/design/q1/variants/d-paths/>）
+然后打开上方 [页面入口](#页面入口--page-links) 表里的链接，例如总览页 <http://localhost:8000/design/q1/>。/ Then use the links in [Page links](#页面入口--page-links) above, e.g. the overview <http://localhost:8000/design/q1/>.
 
-这两个链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。`python -m http.server` 不告诉浏览器"不要缓存"，所以 `git pull` 之后如果页面还是旧的（例如总览顶部不是 "D v3"、D 没有 "OW − ODSP over time" 按钮），按 **Ctrl+F5**（Mac：Cmd+Shift+R）强制刷新。
-These links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. `python -m http.server` sends no cache headers, so if a page still looks old after `git pull` (the overview banner does not say "D v3", or D has no "OW − ODSP over time" button), hard-refresh with **Ctrl+F5** (Mac: Cmd+Shift+R).
+这些本地链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。`python -m http.server` 不告诉浏览器"不要缓存"，所以 `git pull` 之后如果页面还是旧的（例如总览顶部不是 "D v3"、D 没有 "OW − ODSP over time" 按钮），按 **Ctrl+F5**（Mac：Cmd+Shift+R）强制刷新。
+The local links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. `python -m http.server` sends no cache headers, so if a page still looks old after `git pull` (the overview banner does not say "D v3", or D has no "OW − ODSP over time" button), hard-refresh with **Ctrl+F5** (Mac: Cmd+Shift+R).
 
 需要联网加载 D3 7.9.0（cdnjs）。/ D3 7.9.0 loads from cdnjs.
 
