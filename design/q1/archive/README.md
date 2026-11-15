@@ -8,12 +8,14 @@ The current working versions live at stable paths (`design/q1/variants/` during 
 | Q1 v1（候选 A–D）/ candidates A–D | 2026-11-12 | `a193c19` | `q1-v1` | 四个候选：A 时间线、B 变化、C 长时段、D 连接散点图 / Four candidates | 整批见 tag `q1-v1`；A、B、C 仍在 [`variants/`](../variants/) 且未改动 / whole batch at tag `q1-v1`; A–C unchanged in `variants/` | [`screenshots/`](../screenshots/) |
 | D v1（存档）/ D v1 (archived) | 2026-11-12 | `a193c19` | `q1-v1` | 只有 2D 连接散点图 / 2D connected scatterplot only | [`archive/q1-d-paths_2026-11-12_v1/`](q1-d-paths_2026-11-12_v1/index.html) | [D v1 screenshots](q1-d-paths_2026-11-12_v1/screenshots/) |
 | D v2（存档）/ D v2 (archived) | 2026-11-12 | `e836bb9` | `q1-v2` | 图 1a 增加可选的正交 3D 时空路径视图和两个时间视图，带预设、动画、导览 / Optional orthographic 3D space-time view and two time views | [`archive/q1-d-paths_2026-11-14_v2/`](q1-d-paths_2026-11-14_v2/index.html) | [D v2 screenshots](q1-d-paths_2026-11-14_v2/screenshots/) |
-| D v3（当前）/ D v3 (current) | 2026-11-14 | 本次提交 / this commit | — | 第四个正视图 "OW − ODSP over time"：立方体沿 OW 与 ODSP 轴之间的对角线看 / A fourth flat view: the cube seen along the diagonal between the OW and ODSP axes | [`variants/d-paths/`](../variants/d-paths/index.html) | `screenshots/d-*.png`、`screenshots/d3d-*.png` |
+| D v3（当前）/ D v3 (current) | 2026-11-14 | `14e6474` | 包含在 `q1-v3` 中 / included in `q1-v3` | 第四个正视图 "OW − ODSP over time"：立方体沿 OW 与 ODSP 轴之间的对角线看 / A fourth flat view: the cube seen along the diagonal between the OW and ODSP axes | [`variants/d-paths/`](../variants/d-paths/index.html) | `screenshots/d-*.png`、`screenshots/d3d-*.png` |
 
 **D v1 存档说明 / About the D v1 archive**：从 `a193c19` 取回 `variants/d-paths/`（`index.html`、`d.js`），并把 `shared/q1.css`、`shared/q1-common.js` 复制到同一目录，页面改为引用目录内的副本，这样以后修改 `shared/` 不会影响存档。只改了这两处引用和一行存档横幅；数据根路径层级不变（`../../../../`），已实际打开验证。`screenshots/` 是 v1 当时的 6 张截图（与 `a193c19` 逐字节相同）。
 Restored from `a193c19`; the shared CSS and JS were copied in and the page points at the copies. Only those references and a banner changed. The six v1 screenshots are byte-identical to `a193c19`.
 
 **D v2 存档说明 / About the D v2 archive**：从 `e836bb9` 复制 `variants/d-paths/`（`index.html`、`d.js`，与该提交内容相同），并把 `shared/q1.css`、`shared/q1-common.js` 复制到同一目录，页面改为引用目录内的副本；只改了这两处引用和一行存档横幅，数据根路径层级不变（`../../../../`），已实际打开验证。`screenshots/` 是 v2 当时的 16 张 D 截图（与 `e836bb9` 逐字节相同）。
 Copied from `e836bb9` with the shared CSS and JS alongside; only those references and a banner changed. The 16 D screenshots are byte-identical to `e836bb9`.
+
+| D + plane 1–4（并列版本）/ D + plane 1–4 (parallel versions) | 2026-11-14 | 本次提交 / this commit | `q1-v3` | 在 D v3 的立方体里各加一种参照面：OW 占比、时间切面、合计不变、2019 Q4 水平；D v3 未改 / One reference plane each in D v3's cube; D v3 unchanged | [`variants/d-plane-share/`](../variants/d-plane-share/index.html)、[`d-plane-slice/`](../variants/d-plane-slice/index.html)、[`d-plane-total/`](../variants/d-plane-total/index.html)、[`d-plane-level/`](../variants/d-plane-level/index.html) | `screenshots/dplane-*.png` |
 
 运行 / Run: 在仓库根目录 `python -m http.server 8000`，打开 <http://localhost:8000/design/q1/archive/q1-d-paths_2026-11-12_v1/> 或 <http://localhost:8000/design/q1/archive/q1-d-paths_2026-11-14_v2/>。

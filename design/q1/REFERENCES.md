@@ -80,6 +80,11 @@ Every work was confirmed by web search (existence, author, link). Some originals
 
 ---
 
+## D + 参照面版本 / D + reference-plane versions（2026-11-14）
+
+- 不引入新的参考作品。时间切面对应 Bach et al. (2014) 综述的 time cutting 操作，三个由指标定义的平面在正视图中侧对、变成参考线，对应同一篇综述的 flattening（作品信息见上文 D 部分）。/ No new works: the time slice is Bach et al.'s (2014) time cutting; the indicator planes become reference lines in edge-on views (flattening).
+- 占比面与等增长平面等价（OW/OW₀ = ODSP/ODSP₀ ⇔ OW/(OW + ODSP) = 基期占比）是本项目自己的推导，不是引用。/ The equivalence of the base-share plane and the equal-growth plane is our own derivation.
+
 ## 所有候选共同的参考 / Shared across candidates
 
 - 课程 L6 的 martini glass 结构（先引导、后开放探索）和 annotated chart 原则用于全部四个候选。/ The L6 martini-glass structure and annotated-chart principle apply to all four candidates.

@@ -207,6 +207,60 @@ At yaw 90° the pitch rotates the camera about the time axis and the screen's ve
 - 只缩放到数据范围，让图更大：动画最后一帧会跳变，也破坏"同一个投影"。/ Zooming to the data: the last animation frame would jump.
 - 在数量模式下显示案件数之差：两个基数不同，没有意义。/ A difference of cases mixes two scales.
 
+### 7.3 参照面版本：D + plane 1–4（2026-11-14）/ Reference-plane versions: D + plane 1–4
+
+在不改动 D v3（`variants/d-paths/`）的前提下，做了四个并列版本，每个在 D v3 的立方体里加一种由指标定义的二维参照面。四个页面共用 `shared/d-planes.js`（从 D v3 的 `d.js` 复制后增加参照面），用 `<body data-plane="…">` 选择版本：[`variants/d-plane-share/`](variants/d-plane-share/index.html)、[`d-plane-slice/`](variants/d-plane-slice/index.html)、[`d-plane-total/`](variants/d-plane-total/index.html)、[`d-plane-level/`](variants/d-plane-level/index.html)。数字全部由 CSV 在浏览器中计算。
+Four parallel versions add one indicator-defined reference plane each to D v3's cube; D v3 is unchanged. They share `shared/d-planes.js` (a fork of D v3's `d.js`).
+
+**四个版本共用的画法 / Shared drawing rules**
+- 每个面都是立方体坐标（指数单位）里的一个点集；"案件数"模式只换刻度，所以两种模式下是同一个面。/ Each plane is one set of points in the cube's index coordinates, so it is the same in both modes.
+- 3D 中：半透明多边形，画在曲线**下层**，不遮挡曲线；标签正对屏幕，与其他文字冲突时换位置或不显示。/ In 3D: translucent, drawn under the path; billboard labels that give way rather than overlap.
+- 正视图中：只有**侧对**观者的面才画（变成一条参考虚线），否则隐藏，避免一个面铺满整张图。/ In flat views a plane is drawn only when seen edge-on (as a reference line).
+- 开关（分段按钮）= L5 filtering；曲线穿过面的季度画空心圆，悬停提示写明"Crosses the … plane here (now above/below)"；读数面板加一到两行；图下的 "Reference plane" 段落用文字列出穿越季度和距离（2D 读法）；"Read this first" 加一张定义卡。/ On/off toggle, rings at crossings with a tooltip line, extra readout rows, a written 2D reading under the chart, and a definition card.
+
+| 版本 / Version | 一句话故事（页面上由数据生成）/ Story | 面的方程 / Plane | 曲线与面（pandas 复核）/ Curve vs plane | 稳健性 / Robustness | 2D 读法 / Flat reading |
+| --- | --- | --- | --- | --- | --- |
+| 1 · OW 占比面 / OW-share planes | OW's share of the two programs fell from about half in 2003 to 38% before the pandemic and 32% at the 2021 low, then rose to 44% by 2025, the highest since 2014. | 案件数：OW = k/(1−k)·ODSP；指数：OW 指数 = r·ODSP 指数，r = k/(1−k)·ODSP₀/OW₀。填充的是 k = 38.3%（2019 Q4 构成）那一面，它恰好就是等增长平面（OW 指数 = ODSP 指数），93 个季度符号完全一致；35/40/45/50% 只在后墙画射线 | 38.3% 面：2020 Q2 向下，2023 Q1 向上；占比 49.8%（2003 Q1）→ 38.3%（2019 Q4）→ 32.4%（2021 Q3 最低）→ 43.9%（2025 Q2，2014 Q2 以来最高）→ 43.5%（2026 Q1）；40%：2018 Q3 ↓、2023 Q4 ↑；35%：2020 Q4 ↓、2022 Q1 ↑ | **不依赖基期**；4 季度平滑后穿越季度约移动一个季度 | Path 视图里是标了 % 的射线；D v3 的 OW − ODSP 视图里 38.3% 面就是 0 线；读数面板 "OW share of the two" |
+| 2 · 时间切面 / Time slice | Between the pandemic band's edges, OW fell by a quarter and climbed back while ODSP barely moved. | 时间 = 滑块所在季度；底面灰带 = 疫情季度（2020 Q1 – 2023 Q1） | 切面与曲线只交于当前季度；例：2021 Q3 OW 178,872、ODSP 372,545、占比 32.4%、合计 551,417；疫情期 OW 从 2020 Q1 跌 27.0% 到最低，2023 Q1 为 232,089；ODSP 一直在 2020 Q1 水平的 3.4% 以内 | 不涉及估计 | 时间视图里切面是竖直虚线（= 滑块位置），灰带同全站疫情带；数值在读数面板 |
+| 3 · 合计不变面 / Constant-total plane | Combined, OW and ODSP stayed below their 2019 Q4 caseload from 2020 Q3 to 2023 Q3 and recovered in 2023 Q4, two quarters after OW alone. | 案件数：OW + ODSP = 614,516（2019 Q4 合计）；指数：0.383·OW 指数 + 0.617·ODSP 指数 = 100 | 2020 Q3 落到面下，最低 89.7（2021 Q3），2023 Q4 回到面上（OW 单独 2023 Q2）；2026 Q1 为 671,696 件（109.3） | 以 2019 年平均为参照：同样 2023 Q4；以 2020 Q1 为参照：2024 Q1 | 新增正视图 "OW + ODSP over time"（yaw 90°、pitch 58.1°）：在这个角度合计面侧对观者，曲线高度就是合计（案件数或指数，两种模式都成立）；Path 视图里是等合计线 |
+| 4 · 回到 2019 Q4 水平面 / Back-to-2019 Q4 planes | OW returned to its 2019 Q4 caseload in 2023 Q2; ODSP has stayed within about 3% of its 2019 Q4 level since 2020. | OW 指数 = 100（水平面，OW 蓝）；ODSP 指数 = 100（竖直面，ODSP 橙）；可只显示其中一个 | OW：2020 Q2 ↓、2023 Q2 ↑；ODSP：2020 Q4 ↓、2026 Q1 ↑，2020 Q1 以来指数在 97.1–100.6 之间 | OW 回到 2019 年平均水平：2023 Q3；回到 2020 Q1 水平：2023 Q4 | Path 视图里是十字参考线；OW / ODSP 时间视图里各自是 "2019 Q4 level" 线 |
+
+**可能的误读和应对 / Misreadings and safeguards**
+- 版本 1：占比是"两个项目合计中的 OW 占比"，不是领取率或人口比例（定义卡写明）；射线在框外交于原点、不是平行线，所以每条都标 %；把原来的"等增长平面"标成"38.3%"，避免把基期之前的差距（例如 2010 Q1 指数差 36.0）误读成真实差距——同一季度的占比是 48.4%，比 38.3% 高 10.0 个百分点，不依赖基期。/ Share ≠ take-up; rays are labelled; the base-effect gap is replaced by a base-free share.
+- 版本 2：切面只代表一个季度；疫情改画在底面灰带，不画两面整墙（在 Path 视图中整墙会正对观者、把整张图染灰）。/ The slice is one quarter; the pandemic is a floor band, not walls.
+- 版本 3：合计是两个项目的案件数相加，不是人数（定义卡写明）；指数形式的权重来自 2019 Q4。/ The total adds cases, not people; the index weights come from 2019 Q4.
+- 版本 4："回到疫情前"依赖选定 2019 Q4；两个面同时显示最拥挤，所以提供"只看一个面"。/ Depends on the chosen quarter; one plane at a time is offered.
+
+**课程依据 / Course basis**：L3 effectiveness（判断"在哪一侧"是二元判断，容易；精确值在 2D 中读）· L4-1 参照结构和地标、enclosure（疫情带）、similarity（同一种疫情灰、OW 蓝、ODSP 橙）· L5 filtering（开关面）、navigation（切面跟随滑块）、change of view（版本 3 的新正视图）· L6 annotation（穿越点圆圈和文字）· L7 时空立方体操作（Bach et al., 2014）：版本 2 是 time cutting，版本 1、3、4 的面在正视图中侧对、变成参考线，是 flattening 的应用。这些面都由一个有含义的指标定义，曲线与面的关系就是结论本身，所以不是装饰。
+
+**对评分的影响 / Grading impact**（相对 D v3）
+
+| 要求 | 1 占比面 | 2 时间切面 | 3 合计面 | 4 2019 Q4 水平面 |
+| --- | --- | --- | --- | --- |
+| R7 编码合理 | 加分：不依赖基期的指标，修正了等增长平面的基期误读 | 加分：给 3D 提供深度参照 | 加分：一个面加一个精确的侧对视图 | 持平：和正视图参考线重复 |
+| R8 分析能力 | 加分：新指标（OW 占比） | 持平：没有新指标 | 加分：新指标（合计） | 小幅加分 |
+| R9 清楚可导航 | 持平：一个开关 | 加分：3D 中更容易定位当前季度 | 小幅减分：多一个视图按钮 | 小幅减分：两个面最拥挤（可只看一个） |
+| R10 创意 | 加分 | 小幅加分 | 加分 | 持平 |
+| R12 理由深入 | 加分（方程、等价关系、误读说明） | 加分 | 加分 | 持平 |
+
+**开发与测试 / Build and verification**（与 Q1 其他候选相同的方法）
+- 数字：四个页面的参照面段落、定义卡、结论卡片和读数面板逐项与 pandas 重算结果核对，全部一致（穿越季度、占比、合计、水平、范围）。/ Every number checked against pandas.
+- 全部允许角度：yaw −20°–110°（每 10°）× pitch −50°–85°（15 个值），1360 px 和 400 px，每个状态 420 个角度。最终代码在 3 个状态下 0 处文字重叠或出界；修改标签逻辑之前的一版在 10 个状态（4,200 个角度）下也为 0。/ Angle sweeps clean.
+- 版面：每个版本 10–12 个状态（各个正视图、3D、关掉面、指数模式、滑块在 2021 Q3、版本 3 的新视图、版本 4 的单面）× 1360 / 820 / 400 px，共 132 次检查，无横向滚动、无文字重叠或裁切；无控制台错误。/ 132 layout checks clean.
+- 交互：开关会清除和恢复面与圆圈；版本 4 的四个选项各显示 2 / 1 / 1 / 0 个面；切面随滑块和 Play 移动；版本 3 的导览依次经过 3D、OW、ODSP、OW − ODSP、OW + ODSP、Path 并停在 Path；从 3D 动画转到 "OW + ODSP over time" 停在 pitch 58.15°（atan(0.617/0.383)）；鼠标悬停穿越点时提示出现 "Crosses the 38.3% share plane here (now below)"；手机上点按穿越点会把滑块移到该季度，读数面板显示（例：2020 Q3，合计指数 96.5）。键盘：Tab 可到达全部控件（23–25 个），每组分段按钮（含参照面开关）Enter 可用。/ Interactions, tour, keyboard and touch tested.
+- 修复了两个从 D v3 继承的标签问题（只在新版本中修复，D v3 未改）：①手机宽度、滑块拖到 2021 Q3 时，个别角度当前季度标签压住刻度或轴标题；②手机宽度的 OW / ODSP 时间视图中 "Pandemic" 与 "2026 Q1" 标签重叠。D v3 仍有这两个问题（已用同样的检查复现），是否回补列为待决定问题。/ Two label issues inherited from D v3 are fixed in the new versions only.
+- 截图：`screenshots/dplane-{share,slice,total,level}-{desktop,mobile}-{light,dark}.png`、`-state.png`（版本 1、4：3D；版本 2：3D、滑块 2021 Q3；版本 3："OW + ODSP over time"）、`-thumb.png`。
+
+**满分要求和课程原则对照（简表）/ Requirements and checkpoints (short)**：R1、R2、R4–R6、R11、R13–R15 与 D v3 相同（满足）；R3 未部署；R16–R20 同其他候选。L1/L2：新增派生量 OW 占比、合计（版本 1、3）；L3、L4-1、L5、L6、L7 见上。常见错误：没有双纵轴（版本 3 的新视图是单一纵轴）、没有彩虹色、没有饼图；3D 仍是可选视图、默认 2D、不在 3D 中读数，参照面有明确方程和含义。
+
+**受众检查（MCCSS 政策分析员）/ Audience check**
+- 版本 1：能判断两个项目的构成何时、向哪个方向变化（OW 占比 2021 Q3 最低 32.4%，2025 Q2 回到 2014 年以来最高）；能读出穿越 35%、38.3%、40% 的季度写进简报；不能把占比当作领取率，也不能据此判断原因。
+- 版本 2：能在 3D 中看清当前季度在时间上的位置和疫情季度的范围；能拖动切面逐季读截面数值；不能从切面得到新指标，数值仍在面板中读。
+- 版本 3：能判断两个项目合计何时回到 2019 Q4 水平（2023 Q4，比 OW 晚两个季度）；能用侧对视图直接读合计；不能把合计当作人数。
+- 版本 4：能回答"各自回到疫情前水平了吗"（OW 2023 Q2 回来，ODSP 一直贴着 2019 Q4 水平）；能只看一个面；不能把"回到 2019 Q4"当作唯一基准（换基准会差 1–2 个季度）。
+
+**图表类型与多样性 / Chart types**：参照面是现有时空立方体里的参照结构，不是新的图表类型；版本 3 新增的 "OW + ODSP over time" 是单折线时间图，与 D 自己的 "OW over time" 和 Q3 图 1b 的单折线是同一类型（由同一个投影得到，所以没有另做一种图）。
+
 ## 8. 版本比较 / Comparison
 
 | 维度 / Criterion | A · 时间线 | B · 变化 | C · 长时段 | D · 路径 |
@@ -345,3 +399,6 @@ Method: export every fact each page computes, recompute independently in pandas 
 9. **D 的 3D 视图**：保留为可选视图和导览（我的建议），还是撤掉以保持 D 简单？如果保留，是否把它也做进组内读者测试（重点看 §10.6 列出的误读）？/ Keep D's 3D as an optional view (recommended) or drop it; include it in the reader test?
 10. **报告**：如果选 D，是否在 `report.pdf` 中用"斜视 3D + 三个正视投影"的半页小图组？/ Use the half-page 3D figure group in the report if D is chosen?
 11. **OW − ODSP 视图**（D v3）：保留吗？另外，是否把同一张差值图作为普通 2D 图也加进 A（它直接回答"走势如何不同"，不依赖 3D）？/ Keep D v3's difference view, and add the same chart to A as a plain 2D figure?
+12. **参照面版本**（§7.3）：选哪一个或哪几个并入 D（我的建议：版本 1 占比面 + 版本 2 时间切面；版本 3 作为开关里的备选），还是都不加。并入时先给 D v3 存档。/ Which plane version(s) to merge into D, if any.
+13. **D v3 的两个标签问题**（§7.3 "开发与测试"）：是否把新版本中的修复回补到 D v3（属于 bug 修复，不算大版本）？/ Back-port the two label fixes to D v3?
+14. **新增的派生指标**：版本 1 的 OW 占比和版本 3 的合计都由两个项目的案件数计算，没有引入外部变量；是否同意把它们写进 Q1 的指标范围和报告？/ Accept OW share and the combined total as Q1 measures?
