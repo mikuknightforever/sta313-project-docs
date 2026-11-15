@@ -12,7 +12,10 @@ The pages read four CSVs in `datasets/ONT-SA/selected/`. Browsers block this fro
 python -m http.server 8000
 ```
 
-然后打开总览页 / Then open the overview: <http://localhost:8000/design/q1/>
+然后打开总览页 / Then open the overview: <http://localhost:8000/design/q1/>（候选 D 当前 v3 / candidate D, now v3: <http://localhost:8000/design/q1/variants/d-paths/>）
+
+这两个链接只有在本地服务器运行时才能打开；在 GitHub 上点表格里的 `index.html` 只会显示源代码。`python -m http.server` 不告诉浏览器"不要缓存"，所以 `git pull` 之后如果页面还是旧的（例如总览顶部不是 "D v3"、D 没有 "OW − ODSP over time" 按钮），按 **Ctrl+F5**（Mac：Cmd+Shift+R）强制刷新。
+These links work only while the local server is running; on GitHub, the `index.html` links in the table show source code. `python -m http.server` sends no cache headers, so if a page still looks old after `git pull` (the overview banner does not say "D v3", or D has no "OW − ODSP over time" button), hard-refresh with **Ctrl+F5** (Mac: Cmd+Shift+R).
 
 需要联网加载 D3 7.9.0（cdnjs）。/ D3 7.9.0 loads from cdnjs.
 
@@ -23,7 +26,7 @@ python -m http.server 8000
 | A · Annotated timeline | 双折线 + 数量/指数切换 + 叙事步骤 + 对齐的失业率条带 / two lines, cases-index toggle, story steps, aligned unemployment strip | [variants/a-timeline/](variants/a-timeline/index.html) | 否 / No |
 | B · Change, not level | 同比变化小倍数（共用纵轴）+ 同向条带 + 分阶段对比 / YoY small multiples on one axis, same-direction strip, per-period comparison | [variants/b-change/](variants/b-change/index.html) | **是：主图不显示案件数 / Yes: main view is not case counts** |
 | C · The long view | 1969 年以来全部社会援助的可刷选概览 + OW/ODSP 详图 / brushable all-programs overview since 1969 + OW/ODSP detail | [variants/c-longview/](variants/c-longview/index.html) | 否 / No |
-| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线；v2 可切换到正交 3D 时空路径和两个时间视图 / connected scatterplot with slider, reading key, companion timeline; v2 adds an optional orthographic 3D space-time view | [variants/d-paths/](variants/d-paths/index.html) | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
+| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线；当前为 v3：可切换到正交 3D 时空路径、两个时间视图和 OW − ODSP 视图 / connected scatterplot with slider, reading key, companion timeline; now v3: optional orthographic 3D space-time view, two time views and an OW − ODSP view | [variants/d-paths/](variants/d-paths/index.html)（v3，当前 / current） | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
 | D + plane 1 · OW-share planes | D v3 + OW 占比面（38.3% = 2019 Q4 构成，即等增长平面；后墙 35–50% 射线）/ D v3 plus planes of constant OW share | [variants/d-plane-share/](variants/d-plane-share/index.html) | 否 / No |
 | D + plane 2 · Time slice | D v3 + 跟随滑块的时间切面 + 底面疫情灰带 / D v3 plus a time slice that follows the slider and a pandemic floor band | [variants/d-plane-slice/](variants/d-plane-slice/index.html) | 否 / No |
 | D + plane 3 · Constant-total plane | D v3 + OW + ODSP = 2019 Q4 合计的平面 + 侧对视图 "OW + ODSP over time" / D v3 plus a constant-total plane and its edge-on view | [variants/d-plane-total/](variants/d-plane-total/index.html) | 否 / No |
