@@ -1,9 +1,10 @@
 # Q1 设计说明：OW 与 ODSP 的总体趋势（v1 候选 A–D）/ Q1 Design Rationale: OW and ODSP Overall Trends (v1 candidates A–D)
 
 状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v3：v2 在图 1a 增加了可选的 3D 时空路径视图（§7.1），v3 再加了第四个正视图 "OW − ODSP over time"（§7.2）；D v1、D v2 存档在 `archive/`。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
-Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
+Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice (tag `q1-v1`). Candidate D is now v3: v2 added an optional 3D space-time view (§7.1), v3 a fourth flat view, "OW − ODSP over time" (§7.2); D v1 and D v2 are archived in `archive/`. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
+- 当前页面 / Current pages: [A](variants/a-timeline/index.html) · [B](variants/b-change/index.html) · [C](variants/c-longview/index.html) · [D（v3）](variants/d-paths/index.html)；旧版本只在 [archive/](archive/README.md)，仅供对照。/ Older versions live only in the archive, for comparison.
 - 研究问题 / Research question: *How did OW and ODSP caseload trends differ before, during, and after the COVID-19 pandemic?*
 - 受众 / Audience: MCCSS 负责社会援助案件监测和政策研究的政策分析员；场景：写简报时比较疫情前、中、后两个项目的规模和走势，找出值得进一步调查的时期。/ MCCSS policy analysts preparing briefings.
 - 位置 / Place in the site: Part 1 of 3，为 Q2、Q3 提供全省背景。/ Provides province-wide context for Parts 2 and 3.
@@ -125,6 +126,9 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 
 ## 7. 候选 D：一条路径，两个项目（连接散点图）/ Candidate D: one path, two programs
 
+当前页面 / Current page: [variants/d-paths/](variants/d-paths/index.html)（v3）。本节写 v1 起就有的 2D 设计，§7.1、§7.2 是 v2、v3 新增的内容。
+Current page: `variants/d-paths/` (v3). This section covers the 2D design present since v1; §7.1 and §7.2 cover the v2 and v3 additions.
+
 - **Motivation**：问题是两个序列"相对彼此"怎么动；把一个画成另一个的函数，"一起还是分开"就变成一条路径的方向。可选的 3D 视图把时间作为纵深，说明路径图和两张时间图是同一个立方体的三个面（§7.1）。
 - **Appeal**：最容易记住、也最容易在简报里复述的形状：疫情前长期向右漂移，疫情中近乎垂直下降再回升；在 3D 中，同一条曲线随着立方体旋转变成每一张熟悉的图。
 - **代价 / Cost**：读者不熟悉；时间沿路径而不是沿坐标轴，Haroz 等（2016）发现读者更容易弄错顺序和方向；疫情期间下降和回升的两段几乎重叠（ODSP 基本不动），需要滑块才能分开。3D 视图增加遮挡和旋转成本，所以数值只在正视图中读。
@@ -138,8 +142,8 @@ R1–R20 are taken from Q3_DESIGN.md §0 (compiled from the attached *Project* a
 
 ### 7.1 3D 时空路径（D 的 v2）/ 3D space-time path (D v2)
 
-D 的 v1（只有 2D 连接散点图）已存档在 [archive/q1-d-paths_2026-11-12_v1/](archive/q1-d-paths_2026-11-12_v1/index.html)（tag `q1-v1`）。v2 只改了图 1a：加入一个可选的 3D 视图和两个由它"压平"得到的时间视图，其余视图、编码和联动不变。
-D v1 (2D only) is archived (tag `q1-v1`). v2 changes only Figure 1a: an optional 3D view and two time views obtained by flattening it.
+当前页面 / Current page: [variants/d-paths/](variants/d-paths/index.html)（v3，包含本节全部功能；`?view=3d` 直接打开 3D 视图）。D 的 v1（只有 2D 连接散点图）存档在 [archive/q1-d-paths_2026-11-12_v1/](archive/q1-d-paths_2026-11-12_v1/index.html)（tag `q1-v1`，旧版，仅供对照）。v2 只改了图 1a：加入一个可选的 3D 视图和两个由它"压平"得到的时间视图，其余视图、编码和联动不变。
+Current page: `variants/d-paths/` (v3, includes everything in this section; `?view=3d` opens the 3D view). D v1 (2D only) is archived (tag `q1-v1`, old version, for comparison). v2 changes only Figure 1a: an optional 3D view and two time views obtained by flattening it.
 
 **为什么用 3D / Why 3D**
 - 三个变量里有一个是时间：X = ODSP、Y（向上）= OW、Z（纵深）= 时间，93 个季度连成一条空间曲线（L7 的 space-time cube）。
@@ -185,8 +189,8 @@ The report is static. If D is chosen, use one oblique image plus three projectio
 
 ### 7.2 第四个正视图：OW − ODSP（D 的 v3）/ Fourth flat view: OW − ODSP (D v3)
 
-D v2 已存档在 [archive/q1-d-paths_2026-11-14_v2/](archive/q1-d-paths_2026-11-14_v2/index.html)（提交 `e836bb9`，tag `q1-v2`）。v3 只在图 1a 的视图按钮里加了 "OW − ODSP over time"，其余视图、编码和联动不变。
-D v2 is archived (commit `e836bb9`, tag `q1-v2`). v3 only adds an "OW − ODSP over time" button to Figure 1a's view buttons.
+当前页面 / Current page: [variants/d-paths/](variants/d-paths/index.html)（v3；`?view=diff` 直接打开 OW − ODSP 视图）。D v2 存档在 [archive/q1-d-paths_2026-11-14_v2/](archive/q1-d-paths_2026-11-14_v2/index.html)（提交 `e836bb9`，tag `q1-v2`，旧版，仅供对照）。v3 只在图 1a 的视图按钮里加了 "OW − ODSP over time"，其余视图、编码和联动不变。
+Current page: `variants/d-paths/` (v3; `?view=diff` opens the OW − ODSP view). D v2 is archived (commit `e836bb9`, tag `q1-v2`, old version, for comparison). v3 only adds an "OW − ODSP over time" button to Figure 1a's view buttons.
 
 **为什么 / Why**
 - yaw 为 90° 时，pitch 让摄像机绕时间轴旋转，屏幕纵轴显示 OW·cos(pitch) + ODSP·sin(pitch)（单位：指数点）。0° 是 OW over time，90° 是 ODSP over time；**−45° 时是 (OW − ODSP)/√2**：等增长平面（OW 指数 = ODSP 指数）正好侧对观者，曲线的高度就是 OW 指数 − ODSP 指数。这样 3D 不只是"把三张已有的图连起来"，还能从同一个立方体里得到一张页面上原本没有、而且直接回答 Q1 问题（两个项目的走势如何不同）的派生图。

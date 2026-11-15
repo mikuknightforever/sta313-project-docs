@@ -23,7 +23,7 @@ python -m http.server 8000
 | A · Annotated timeline | 双折线 + 数量/指数切换 + 叙事步骤 + 对齐的失业率条带 / two lines, cases-index toggle, story steps, aligned unemployment strip | [variants/a-timeline/](variants/a-timeline/index.html) | 否 / No |
 | B · Change, not level | 同比变化小倍数（共用纵轴）+ 同向条带 + 分阶段对比 / YoY small multiples on one axis, same-direction strip, per-period comparison | [variants/b-change/](variants/b-change/index.html) | **是：主图不显示案件数 / Yes: main view is not case counts** |
 | C · The long view | 1969 年以来全部社会援助的可刷选概览 + OW/ODSP 详图 / brushable all-programs overview since 1969 + OW/ODSP detail | [variants/c-longview/](variants/c-longview/index.html) | 否 / No |
-| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线；v2 可切换到正交 3D 时空路径和两个时间视图 / connected scatterplot with slider, reading key, companion timeline; v2 adds an optional orthographic 3D space-time view | [variants/d-paths/](variants/d-paths/index.html) | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
+| D · One path, two programs | 连接散点图（横 ODSP、纵 OW）+ 时间滑块 + 阅读说明 + 同步时间线；当前为 v3：可切换到正交 3D 时空路径、两个时间视图和 OW − ODSP 视图 / connected scatterplot with slider, reading key, companion timeline; now v3: optional orthographic 3D space-time view, two time views and an OW − ODSP view | [variants/d-paths/](variants/d-paths/index.html)（v3，当前 / current） | 否（失业率对齐到同步时间线）/ No (unemployment aligned to the companion timeline) |
 
 按版本规则（见 [design/DESIGN_LOG.md](../DESIGN_LOG.md)），这批候选是 Q1 v1。小组选定后，入选版本放到稳定路径 `design/q1/prototype/`（尚未建立）；在之后任何大改动之前，先给这批候选打 tag `q1-v1`。
 Under the versioning rule, these candidates are Q1 v1. Once the group chooses, the selected version moves to the stable path `design/q1/prototype/` (not created yet); tag this commit `q1-v1` before any further major change.
