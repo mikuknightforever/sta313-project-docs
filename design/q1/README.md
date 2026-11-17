@@ -1,5 +1,7 @@
 # Q1 候选版本 / Q1 Candidate Variants
 
+**新增研究深化原型 / New research candidate (2026-11-17):** [危机响应与收入充分性 / Crisis response and income adequacy](crisis-prototype/README.md)。用全省经济压力和案件趋势，以及 Toronto 单身家庭的年度福利收入／MBM 快照，探索保障充分性问题。可下载 [standalone.html](crisis-prototype/standalone.html) 离线打开；不替换下列候选，不代表小组最终选型。/ A separate candidate combines province-wide pressure and caseload trends with annual Toronto single-household welfare-income/MBM snapshots. Download the portable HTML for offline use. Existing variants remain available; this is not a final group selection.
+
 Q1（总体趋势）的 v1 是四个候选版本，供小组比较、选择。设计理由见 [Q1_DESIGN.md](Q1_DESIGN.md)，参考案例见 [REFERENCES.md](REFERENCES.md)。
 Q1 (overall trends) v1 consists of four candidate variants for the group to compare. See [Q1_DESIGN.md](Q1_DESIGN.md) for the rationale and [REFERENCES.md](REFERENCES.md) for reference works.
 

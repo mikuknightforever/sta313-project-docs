@@ -1,0 +1,6 @@
+date,label,description,source_url,date_precision
+2020-03-15,CERB begins,"CERB eligibility periods ran from March 15 to September 26 2020. Eligibility dates are distinct from application deadlines.",https://www.canada.ca/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html,day
+2020-09-27,CRB begins,"CRB eligibility periods ran from September 27 2020 to October 23 2021. This was a separate program with its own eligibility rules.",https://www.canada.ca/en/revenue-agency/services/benefits/recovery-benefit.html,day
+2021-10-23,CRB eligibility ends,"End of the last CRB eligibility period; not the date when all emergency support ended. These charts do not identify a policy effect.",https://www.canada.ca/en/revenue-agency/services/benefits/recovery-benefit.html,day
+2022-09,ODSP rates increase,"ODSP allowance rates increased by 5% in September 2022. Dates here mark policy context rather than estimated causes of changes in cases.",https://fao-on.org/en/report/fa2305-mccss/,month
+2023-07,ODSP inflation adjustment,"ODSP allowance rates increased by 6.5% in July 2023 following inflation indexing. The project pandemic phase is not a benefit eligibility window.",https://fao-on.org/en/report/fa2305-mccss/,month

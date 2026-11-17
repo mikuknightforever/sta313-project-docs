@@ -23,6 +23,8 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 
 ## 2. 当前进度 / Status
 
+**2026-11-17 新增独立 Q1 候选 / Additional Q1 candidate:** [crisis-prototype/README.md](q1/crisis-prototype/README.md) 将问题深化为“危机压力 → 案件响应 → 收入充分性”，包含离线可打开的 `standalone.html`、新外部情景数据、来源记录与独立验证。它不替换下表候选，是否全站采用仍待小组决定。用户在本次讨论中明确要求初级原型并推送到 docs 仓库；不包含网站公开部署。/ An additional candidate connects pressure, caseload response and income adequacy, with portable HTML, sourced household scenarios and independent checks. Existing candidates are retained. Group adoption and public hosting remain separate decisions.
+
 | 部分 / Part | 当前版本（稳定路径）/ Current | Tag | 设计说明 / Rationale | 待决定 / Open questions |
 | --- | --- | --- | --- | --- |
 | Q1 | 候选 A–C（v1）、D v3、D + 参照面 1–4、D + 插入面 5–9（2026-11-16，未提交）；页面入口表和插入面比较见 [q1/README.md](q1/README.md) | `q1-v1` = `a193c19`（A–D v1）· `q1-v2` = `e836bb9`（D v2，已存档）· `q1-v3` = `eb2586e`（D v3 `14e6474` + 参照面 1–4） | [q1/Q1_DESIGN.md](q1/Q1_DESIGN.md)（D：§7、§7.1 3D、§7.2 OW − ODSP 视图、§7.3 参照面、§7.4 插入面） | Q1_DESIGN §11（17 条） |

@@ -1,0 +1,71 @@
+{
+  "source_title": "Welfare in Canada, 2020",
+  "authors": [
+    "Jennefer Laidley",
+    "Mohy Tabbara"
+  ],
+  "published": "December 2021",
+  "revised": "May 2022",
+  "source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf",
+  "verified_on": "2026-11-17",
+  "verification": "Opened full PDF in web tool; read methodology pp.2-5, Ontario pp.94-100. Direct executor download blocked by outbound proxy; linked spreadsheet returned verification interstitial, so no spreadsheet data claim.",
+  "linked_spreadsheet_url": "https://maytree.com/wp-content/uploads/WiC2020-Ontario.xlsx",
+  "pages": {
+    "methodology_printed": "2-5",
+    "components_printed": "94-96",
+    "adequacy_printed": "99-100",
+    "components_pdf_1_based": 97,
+    "adequacy_pdf_1_based": 103
+  },
+  "unit": "Hypothetical annual government-transfer income of specified single-person household, not observed recipient average or province-wide total.",
+  "model_assumptions": [
+    "Eligible throughout calendar 2020 starting January 1",
+    "No employment earnings, no other income/assets",
+    "Lives in Toronto in private-market rental housing with utilities included",
+    "Filed previous-year tax return",
+    "Special-needs payments excluded"
+  ],
+  "numerator": {
+    "OW": [
+      "Basic Ontario Works 8796",
+      "Federal credits/benefits 807",
+      "Ontario credits/benefits 706"
+    ],
+    "ODSP": [
+      "Basic Ontario Disability Support Program 14028",
+      "Federal credits/benefits 896",
+      "Ontario credits/benefits 731"
+    ],
+    "federal_details": "GST/HST regular credit 293, pandemic top-up 290, Climate Action Incentive 224 for both; ODSP example also GST/HST supplement 89.10. Provincial benefits are Ontario Trillium Benefit. Published components and total are rounded."
+  },
+  "pandemic_treatment": {
+    "included": "Federal GST/HST one-time top-up of 290 per single household; already part of total, not additional to it. Climate Action Incentive 224 is included but not classified as a pandemic payment.",
+    "excluded": [
+      "CERB: model households lost employment before pandemic",
+      "CRB: model households had no employment income",
+      "EI: excluded consistently with report model",
+      "Federal disability one-time 600: households do not receive qualifying federal programs",
+      "Ontario Emergency Benefit: application required and fewer than 50% of recipients received it; report includes automatic benefits or discretionary benefits received by over half of eligible recipients"
+    ]
+  },
+  "denominator": {
+    "measure": "Market Basket Measure, Toronto, single person",
+    "base": 2018,
+    "year": 2020,
+    "published_amount": 24722,
+    "status": "Estimated by Maytree using 2019 Toronto MBM threshold and city CPI; official 2020 MBM not available at publication",
+    "deep_poverty_published_amount": 18542,
+    "disability_costs": "Does not include additional disability costs"
+  },
+  "source_inconsistencies": [
+    "Ontario component table on printed p.94 states ODSP total 15665, but same-page narrative, cross-Canada table, time-series narrative and adequacy chart all give 15655. Components 14028+896+731 sum to 15655; retain 15655 and flag table typo.",
+    "Printed OW gap to MBM is 14414, whereas subtracting rounded chart amounts 24722-10309 gives 14413. Use published rounded levels for prototype calculations and disclose rounding; do not claim dollar-level precision."
+  ],
+  "comparison_limits": [
+    "Not a measure of all social protection or actual household outcomes",
+    "Not directly representative of every recipient or all Ontario locations",
+    "2020 denominator is publication-vintage estimate; keep distinct from later revised observed MBM values",
+    "Use consistent MBM base before connecting across years; do not merge 2018-base with 2023-base silently",
+    "ODSP adequacy comparison omits extra disability costs; higher ratio is not proof of better program performance"
+  ]
+}

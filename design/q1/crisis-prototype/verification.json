@@ -1,0 +1,98 @@
+{
+  "checks_passed": 488,
+  "raw_unemployment_months_verified": 108,
+  "quarters": 36,
+  "joint_yoy_quarters": 32,
+  "incomplete_quarter_rejected": true,
+  "csv_quoted_fields_checked": true,
+  "quarterly_mean_unemployment_peak": {
+    "quarter": "2020 Q2",
+    "unemployment": 12.966666666666667
+  },
+  "caseload_troughs": {
+    "ow": {
+      "quarter": "2021 Q3",
+      "ow": 178872.333333333,
+      "owIndex": 75.95412040880295
+    },
+    "odsp": {
+      "quarter": "2017 Q1",
+      "odsp": 353183.0,
+      "odspIndex": 93.18443861060908
+    }
+  },
+  "adequacy": [
+    {
+      "year": 2020,
+      "program": "OW",
+      "household": "Unattached single considered employable",
+      "income": 10309,
+      "threshold": 24722,
+      "mbm_base": "2018",
+      "geography": "Toronto, Ontario",
+      "source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf",
+      "note": "Model household: full-year assistance, no employment income, private-market rent. Total includes other government transfers; not OW/ODSP benefit alone. Includes a $290 GST/HST pandemic top-up; excludes CERB/CRB/EI under the model. 2020 threshold is an estimate. ",
+      "threshold_status": "Maytree publication-vintage estimate: 2019 Toronto MBM updated with city CPI",
+      "threshold_source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf#page=103",
+      "published_adequacy_percent": "42",
+      "ratio": 41.69970067146671,
+      "gap": 14413
+    },
+    {
+      "year": 2020,
+      "program": "ODSP",
+      "household": "Unattached single with a disability",
+      "income": 15655,
+      "threshold": 24722,
+      "mbm_base": "2018",
+      "geography": "Toronto, Ontario",
+      "source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf",
+      "note": "Model household: full-year assistance, no employment income, private-market rent. Total includes other government transfers; not OW/ODSP benefit alone. Includes a $290 GST/HST pandemic top-up; excludes CERB/CRB/EI under the model. 2020 threshold is an estimate. ODSP table typo resolved using report text and component sum.",
+      "threshold_status": "Maytree publication-vintage estimate: 2019 Toronto MBM updated with city CPI",
+      "threshold_source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf#page=103",
+      "published_adequacy_percent": "63",
+      "ratio": 63.324164711592914,
+      "gap": 9067
+    },
+    {
+      "year": 2024,
+      "program": "OW",
+      "household": "Unattached single considered employable",
+      "income": 10455,
+      "threshold": 29329,
+      "mbm_base": "2018",
+      "geography": "Toronto, Ontario",
+      "source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2024.pdf",
+      "note": "Model household: full-year assistance, no employment income, private-market rent. Total includes other government transfers; not OW/ODSP benefit alone. Uses the 2018-base threshold published in the 2024 edition, not the later 2023-base revision. The report explicitly estimates LIM with CPI, but does not label its MBM as CPI-estimated; do not label this benchmark independently verified official data.",
+      "threshold_status": "2024 report-published 2018-base benchmark; official Statistics Canada release vintage not independently verified",
+      "threshold_source_url": "https://www.lcfvitalsigns.ca/health-wellbeing",
+      "published_adequacy_percent": "36",
+      "ratio": 35.64731153465853,
+      "gap": 18874
+    },
+    {
+      "year": 2024,
+      "program": "ODSP",
+      "household": "Unattached single with a disability",
+      "income": 17826,
+      "threshold": 29329,
+      "mbm_base": "2018",
+      "geography": "Toronto, Ontario",
+      "source_url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2024.pdf",
+      "note": "Model household: full-year assistance, no employment income, private-market rent. Total includes other government transfers; not OW/ODSP benefit alone. Uses the 2018-base threshold published in the 2024 edition, not the later 2023-base revision. The report explicitly estimates LIM with CPI, but does not label its MBM as CPI-estimated; do not label this benchmark independently verified official data.",
+      "threshold_status": "2024 report-published 2018-base benchmark; official Statistics Canada release vintage not independently verified",
+      "threshold_source_url": "https://www.lcfvitalsigns.ca/health-wellbeing",
+      "published_adequacy_percent": "61",
+      "ratio": 60.77943332537761,
+      "gap": 11503
+    }
+  ],
+  "input_hashes": {
+    "ow": "cc3b10897eae905acc3b4fb2083f9ecb103ae03754a48cf94fbffbdb779fbda2",
+    "odsp": "4378bdc5324fa5c1d479179427fe0ce4162a7bc90bfc9cff532afd5cd634bdbd",
+    "unemployment": "700a7503fec2deec6dc9781bfe1e29f6cc62e57612d589441554634a4f6f1b55",
+    "adequacy": "91dde98ef9246ff0dce1540bc73f00f5ec74ba44ec6fe92c132ffc35eed6a23d",
+    "events": "fd4c846bd407c757ccefd34a7f7d58cdd1d60b1c495b18881a701434cea271c2"
+  },
+  "interpretation": "Independent arithmetic and extraction checks; not a causal analysis or a test of benefit eligibility."
+}

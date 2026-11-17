@@ -22,3 +22,15 @@ Use this log to document visualization and interaction design. Q3 has v1 and v2 
 将草图、图表说明、交互流程和评审反馈放在本目录，并添加相对链接。每次迭代记录选择理由与反馈，避免只保留最终截图。新增说明使用中英双语。
 
 Store sketches, chart explanations, interaction flows, and review feedback in this folder and link them using relative paths. For every iteration, record the rationale and feedback as well as the final images. Provide new descriptions in both Chinese and English.
+
+## 2026-11-17 · Q1 crisis-response and income-adequacy prototype v1
+
+本次讨论确认 Q1 的政策动机为重大危机中社会援助是否提供足够支持。新增 [crisis-prototype](q1/crisis-prototype/README.md) 并列方案，保留既有 A–D、参照面与 insight 版本。三个视图依次比较全省经济压力与案件水平、同比变化方向、Toronto 单身家庭的年度总福利收入与同版 MBM 门槛。未采用预测模型评分，因为它不能直接回答充分性。
+
+The discussion approved a policy motivation around sufficient support during a crisis. The new parallel candidate preserves existing variants. Its three views compare provincial pressure and cases, year-over-year directions, and annual Toronto model-household welfare income against a report-vintage MBM benchmark. Predictive-model scores were omitted because they do not directly assess adequacy.
+
+数据：共同窗口2017–2025，失业率月度季调率取季均；2020和2024充分性快照来自经核实报告，保持年度、地域、家庭类型与基准版本说明，不画跨年趋势。所有页面统计值由CSV计算，pandas独立复算；验证详情与截图见新目录。该版本新增文件，不覆盖旧版，因此无旧版需先搬移归档。以后大改本方案时应先归档本版。
+
+Data: the 2017–2025 common window uses quarterly means of monthly seasonally adjusted unemployment rates. The 2020 and 2024 adequacy examples retain explicit year, geography, household and benchmark-vintage assumptions; they are not connected into a trend. Browser values are calculated from CSV and independently recomputed in pandas; verification and screenshots are in the new directory. As a new parallel candidate, no prior candidate files were replaced. Archive this version before a future major redesign.
+
+当前范围：交互初稿及可携带单文件；不是全组最终选型、最终报告或公开部署。剩余研究包括更多可比年份、额外残障费用、领取资格及覆盖证据。/ Scope: interactive draft and portable HTML; not final group adoption, final report or public hosting. Further work may examine comparable years, extra disability costs, eligibility and coverage.

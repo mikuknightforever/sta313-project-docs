@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore economic pressure, OW and ODSP caseloads, and the adequacy of example welfare incomes during and after COVID-19 in Ontario.">
+  <title>When the safety net is tested · Ontario social assistance</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#pressure">Skip to the analysis</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">O.</span><span>Ontario<br><strong>Social Assistance Observatory</strong></span></a>
+    <div class="mast-tools"><span class="edition">Q1 / PART 1 OF 3</span><button id="theme-toggle" class="theme-button" type="button" aria-pressed="false">Dark mode</button></div>
+  </header>
+  <main id="top" class="wrap">
+    <div class="prototype-note"><span class="status-dot" aria-hidden="true"></span>Research prototype · Crisis response and income adequacy</div>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">A crisis puts a system to the test</p>
+        <h1 id="page-title">When the safety<br>net is tested.</h1>
+        <p class="hero-question">Can social assistance provide enough support in a major crisis?</p>
+        <p class="hero-copy">Use COVID-19 as an observation window: follow economic pressure, compare Ontario Works and ODSP caseloads, then examine income against a basic-needs benchmark.</p>
+      </div>
+      <aside class="reading-route" aria-label="Three questions in this analysis">
+        <p class="eyebrow">The evidence trail</p>
+        <a href="#pressure"><span>01</span><div><strong>Pressure &amp; response</strong><small>How did the recorded series change?</small></div><b aria-hidden="true">›</b></a>
+        <a href="#relationship"><span>02</span><div><strong>Moving together?</strong><small>Where did their directions diverge?</small></div><b aria-hidden="true">›</b></a>
+        <a href="#adequacy"><span>03</span><div><strong>Enough to live on?</strong><small>Income relative to a poverty threshold</small></div><b aria-hidden="true">›</b></a>
+        <p>For Ontario policy analysts. Q2 examines family composition; Q3 examines OW assistance duration.</p>
+      </aside>
+    </section>
+
+    <div id="loading" class="loading-message" role="status">Loading the source data…</div>
+    <div id="error" class="error-message" role="alert" hidden></div>
+    <div id="analysis" hidden>
+      <div class="fact-strip" aria-label="Three observations from the data">
+        <div><span class="fact-label">Peak quarterly unemployment</span><strong id="fact-unemployment">—</strong><small id="fact-unemployment-detail"></small></div>
+        <div><span class="fact-label">OW’s low relative to 2019 Q4</span><strong id="fact-ow">—</strong><small id="fact-ow-detail"></small></div>
+        <div><span class="fact-label">Most recent income snapshot shown</span><strong id="fact-adequacy">—</strong><small id="fact-adequacy-detail"></small></div>
+      </div>
+
+      <details class="definitions">
+        <summary>Read this first <span>What the measures mean</span></summary>
+        <div class="definition-grid">
+          <p><strong>A case is not a person.</strong> Caseloads count administrative units receiving assistance. They do not measure all people in need or people unable to access a program.</p>
+          <p><strong>Unemployment is context.</strong> It captures one part of economic pressure. OW and ODSP have different eligibility rules and populations; unemployment is particularly incomplete as a measure of disability-related needs.</p>
+          <p><strong>Different evidence, different scope.</strong> The first two figures use Ontario-wide quarterly data. Figure 3 uses annual illustrative household incomes and a Toronto poverty threshold.</p>
+          <p><strong>A phase is not a policy.</strong> The shaded pandemic classification is 2020 Q1–2023 Q1. CERB and CRB had their own eligibility dates, shown separately below.</p>
+        </div>
+      </details>
+
+      <section id="pressure" class="analysis-section" aria-labelledby="pressure-title">
+        <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">Pressure &amp; response</p><h2 id="pressure-title">Follow the shock, then the caseload.</h2><p>Compare levels through time. A falling caseload can have several explanations; its direction alone does not measure success.</p></div></div>
+        <div class="chart-panel">
+          <div class="toolbar">
+            <div><span class="control-label">Period · linked to Figure 2</span><div class="segmented" id="phase-controls" role="group" aria-label="Choose a period"><button type="button" data-phase="all" aria-pressed="true">All years</button><button type="button" data-phase="pre" aria-pressed="false">Before</button><button type="button" data-phase="during" aria-pressed="false">During</button><button type="button" data-phase="post" aria-pressed="false">After</button></div></div>
+            <div><span class="control-label">Caseload measure</span><div class="segmented" id="measure-controls" role="group" aria-label="Choose caseload measure"><button type="button" data-measure="index" aria-pressed="true">2019 Q4 = 100</button><button type="button" data-measure="count" aria-pressed="false">Cases</button></div></div>
+          </div>
+          <div class="figure-topline"><span id="timeline-range" class="chart-kicker"></span><div class="legend"><span><i class="ow"></i>Ontario Works</span><span><i class="odsp"></i>ODSP</span><span><i class="phase-swatch"></i>Pandemic classification</span></div></div>
+          <div id="timeline-chart" class="chart" aria-label="Caseload and unemployment charts"></div>
+          <div class="quarter-control"><label for="quarter-slider">Inspect a quarter <strong id="selected-quarter"></strong></label><input id="quarter-slider" type="range" min="0" max="0" value="0" step="1"><p class="hint">Move the slider, use the arrow keys, or point to the chart.</p></div>
+          <div id="quarter-readout" class="readout" aria-live="polite"></div>
+          <p class="figure-caption"><strong>Figure 1.</strong> Quarterly OW and ODSP observations, with the mean of the three monthly seasonally adjusted Ontario unemployment rates below. Separate vertical scales share the same time axis. The index compares each program with its own 2019 Q4 level; 100 is a reference, not an adequacy standard.</p>
+        </div>
+        <div class="policy-block"><p class="eyebrow">Policy context · dates do not establish causation</p><div id="policy-events" class="policy-events"></div></div>
+      </section>
+
+      <section id="relationship" class="analysis-section" aria-labelledby="relationship-title">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">Moving together?</p><h2 id="relationship-title">The direction matters. So does the timing.</h2><p>Each point compares a quarter with the same quarter one year earlier. Follow the path to see where economic pressure and caseloads moved together or apart.</p></div></div>
+        <div class="relationship-layout">
+          <div class="chart-panel">
+            <div class="toolbar compact"><div class="segmented" id="program-controls" role="group" aria-label="Choose program for Figure 2"><button type="button" data-program="OW" aria-pressed="true">Ontario Works</button><button type="button" data-program="ODSP" aria-pressed="false">ODSP</button></div><label class="checkbox-label"><input id="path-toggle" type="checkbox" checked>Connect quarters</label></div>
+            <div id="scatter-chart" class="chart"></div>
+            <p class="figure-caption"><strong>Figure 2.</strong> Caseload change (%) and unemployment-rate change (percentage points), both year over year. The connecting path shows chronological order. Its geometry does not identify a causal effect or a response delay.</p>
+          </div>
+          <aside class="relationship-note">
+            <p class="eyebrow">The selected quarter</p><h3 id="scatter-quarter">—</h3><div id="scatter-readout" aria-live="polite"></div>
+            <div class="interpretation"><strong>What this raises</strong><p id="scatter-interpretation"></p></div>
+            <p class="small-note">Other income support, eligibility, applications and exits can all matter. Neither program is a control group for the other.</p>
+            <p id="scatter-sample" class="small-note"></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="adequacy" class="analysis-section" aria-labelledby="adequacy-title">
+        <div class="section-heading"><span class="section-number">03</span><div><p class="eyebrow">Enough to live on?</p><h2 id="adequacy-title">Count the support. Compare it with the need.</h2><p>Receiving assistance and receiving enough assistance are different questions. This annual example compares total welfare income with a Toronto Market Basket Measure (MBM) poverty threshold.</p></div></div>
+        <div class="adequacy-layout">
+          <div class="chart-panel">
+            <div class="toolbar"><div><label class="control-label" for="adequacy-year">Published annual snapshot</label><select id="adequacy-year"></select></div><div class="benchmark-key"><span></span>100% = the reported poverty threshold</div></div>
+            <div id="adequacy-chart" class="chart"></div>
+            <div id="adequacy-values" class="adequacy-values"></div>
+            <p class="figure-caption"><strong>Figure 3.</strong> Annual total welfare income ÷ annual MBM threshold × 100. A value below 100% means income falls below this benchmark for the specified example. It does not estimate the share of residents who are covered.</p>
+          </div>
+          <aside class="scope-note"><p class="eyebrow">A deliberately specific comparison</p><h3>One adult. Two program examples.</h3><p id="adequacy-scope"></p><p>Total welfare income can include tax credits and one-time payments, as specified by the source. It is not simply the monthly OW or ODSP payment multiplied by twelve.</p><p>These are annual illustrative scenarios, not observed incomes for every recipient. They do not capture all costs, access barriers, or disability-related needs.</p><p id="adequacy-source"></p><p id="adequacy-note" class="small-note"></p></aside>
+        </div>
+      </section>
+
+      <section class="closing-section" aria-labelledby="conclusions-title"><p class="eyebrow">Reading the evidence together</p><h2 id="conclusions-title">A more precise question for the safety net.</h2><div class="conclusion-grid"><div><h3>The data support</h3><p id="closing-support"></p></div><div><h3>The data do not establish</h3><p>Whether people who needed help could obtain it, why caseloads changed, or the causal effect of any policy. A household benchmark is not an overall score for the system.</p></div><div><h3>Worth investigating</h3><p>How regular assistance and temporary benefits interacted, who remained outside support, and how disability-related costs change the adequacy assessment.</p></div></div></section>
+
+      <details class="data-details"><summary>Inspect the data and definitions</summary><p class="small-note">The tables update with the period and year selected above. Cases are shown as published, rounded for display; calculations use the unrounded values.</p><h3>Quarterly Ontario observations</h3><div class="table-scroll"><table id="quarter-table"><caption class="sr-only">Quarterly observations for the selected period</caption><thead><tr><th scope="col">Quarter</th><th scope="col">OW cases</th><th scope="col">ODSP cases</th><th scope="col">Unemployment</th><th scope="col">OW YoY</th><th scope="col">ODSP YoY</th><th scope="col">Unemployment YoY</th></tr></thead><tbody></tbody></table></div><h3>Annual adequacy example</h3><div class="table-scroll"><table id="adequacy-table"><caption class="sr-only">Annual welfare income and threshold for the selected year</caption><thead><tr><th scope="col">Year</th><th scope="col">Program</th><th scope="col">Income</th><th scope="col">MBM threshold</th><th scope="col">Ratio</th><th scope="col">MBM base</th></tr></thead><tbody></tbody></table></div></details>
+      <footer class="page-footer"><div><p class="eyebrow">Sources &amp; methods</p><p>Caseloads: <a href="https://github.com/mjmoon/sta313-project-datasets">course-provided Ontario social assistance data</a>. Unemployment: <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028701">Statistics Canada, Table 14-10-0287-01</a>, as stored in the project. Annual income and threshold sources appear beside Figure 3.</p><p><a href="./README.md">Prototype guide</a> · <a href="./METHODS.md">Definitions, calculations &amp; verification</a> · <a href="https://github.com/mikuknightforever/sta313-project-docs">Project repository</a></p></div><div><p class="eyebrow">Newtown’s group · STA313</p><p>Part 1: overall trends and crisis response.<br>Part 2: family composition.<br>Part 3: OW assistance duration.</p></div></footer>
+    </div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
