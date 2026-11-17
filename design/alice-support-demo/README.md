@@ -20,14 +20,18 @@ No dependencies, server, or separate data downloads are required. Styles, script
 
 ## 转场更新 / Transition update
 
-- **Opening → Q1**：保留约 4.2 秒的镜头推进、章节编号和开门动画。  
-  Keeps the approximately 4.2-second opening camera journey, chapter marker, and architectural reveal.
-- **Q1 ↔ Q2 ↔ Q3**：约 0.8 秒，采用短距离内容滑动和轻微镜头移动，直接显示下一组图表；不重复 opening 的门框、放大或长停顿。  
-  Approximately 0.8 seconds, with a short content slide and subtle camera movement straight into the next analytical view. No repeated opening doorway, zoom-in, or long pause.
-- **结尾与返回全景 / Closing and overview**：约 1.2 秒的简短全景移动。  
-  A brief approximately 1.2-second overview movement.
-- 三种配色同步；减少动态效果设置下直接切换。已验证长开场、Q1→Q2 和 Q2→Q3 的区别。  
-  Applies to all three palettes; reduced-motion mode switches directly. Verified the distinct opening, Q1→Q2, and Q2→Q3 behavior.
+- **Opening 首页**：页面首次加载时自动打开两扇带窗格与把手的玻璃窗，约 4.2 秒；露出社区后停留在首页，不自动跳进 Q1。  
+  On initial load, two glazed window sashes open over approximately 4.2 seconds, revealing the community. The page remains on the home view.
+- **进入 Q1 / Enter Q1**：点击 Enter the landscape，以约 0.8 秒的短转场进入分析页，不重复开窗。  
+  Enter the landscape opens Q1 with an approximately 0.8-second transition, without replaying the windows.
+- **Q1 ↔ Q2 ↔ Q3**：约 0.8 秒，短距离内容滑动与轻微镜头移动，直接进入下一组图表。  
+  Approximately 0.8 seconds, with a brief content slide and subtle camera movement straight into the next analytical view.
+- 首页的 **Replay window opening ↻** 可以重播开窗；切换至另一个配色后，也可用此按钮比较 opening。  
+  Replay window opening ↻ replays the effect on the home view, including when comparing another palette.
+- 结尾与返回全景约 1.2 秒；减少动态效果设置下直接显示内容。  
+  Closing and overview movements take approximately 1.2 seconds; reduced-motion mode shows the content directly.
+- 已验证首页自动开窗、开窗后仍为首页，以及进入 Q1 时不重复开窗。  
+  Verified automatic home-window opening, remaining on home afterward, and short entry into Q1 without a repeated window animation.
 
 ## 包含内容 / Included
 
