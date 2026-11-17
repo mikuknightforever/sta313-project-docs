@@ -18,6 +18,17 @@ A standalone design prototype for group review of visual style, transitions, and
 无需安装依赖、启动服务器或额外下载数据；样式、脚本和数据已包含在一个文件中。  
 No dependencies, server, or separate data downloads are required. Styles, scripts, and data are embedded.
 
+## 转场更新 / Transition update
+
+- **Opening → Q1**：保留约 4.2 秒的镜头推进、章节编号和开门动画。  
+  Keeps the approximately 4.2-second opening camera journey, chapter marker, and architectural reveal.
+- **Q1 ↔ Q2 ↔ Q3**：约 0.8 秒，采用短距离内容滑动和轻微镜头移动，直接显示下一组图表；不重复 opening 的门框、放大或长停顿。  
+  Approximately 0.8 seconds, with a short content slide and subtle camera movement straight into the next analytical view. No repeated opening doorway, zoom-in, or long pause.
+- **结尾与返回全景 / Closing and overview**：约 1.2 秒的简短全景移动。  
+  A brief approximately 1.2-second overview movement.
+- 三种配色同步；减少动态效果设置下直接切换。已验证长开场、Q1→Q2 和 Q2→Q3 的区别。  
+  Applies to all three palettes; reduced-motion mode switches directly. Verified the distinct opening, Q1→Q2, and Q2→Q3 behavior.
+
 ## 包含内容 / Included
 
 - 冰蓝雾灰、雾紫杏白、暖纸色杂志专题；深浅色切换。  
