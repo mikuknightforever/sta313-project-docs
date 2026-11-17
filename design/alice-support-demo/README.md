@@ -20,18 +20,18 @@ No dependencies, server, or separate data downloads are required. Styles, script
 
 ## 转场更新 / Transition update
 
-- **Opening 首页**：页面首次加载时自动打开两扇带窗格与把手的玻璃窗，约 4.2 秒；露出社区后停留在首页，不自动跳进 Q1。  
-  On initial load, two glazed window sashes open over approximately 4.2 seconds, revealing the community. The page remains on the home view.
-- **进入 Q1 / Enter Q1**：点击 Enter the landscape，以约 0.8 秒的短转场进入分析页，不重复开窗。  
-  Enter the landscape opens Q1 with an approximately 0.8-second transition, without replaying the windows.
+- **Opening 首页：先房屋近景，再拉远，最后开窗。** 页面首次加载先展示房屋近景，前约 3 秒缓慢拉远至社区全景；随后窗框出现，两扇窗户向外打开，首页标题才进入。整段约 6 秒，结束后停留在首页。  
+  **Opening: close houses → slow pullback → windows open.** Initial load starts close to the houses. Over roughly three seconds, the camera pulls back to the community; window frames then appear and the two sashes swing outward, revealing the home title. The sequence lasts approximately six seconds and stays on home.
+- **进入 Q1 / Enter Q1**：点击 Enter the landscape，以约 0.8 秒短转场进入分析页，不重复 opening。  
+  Enter the landscape uses an approximately 0.8-second transition into Q1 without replaying the opening.
 - **Q1 ↔ Q2 ↔ Q3**：约 0.8 秒，短距离内容滑动与轻微镜头移动，直接进入下一组图表。  
-  Approximately 0.8 seconds, with a brief content slide and subtle camera movement straight into the next analytical view.
-- 首页的 **Replay window opening ↻** 可以重播开窗；切换至另一个配色后，也可用此按钮比较 opening。  
-  Replay window opening ↻ replays the effect on the home view, including when comparing another palette.
+  Approximately 0.8 seconds, with a brief content slide and subtle camera movement into the next analytical view.
+- 首页 **Replay window opening ↻** 可重播完整“房屋拉远 → 开窗”；切换配色后也可用此按钮比较。  
+  Replay window opening ↻ replays the full pullback-and-window sequence, including in other palettes.
 - 结尾与返回全景约 1.2 秒；减少动态效果设置下直接显示内容。  
-  Closing and overview movements take approximately 1.2 seconds; reduced-motion mode shows the content directly.
-- 已验证首页自动开窗、开窗后仍为首页，以及进入 Q1 时不重复开窗。  
-  Verified automatic home-window opening, remaining on home afterward, and short entry into Q1 without a repeated window animation.
+  Closing and overview movements take approximately 1.2 seconds; reduced-motion mode shows content directly.
+- 三套配色、分析页与嵌入数据保留。房屋只是概念插画，不表示实际住宅、户数或地址。  
+  All three palettes, analytical pages, and embedded data are retained. Houses are conceptual illustrations, not actual housing, household counts, or addresses.
 
 ## 包含内容 / Included
 
