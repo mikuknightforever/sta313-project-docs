@@ -1,0 +1,51 @@
+vintage,published,series,program,fy_start,cases,source_table,source_url
+fao2024,2024-06-05,fao_projection,OW,2023,244750,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,OW,2024,283908,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,OW,2025,294626,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,OW,2026,293556,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,OW,2027,285589,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,OW,2028,278963,Figure 5.4 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2023,368093,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2024,378076,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2025,388678,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2026,399731,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2027,411168,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2024,2024-06-05,fao_projection,ODSP,2028,422704,Figure 5.2 (projection),https://fao-on.org/en/report/fa2305-mccss/
+fao2025,2025-10-23,fao_projection,OW,2025,313732,Figure 4.4 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2025,2025-10-23,fao_projection,OW,2026,327241,Figure 4.4 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2025,2025-10-23,fao_projection,OW,2027,330684,Figure 4.4 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2025,2025-10-23,fao_projection,ODSP,2025,386306,Figure 4.1 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2025,2025-10-23,fao_projection,ODSP,2026,395456,Figure 4.1 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2025,2025-10-23,fao_projection,ODSP,2027,402639,Figure 4.1 (FAO forecast),https://fao-on.org/en/report/estimates-2025-mccss/
+fao2026,2026-09-23,budget_funded_capacity,OW,2026,246430,Figure 4.4 (funded OW case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,budget_funded_capacity,OW,2027,265963,Figure 4.4 (funded OW case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,budget_funded_capacity,OW,2028,268587,Figure 4.4 (funded OW case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,budget_funded_capacity,ODSP,2026,380622,Figure 4.2 (funded ODSP case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,budget_funded_capacity,ODSP,2027,377684,Figure 4.2 (funded ODSP case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,budget_funded_capacity,ODSP,2028,393109,Figure 4.2 (funded ODSP case capacity in the 2026 Ontario Budget),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,OW,2026,56534,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,OW,2027,37830,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,OW,2028,34196,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,ODSP,2026,4468,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,ODSP,2027,16365,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_shortfall,ODSP,2028,9357,Text (funded caseload shortfall estimated by the FAO),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2016,252247,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2017,250292,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2018,243875,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2019,240545,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2020,217234,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2021,189981,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2022,217639,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2023,245246,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2024,282011,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,OW,2025,291605,Figure 4.4 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2016,346070,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2017,359330,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2018,370674,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2019,378441,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2020,378145,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2021,371462,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2022,367828,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2023,368052,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2024,372681,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/
+fao2026,2026-09-23,fao_actual,ODSP,2025,376915,Figure 4.2 (historical),https://fao-on.org/en/report/estimates-2026-mccss/

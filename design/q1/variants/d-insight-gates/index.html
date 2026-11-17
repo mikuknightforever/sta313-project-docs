@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q1 · D + insight 6 · Support window and rule changes</title>
+<link rel="stylesheet" href="../../shared/q1.css">
+<style>
+  .d-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,1fr);gap:18px;align-items:start}
+  @media (max-width:860px){.d-grid{grid-template-columns:minmax(0,1fr)}}
+  .key{font-size:12.5px;color:var(--ink2)}
+  .key h3{font-size:13px;color:var(--ink);margin:0 0 4px}
+  .key .row{display:flex;align-items:center;gap:8px;margin:3px 0}
+  .key svg{flex:none}
+  .readout{border-top:1px solid var(--grid);margin-top:10px;padding-top:8px;font-size:13px}
+  .readout .q{font:600 17px var(--serif);color:var(--ink)}
+  .readout dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:6px 0 0}
+  .readout dt{color:var(--ink2)} .readout dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  .slider{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;margin:8px 0 4px}
+  .slider output{font-weight:600;min-width:6.5em}
+  #f1a{outline:none;border-radius:6px}
+  #f1a:focus-visible{outline:2px solid var(--d512);outline-offset:2px}
+  #f1a.spatial svg{touch-action:none;cursor:grab}
+  .viewbar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:4px 0 6px}
+  #insightTable table td{vertical-align:top} #insightTable .gate-go{min-width:2.6em;padding:2px 8px}
+  #insightTable{margin-top:4px}
+  .tourtext{font-size:13px;color:var(--ink);min-height:1.4em;margin:2px 0 0}
+</style>
+</head>
+<body data-insight="gates">
+<div class="page">
+  <p class="cand" role="note">Q1 candidate <b>D + insight surface, version 6 (of 5–9) · Support window and rule changes</b> — builds on candidate D v3 (<a href="../d-paths/index.html">unchanged</a>) and the reference-plane versions 1–4; prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 1 of 3 · OW and ODSP, all of Ontario · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1>When support arrived and ended: the path through federal benefits and provincial rule changes</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this version">
+    <p><b>Motivation.</b> Decision-makers ask how caseloads moved around big public decisions. The federal income-support window (CERB, then CRB) and provincial OW and ODSP rule changes become gates in the cube, so an analyst sees what the path did between them, without a claim about cause.</p>
+    <p><b>Appeal.</b> OW's drop sits inside the hatched federal window and its rebound starts as the window closes; the ODSP path barely moves through three ODSP rule changes.</p>
+    <p><b>Cost.</b> Event dates come from outside the course data (sources in Figure 1d); dates lining up is not evidence of cause; eight markers need decluttering on phones.</p>
+    <p><b>Course basis.</b> L4-1 enclosure (the window) and landmarks (gates) · L5 navigation (choose a change to move the slider) and filtering · L6 annotation with sources · L7 time cutting (Bach et al., 2014).</p>
+  </div>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: how to read the path</summary>
+      <div class="def-grid">
+        <div><h3>One dot per quarter</h3><p>Across = ODSP cases, up = OW cases. Dots are joined in time order, from 2003 Q1 to the latest quarter. The optional 3D view adds time as depth; read exact values in the flat views or the panel on the right.</p></div>
+        <div><h3>Direction means something</h3><p>Moving right = ODSP grew; moving up = OW grew. Both axes use the same scale per index point (2019 Q4 = 100), so the dotted 45° line marks equal relative growth.</p></div>
+        <div><h3>A case is not a person</h3><p>A case can include a spouse and children. Counts are not adjusted for population. Province-wide OW counts include decimals in the source and are shown as published.</p></div>
+        <div><h3>The overlay: federal support and provincial changes</h3><p id="planeDef"></p></div>
+        <div><h3>Pandemic period and context</h3><p>March 2020 – May 2023 (2020 Q1 – 2023 Q1). Segments are shaded light → dark: before, during, after. Unemployment (Jan 2017 – Dec 2025) is context only.</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>One path, three periods</h2>
+      <p class="sub">Step through the periods, drag the slider or press Play. Hover a dot or the timeline for exact values.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+    <div class="toolbar"><div class="seg" id="modeSeg" role="group" aria-label="Axis labels"></div></div>
+    <figure class="fig">
+      <figcaption><b>Figure 1a.</b> <span id="f1aTitle"></span></figcaption>
+      <div class="viewbar">
+        <div class="seg" id="viewSeg" role="group" aria-label="View of Figure 1a"></div>
+        <div class="seg" id="planeSeg" role="group" aria-label="Overlay"></div>
+        <button type="button" class="ghost" id="resetBtn" hidden>Reset 3D view</button>
+        <button type="button" class="ghost" id="tourBtn">Show how the views connect</button>
+      </div>
+      <p class="tourtext" id="tourText" aria-live="polite"></p>
+      <div class="slider">
+        <label for="tSlider" class="lab-t">Path up to</label>
+        <input type="range" id="tSlider" min="0" max="92" step="1" value="92" aria-describedby="tOut">
+        <span><output id="tOut" for="tSlider"></output> <button type="button" class="ghost" id="playBtn">Play</button></span>
+      </div>
+      <div class="d-grid">
+        <div class="chart" id="f1a" tabindex="0" aria-describedby="viewHint"></div>
+        <aside class="key" aria-label="Reading key and current quarter">
+          <h3>Reading key</h3>
+          <div id="dirKey"></div>
+          <h3 style="margin-top:10px">Periods</h3>
+          <div id="phKey"></div>
+          <h3 style="margin-top:10px">Federal support and provincial changes</h3>
+          <div id="planeKey"></div>
+          <div class="readout" id="readout" aria-live="polite"></div>
+        </aside>
+      </div>
+      <p class="note" id="viewHint"></p>
+      <p class="note" id="planeNote" aria-live="polite"></p>
+      <figcaption><b>Figure 1b.</b> The same two series over time (index, 2019 Q4 = 100) and the Ontario unemployment rate (monthly, context only) — the vertical line follows the slider</figcaption>
+      <div class="chart" id="f1b"></div>
+      <div class="chart" id="f1c"></div>
+      <p class="note">Hover the timeline to preview a quarter on the path; click it to move the slider there. Dashed lines on the timeline, where shown, are the overlay's index values.</p>
+      <figcaption id="insCap"></figcaption>
+      <div id="insightTable"></div>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Net movement in each period</h2><p class="sub">First to last quarter. Click a row to show that period on the path.</p></div>
+    </div>
+    <figure class="fig">
+      <figcaption><b>Figure 2.</b> Change in cases from the first to the last quarter of each period, and the resulting direction of the path</figcaption>
+      <div id="phaseTable"></div>
+      <p class="note">Direction is described from the index changes: the program that changed more sets the main direction of the path.</p>
+    </figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics; Statistics Canada, Labour Force Survey table 14-10-0287 (STA313 course data snapshot); event dates from the Canada Revenue Agency, Ontario e-Laws and the news and legal-clinic sources listed in Figure 1d. Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q1-common.js"></script>
+<script src="../../shared/d-insight.js"></script>
+</body>
+</html>

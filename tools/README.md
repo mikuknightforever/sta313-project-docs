@@ -63,6 +63,10 @@ Note: Q1's `views` and `mob3d` rewrite D's `d3d-*.png` screenshots; `shots` over
 for v in "a-timeline a" "b-change b" "c-longview c" "d-paths d"; do set -- $v; node tools/check_q1.mjs $1 $2 "" facts; done
 python tools/verify_q1.py
 
+# Q1 D + insight 5–9（插入面版本：叠加层的全部数字 / every overlay number）
+for m in plans gates trend porcupine ghost; do node tools/check_q1.mjs d-insight-$m ins-$m "" facts; done
+python tools/verify_q1_insight.py
+
 # Q2 A–C（6 个页面状态 / six page states）
 ST="theme=light;theme=light&step=2;theme=light&step=3;theme=light&step=4;theme=light&step=0&period=pre&cma=532;theme=light&step=0&period=post&cma=505"
 for v in "a-dumbbell a" "b-arrows b" "c-tilemap c"; do set -- $v; STATES="$ST" node tools/check_q2.mjs $1 $2 "" texts; done
