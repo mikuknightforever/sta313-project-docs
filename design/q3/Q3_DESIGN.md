@@ -312,3 +312,32 @@ Every map and card number was exported from the DOM and recomputed independently
 7. **研究问题措辞**：建议改为 "How has the duration *composition* of the OW caseload changed…"。/ Reword the question.
 8. **开发分工**（R16）与 `report.pdf` 中 Q3 的篇幅。/ Division of labour and report space.
 9. **全省 `cases` 带小数**的原因仍未核实。/ Decimal Ontario `cases` still unverified.
+10. **失业率额外版本**（§11）是否并入稳定版本，或只作附加？/ Adopt the unemployment extra version (§11)?
+
+## 11. 额外版本：CMA 失业率 / Extra version: local unemployment rates (2026-11-18)
+
+位置 / Location: [unemployment-prototype/](unemployment-prototype/README.md)（并列版本，`prototype/` 未改动 / parallel version; `prototype/` unchanged）。数据 / Data: [data/](data/README.md)。
+
+**起因 / Request**：组员希望"额外加一个失业率的图，交互逻辑和地图一样"。理解为：失业率信息出现在地图选取部分（图 2b 卡片），并有一张与地图同样可悬停、点选、跟随时期的失业率图。/ A teammate asked for an unemployment chart with the same interaction logic as the map; read as unemployment information in the map-selection card plus a chart that previews, selects and follows the period like the map.
+
+**受众任务 / Audience task**：分析员看到某个 CMA 长期占比偏高时，想知道当地劳动力市场是否也偏弱，以及这种对应在不同时期是否成立。/ When a CMA's long-term share is high, check whether its labour market is also weak, and whether that holds across periods.
+
+**数据抽象 / Data**：StatCan 表 14-10-0459-01，失业率、估计值、季节调整，月度三个月移动平均，2011-01 至 2026-10，量化、按 CMA 和月份。季度最后一个月的值 = 该季度平均，直接对上 OW 季度（以最后一个月标日期）。Ottawa 用安省部分。/ Quantitative, by CMA and month; the quarter's last month equals the quarter average; Ottawa = Ontario part.
+
+**视图 / Views**
+
+| 视图 / View | 编码 / Encoding | 交互 / Interaction |
+| --- | --- | --- |
+| 图 2b 卡片底部区块 / card block | 文字数字：时期平均失业率、15 个 CMA 中排名（1 = 最高）；时期早于 2011 时给出所用季度和同期长期占比 / numbers with the quarters used | 随悬停 / 选中的 CMA 和时期更新 / follows hover, selection, period |
+| 图 5a 散点图 / scatter | x = 平均失业率，y = 同一段季度的长期占比（共同尺度上的位置，L3 最有效的通道）；横线 = 全省长期占比；点为中性灰，选中用 v2 选中色 / position on common scales; Ontario line; neutral dots | 悬停 / 触摸 / Tab → 卡片预览 + 地图、图 3、图 5b 联动；点击 / Enter → 选中（不重绘，焦点保留）；提示框给精确值；两轴随时期重新缩放 / same preview and selection as the map |
+| 图 5b 折线 / lines | 选中 CMA 月度失业率（选中色）+ 其余 14 个灰线，疫情灰带，所选时期包围框（与图 4 相同）/ like Figure 4 | 其他视图悬停时对应灰线加深；悬停显示当月值、15 个 CMA 的最低–最高和中位数 / linked darkening; tooltip |
+
+**为什么这样做 / Rationale**：图 5a 一个点对应一个 CMA，和地图一样是"每个地区一个标记"，所以可以原样复用地图的悬停预览 / 点击选中逻辑（L4 联动、L5 overview + details on demand）。两个量放在散点图的两个轴上，避免双纵轴；时间走势单独放在图 5b，与图 4 并列的形式一致。两个轴用同一段季度，避免"占比用 2003–2019、失业率用 2011–2019"的错配。/ One mark per CMA, like the map, so the map's interaction carries over; no dual axis; the same quarters on both axes.
+
+**考虑过但放弃 / Rejected**：地图切换为按失业率着色（一张地图两种颜色含义，且需新色阶；可作备选，见 README 待决定问题 1）；双纵轴把失业率叠在图 4 上；给失业率用青绿 ↔ 紫（那只表示"与全省之差"）；画 OLS 拟合线（15 个点，容易被读成预测或因果）；拼接表 14-10-0287 的全省月度失业率作参考线（不同表、不是移动平均、2017 年起）。/ Map colour toggle; dual axis on Figure 4; reusing teal ↔ violet; a fitted line; splicing the Ontario-wide table as a reference.
+
+**数据给出的结论 / What the data show**（页面计算，Python 独立复核）：15 个 CMA 的 Spearman 等级相关：疫情前（2011 Q1 – 2019 Q4）+0.44，疫情期间 +0.14，疫情后 −0.44。方向在时期之间改变，页面据此写"失业率本身不能解释哪些 CMA 长期占比更高"。例：疫情后 Peterborough 长期占比最高（59.0%），失业率却排第 13（5.8%）。/ Spearman: +0.44 before (2011–2019), +0.14 during, −0.44 after; the direction changes, so unemployment alone does not explain the ranking.
+
+**解释边界 / Limits**：失业率只作背景（全站规则）；它数的是劳动力中的人，不是 OW 案件；是抽样估计，小 CMA 波动大（同一张表有标准误，未使用）；相关只是描述，15 个点时一个地区就能明显改变系数。/ Background only; people, not cases; survey estimates; descriptive correlations sensitive to single CMAs.
+
+**自检 / Self-check**：数字 299 项 0 处不一致（标准库复核，pandas 在本机被应用程序控制阻止）；12 种版面 × 交互检查 12 项全部通过；继承自 v2 的图 4 标签越界未改。详见 [unemployment-prototype/README.md](unemployment-prototype/README.md#验证--checks2026-11-18)。/ 299 checks, 0 mismatches; 12 browser checks pass; the Figure 4 label overflow inherited from v2 is unchanged.

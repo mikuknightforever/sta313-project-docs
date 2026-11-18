@@ -80,6 +80,13 @@ python tools/verify_q3.py
 预期结果 / Expected: 事实字段全部 0 处不一致。Q1 A、B、C 会列出几个"unexplained"数字（235,501 的四舍五入、16.75 年、正则多抓的逗号），已在 `design/q1/Q1_DESIGN.md` §10.3 逐条说明；Q2 0 个未解释；Q3 95 项 0 处不一致。
 All fact fields match. Q1 A, B and C list a few "unexplained" numbers that Q1_DESIGN.md §10.3 explains one by one; Q2 has none; Q3 checks 95 items with 0 mismatches.
 
+Q3 失业率额外版本的检查脚本在它自己的目录里（Python Playwright + 本机 Edge，以及只用标准库的数字复核），用法见 [design/q3/unemployment-prototype/README.md](../design/q3/unemployment-prototype/README.md)。/ The Q3 unemployment extra version keeps its own checks (Python Playwright + installed Edge, and a standard-library number check) in its folder.
+
+```bash
+python design/q3/unemployment-prototype/verify_browser.py
+python design/q3/unemployment-prototype/verify.py
+```
+
 ## 分析脚本 / Analysis（`tools/analysis/`）
 
 - `q1_reference_planes.py`：Q1 参照面的全部数字和稳健性（换基期、平滑、趋势外推窗口），对应 `Q1_DESIGN.md` §7.3。/ All numbers and robustness checks for the Q1 reference planes.

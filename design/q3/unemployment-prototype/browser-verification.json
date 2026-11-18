@@ -1,0 +1,1327 @@
+{
+ "base": "http://127.0.0.1:64035/design/q3/unemployment-prototype/index.html",
+ "layout": [
+  {
+   "width": 1360,
+   "theme": "light",
+   "period": "post",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": [
+      "Peterborough 58.0%"
+     ]
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "light",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [
+      [
+       "Toronto 50.5%",
+       "Ontario 50.1%"
+      ]
+     ],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "period": "post",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": [
+      "Peterborough 58.0%"
+     ]
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [
+      [
+       "Toronto 50.5%",
+       "Ontario 50.1%"
+      ]
+     ],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "period": "post",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": [
+      "Peterborough 58.0%"
+     ]
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [
+      [
+       "Toronto 50.5%",
+       "Ontario 50.1%"
+      ]
+     ],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "period": "post",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": [
+      "Peterborough 58.0%"
+     ]
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "Average OW cases",
+       "100,000"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 20,
+     "overlaps": [
+      [
+       "Toronto 50.5%",
+       "Ontario 50.1%"
+      ]
+     ],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 15,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 19,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "period": "post",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 11,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 9,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Ontario 39.8%",
+       "30.0% · 2,667"
+      ],
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 11,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 9,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "period": "post",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 11,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 9,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "period": "pre",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f2map": {
+     "texts": 21,
+     "overlaps": [
+      [
+       "All Ontario · box = main map",
+       "≈ 900 km NW of Toronto"
+      ],
+      [
+       "2,000",
+       "10,000"
+      ]
+     ],
+     "outside": []
+    },
+    "f3": {
+     "texts": 39,
+     "overlaps": [
+      [
+       "Ontario 39.8%",
+       "30.0% · 2,667"
+      ],
+      [
+       "Share ·",
+       "avg cases"
+      ]
+     ],
+     "outside": []
+    },
+    "f4": {
+     "texts": 11,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5a": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    },
+    "f5b": {
+     "texts": 9,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1a": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "f1b": {
+     "texts": 12,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverDot": []
+  }
+ ],
+ "states": [
+  {
+   "query": "period=latest",
+   "errors": [],
+   "card": "Peterborough",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n5.4%\nRank among 15 CMAs (1 = highest)\n14 (tied) of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "in the latest quarter (2026 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2026 Q1 (1 quarter). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 · selected period −0.06 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 50.1%"
+   ],
+   "f5aHits": [
+    "Peterborough: average unemployment rate 5.4%, rank 14 of 15; long-term share 58.0%; 2026 Q1.",
+    "Thunder Bay: average unemployment rate 5.4%, rank 14 of 15; long-term share 51.4%; 2026 Q1.",
+    "Greater Sudbury: average unemployment rate 5.9%, rank 13 of 15; long-term share 50.3%; 2026 Q1.",
+    "Kingston: average unemployment rate 6.1%, rank 11 of 15; long-term share 53.7%; 2026 Q1.",
+    "Ottawa–Gatineau: average unemployment rate 6.1%, rank 11 of 15; long-term share 48.6%; 2026 Q1.",
+    "Brantford: average unemployment rate 6.3%, rank 10 of 15; long-term share 48.1%; 2026 Q1.",
+    "Guelph: average unemployment rate 6.5%, rank 7 of 15; long-term share 48.0%; 2026 Q1.",
+    "Hamilton: average unemployment rate 6.5%, rank 7 of 15; long-term share 51.4%; 2026 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 6.5%, rank 7 of 15; long-term share 55.6%; 2026 Q1.",
+    "Oshawa: average unemployment rate 7.9%, rank 6 of 15; long-term share 48.6%; 2026 Q1.",
+    "Toronto: average unemployment rate 8.1%, rank 5 of 15; long-term share 50.5%; 2026 Q1.",
+    "Barrie: average unemployment rate 8.5%, rank 3 of 15; long-term share 44.2%; 2026 Q1.",
+    "Windsor: average unemployment rate 8.5%, rank 3 of 15; long-term share 52.8%; 2026 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 8.6%, rank 2 of 15; long-term share 52.7%; 2026 Q1.",
+    "London: average unemployment rate 9.1%, rank 1 of 15; long-term share 53.8%; 2026 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Peterborough: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2026 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Peterborough 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nIn the latest quarter (2026 Q1), the highest shares were in Peterborough, St. Catharines–Niagara, London; the lowest in Guelph, Barrie (Ontario: 50.1%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=post",
+   "errors": [],
+   "card": "Peterborough",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n5.8%\nRank among 15 CMAs (1 = highest)\n13 of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "after the pandemic (2023 Q2 – 2026 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2023 Q2 – 2026 Q1 (12 quarters). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 46.9%"
+   ],
+   "f5aHits": [
+    "Thunder Bay: average unemployment rate 4.5%, rank 15 of 15; long-term share 54.6%; 2023 Q2 – 2026 Q1.",
+    "Greater Sudbury: average unemployment rate 5.7%, rank 14 of 15; long-term share 52.1%; 2023 Q2 – 2026 Q1.",
+    "Peterborough: average unemployment rate 5.8%, rank 13 of 15; long-term share 59.0%; 2023 Q2 – 2026 Q1.",
+    "Ottawa–Gatineau: average unemployment rate 5.8%, rank 12 of 15; long-term share 46.8%; 2023 Q2 – 2026 Q1.",
+    "Guelph: average unemployment rate 5.8%, rank 11 of 15; long-term share 46.3%; 2023 Q2 – 2026 Q1.",
+    "Kingston: average unemployment rate 6.0%, rank 10 of 15; long-term share 53.5%; 2023 Q2 – 2026 Q1.",
+    "Brantford: average unemployment rate 6.2%, rank 9 of 15; long-term share 48.5%; 2023 Q2 – 2026 Q1.",
+    "Hamilton: average unemployment rate 6.5%, rank 8 of 15; long-term share 49.3%; 2023 Q2 – 2026 Q1.",
+    "London: average unemployment rate 6.5%, rank 7 of 15; long-term share 51.8%; 2023 Q2 – 2026 Q1.",
+    "Barrie: average unemployment rate 6.6%, rank 6 of 15; long-term share 43.1%; 2023 Q2 – 2026 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 6.9%, rank 5 of 15; long-term share 51.2%; 2023 Q2 – 2026 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 7.2%, rank 4 of 15; long-term share 53.0%; 2023 Q2 – 2026 Q1.",
+    "Oshawa: average unemployment rate 7.3%, rank 3 of 15; long-term share 49.6%; 2023 Q2 – 2026 Q1.",
+    "Toronto: average unemployment rate 7.8%, rank 2 of 15; long-term share 44.6%; 2023 Q2 – 2026 Q1.",
+    "Windsor: average unemployment rate 8.3%, rank 1 of 15; long-term share 48.1%; 2023 Q2 – 2026 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Peterborough: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2023 Q2 – 2026 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Peterborough 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nAfter the pandemic (2023 Q2 – 2026 Q1), the highest shares were in Peterborough, Thunder Bay, Kingston; the lowest in Toronto, Barrie (Ontario: 46.9%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=during",
+   "errors": [],
+   "card": "Oshawa",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n7.4%\nRank among 15 CMAs (1 = highest)\n4 of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "during the pandemic (2020 Q1 – 2023 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2020 Q1 – 2023 Q1 (13 quarters). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 59.0%"
+   ],
+   "f5aHits": [
+    "Ottawa–Gatineau: average unemployment rate 5.7%, rank 15 of 15; long-term share 59.4%; 2020 Q1 – 2023 Q1.",
+    "Greater Sudbury: average unemployment rate 6.3%, rank 14 of 15; long-term share 57.2%; 2020 Q1 – 2023 Q1.",
+    "Guelph: average unemployment rate 6.7%, rank 13 of 15; long-term share 54.8%; 2020 Q1 – 2023 Q1.",
+    "Thunder Bay: average unemployment rate 6.7%, rank 12 of 15; long-term share 57.7%; 2020 Q1 – 2023 Q1.",
+    "Brantford: average unemployment rate 6.7%, rank 11 of 15; long-term share 55.4%; 2020 Q1 – 2023 Q1.",
+    "Hamilton: average unemployment rate 6.8%, rank 10 of 15; long-term share 60.4%; 2020 Q1 – 2023 Q1.",
+    "Kingston: average unemployment rate 7.1%, rank 9 of 15; long-term share 59.1%; 2020 Q1 – 2023 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 7.2%, rank 8 of 15; long-term share 64.2%; 2020 Q1 – 2023 Q1.",
+    "London: average unemployment rate 7.3%, rank 7 of 15; long-term share 57.5%; 2020 Q1 – 2023 Q1.",
+    "Barrie: average unemployment rate 7.3%, rank 6 of 15; long-term share 50.9%; 2020 Q1 – 2023 Q1.",
+    "Peterborough: average unemployment rate 7.4%, rank 5 of 15; long-term share 64.6%; 2020 Q1 – 2023 Q1.",
+    "Oshawa: average unemployment rate 7.4%, rank 4 of 15; long-term share 65.4%; 2020 Q1 – 2023 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 8.5%, rank 3 of 15; long-term share 56.2%; 2020 Q1 – 2023 Q1.",
+    "Toronto: average unemployment rate 8.7%, rank 2 of 15; long-term share 60.6%; 2020 Q1 – 2023 Q1.",
+    "Windsor: average unemployment rate 9.3%, rank 1 of 15; long-term share 54.9%; 2020 Q1 – 2023 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Oshawa: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2020 Q1 – 2023 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Oshawa 8.9%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nDuring the pandemic (2020 Q1 – 2023 Q1), the highest shares were in Oshawa, Peterborough, Kitchener–Cambridge–Waterloo; the lowest in Guelph, Barrie (Ontario: 59.0%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=pre",
+   "errors": [],
+   "card": "Toronto",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate, 2011 Q1 – 2019 Q4\n7.4%\nRank among 15 CMAs (1 = highest)\n2 of 15\nLong-term share, same quarters\n50.0%\n\nUnemployment data start in Jan 2011, so this uses 36 of the period's 68 quarters. People unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "before the pandemic (2003 Q1 – 2019 Q4)",
+   "f5aNote": "Both axes use the same quarters: 2011 Q1 – 2019 Q4 (36 quarters); unemployment data start in Jan 2011, so the period's 32 earlier quarters are left out. Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 46.0%"
+   ],
+   "f5aHits": [
+    "Guelph: average unemployment rate 5.2%, rank 15 of 15; long-term share 38.2%; 2011 Q1 – 2019 Q4.",
+    "Hamilton: average unemployment rate 5.8%, rank 14 of 15; long-term share 45.7%; 2011 Q1 – 2019 Q4.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 5.9%, rank 13 of 15; long-term share 43.7%; 2011 Q1 – 2019 Q4.",
+    "Ottawa–Gatineau: average unemployment rate 5.9%, rank 12 of 15; long-term share 43.6%; 2011 Q1 – 2019 Q4.",
+    "Thunder Bay: average unemployment rate 5.9%, rank 11 of 15; long-term share 39.7%; 2011 Q1 – 2019 Q4.",
+    "Kingston: average unemployment rate 6.2%, rank 10 of 15; long-term share 40.2%; 2011 Q1 – 2019 Q4.",
+    "Brantford: average unemployment rate 6.4%, rank 9 of 15; long-term share 37.5%; 2011 Q1 – 2019 Q4.",
+    "Oshawa: average unemployment rate 6.8%, rank 8 of 15; long-term share 46.7%; 2011 Q1 – 2019 Q4.",
+    "Greater Sudbury: average unemployment rate 6.9%, rank 7 of 15; long-term share 38.2%; 2011 Q1 – 2019 Q4.",
+    "Barrie: average unemployment rate 7.2%, rank 6 of 15; long-term share 37.4%; 2011 Q1 – 2019 Q4.",
+    "London: average unemployment rate 7.2%, rank 5 of 15; long-term share 46.5%; 2011 Q1 – 2019 Q4.",
+    "Peterborough: average unemployment rate 7.4%, rank 4 of 15; long-term share 46.4%; 2011 Q1 – 2019 Q4.",
+    "St. Catharines–Niagara: average unemployment rate 7.4%, rank 3 of 15; long-term share 43.1%; 2011 Q1 – 2019 Q4.",
+    "Toronto: average unemployment rate 7.4%, rank 2 of 15; long-term share 50.0%; 2011 Q1 – 2019 Q4.",
+    "Windsor: average unemployment rate 7.6%, rank 1 of 15; long-term share 49.2%; 2011 Q1 – 2019 Q4."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Toronto: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2011 Q1 – 2019 Q4). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Toronto 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nBefore the pandemic (2003 Q1 – 2019 Q4), the highest shares were in Toronto, Windsor, Peterborough; the lowest in Guelph, Barrie (Ontario: 39.8%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=all",
+   "errors": [],
+   "card": "Toronto",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate, 2011 Q1 – 2026 Q1\n7.7%\nRank among 15 CMAs (1 = highest)\n2 of 15\nLong-term share, same quarters\n50.6%\n\nUnemployment data start in Jan 2011, so this uses 61 of the period's 93 quarters. People unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "across all years (2003 Q1 – 2026 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2011 Q1 – 2026 Q1 (61 quarters); unemployment data start in Jan 2011, so the period's 32 earlier quarters are left out. Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 · selected period +0.50 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 48.6%"
+   ],
+   "f5aHits": [
+    "Guelph: average unemployment rate 5.7%, rank 15 of 15; long-term share 43.1%; 2011 Q1 – 2026 Q1.",
+    "Thunder Bay: average unemployment rate 5.8%, rank 14 of 15; long-term share 46.3%; 2011 Q1 – 2026 Q1.",
+    "Ottawa–Gatineau: average unemployment rate 5.9%, rank 13 of 15; long-term share 47.1%; 2011 Q1 – 2026 Q1.",
+    "Hamilton: average unemployment rate 6.1%, rank 12 of 15; long-term share 49.0%; 2011 Q1 – 2026 Q1.",
+    "Kingston: average unemployment rate 6.3%, rank 11 of 15; long-term share 46.2%; 2011 Q1 – 2026 Q1.",
+    "Brantford: average unemployment rate 6.4%, rank 10 of 15; long-term share 43.2%; 2011 Q1 – 2026 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 6.4%, rank 9 of 15; long-term share 49.6%; 2011 Q1 – 2026 Q1.",
+    "Greater Sudbury: average unemployment rate 6.5%, rank 8 of 15; long-term share 44.6%; 2011 Q1 – 2026 Q1.",
+    "Oshawa: average unemployment rate 7.0%, rank 7 of 15; long-term share 50.6%; 2011 Q1 – 2026 Q1.",
+    "Peterborough: average unemployment rate 7.0%, rank 6 of 15; long-term share 52.0%; 2011 Q1 – 2026 Q1.",
+    "Barrie: average unemployment rate 7.1%, rank 5 of 15; long-term share 40.7%; 2011 Q1 – 2026 Q1.",
+    "London: average unemployment rate 7.1%, rank 4 of 15; long-term share 49.5%; 2011 Q1 – 2026 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 7.5%, rank 3 of 15; long-term share 47.3%; 2011 Q1 – 2026 Q1.",
+    "Toronto: average unemployment rate 7.7%, rank 2 of 15; long-term share 50.6%; 2011 Q1 – 2026 Q1.",
+    "Windsor: average unemployment rate 8.1%, rank 1 of 15; long-term share 49.9%; 2011 Q1 – 2026 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Toronto: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2011 Q1 – 2026 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Toronto 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nAcross all years (2003 Q1 – 2026 Q1), the highest shares were in Toronto, Peterborough, Oshawa; the lowest in Guelph, Barrie (Ontario: 43.3%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "from=2015Q1&to=2019Q4",
+   "errors": [],
+   "card": "Oshawa",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n5.9%\nRank among 15 CMAs (1 = highest)\n9 of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "in the selected period (2015 Q1 – 2019 Q4)",
+   "f5aNote": "Both axes use the same quarters: 2015 Q1 – 2019 Q4 (20 quarters). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 · selected period +0.10 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 52.0%"
+   ],
+   "f5aHits": [
+    "Guelph: average unemployment rate 4.6%, rank 15 of 15; long-term share 44.8%; 2015 Q1 – 2019 Q4.",
+    "Hamilton: average unemployment rate 5.2%, rank 14 of 15; long-term share 53.2%; 2015 Q1 – 2019 Q4.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 5.3%, rank 13 of 15; long-term share 50.5%; 2015 Q1 – 2019 Q4.",
+    "Brantford: average unemployment rate 5.5%, rank 12 of 15; long-term share 43.9%; 2015 Q1 – 2019 Q4.",
+    "Ottawa–Gatineau: average unemployment rate 5.6%, rank 11 of 15; long-term share 50.8%; 2015 Q1 – 2019 Q4.",
+    "Thunder Bay: average unemployment rate 5.8%, rank 10 of 15; long-term share 47.3%; 2015 Q1 – 2019 Q4.",
+    "Oshawa: average unemployment rate 5.9%, rank 9 of 15; long-term share 55.3%; 2015 Q1 – 2019 Q4.",
+    "Kingston: average unemployment rate 5.9%, rank 8 of 15; long-term share 48.3%; 2015 Q1 – 2019 Q4.",
+    "Peterborough: average unemployment rate 6.0%, rank 7 of 15; long-term share 54.4%; 2015 Q1 – 2019 Q4.",
+    "London: average unemployment rate 6.2%, rank 6 of 15; long-term share 53.1%; 2015 Q1 – 2019 Q4.",
+    "Barrie: average unemployment rate 6.5%, rank 5 of 15; long-term share 44.6%; 2015 Q1 – 2019 Q4.",
+    "Toronto: average unemployment rate 6.6%, rank 4 of 15; long-term share 55.0%; 2015 Q1 – 2019 Q4.",
+    "Windsor: average unemployment rate 6.6%, rank 3 of 15; long-term share 55.2%; 2015 Q1 – 2019 Q4.",
+    "St. Catharines–Niagara: average unemployment rate 6.7%, rank 2 of 15; long-term share 50.4%; 2015 Q1 – 2019 Q4.",
+    "Greater Sudbury: average unemployment rate 6.9%, rank 1 of 15; long-term share 44.1%; 2015 Q1 – 2019 Q4."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Oshawa: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2015 Q1 – 2019 Q4). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Oshawa 8.9%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nIn the selected period (2015 Q1 – 2019 Q4), the highest shares were in Oshawa, Windsor, Toronto; the lowest in Greater Sudbury, Brantford (Ontario: 52.0%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "from=2005Q1&to=2009Q4",
+   "errors": [],
+   "card": "Toronto",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\n\nNo unemployment data for 2005 Q1 – 2009 Q4: the series starts in Jan 2011.",
+   "f5aCaption": "in the selected period (2005 Q1 – 2009 Q4)",
+   "f5aNote": "",
+   "f5aTake": "",
+   "f5aNodata": "No unemployment data for 2005 Q1 – 2009 Q4: the series starts in Jan 2011. Choose a period that reaches 2011 or later.",
+   "f5aOntario": [],
+   "f5aHits": [],
+   "f5aDots": 0,
+   "f5bTitle": "Toronto: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). The selected period has no unemployment data. The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Toronto 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nIn the selected period (2005 Q1 – 2009 Q4), the highest shares were in Toronto, Ottawa–Gatineau, Windsor; the lowest in Guelph, Barrie (Ontario: 31.0%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=pre&cma=505",
+   "errors": [],
+   "card": "Ottawa–Gatineau",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate, 2011 Q1 – 2019 Q4\n5.9%\nRank among 15 CMAs (1 = highest)\n12 of 15\nLong-term share, same quarters\n43.6%\n\nUnemployment data start in Jan 2011, so this uses 36 of the period's 68 quarters. People unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs. Ottawa: Ontario part of Ottawa–Gatineau.",
+   "f5aCaption": "before the pandemic (2003 Q1 – 2019 Q4)",
+   "f5aNote": "Both axes use the same quarters: 2011 Q1 – 2019 Q4 (36 quarters); unemployment data start in Jan 2011, so the period's 32 earlier quarters are left out. Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 46.0%"
+   ],
+   "f5aHits": [
+    "Guelph: average unemployment rate 5.2%, rank 15 of 15; long-term share 38.2%; 2011 Q1 – 2019 Q4.",
+    "Hamilton: average unemployment rate 5.8%, rank 14 of 15; long-term share 45.7%; 2011 Q1 – 2019 Q4.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 5.9%, rank 13 of 15; long-term share 43.7%; 2011 Q1 – 2019 Q4.",
+    "Ottawa–Gatineau: average unemployment rate 5.9%, rank 12 of 15; long-term share 43.6%; 2011 Q1 – 2019 Q4.",
+    "Thunder Bay: average unemployment rate 5.9%, rank 11 of 15; long-term share 39.7%; 2011 Q1 – 2019 Q4.",
+    "Kingston: average unemployment rate 6.2%, rank 10 of 15; long-term share 40.2%; 2011 Q1 – 2019 Q4.",
+    "Brantford: average unemployment rate 6.4%, rank 9 of 15; long-term share 37.5%; 2011 Q1 – 2019 Q4.",
+    "Oshawa: average unemployment rate 6.8%, rank 8 of 15; long-term share 46.7%; 2011 Q1 – 2019 Q4.",
+    "Greater Sudbury: average unemployment rate 6.9%, rank 7 of 15; long-term share 38.2%; 2011 Q1 – 2019 Q4.",
+    "Barrie: average unemployment rate 7.2%, rank 6 of 15; long-term share 37.4%; 2011 Q1 – 2019 Q4.",
+    "London: average unemployment rate 7.2%, rank 5 of 15; long-term share 46.5%; 2011 Q1 – 2019 Q4.",
+    "Peterborough: average unemployment rate 7.4%, rank 4 of 15; long-term share 46.4%; 2011 Q1 – 2019 Q4.",
+    "St. Catharines–Niagara: average unemployment rate 7.4%, rank 3 of 15; long-term share 43.1%; 2011 Q1 – 2019 Q4.",
+    "Toronto: average unemployment rate 7.4%, rank 2 of 15; long-term share 50.0%; 2011 Q1 – 2019 Q4.",
+    "Windsor: average unemployment rate 7.6%, rank 1 of 15; long-term share 49.2%; 2011 Q1 – 2019 Q4."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Ottawa–Gatineau (Ontario part): unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2011 Q1 – 2019 Q4). The series continues after the last OW quarter (2026 Q1). Ottawa: Ontario part of Ottawa–Gatineau.",
+   "f5bEnd": [
+    "Ottawa 7.3%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nBefore the pandemic (2003 Q1 – 2019 Q4), the highest shares were in Toronto, Windsor, Peterborough; the lowest in Guelph, Barrie (Ontario: 39.8%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=during&cma=535",
+   "errors": [],
+   "card": "Toronto",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n8.7%\nRank among 15 CMAs (1 = highest)\n2 of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "during the pandemic (2020 Q1 – 2023 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2020 Q1 – 2023 Q1 (13 quarters). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 59.0%"
+   ],
+   "f5aHits": [
+    "Ottawa–Gatineau: average unemployment rate 5.7%, rank 15 of 15; long-term share 59.4%; 2020 Q1 – 2023 Q1.",
+    "Greater Sudbury: average unemployment rate 6.3%, rank 14 of 15; long-term share 57.2%; 2020 Q1 – 2023 Q1.",
+    "Guelph: average unemployment rate 6.7%, rank 13 of 15; long-term share 54.8%; 2020 Q1 – 2023 Q1.",
+    "Thunder Bay: average unemployment rate 6.7%, rank 12 of 15; long-term share 57.7%; 2020 Q1 – 2023 Q1.",
+    "Brantford: average unemployment rate 6.7%, rank 11 of 15; long-term share 55.4%; 2020 Q1 – 2023 Q1.",
+    "Hamilton: average unemployment rate 6.8%, rank 10 of 15; long-term share 60.4%; 2020 Q1 – 2023 Q1.",
+    "Kingston: average unemployment rate 7.1%, rank 9 of 15; long-term share 59.1%; 2020 Q1 – 2023 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 7.2%, rank 8 of 15; long-term share 64.2%; 2020 Q1 – 2023 Q1.",
+    "London: average unemployment rate 7.3%, rank 7 of 15; long-term share 57.5%; 2020 Q1 – 2023 Q1.",
+    "Barrie: average unemployment rate 7.3%, rank 6 of 15; long-term share 50.9%; 2020 Q1 – 2023 Q1.",
+    "Peterborough: average unemployment rate 7.4%, rank 5 of 15; long-term share 64.6%; 2020 Q1 – 2023 Q1.",
+    "Oshawa: average unemployment rate 7.4%, rank 4 of 15; long-term share 65.4%; 2020 Q1 – 2023 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 8.5%, rank 3 of 15; long-term share 56.2%; 2020 Q1 – 2023 Q1.",
+    "Toronto: average unemployment rate 8.7%, rank 2 of 15; long-term share 60.6%; 2020 Q1 – 2023 Q1.",
+    "Windsor: average unemployment rate 9.3%, rank 1 of 15; long-term share 54.9%; 2020 Q1 – 2023 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Toronto: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2020 Q1 – 2023 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Toronto 7.1%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nDuring the pandemic (2020 Q1 – 2023 Q1), the highest shares were in Oshawa, Peterborough, Kitchener–Cambridge–Waterloo; the lowest in Guelph, Barrie (Ontario: 59.0%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  },
+  {
+   "query": "period=post&cma=559",
+   "errors": [],
+   "card": "Windsor",
+   "cardMode": "Figure 2b · Selected CMA",
+   "cardUR": "Local unemployment rate · background\nAverage unemployment rate\n8.3%\nRank among 15 CMAs (1 = highest)\n1 of 15\n\nPeople unemployed ÷ labour force; not OW cases. Figure 5 compares all 15 CMAs.",
+   "f5aCaption": "after the pandemic (2023 Q2 – 2026 Q1)",
+   "f5aNote": "Both axes use the same quarters: 2023 Q2 – 2026 Q1 (12 quarters). Unemployment rate = mean of the quarterly values (each the three-month average ending in the quarter's last month). Line: Ontario long-term share over the same quarters. Both axes rescale with the period.",
+   "f5aTake": "Rank correlation across the 15 CMAs (Spearman; +1 = the two rankings match, 0 = unrelated, −1 = reversed): before the pandemic +0.44 · during the pandemic +0.14 · after the pandemic −0.44 (before = 2011 Q1 – 2019 Q4 only). The direction changes between periods, so the local unemployment rate alone does not explain which CMAs have higher long-term shares.",
+   "f5aNodata": null,
+   "f5aOntario": [
+    "Ontario 46.9%"
+   ],
+   "f5aHits": [
+    "Thunder Bay: average unemployment rate 4.5%, rank 15 of 15; long-term share 54.6%; 2023 Q2 – 2026 Q1.",
+    "Greater Sudbury: average unemployment rate 5.7%, rank 14 of 15; long-term share 52.1%; 2023 Q2 – 2026 Q1.",
+    "Peterborough: average unemployment rate 5.8%, rank 13 of 15; long-term share 59.0%; 2023 Q2 – 2026 Q1.",
+    "Ottawa–Gatineau: average unemployment rate 5.8%, rank 12 of 15; long-term share 46.8%; 2023 Q2 – 2026 Q1.",
+    "Guelph: average unemployment rate 5.8%, rank 11 of 15; long-term share 46.3%; 2023 Q2 – 2026 Q1.",
+    "Kingston: average unemployment rate 6.0%, rank 10 of 15; long-term share 53.5%; 2023 Q2 – 2026 Q1.",
+    "Brantford: average unemployment rate 6.2%, rank 9 of 15; long-term share 48.5%; 2023 Q2 – 2026 Q1.",
+    "Hamilton: average unemployment rate 6.5%, rank 8 of 15; long-term share 49.3%; 2023 Q2 – 2026 Q1.",
+    "London: average unemployment rate 6.5%, rank 7 of 15; long-term share 51.8%; 2023 Q2 – 2026 Q1.",
+    "Barrie: average unemployment rate 6.6%, rank 6 of 15; long-term share 43.1%; 2023 Q2 – 2026 Q1.",
+    "St. Catharines–Niagara: average unemployment rate 6.9%, rank 5 of 15; long-term share 51.2%; 2023 Q2 – 2026 Q1.",
+    "Kitchener–Cambridge–Waterloo: average unemployment rate 7.2%, rank 4 of 15; long-term share 53.0%; 2023 Q2 – 2026 Q1.",
+    "Oshawa: average unemployment rate 7.3%, rank 3 of 15; long-term share 49.6%; 2023 Q2 – 2026 Q1.",
+    "Toronto: average unemployment rate 7.8%, rank 2 of 15; long-term share 44.6%; 2023 Q2 – 2026 Q1.",
+    "Windsor: average unemployment rate 8.3%, rank 1 of 15; long-term share 48.1%; 2023 Q2 – 2026 Q1."
+   ],
+   "f5aDots": 15,
+   "f5bTitle": "Windsor: unemployment rate vs the other 14 CMAs",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). Shaded: the selected period's quarters with unemployment data (2023 Q2 – 2026 Q1). The series continues after the last OW quarter (2026 Q1).",
+   "f5bEnd": [
+    "Windsor 7.5%"
+   ],
+   "f5bOthers": 14,
+   "cards": "The data support\nOntario's long-term share peaked at 72.9% in 2021 Q3 with about as many long-term cases as in 2019 Q4 (130,096 vs 130,444) but fewer cases overall.\nAfter the pandemic (2023 Q2 – 2026 Q1), the highest shares were in Peterborough, Thunder Bay, Kingston; the lowest in Toronto, Barrie (Ontario: 46.9%).\nBarrie, Guelph and Brantford had a lower long-term share than Ontario in at least 90% of quarters.\nRankings shift: Toronto ranked 1 of 15 before the pandemic and 14 of 15 after it.\nAcross the 15 CMAs, the rank correlation between the unemployment rate and the long-term share was +0.44 before, +0.14 during and −0.44 after the pandemic (before = 2011 Q1 – 2019 Q4, when unemployment data exist).\nThe data do not show\nWhy the total caseload fell in 2020–2021, or why it grew afterwards.\nHow long a new case will last, or how likely any person is to stay on assistance.\nThat a CMA's local services or policies caused its higher or lower share.\nThat local unemployment explains or causes a CMA's long-term share: the unemployment rate counts people in the labour market, not OW cases, and is background only.\nRegional differences in need: a share of the caseload is not a rate per population.\nWorth investigating\nAbove Ontario before, during and after the pandemic: Peterborough and Oshawa (in at least one period by under 2 pp).\nLarge rank changes, such as Toronto, before reading any single quarter's ranking as stable.\nWhy the Ontario long-term share has risen again since 2024 Q4 (compare with case counts in Figure 1a).\nWhy Peterborough had the highest long-term share after the pandemic (59.0%) while its unemployment rate ranked 13 of 15 (5.8%; Figure 5a)."
+  }
+ ],
+ "interactions": {
+  "hover5a": {
+   "code": "595",
+   "card": "Thunder Bay",
+   "name": "Thunder Bay",
+   "mode": "Figure 2b · Preview · click the circle to select",
+   "mapHl": [
+    "595"
+   ],
+   "f3Hl": [
+    "595"
+   ],
+   "f5bHl": [
+    "595"
+   ],
+   "lblShown": [
+    "529",
+    "595"
+   ],
+   "tip": true
+  },
+  "click5a": {
+   "code": "595",
+   "before": "Peterborough",
+   "card": "Thunder Bay",
+   "mode": "Figure 2b · Selected CMA",
+   "f4": "Thunder Bay: long-term share vs Ontario and the other CMAs",
+   "f5b": "Thunder Bay: unemployment rate vs the other 14 CMAs",
+   "f3Sel": [
+    "595"
+   ],
+   "mapSel": [
+    "595"
+   ],
+   "f5aSel": [
+    "595"
+   ]
+  },
+  "hoverMap": {
+   "code": "535",
+   "f5aHl": [
+    "535"
+   ],
+   "lblShown": [
+    "535",
+    "595"
+   ],
+   "f5bHl": [
+    "535"
+   ]
+  },
+  "hover5b": {
+   "tip": true,
+   "text": "Thunder Bay · Jan 2020\nUnemployment rate\n4.4%\n15 CMAs, lowest–highest\n4.1% – 8.7%\nMedian of the 15 CMAs\n5.3%\nThree-month average ending in this month"
+  },
+  "keys": {
+   "reached": [
+    "580",
+    "529",
+    "505",
+    "550",
+    "521",
+    "543",
+    "537",
+    "555",
+    "568",
+    "539",
+    "541",
+    "532",
+    "535",
+    "559",
+    "595"
+   ],
+   "n": 15,
+   "focusKept": true,
+   "focusedCode": "595",
+   "selected": "Thunder Bay",
+   "f5aSel": [
+    "595"
+   ]
+  },
+  "brushPre2011": {
+   "selected": "Selected: 2005 Q1 – 2009 Q4 · 20 quarters",
+   "nodata": "No unemployment data for 2005 Q1 – 2009 Q4: the series starts in Jan 2011. Choose a period that reaches 2011 or later.",
+   "cardUR": "Local unemployment rate · background\n\nNo unemployment data for 2005 Q1 – 2009 Q4: the series starts in Jan 2011.",
+   "f5bNote": "Monthly, Jan 2011 – Oct 2026; each value is the seasonally adjusted average of that month and the two before. Grey lines: the other 14 CMAs (the one under your pointer is darkened). The selected period has no unemployment data. The series continues after the last OW quarter (2026 Q1)."
+  },
+  "errors": [],
+  "touch": {
+   "code": "559",
+   "card": "Windsor",
+   "f5b": "Windsor: unemployment rate vs the other 14 CMAs",
+   "f5aSel": [
+    "559"
+   ],
+   "scrollW": 400,
+   "clientW": 400
+  },
+  "touchErrors": []
+ }
+}

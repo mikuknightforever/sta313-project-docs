@@ -1,6 +1,6 @@
 # 交接说明：可视化设计工作 / Handoff: Visualization Design Work
 
-最后更新 / Last updated: 2026-11-16 · 分支 / Branch: `eric_roughwork`
+最后更新 / Last updated: 2026-11-18 · 分支 / Branch: `eric_roughwork`
 
 这份文件让你在**另一台设备或一个新的 Claude 会话**里接着做 Q1–Q3 的可视化设计，不需要原来的聊天记录。新会话先读这份文件，再读下面链接的设计文档。
 This file lets you continue the Q1–Q3 visualization work on **another device or in a new Claude session** without the original chat. A new session should read this file first, then the design documents linked below.
@@ -29,7 +29,7 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 | --- | --- | --- | --- | --- |
 | Q1 | 候选 A–C（v1）、D v3、D + 参照面 1–4、D + 插入面 5–9（2026-11-16，未提交）；页面入口表和插入面比较见 [q1/README.md](q1/README.md) | `q1-v1` = `a193c19`（A–D v1）· `q1-v2` = `e836bb9`（D v2，已存档）· `q1-v3` = `eb2586e`（D v3 `14e6474` + 参照面 1–4） | [q1/Q1_DESIGN.md](q1/Q1_DESIGN.md)（D：§7、§7.1 3D、§7.2 OW − ODSP 视图、§7.3 参照面、§7.4 插入面） | Q1_DESIGN §11（17 条） |
 | Q2 | 候选 A–C：[q2/variants/](q2/variants/)，总览 [q2/index.html](q2/index.html) | `q2-v1` = `ab9e8dd` | [q2/Q2_DESIGN.md](q2/Q2_DESIGN.md) | Q2_DESIGN §11（10 条） |
-| Q3 | v2 原型：[q3/prototype/](q3/prototype/index.html)；v1 存档在 [q3/archive/](q3/archive/README.md) | `q3-v1` = `55e5870` · `q3-v2` = `a336f1a` | [q3/Q3_DESIGN.md](q3/Q3_DESIGN.md) | Q3_DESIGN 第 9–10 节 |
+| Q3 | v2 原型：[q3/prototype/](q3/prototype/index.html)；v1 存档在 [q3/archive/](q3/archive/README.md)；额外版本 v2 + CMA 失业率（2026-11-18，并列）：[q3/unemployment-prototype/](q3/unemployment-prototype/README.md) | `q3-v1` = `55e5870` · `q3-v2` = `a336f1a` | [q3/Q3_DESIGN.md](q3/Q3_DESIGN.md)（额外版本：§11） | Q3_DESIGN 第 9–10 节；额外版本见其 README |
 
 - 每次迭代的记录：[DESIGN_LOG.md](DESIGN_LOG.md)。/ Iteration log.
 - 外部数据：2021 年 CMA 边界 `datasets/EXTERNAL/CMA-BOUNDARIES/`（Q3 地图用，Q2 C 用来排网格位置）。/ External CMA boundaries.
@@ -71,6 +71,9 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 - GitHub 上不能直接打开页面（没开 GitHub Pages），只能本地预览。/ No GitHub Pages yet.
 - 全省 OW 案件数带小数：数据字典写明全省数字包括第一民族案件的估计值，很可能是原因（Q1_DESIGN §7.4），待小组确认后更新页面说明。/ Decimal OW counts: the dictionary says they include First Nations estimates.
 - 插入面版本 5、6 使用外部参照数据（`design/q1/data/`，FAO 报告和政策日期，每行有来源）；FAO 数字每年更新，提交前要再核对。复核脚本 `tools/verify_q1_insight.py`。/ Versions 5–6 use sourced external data; re-check FAO numbers before submission.
+- Q3 v2 图 4 在 1360 / 820 px 选中 Peterborough 时右端标签超出图框（失业率额外版本继承，两处都未改）。/ Q3 v2 Figure 4's end label overflows its frame for Peterborough at 1360 / 820 px (also in the unemployment extra version; not fixed in either).
+- 在 2026-11-18 用的这台电脑上：没有 Node（`tools/check_q*.mjs` 不能跑），pandas 的 DLL 被 Windows 应用程序控制阻止。Q3 失业率版本因此用 Playwright（Python + 本机 Edge）和标准库复核，脚本在该版本目录里。/ On the 2026-11-18 machine there is no Node and pandas is blocked by Application Control; the Q3 unemployment version is checked with Python Playwright + Edge and the standard library.
+- Q3 失业率数据（StatCan 表 14-10-0459-01）会被 StatCan 修订；提交前运行 `python design/q3/data/fetch_unemployment.py --check`。/ Re-check the StatCan unemployment data before submission.
 
 ## 5. 原来的会话记录 / Original session transcript
 
