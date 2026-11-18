@@ -1,7 +1,7 @@
 # Q2 设计说明：单人无子女案件占比与两个项目的差距（v1 候选 A–C）/ Q2 Design Rationale: Single-Person Shares and the OW–ODSP Gap (v1 candidates A–C)
 
-状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。**2026-11-18 新增并列的额外版本 D（两团点云 + 拉链），见 §12。**
-Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). **2026-11-18: extra version D (two clouds + zipper) added in parallel, §12.** Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
+状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。**2026-11-18 新增并列的额外版本 D（两团点云 + 拉链，§12）和 D2（D + "每 100 个案件"开场，§13）。**
+Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). **2026-11-18: extra versions D (two clouds + zipper, §12) and D2 (D + a "100 cases" opening, §13) added in parallel.** Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
 - 研究问题 / Research question: *How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?*
@@ -349,7 +349,7 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 8. **B 的读者测试**：如果考虑 B，先找 2–3 位组外同学试读图 1。/ Reader test for B.
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
-11. **额外版本 D**（2026-11-18，§12）：是替换还是并入 A–C；是否再做"滚动驱动"版本（同一组点随叙事步骤变形）；D 是否也要做读者测试。/ Extra version D: replace or join A–C; try a scroll-driven version; reader test.
+11. **额外版本 D / D2**（2026-11-18，§12、§13）：是替换还是并入 A–C；用 D 还是带开场的 D2；是否再做"滚动驱动"版本（同一组点随叙事步骤变形）；D / D2 是否也要做读者测试。/ Extra versions D / D2: replace or join A–C; D or D2; scroll-driven version; reader test.
 
 ## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
 
@@ -412,3 +412,29 @@ The form follows this fact: a blue cloud climbing toward an almost flat orange o
 - 页面横幅和定义卡说明它不是小组基线。
 
 Limitations: no reader test; first-quarter sampling; 2 px dots on phones; keyboard access goes through Figure 2 names and Table 1, not the 720 dots.
+
+## 13. 额外版本 D2：D + "每 100 个案件"开场（2026-11-18）/ Extra version D2: D plus a "100 cases" opening
+
+状态：并列的额外版本，放在 [variants/d2-clouds-waffle/](variants/d2-clouds-waffle/index.html)；D 不变（D2 复制了 D 的文件，新增部分在代码里标 "D2"）。用户在看过 D 之后要求把"方案四"（开场方格图）并进去。
+Status: parallel extra version; D is unchanged (D2 copies D's files and marks its additions "D2").
+
+### 13.1 设计 / Design
+
+- **问题**：百分比抽象；"每 100 个案件里有几个"可以数。开场先用全省给出这个最直观的结论，再由图 1a 拆到 15 个 CMA（L6 的叙事：先给一个具体的"钩子"，再进入 martini glass 的杯颈和杯口）。/ A countable headline before the detail.
+- **视图**：每个项目一张 10 × 10 方格图（unit / waffle chart），每格 = 每 100 个案件中的 1 个，从最下一行开始、从左到右填色；色相 = 项目（全站 OW 蓝、ODSP 橙）。OW 方格中从 OW 占比到 ODSP 占比的部分画成中性斜纹，就是差距（与 A 的差距纹理带同一编码，不占用新颜色）。旁边印出准确的 OW、ODSP 占比和差距（大字），以及计算出的一段话（时期起止的数值和变化）。
+- **不取整**：如果把格数四舍五入，2003 Q1 的 OW 49.54% → 50 格、ODSP 76.41% → 76 格，差距只剩 26 格，与印出的 26.9 pp 矛盾。所以最后一格按小数部分填一部分（"a partly filled square is a fraction"），格子面积与数字完全一致；自动检查逐个读出绘制的矩形宽度求和，与占比和差距比较（误差 < 0.01 格）。
+- **时间**：滑块（季度）+ Play / Pause / Replay；开场第一次进入视野时自动播放一次（约 5 秒，每季度 55 ms），系统设置"减少动态效果"时不自动播放、手动播放变慢；滑块可用方向键逐季移动，读数写出所处阶段（before / during / after the pandemic）。**开场跟随所选时期**：预设、下拉框或刷选改变时期时，滑块范围和那段话都跟着变（例如 "During" 时从 2019 Q4 播到 2023 Q1）。这是 L5 的 navigation（在时间上移动视窗）。
+- **只画全省**：开场是总结论；各 CMA 的同一组数字就在图 1a 里，叙事步骤 1 的提示写明两者的关系。
+
+### 13.2 考虑过但没采用 / Rejected
+
+- 一张方格图叠两个项目（蓝 = OW，蓝 + 橙 = ODSP）：橙色就变成"差距"而不是"ODSP"，与全站颜色含义冲突。/ One stacked waffle: orange would mean the gap.
+- 格数取整：与印出的数字差 1 格（见上）。/ Whole squares.
+- 开场跟随选中的 CMA：开场在页面顶部，点选发生在下方，读者看不到它变化，还会失去"全省总结论"的作用。/ Following the selected CMA.
+- 饼图 / 环形图：角度和面积比较不如方格计数直观，而且本文件 §3 已约定 Q2 不用饼图。/ Pie or donut (ruled out in §3).
+
+### 13.3 自检 / Self-check
+
+- **数字复核**（[verify.py](variants/d2-clouds-waffle/verify.py)，标准库）：D 的全部 253 个字段，加上 11 个状态下开场的那段话、三个大数字、季度读数和滑块范围，以及 7 个季度（2003 Q1、2003 Q2、2009 Q4、2016 Q1、2020 Q1、2023 Q1、2026 Q1）的大数字和绘制面积：共 **313 个字段，0 处不一致**。
+- **浏览器检查**（[verify_browser.py](variants/d2-clouds-waffle/verify_browser.py)）：D 的 16 项，加上开场 6 项，共 **22 项全部通过**：12 种版面下开场的文字和方格不重叠、不出界；正常动态效果下自动播放一次、从第一个季度播到最后一个、按钮变成 Replay；减少动态效果时不自动播放；方向键逐季移动；Play / Pause；选 "During" 后滑块范围变成 2019 Q4 – 2023 Q1、那段话随之更新。为了结果可重复，其余检查都在"减少动态效果"下运行（开场停在时期的第一个季度）。
+- 局限：方格靠计数和面积读，精度低于位置，所以数字都印在旁边；只画全省；页面多了一段动画；没有读者测试。

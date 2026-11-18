@@ -24,11 +24,11 @@
 </head>
 <body>
 <div class="page">
-  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) plus extra version D (2026-11-18) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
+  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) plus extra versions D and D2 (2026-11-18) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
   <header class="q-head">
     <p class="eyebrow">Part 2 of 3 · Family composition · OW and ODSP, 15 CMAs</p>
-    <h1>Q2: three candidate designs and one extra version</h1>
-    <p class="lead">All four answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
+    <h1>Q2: three candidate designs and two extra versions</h1>
+    <p class="lead">All five answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
     <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
   </header>
 
@@ -81,6 +81,18 @@
       </dl>
       <p class="links"><a href="variants/d-clouds/index.html"><b>Open D →</b></a> <a href="screenshots/d-desktop-light.png">desktop</a> <a href="screenshots/d-desktop-dark.png">dark</a> <a href="screenshots/d-mobile-light.png">phone</a> <a href="screenshots/d-hover-light.png">hover</a> <a href="screenshots/d-state.png">interaction</a></p>
     </article>
+    <article class="vcard">
+      <img src="screenshots/d2-thumb.png" alt="Extra version D2: an opening with two 10 by 10 waffles for Ontario, blue squares for OW single-person cases with the gap hatched up to the ODSP level, orange squares for ODSP">
+      <h2>D2 · D + "100 cases" opening <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Version D with an opening for Ontario: out of every 100 cases, how many are a single person without children? Blue squares fill up while the hatched gap to ODSP shrinks, playing through the selected period; then Figure 1a breaks it into the 15 CMAs.</p>
+      <dl>
+        <dt>Motivation</dt><dd>"Of every 100 cases" can be counted; it gives the headline in a form anyone can read before the detail.</dd>
+        <dt>Appeal</dt><dd>The squares play by themselves when the opening scrolls into view; the hatched gap visibly shrinks.</dd>
+        <dt>Cost</dt><dd>Squares are read by counting and area, so exact numbers are printed beside them; Ontario only; one more animation (none with reduced motion). Otherwise as D.</dd>
+        <dt>Course basis</dt><dd>As D, plus L6 narrative: a concrete hook before the martini glass; animation as navigation through time (L5), with a slider and Play / Pause.</dd>
+      </dl>
+      <p class="links"><a href="variants/d2-clouds-waffle/index.html"><b>Open D2 →</b></a> <a href="screenshots/d2-desktop-light.png">desktop</a> <a href="screenshots/d2-desktop-dark.png">dark</a> <a href="screenshots/d2-mobile-light.png">phone</a> <a href="screenshots/d2-opening-light.png">opening</a> <a href="screenshots/d2-hover-light.png">hover</a> <a href="screenshots/d2-state.png">interaction</a></p>
+    </article>
   </section>
 
   <section class="block">
@@ -97,6 +109,7 @@
         <tr><td>D</td><td>1a</td><td>Beeswarm strips over time ("two clouds") with a zipper on demand</td><td>Dots (one per CMA, year, program); for the focused CMA two threads + teeth</td><td>x = year (first quarter); y = share; hue = program; sideways offset only avoids overlap; tooth length = gap</td><td>Both</td><td>No: the only swarm on the site</td></tr>
         <tr><td>D</td><td>1b</td><td>Analysis card: gap sparkline + period bars</td><td>Line; bars from zero</td><td>x = time; y = gap · length from zero = change in a period</td><td>When; details</td><td>Same component as Part 3's card (on purpose: same interaction logic)</td></tr>
         <tr><td>D</td><td>2</td><td>Slopegraph of start and end gaps</td><td>Lines between two axes</td><td>y = gap at the start and end quarter; slope = change</td><td>Where</td><td>No; same data as A's dumbbell in another form, and it shows the gaps converging</td></tr>
+        <tr><td>D2</td><td>Opening</td><td>Waffle (unit) chart, one per program, animated through time</td><td>100 squares; partly filled squares for fractions; hatching for the gap</td><td>number of filled squares = share per 100 cases; hue = program; hatched squares in the OW waffle = gap; time = slider / Play</td><td>How Ontario's shares changed (headline)</td><td>No. Figures 1a, 1b and 2 are D's</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -122,7 +135,7 @@
     <div class="rec">
       <p><b>Use B as the main view and add C's waterfall as the "when" view for the selected CMA.</b> B is the only candidate that shows which program moved — the OW share rose in every CMA while the ODSP share changed far less — and its Figure 2 still ranks the CMAs. Its form is new to the site and every novelty has a function (45° = no gap, direction = which program). C's waterfall covers B's weak spot, time, using the same before / during / after periods as Parts 1 and 3.</p>
       <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
-      <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing?</p>
+      <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing? <b>D2</b> is D with a "100 cases" opening for Ontario; it is the more inviting first screen, at the cost of one more animation and a less precise encoding (counting squares) that is backed by printed numbers.</p>
     </div>
   </section>
 
@@ -135,7 +148,7 @@
       <li>Default period (2003 Q1 → 2026 Q1) and phase cut points (2019 Q4, 2023 Q1).</li>
       <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
       <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
-      <li>Whether extra version D replaces or joins A–C, and whether to try a scroll-driven version of it (the same dots morphing through the story steps).</li>
+      <li>Whether extra version D (or D2, with the "100 cases" opening) replaces or joins A–C, and whether to try a scroll-driven version of it (the same dots morphing through the story steps).</li>
     </ol>
   </section>
 </div>

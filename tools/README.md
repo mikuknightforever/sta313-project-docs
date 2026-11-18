@@ -87,11 +87,13 @@ python design/q3/unemployment-prototype/verify_browser.py
 python design/q3/unemployment-prototype/verify.py
 ```
 
-Q2 额外版本 D 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。/ Q2 extra version D works the same way.
+Q2 额外版本 D、D2 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。/ Q2 extra versions D and D2 work the same way.
 
 ```bash
 python design/q2/variants/d-clouds/verify_browser.py
 python design/q2/variants/d-clouds/verify.py
+python design/q2/variants/d2-clouds-waffle/verify_browser.py   # D2 = D + 开场 / D + the opening
+python design/q2/variants/d2-clouds-waffle/verify.py
 ```
 
 ## 分析脚本 / Analysis（`tools/analysis/`）

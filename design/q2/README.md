@@ -26,15 +26,16 @@ python serve.py
 | B · Arrows in share space + decomposition | OW 占比 × ODSP 占比空间里的彗星图（结束季度滑块 + Play）+ 分歧堆叠的贡献分解条 / comets in OW-share × ODSP-share space with an end-quarter slider, plus diverging decomposition bars | [variants/b-arrows/](variants/b-arrows/index.html) | **否：页面已说明原因 / No: reason stated on the page** |
 | C · Tile grid map + phase waterfall | 按地理排列的网格地图（每格逐年浮动柱）+ 选中 CMA 的分阶段瀑布图 / tile grid map of yearly floating columns + phase waterfall for the selected CMA | [variants/c-tilemap/](variants/c-tilemap/index.html) | **否：页面已说明原因 / No: reason stated on the page** |
 | D · Two clouds + zipper（**额外版本 / extra version，2026-11-18**） | 每年一列的点云：每个 CMA 一个蓝点（OW 占比）、一个橙点（ODSP 占比）；悬停把该 CMA 的两点"拉链"连起来（齿长 = 差距）并在固定卡片中预览、点击选中（交互同 Q3）；全省差距刷选条；起止差距斜线图 / yearly dot clouds of every CMA's OW and ODSP shares, a zipper and Q3-style card on hover, a brushable period strip and a start → end slopegraph | [variants/d-clouds/](variants/d-clouds/index.html) | **否：页面已说明原因 / No: reason stated on the page** |
+| D2 · D + "100 cases" opening（**额外版本 / extra version，2026-11-18**） | D 加一个全省开场：每个项目一张 10 × 10 方格图（每格 = 每 100 个案件中的 1 个，部分填色表示小数），OW 方格里的斜纹是差距；进入视野时自动播放一次，跟随所选时期 / D plus an Ontario opening of two 10 × 10 waffles that play through the selected period | [variants/d2-clouds-waffle/](variants/d2-clouds-waffle/index.html) | **否：页面已说明原因 / No: reason stated on the page** |
 
-D 是 2026-11-18 在 v1 之后加的并列额外版本（设计理由见 [Q2_DESIGN.md](Q2_DESIGN.md) §12），不改 A–C。/ D is a parallel extra version added after v1 (rationale in §12); A–C are unchanged.
+D、D2 是 2026-11-18 在 v1 之后加的并列额外版本（设计理由见 [Q2_DESIGN.md](Q2_DESIGN.md) §12、§13），不改 A–C；D2 复制 D 的文件再加开场，D 本身不变。/ D and D2 are parallel extra versions added after v1 (§12, §13); A–C are unchanged, and D2 copies D's files rather than changing them.
 
 按版本规则（见 [design/DESIGN_LOG.md](../DESIGN_LOG.md)），这批候选是 Q2 v1，tag `q2-v1`。小组选定后，入选版本放到稳定路径 `design/q2/prototype/`（尚未建立）。
 Under the versioning rule these candidates are Q2 v1 (tag `q2-v1`). The chosen version will move to the stable path `design/q2/prototype/` (not created yet).
 
 ## URL 参数 / URL parameters
 
-四个版本都支持 / All four accept:
+五个版本都支持 / All five accept:
 
 | 参数 / Parameter | 值 / Values |
 | --- | --- |
@@ -46,14 +47,14 @@ Under the versioning rule these candidates are Q2 v1 (tag `q2-v1`). The chosen v
 
 另外 / In addition: A `sort=nar|g1|name`；C `arrange=map|rank`。B 的结束季度就是 `end`。D 的刷选条写回 `start` / `end` 对应的下拉框（不写入 URL）。/ B's slider is `end`; D's brush drives the same start / end selectors.
 
-例 / Examples: `variants/a-dumbbell/index.html?step=4`, `variants/b-arrows/index.html?end=2012Q4&cma=559`, `variants/c-tilemap/index.html?period=during&arrange=rank&cma=550`, `variants/d-clouds/index.html?period=during&cma=550`
+例 / Examples: `variants/a-dumbbell/index.html?step=4`, `variants/b-arrows/index.html?end=2012Q4&cma=559`, `variants/c-tilemap/index.html?period=during&arrange=rank&cma=550`, `variants/d-clouds/index.html?period=during&cma=550`, `variants/d2-clouds-waffle/index.html?period=during`（开场从 2019 Q4 播到 2023 Q1 / the opening plays 2019 Q4 → 2023 Q1）
 
 ## 文件 / Files
 
 - `index.html`：候选总览（卡片、图表类型清单、比较表、推荐、待决定事项）/ overview of candidates
 - `shared/q2.css`：从 Q1（再上溯到 Q3 v2）复制的全站变量和页面骨架，新增中性"差距"颜色和组件样式 / site tokens copied from Q1 plus the neutral gap colour and components
 - `shared/q2-common.js`：数据加载、所有派生事实（占比、差距、缩小幅度、阶段、排序）、共用的导语 / 叙事 / 结论文字、时期选择器、表 1 和绘图工具 / data loading, every derived fact, shared text, period control, Table 1, helpers
-- `variants/<候选>/index.html` + `<a|b|c|d>.js`：各候选；D 另有 `d.css` 和自己的检查脚本 `verify_browser.py`（Playwright + 本机 Edge：版面、交互、截图）、`verify.py`（只用标准库，从 CSV 重算页面上的全部数字）/ each candidate; D also has `d.css` and its own checks
+- `variants/<候选>/index.html` + `<a|b|c|d>.js`：各候选；D2 是 `d2.js` + `d2.css`（D 的副本加开场）；D、D2 各有 `d.css` / `d2.css` 和自己的检查脚本 `verify_browser.py`（Playwright + 本机 Edge：版面、交互、截图）、`verify.py`（只用标准库，从 CSV 重算页面上的全部数字）/ each candidate; D also has `d.css` and its own checks
 - `screenshots/`：每个候选的 `-desktop-light`、`-desktop-dark`（1360px）、`-mobile-light`、`-mobile-dark`（400px）、`-state`（关键交互状态）、`-thumb`（总览卡片缩略图），以及 `overview-desktop-light.png` / per-candidate screenshots plus the overview page
 
-交互状态截图对应的 URL / State screenshots: A `step=4` · B `step=0&start=2003Q1&end=2012Q4&cma=559` · C `step=0&period=during&arrange=rank&cma=550` · D `step=0&period=during&cma=550`；D 另有 `d-hover-light.png`（悬停 Toronto 时的图 1：拉链预览 + 卡片 + 提示）/ D also has a hover screenshot
+交互状态截图对应的 URL / State screenshots: A `step=4` · B `step=0&start=2003Q1&end=2012Q4&cma=559` · C `step=0&period=during&arrange=rank&cma=550` · D `step=0&period=during&cma=550`；D 另有 `d-hover-light.png`（悬停 Toronto 时的图 1：拉链预览 + 卡片 + 提示）/ D also has a hover screenshot · D2 同 D，截图前缀 `d2-`，另有 `d2-opening-light.png`（开场自动播放结束时）/ D2 as D with prefix `d2-`, plus the opening after autoplay

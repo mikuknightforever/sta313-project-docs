@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · D2 · Two clouds and 100 cases</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+<link rel="stylesheet" href="d2.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 extra version <b>D2 · Two clouds and a zipper, with a "100 cases" opening</b> (added 2026-11-18; version D plus the opening; an alternative to the baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1 id="h1">Two clouds: OW and ODSP single-person shares in 15 CMAs</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <section class="hero" id="hero" aria-labelledby="heroH">
+    <p class="hero-kicker">Opening · Ontario as a whole</p>
+    <h2 id="heroH">Out of every 100 cases, how many are a single person without children?</h2>
+    <div class="hero-grid">
+      <div class="waf-col">
+        <p class="waf-name"><i class="sw ow"></i>Ontario Works (OW)</p>
+        <p class="waf-big ow" id="owBig">–</p>
+        <div class="waf" id="wafOW"></div>
+      </div>
+      <div class="waf-col">
+        <p class="waf-name"><i class="sw od"></i>ODSP</p>
+        <p class="waf-big od" id="odBig">–</p>
+        <div class="waf" id="wafOD"></div>
+      </div>
+      <div class="hero-ctl">
+        <button type="button" class="ghost play" id="heroPlay">Play</button>
+        <label class="lab-t" for="heroSlider">Quarter</label>
+        <input type="range" id="heroSlider" min="0" max="92" step="1" value="0">
+        <span class="hero-q" id="heroQ"></span>
+      </div>
+      <div class="waf-side">
+        <p class="waf-gap"><span class="lab">Gap</span><span id="gapBig">–</span></p>
+        <p class="waf-key" id="wafKey"></p>
+        <p class="hero-take" id="heroTake"></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pitch" aria-label="Why this version">
+    <p><b>Motivation.</b> A percentage is abstract; "of every 100 cases" can be counted. The opening gives Ontario's headline in that form, then Figure 1a breaks it into the 15 CMAs (both shares, which program moved, how far apart), each dot one CMA in one year.</p>
+    <p><b>Appeal.</b> Blue squares fill up while the hatched gap shrinks, playing by itself when the opening scrolls into view; below, the blue cloud climbs toward an almost flat orange one, and hovering a dot zips that CMA's two dots together.</p>
+    <p><b>Cost.</b> Squares are read by counting and area, less precisely than position, so the exact numbers are printed beside them; the opening shows Ontario only. Figure 1a's costs are D's: sideways position inside a year means nothing, the first quarter stands for the year, and the space between the clouds is not any one CMA's gap.</p>
+  </div>
+  <p class="challenge" role="note"><b>This version does not use the agreed dumbbell baseline</b>, because a dumbbell shows two moments and only the size of the gap; it cannot show that the OW share rose in every CMA while the ODSP share barely moved. The ranking is kept in Figure 2 (start and end gaps, slopes) and Table 1.</p>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Share of cases</h3><p>Single-person cases without children ÷ all cases × 100, for one program, one CMA, one quarter. It describes who is on the caseload, not how many single residents receive assistance.</p></div>
+        <div><h3>Gap</h3><p>ODSP share − OW share, in percentage points (pp), for one CMA. In Figure 1 it is the length of a zipper tooth: the line joining a CMA's blue and orange dots in the same year.</p></div>
+        <div><h3>Space between the clouds</h3><p>The lowest ODSP share among the 15 CMAs minus the highest OW share in the same quarter. It compares the two groups of CMAs, so it is smaller than every single CMA's gap.</p></div>
+        <div><h3>Narrowed by</h3><p>Gap at the start quarter − gap at the end quarter (default 2003 Q1 → 2026 Q1). Positive means narrower; it does not mean narrower every quarter.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter, so hover shows the counts. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Fifteen CMAs, two clouds</h2>
+      <p class="sub">Follow the four steps, then choose "Explore". Hover or tap a dot to preview that CMA in Figure 1b; click it to select it for Figures 1b and 2 and Table 1.</p></div>
+    </div>
+    <div class="story" role="group" aria-label="Story steps">
+      <div class="seg" id="stepSeg"></div>
+      <p class="story-text" id="stepText" aria-live="polite"></p>
+    </div>
+
+    <div class="period-panel" role="group" aria-label="Period">
+      <div class="toolbar tight"><div class="period" id="period" role="group" aria-label="Start and end quarter"></div></div>
+      <p class="strip-label">Ontario's gap (ODSP share − OW share), every quarter 2003–2026. Drag across the strip to choose any range of quarters; every figure, the card and Table 1 follow it.</p>
+      <div class="chart" id="periodStrip"></div>
+    </div>
+
+    <figure class="fig" id="fig1">
+      <figcaption><b>Figure 1a.</b> <span id="f1Title"></span></figcaption>
+      <div class="key" id="f1Key"></div>
+      <div class="map-grid">
+        <div class="chart" id="f1"></div>
+        <aside class="card-panel" id="card" aria-live="polite" aria-label="Figure 1b, analysis of one CMA"></aside>
+      </div>
+      <p class="note" id="f1Note"></p>
+      <p class="takeaway" id="f1Take"></p>
+    </figure>
+
+    <figure class="fig" id="fig2">
+      <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2"></div>
+      <p class="readout" id="f2Read" aria-live="polite"></p>
+      <p class="note" id="f2Note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Exact values for every CMA</h2><p class="sub">Same period as above. Click a row to select it in every figure.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> Shares, gaps and case counts for the selected period</figcaption><div id="tbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA) and for Ontario, quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="d2.js"></script>
+</body>
+</html>
