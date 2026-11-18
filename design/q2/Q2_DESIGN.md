@@ -1,7 +1,7 @@
 # Q2 设计说明：单人无子女案件占比与两个项目的差距（v1 候选 A–C）/ Q2 Design Rationale: Single-Person Shares and the OW–ODSP Gap (v1 candidates A–C)
 
-状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。
-Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
+状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。**2026-11-18 新增并列的额外版本 D（两团点云 + 拉链），见 §12。**
+Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). **2026-11-18: extra version D (two clouds + zipper) added in parallel, §12.** Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
 - 研究问题 / Research question: *How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?*
@@ -349,3 +349,66 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 8. **B 的读者测试**：如果考虑 B，先找 2–3 位组外同学试读图 1。/ Reader test for B.
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
+11. **额外版本 D**（2026-11-18，§12）：是替换还是并入 A–C；是否再做"滚动驱动"版本（同一组点随叙事步骤变形）；D 是否也要做读者测试。/ Extra version D: replace or join A–C; try a scroll-driven version; reader test.
+
+## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
+
+状态：并列的额外版本，放在 [variants/d-clouds/](variants/d-clouds/index.html)，A–C 和 `q2-v1` 不变。起因：A–C 与 Q1（3D）、Q3（地图 + 卡片）相比显得平淡，用户要求做一个更醒目的方案，交互逻辑与 Q3 相同。
+Status: a parallel extra version; A–C and `q2-v1` are unchanged. Reason: A–C looked plain next to Parts 1 and 3; the user asked for a more striking design with Part 3's interaction logic.
+
+### 12.1 核心事实（先核数据，再定形式）/ The fact that drives the form
+
+用标准库从 CSV 重算（[verify.py](variants/d-clouds/verify.py)）：
+- 15 个 CMA 的 OW 占比和 ODSP 占比**在 93 个季度里从不重叠**：每个季度，最低的 ODSP 占比都高于最高的 OW 占比。
+- 两团之间的空白（最低 ODSP − 最高 OW）从 2003 Q1 的 20.1 pp 缩到 2026 Q1 的 4.0 pp（2026 Q1 也是 93 个季度中最小的）。
+- 主要是 OW 团在上升：中位数 CMA 的 OW 占比 47.9% → 69.3%，ODSP 占比 77.6% → 81.3%。
+- 各 CMA 的差距在收敛：2003 Q1 为 23.8–36.0 pp（极差 12.2），2026 Q1 为 9.1–14.8 pp（极差 5.7）；起始差距与缩小幅度的秩相关 +0.94。这一部分是"起点高、回落空间大"以及小 CMA 单季波动的结果，页面在图 2 注释里写明，不作因果解释。
+
+Recomputed with the standard library: the two groups never overlap in 93 quarters; the space between them shrank from 20.1 pp to 4.0 pp; the OW median rose 47.9% → 69.3% while ODSP's went 77.6% → 81.3%; the CMA gaps converged (rank correlation +0.94 between start gap and narrowing, partly expected from regression toward the middle, stated on the page).
+
+这个事实正好可以画成一张图：蓝团往上爬，橙团几乎不动，两团之间的空白在合拢。D 的主图就是为它设计的。
+The form follows this fact: a blue cloud climbing toward an almost flat orange one.
+
+### 12.2 视图与编码 / Views and encodings
+
+- **图 1a 两团点云**（L8 "Quant + Ordered: beeswarm / swarm plot"，讲义第 25–26 页）：每年一列（该年第一季度，与 C 相同），每个 CMA 一个蓝点（OW 占比）和一个橙点（ODSP 占比）；纵向位置 = 占比（共同尺度，L3 最有效通道）；点只在列内横向错开以减少重叠，横向位置没有含义（图注写明）；色相 = 项目（全站 OW 蓝 / ODSP 橙）。直接标签 "ODSP share" / "OW share" 放在没有点的位置；第一列和最后一列画出两团之间的空白（虚线括号 + "20.1 pp between the clouds" / "4.0 pp"）。疫情灰带、所选时期框与全站一致。
+  - 点的半径：取能让每年的点留在本列内的最大值（允许最多 1/5 直径的重叠，点有表面色细描边分隔）；实测 1360 px 为 2.6 px，820 px 为 2.9 px，400 px 为 2.0 px（手机图更高，600 px）。
+- **拉链**（L4-1 connectedness）：被聚焦的 CMA（悬停预览或已选中）的每年蓝点和橙点用灰色"齿"连起来，齿长 = 当年差距；两条墨色"线"分别穿过它的蓝点和橙点。所选时期的起止季度画成粗齿（非第一季度时画在时间轴的准确位置）。全省不是 15 个点之一，选中时用空心标记画它的拉链。悬停预览时其余点变淡，已选中的拉链变成浅色背景，预览拉链用虚线（Q3 中"悬停 = 预览、点击 = 选中"的同一套规则）。
+- **图 1b 分析卡片**（与 Q3 图 2b 相同的组件）：差距起止、缩小幅度、按缩小幅度的排名（全省写 "reference, not ranked"）、两个占比的起止和变化、扩大的季度数、两个项目的案件数；"每季度差距"小图（全省为点线参照，共用纵轴）；"各阶段差距变化"条（向右 = 缩小，与 B 的约定相同；同一时期所有地区共用横轴）；计算出的结论句。小 CMA（结束季度 OW 案件 < 3,000）显示提示。卡片的高度对 16 个地区恒定（提示条位置始终保留、标题不换行、案件数分两行、结论句预留三行），否则悬停时下方的图 2 会跳动、鼠标下的名字随之改变——这是第一次自检发现的真实 bug，已修复并加入自动检查。
+- **时期刷选条**（与 Q3 相同）：全省差距的小面积图，`d3.brushX` 吸附到季度；与 Q2 共用的预设按钮和起止下拉框同步；所有图、卡片和表 1 跟随。
+- **图 2 斜线图**（L8 讲义第 34 页 experception.net 图表速查中的 slopegraph："With two values, slope encodes delta"；两轴的平行坐标）：每个 CMA 一条线，左 = 起始季度差距，右 = 结束季度差距，全省为点线；名字用聚类居中的方式错开，细引线指向准确值；右侧名字可 Tab 聚焦、Enter 选中。读数句给出起止的范围、缩小最多 / 最少、起始差距与缩小幅度的秩相关（|ρ| ≥ 0.5 时才加一句方向描述）。和 A 的哑铃图是同一组数据的另一种形式；它额外显示"收敛"。
+
+### 12.3 交互（Card 流程）/ Interactions
+
+| 操作 / Action | 作用层 / Pipeline layer | 课堂术语 / Term |
+| --- | --- | --- |
+| 悬停 / 点按点云中的点（Delaunay 最近点，12 px 内）| view：拉链、变淡、卡片预览、图 2 线高亮 | details on demand、linked highlighting |
+| 点击点、图 2 的线或名字、表 1 的行 | 选中状态 → 卡片、拉链、图 2、表 1 | selection、linked views |
+| 刷选条 / 预设 / 下拉框 | data transformation：重新计算所有起止值 | filtering、navigation |
+| 叙事步骤 1–4 | 设定时期、选中和高亮集合 | martini glass（L6） |
+| 主题切换 | visual mapping（颜色变量） | — |
+
+### 12.4 考虑过但没采用 / Rejected
+
+- 每季度一列（93 列）：桌面每列约 5 px，点无法排开。/ Quarterly columns: too narrow.
+- 随机抖动（jitter）代替 beeswarm：每次加载位置不同、点更容易重叠；beeswarm 是确定性的。/ Random jitter.
+- 按 CMA 着色：15 种颜色无法分辨（L3 discriminability），而且会占用项目色相。/ Colour by CMA.
+- 同时画出 15 条拉链：变成 30 条线的意大利面图。/ All 15 zippers at once.
+- 把两团之间的空白画成阴影带：容易被误读成某个 CMA 的差距；只用两处括号标注并在定义卡和图注中说明。/ Shading the space between the clouds.
+- 用 Q3 的青绿 ↔ 紫：违反"同一颜色只表示一个含义"。/ Reusing Part 3's diverging colours.
+
+### 12.5 自检 / Self-check
+
+- **要求对照**：R1 点云和斜线图是页面主体；R2 悬停、点击、刷选、预设、叙事步骤；R4 定义卡新增"Space between the clouds"，图注说明横向位置无含义；R7 占比用共同尺度位置、项目用色相、差距用齿长 / 斜率（位置），没有新颜色；R8 一张图同时给出每个地区每年的两个占比、哪个项目在动、收敛，卡片给出阶段、排名和案件数；R10 全站唯一的 swarm 图；R12–R14 见 §12.2–12.3；R3、R16、R17 与 A–C 相同，未完成。
+- **数字复核**（[verify.py](variants/d-clouds/verify.py)，只用标准库，复刻 d3.format 的四舍五入和负号）：11 个页面状态、253 个字段（标题、导语、叙事文字和提示、图 1 结论、括号标签、拉链标签、卡片全部条目、阶段条、结论句、图 2 两侧标签、读数句、高亮集合、表 1 共 2,288 个单元格）**0 处不一致**；另核对 5 条写成事实的说法（两团从不重叠、空白缩小、OW 中位数变化超过 ODSP 的两倍、每个 CMA OW 上升且差距缩小、每个 CMA-季度 ODSP 高于 OW）全部成立。本机 pandas 被 Windows 应用程序控制阻止、没有 Node，所以没用 `tools/verify_q2.py` 和 `check_q2.mjs`。
+- **渲染与交互**（[verify_browser.py](variants/d-clouds/verify_browser.py)，Playwright + 本机 Edge）：16 项全部通过——1360 / 820 / 400 px × 浅色 / 深色 × 两个状态的页面横向滚动、控制台错误、图内文字重叠、文字出界、标签压住点、点是否留在本列；卡片高度对 16 个地区恒定（5 种宽度 × 2 个时期）；悬停点（预览、提示、拉链、变淡、图 2 联动）；点击选中（卡片、拉链、图 2、表 1，进入 Explore）；悬停图 2 名字及离开后恢复；键盘 Tab 到达 16 个名字、Enter 选中并保留焦点；预设 "During"；刷选 2010 Q1 – 2015 Q4；叙事步骤 2；400 px 触摸点按。
+- **四舍五入**：与 A–C 相同，"Narrowed by" 用未取整的值计算，可能与两个显示值之差相差 0.1（例如 Guelph 疫情期 16.8 → 18.4，widened 1.7）；图 2 读数句里的"极差"按显示值相减，与读者心算一致。
+
+### 12.6 局限 / Limitations
+
+- 没有读者测试；最大的风险是读者把横向位置当成数据，或分不清"两团之间的空白"和某个 CMA 的差距。
+- 每年只取第一季度（与 C 相同）；季度内波动只在卡片小图和表 1 中可见。
+- 400 px 时点半径只有 2 px；点云中 720 个点不能用 Tab 逐个到达，键盘用户通过图 2 的名字和表 1 选择（图注写明）。
+- 页面横幅和定义卡说明它不是小组基线。
+
+Limitations: no reader test; first-quarter sampling; 2 px dots on phones; keyboard access goes through Figure 2 names and Table 1, not the 720 dots.

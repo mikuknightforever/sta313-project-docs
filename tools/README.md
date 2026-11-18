@@ -87,6 +87,13 @@ python design/q3/unemployment-prototype/verify_browser.py
 python design/q3/unemployment-prototype/verify.py
 ```
 
+Q2 额外版本 D 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。/ Q2 extra version D works the same way.
+
+```bash
+python design/q2/variants/d-clouds/verify_browser.py
+python design/q2/variants/d-clouds/verify.py
+```
+
 ## 分析脚本 / Analysis（`tools/analysis/`）
 
 - `q1_reference_planes.py`：Q1 参照面的全部数字和稳健性（换基期、平滑、趋势外推窗口），对应 `Q1_DESIGN.md` §7.3。/ All numbers and robustness checks for the Q1 reference planes.

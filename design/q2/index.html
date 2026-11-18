@@ -24,11 +24,11 @@
 </head>
 <body>
 <div class="page">
-  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
+  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) plus extra version D (2026-11-18) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
   <header class="q-head">
     <p class="eyebrow">Part 2 of 3 · Family composition · OW and ODSP, 15 CMAs</p>
-    <h1>Q2: three candidate designs, no chart type repeated</h1>
-    <p class="lead">All three answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
+    <h1>Q2: three candidate designs and one extra version</h1>
+    <p class="lead">All four answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
     <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
   </header>
 
@@ -69,6 +69,18 @@
       </dl>
       <p class="links"><a href="variants/c-tilemap/index.html"><b>Open C →</b></a> <a href="screenshots/c-desktop-light.png">desktop</a> <a href="screenshots/c-desktop-dark.png">dark</a> <a href="screenshots/c-mobile-light.png">phone</a> <a href="screenshots/c-state.png">interaction</a></p>
     </article>
+    <article class="vcard">
+      <img src="screenshots/d-thumb.png" alt="Extra version D: for every year, each CMA's OW share is a blue dot and its ODSP share an orange dot; the blue cloud climbs toward the orange one, and Ontario's two series are joined into a zipper">
+      <h2>D · Two clouds + zipper <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">One dot per CMA per year for each program: a blue cloud climbing toward an almost flat orange one. Hover a dot to zip that CMA's two dots together (each tooth = that year's gap) and preview it in a fixed card, as in Part 3; slopes rank the start and end gaps.</p>
+      <dl>
+        <dt>Motivation</dt><dd>One picture shows, for every CMA at once, how both shares moved, which program moved and how far apart the programs are.</dd>
+        <dt>Appeal</dt><dd>The two clouds never overlap, and the empty space between them closes; hovering zips one CMA's dots together.</dd>
+        <dt>Cost</dt><dd>Readers must learn that sideways position means nothing; yearly columns use the first quarter; small dots on phones; the space between the clouds is not any one CMA's gap.</dd>
+        <dt>Course basis</dt><dd>L8 swarm plot (quantity × ordered time) and slopegraph · L3 position on a common scale · L4-1 similarity, connectedness · L5 linked highlighting, details on demand, brushing · L6 contrast, annotation.</dd>
+      </dl>
+      <p class="links"><a href="variants/d-clouds/index.html"><b>Open D →</b></a> <a href="screenshots/d-desktop-light.png">desktop</a> <a href="screenshots/d-desktop-dark.png">dark</a> <a href="screenshots/d-mobile-light.png">phone</a> <a href="screenshots/d-hover-light.png">hover</a> <a href="screenshots/d-state.png">interaction</a></p>
+    </article>
   </section>
 
   <section class="block">
@@ -82,6 +94,9 @@
         <tr><td>B</td><td>2</td><td>Diverging stacked bars (decomposition)</td><td>Two-part bars + net tick</td><td>length from zero; hue = program; side of zero = widens / narrows</td><td>Where + which program</td><td>No</td></tr>
         <tr><td>C</td><td>1</td><td>Tile grid map of floating-column small multiples</td><td>Equal tiles + yearly floating columns with end caps</td><td>tile position = rough geography; column bottom / top = OW / ODSP share; length = gap; x in tile = year</td><td>Both</td><td>Both are maps, different marks from Part 3's proportional-symbol map (open question: one site-wide map panel?)</td></tr>
         <tr><td>C</td><td>2</td><td>Waterfall</td><td>Floating bars + connectors</td><td>vertical position / length; step up = widened, down = narrowed</td><td>When it narrowed</td><td>No</td></tr>
+        <tr><td>D</td><td>1a</td><td>Beeswarm strips over time ("two clouds") with a zipper on demand</td><td>Dots (one per CMA, year, program); for the focused CMA two threads + teeth</td><td>x = year (first quarter); y = share; hue = program; sideways offset only avoids overlap; tooth length = gap</td><td>Both</td><td>No: the only swarm on the site</td></tr>
+        <tr><td>D</td><td>1b</td><td>Analysis card: gap sparkline + period bars</td><td>Line; bars from zero</td><td>x = time; y = gap · length from zero = change in a period</td><td>When; details</td><td>Same component as Part 3's card (on purpose: same interaction logic)</td></tr>
+        <tr><td>D</td><td>2</td><td>Slopegraph of start and end gaps</td><td>Lines between two axes</td><td>y = gap at the start and end quarter; slope = change</td><td>Where</td><td>No; same data as A's dumbbell in another form, and it shows the gaps converging</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -89,15 +104,15 @@
   <section class="block">
     <div class="block-head"><div><h2>Side by side</h2><p class="sub">A starting point for the meeting; details and evidence in Q2_DESIGN.md §8 and §10.</p></div></div>
     <div class="tbl-wrap"><table class="cmp">
-      <thead><tr><th>Criterion</th><th>A · Dumbbell + lines</th><th>B · Comets + decomposition</th><th>C · Tile map + waterfall</th></tr></thead>
+      <thead><tr><th>Criterion</th><th>A · Dumbbell + lines</th><th>B · Comets + decomposition</th><th>C · Tile map + waterfall</th><th>D · Two clouds + zipper (extra)</th></tr></thead>
       <tbody>
-        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (diagonal reference lines)</td><td>Medium–high (many small panels, one structure)</td></tr>
-        <tr><td>Analytical depth</td><td>Medium: ranking + one area's full trend</td><td>High: both shares, gap, contributions, quarter slider</td><td>Medium–high: every area's full trend, geography, phases</td></tr>
-        <tr><td>Creativity (R10)</td><td>Low</td><td>High</td><td>High</td></tr>
-        <tr><td>Development effort left</td><td>Low</td><td>Medium (reader test, overlap)</td><td>Medium–high (second map decision, grid sign-off)</td></tr>
-        <tr><td>Consistency with Parts 1 and 3</td><td>High</td><td>Medium (new form, same colours and skeleton)</td><td>Medium (a second map)</td></tr>
-        <tr><td>Visual diversity for the site</td><td>Low (repeats Part 1 lines)</td><td>High</td><td>Medium–high</td></tr>
-        <tr><td>Agreed baseline</td><td>Used</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td></tr>
+        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (diagonal reference lines)</td><td>Medium–high (many small panels, one structure)</td><td>Medium–high (familiar axes; the swarm offsets and the zipper each need a sentence)</td></tr>
+        <tr><td>Analytical depth</td><td>Medium: ranking + one area's full trend</td><td>High: both shares, gap, contributions, quarter slider</td><td>Medium–high: every area's full trend, geography, phases</td><td>High: both shares of every area every year, gap on demand, card with phases, slopes, brushing</td></tr>
+        <tr><td>Creativity (R10)</td><td>Low</td><td>High</td><td>High</td><td>High</td></tr>
+        <tr><td>Development effort left</td><td>Low</td><td>Medium (reader test, overlap)</td><td>Medium–high (second map decision, grid sign-off)</td><td>Low–medium (reader test, phone dot size)</td></tr>
+        <tr><td>Consistency with Parts 1 and 3</td><td>High</td><td>Medium (new form, same colours and skeleton)</td><td>Medium (a second map)</td><td>High (Part 3's hover card and period brush, same colours)</td></tr>
+        <tr><td>Visual diversity for the site</td><td>Low (repeats Part 1 lines)</td><td>High</td><td>Medium–high</td><td>High</td></tr>
+        <tr><td>Agreed baseline</td><td>Used</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -107,6 +122,7 @@
     <div class="rec">
       <p><b>Use B as the main view and add C's waterfall as the "when" view for the selected CMA.</b> B is the only candidate that shows which program moved — the OW share rose in every CMA while the ODSP share changed far less — and its Figure 2 still ranks the CMAs. Its form is new to the site and every novelty has a function (45° = no gap, direction = which program). C's waterfall covers B's weak spot, time, using the same before / during / after periods as Parts 1 and 3.</p>
       <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
+      <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing?</p>
     </div>
   </section>
 
@@ -119,6 +135,7 @@
       <li>Default period (2003 Q1 → 2026 Q1) and phase cut points (2019 Q4, 2023 Q1).</li>
       <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
       <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
+      <li>Whether extra version D replaces or joins A–C, and whether to try a scroll-driven version of it (the same dots morphing through the story steps).</li>
     </ol>
   </section>
 </div>
