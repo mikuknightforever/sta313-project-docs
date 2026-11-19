@@ -1,0 +1,5714 @@
+{
+ "base": "http://127.0.0.1:61525/design/q2/variants/e-scroll/index.html",
+ "layout": [
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 17,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.6,
+    "fits": true,
+    "step": 21.958333333333332,
+    "maxOff": 9.1
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.6,
+    "fits": true,
+    "step": 21.958333333333332,
+    "maxOff": 9.1
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 17,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.6,
+    "fits": true,
+    "step": 21.958333333333332,
+    "maxOff": 9.1
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.6,
+    "fits": true,
+    "step": 21.958333333333332,
+    "maxOff": 9.1
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.9,
+    "fits": true,
+    "step": 24.166666666666668,
+    "maxOff": 10.15
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.9,
+    "fits": true,
+    "step": 24.166666666666668,
+    "maxOff": 10.15
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.9,
+    "fits": true,
+    "step": 24.166666666666668,
+    "maxOff": 10.15
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 24,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2.9,
+    "fits": true,
+    "step": 24.166666666666668,
+    "maxOff": 10.15
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 17,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2,
+    "fits": true,
+    "step": 12.416666666666666,
+    "maxOff": 5
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2,
+    "fits": true,
+    "step": 12.416666666666666,
+    "maxOff": 5
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "x=1",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 17,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2,
+    "fits": true,
+    "step": 12.416666666666666,
+    "maxOff": 5
+   },
+   "textOverDot": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "period=during&cma=550",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 16,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 40,
+     "overlaps": [],
+     "outside": []
+    },
+    "periodStrip": {
+     "texts": 6,
+     "overlaps": [],
+     "outside": []
+    },
+    "card": {
+     "texts": 13,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "layout": {
+    "r": 2,
+    "fits": true,
+    "step": 12.416666666666666,
+    "maxOff": 5
+   },
+   "textOverDot": []
+  }
+ ],
+ "states": [
+  {
+   "query": "theme=light",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Ontario11.4 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Ontario as a whole (reference)",
+    "name": "Ontario (all)",
+    "per": "2003 Q1 → 2026 Q1 · 92 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "26.9 → 11.4 pp"
+     ],
+     [
+      "Narrowed by",
+      "15.5 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "reference, not ranked"
+     ],
+     [
+      "OW share",
+      "49.5 → 69.7% (+20.1)"
+     ],
+     [
+      "ODSP share",
+      "76.4 → 81.1% (+4.6)"
+     ],
+     [
+      "Gap widened in",
+      "43 of 92 changes"
+     ],
+     [
+      "OW cases, 2026 Q1",
+      "291,970"
+     ],
+     [
+      "ODSP cases, 2026 Q1",
+      "379,726"
+     ]
+    ],
+    "warn": null,
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "Before",
+     "narrowed 9.5",
+     "During",
+     "narrowed 2.5",
+     "After",
+     "narrowed 3.5"
+    ],
+    "sum": "Narrowed by 15.5 pp: the OW share rose 20.1 pp and the ODSP share rose 4.6 pp. The change came mostly from the OW share."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2003 Q1 → 2026 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2003 Q1 → 2026 Q1: the 15 CMAs' gaps spanned 23.8–36.0 pp at the start and 9.1–14.8 pp at the end (a range of 12.2 pp, then 5.7 pp). Oshawa narrowed 24.0 pp, the most; Ottawa–Gatineau narrowed 9.8 pp, the least. Rank correlation between the start gap and the narrowing: +0.94: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 26.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 24.6"
+    ],
+    [
+     "521",
+     "Kingston 23.8"
+    ],
+    [
+     "529",
+     "Peterborough 25.8"
+    ],
+    [
+     "532",
+     "Oshawa 36.0"
+    ],
+    [
+     "535",
+     "Toronto 27.1"
+    ],
+    [
+     "537",
+     "Hamilton 34.5"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 28.4"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 29.4"
+    ],
+    [
+     "543",
+     "Brantford 31.4"
+    ],
+    [
+     "550",
+     "Guelph 26.3"
+    ],
+    [
+     "555",
+     "London 30.2"
+    ],
+    [
+     "559",
+     "Windsor 32.2"
+    ],
+    [
+     "568",
+     "Barrie 30.3"
+    ],
+    [
+     "580",
+     "Sudbury 24.1"
+    ],
+    [
+     "595",
+     "Thunder Bay 32.4"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "11.4 Ontario"
+    ],
+    [
+     "505",
+     "14.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.2 Kingston"
+    ],
+    [
+     "529",
+     "9.1 Peterborough"
+    ],
+    [
+     "532",
+     "12.0 Oshawa"
+    ],
+    [
+     "535",
+     "10.8 Toronto"
+    ],
+    [
+     "537",
+     "12.9 Hamilton"
+    ],
+    [
+     "539",
+     "11.7 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "12.7 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "10.3 Brantford"
+    ],
+    [
+     "550",
+     "11.6 Guelph"
+    ],
+    [
+     "555",
+     "12.0 London"
+    ],
+    [
+     "559",
+     "11.4 Windsor"
+    ],
+    [
+     "568",
+     "9.9 Barrie"
+    ],
+    [
+     "580",
+     "11.3 Sudbury"
+    ],
+    [
+     "595",
+     "12.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont on"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "49.5",
+     "69.7",
+     "+20.1",
+     "76.4",
+     "81.1",
+     "+4.6",
+     "26.9",
+     "11.4",
+     "+15.5",
+     "291,970",
+     "379,726"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "45.4",
+     "69.3",
+     "+23.9",
+     "81.4",
+     "81.3",
+     "−0.1",
+     "36.0",
+     "12.0",
+     "+24.0",
+     "6,306",
+     "10,299"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "43.1",
+     "67.3",
+     "+24.2",
+     "77.6",
+     "80.2",
+     "+2.6",
+     "34.5",
+     "12.9",
+     "+21.7",
+     "14,278",
+     "22,579"
+    ],
+    [
+     "543",
+     "Brantford",
+     "41.9",
+     "68.9",
+     "+26.9",
+     "73.4",
+     "79.2",
+     "+5.8",
+     "31.4",
+     "10.3",
+     "+21.1",
+     "2,606",
+     "5,665"
+    ],
+    [
+     "559",
+     "Windsor",
+     "46.4",
+     "65.2",
+     "+18.8",
+     "78.7",
+     "76.6",
+     "−2.1",
+     "32.2",
+     "11.4",
+     "+20.8",
+     "8,496",
+     "12,794"
+    ],
+    [
+     "568",
+     "Barrie",
+     "47.9",
+     "72.6",
+     "+24.7",
+     "78.2",
+     "82.5",
+     "+4.3",
+     "30.3",
+     "9.9",
+     "+20.4",
+     "3,162",
+     "5,494"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "47.6",
+     "71.3",
+     "+23.7",
+     "80.0",
+     "84.1",
+     "+4.1",
+     "32.4",
+     "12.8",
+     "+19.7",
+     "2,057",
+     "4,896"
+    ],
+    [
+     "555",
+     "London",
+     "46.9",
+     "67.2",
+     "+20.3",
+     "77.1",
+     "79.2",
+     "+2.1",
+     "30.2",
+     "12.0",
+     "+18.2",
+     "11,320",
+     "18,517"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "47.2",
+     "69.3",
+     "+22.1",
+     "75.6",
+     "81.0",
+     "+5.4",
+     "28.4",
+     "11.7",
+     "+16.7",
+     "10,921",
+     "15,589"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "50.7",
+     "71.6",
+     "+20.9",
+     "76.5",
+     "80.8",
+     "+4.3",
+     "25.8",
+     "9.1",
+     "+16.7",
+     "2,918",
+     "4,993"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "49.4",
+     "68.5",
+     "+19.1",
+     "78.8",
+     "81.2",
+     "+2.4",
+     "29.4",
+     "12.7",
+     "+16.7",
+     "10,098",
+     "12,826"
+    ],
+    [
+     "535",
+     "Toronto",
+     "52.1",
+     "71.3",
+     "+19.2",
+     "79.3",
+     "82.1",
+     "+2.8",
+     "27.1",
+     "10.8",
+     "+16.4",
+     "125,611",
+     "118,210"
+    ],
+    [
+     "550",
+     "Guelph",
+     "52.4",
+     "72.2",
+     "+19.7",
+     "78.8",
+     "83.7",
+     "+5.0",
+     "26.3",
+     "11.6",
+     "+14.8",
+     "2,045",
+     "3,692"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "53.3",
+     "72.3",
+     "+19.0",
+     "77.4",
+     "83.6",
+     "+6.2",
+     "24.1",
+     "11.3",
+     "+12.8",
+     "3,028",
+     "6,105"
+    ],
+    [
+     "521",
+     "Kingston",
+     "50.6",
+     "71.5",
+     "+20.9",
+     "74.5",
+     "82.7",
+     "+8.2",
+     "23.8",
+     "11.2",
+     "+12.7",
+     "2,851",
+     "6,610"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "52.9",
+     "67.9",
+     "+15.0",
+     "77.5",
+     "82.7",
+     "+5.2",
+     "24.6",
+     "14.8",
+     "+9.8",
+     "19,146",
+     "25,195"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "0",
+    "92"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "cma=532",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Oshawa12.0 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Oshawa",
+    "per": "2003 Q1 → 2026 Q1 · 92 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "36.0 → 12.0 pp"
+     ],
+     [
+      "Narrowed by",
+      "24.0 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "1 of 15"
+     ],
+     [
+      "OW share",
+      "45.4 → 69.3% (+23.9)"
+     ],
+     [
+      "ODSP share",
+      "81.4 → 81.3% (−0.1)"
+     ],
+     [
+      "Gap widened in",
+      "40 of 92 changes"
+     ],
+     [
+      "OW cases, 2026 Q1",
+      "6,306"
+     ],
+     [
+      "ODSP cases, 2026 Q1",
+      "10,299"
+     ]
+    ],
+    "warn": null,
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "Before",
+     "narrowed 16.8",
+     "During",
+     "narrowed 2.8",
+     "After",
+     "narrowed 4.3"
+    ],
+    "sum": "Narrowed by 24.0 pp: the OW share rose 23.9 pp and the ODSP share fell 0.1 pp. The change came mostly from the OW share."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2003 Q1 → 2026 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2003 Q1 → 2026 Q1: the 15 CMAs' gaps spanned 23.8–36.0 pp at the start and 9.1–14.8 pp at the end (a range of 12.2 pp, then 5.7 pp). Oshawa narrowed 24.0 pp, the most; Ottawa–Gatineau narrowed 9.8 pp, the least. Rank correlation between the start gap and the narrowing: +0.94: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 26.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 24.6"
+    ],
+    [
+     "521",
+     "Kingston 23.8"
+    ],
+    [
+     "529",
+     "Peterborough 25.8"
+    ],
+    [
+     "532",
+     "Oshawa 36.0"
+    ],
+    [
+     "535",
+     "Toronto 27.1"
+    ],
+    [
+     "537",
+     "Hamilton 34.5"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 28.4"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 29.4"
+    ],
+    [
+     "543",
+     "Brantford 31.4"
+    ],
+    [
+     "550",
+     "Guelph 26.3"
+    ],
+    [
+     "555",
+     "London 30.2"
+    ],
+    [
+     "559",
+     "Windsor 32.2"
+    ],
+    [
+     "568",
+     "Barrie 30.3"
+    ],
+    [
+     "580",
+     "Sudbury 24.1"
+    ],
+    [
+     "595",
+     "Thunder Bay 32.4"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "11.4 Ontario"
+    ],
+    [
+     "505",
+     "14.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.2 Kingston"
+    ],
+    [
+     "529",
+     "9.1 Peterborough"
+    ],
+    [
+     "532",
+     "12.0 Oshawa"
+    ],
+    [
+     "535",
+     "10.8 Toronto"
+    ],
+    [
+     "537",
+     "12.9 Hamilton"
+    ],
+    [
+     "539",
+     "11.7 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "12.7 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "10.3 Brantford"
+    ],
+    [
+     "550",
+     "11.6 Guelph"
+    ],
+    [
+     "555",
+     "12.0 London"
+    ],
+    [
+     "559",
+     "11.4 Windsor"
+    ],
+    [
+     "568",
+     "9.9 Barrie"
+    ],
+    [
+     "580",
+     "11.3 Sudbury"
+    ],
+    [
+     "595",
+     "12.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl on",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "49.5",
+     "69.7",
+     "+20.1",
+     "76.4",
+     "81.1",
+     "+4.6",
+     "26.9",
+     "11.4",
+     "+15.5",
+     "291,970",
+     "379,726"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "45.4",
+     "69.3",
+     "+23.9",
+     "81.4",
+     "81.3",
+     "−0.1",
+     "36.0",
+     "12.0",
+     "+24.0",
+     "6,306",
+     "10,299"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "43.1",
+     "67.3",
+     "+24.2",
+     "77.6",
+     "80.2",
+     "+2.6",
+     "34.5",
+     "12.9",
+     "+21.7",
+     "14,278",
+     "22,579"
+    ],
+    [
+     "543",
+     "Brantford",
+     "41.9",
+     "68.9",
+     "+26.9",
+     "73.4",
+     "79.2",
+     "+5.8",
+     "31.4",
+     "10.3",
+     "+21.1",
+     "2,606",
+     "5,665"
+    ],
+    [
+     "559",
+     "Windsor",
+     "46.4",
+     "65.2",
+     "+18.8",
+     "78.7",
+     "76.6",
+     "−2.1",
+     "32.2",
+     "11.4",
+     "+20.8",
+     "8,496",
+     "12,794"
+    ],
+    [
+     "568",
+     "Barrie",
+     "47.9",
+     "72.6",
+     "+24.7",
+     "78.2",
+     "82.5",
+     "+4.3",
+     "30.3",
+     "9.9",
+     "+20.4",
+     "3,162",
+     "5,494"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "47.6",
+     "71.3",
+     "+23.7",
+     "80.0",
+     "84.1",
+     "+4.1",
+     "32.4",
+     "12.8",
+     "+19.7",
+     "2,057",
+     "4,896"
+    ],
+    [
+     "555",
+     "London",
+     "46.9",
+     "67.2",
+     "+20.3",
+     "77.1",
+     "79.2",
+     "+2.1",
+     "30.2",
+     "12.0",
+     "+18.2",
+     "11,320",
+     "18,517"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "47.2",
+     "69.3",
+     "+22.1",
+     "75.6",
+     "81.0",
+     "+5.4",
+     "28.4",
+     "11.7",
+     "+16.7",
+     "10,921",
+     "15,589"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "50.7",
+     "71.6",
+     "+20.9",
+     "76.5",
+     "80.8",
+     "+4.3",
+     "25.8",
+     "9.1",
+     "+16.7",
+     "2,918",
+     "4,993"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "49.4",
+     "68.5",
+     "+19.1",
+     "78.8",
+     "81.2",
+     "+2.4",
+     "29.4",
+     "12.7",
+     "+16.7",
+     "10,098",
+     "12,826"
+    ],
+    [
+     "535",
+     "Toronto",
+     "52.1",
+     "71.3",
+     "+19.2",
+     "79.3",
+     "82.1",
+     "+2.8",
+     "27.1",
+     "10.8",
+     "+16.4",
+     "125,611",
+     "118,210"
+    ],
+    [
+     "550",
+     "Guelph",
+     "52.4",
+     "72.2",
+     "+19.7",
+     "78.8",
+     "83.7",
+     "+5.0",
+     "26.3",
+     "11.6",
+     "+14.8",
+     "2,045",
+     "3,692"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "53.3",
+     "72.3",
+     "+19.0",
+     "77.4",
+     "83.6",
+     "+6.2",
+     "24.1",
+     "11.3",
+     "+12.8",
+     "3,028",
+     "6,105"
+    ],
+    [
+     "521",
+     "Kingston",
+     "50.6",
+     "71.5",
+     "+20.9",
+     "74.5",
+     "82.7",
+     "+8.2",
+     "23.8",
+     "11.2",
+     "+12.7",
+     "2,851",
+     "6,610"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "52.9",
+     "67.9",
+     "+15.0",
+     "77.5",
+     "82.7",
+     "+5.2",
+     "24.6",
+     "14.8",
+     "+9.8",
+     "19,146",
+     "25,195"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "0",
+    "92"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "period=during&cma=550",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Guelph11.6 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Guelph",
+    "per": "2019 Q4 → 2023 Q1 · 13 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "16.8 → 18.4 pp"
+     ],
+     [
+      "Widened by",
+      "1.7 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "15 of 15"
+     ],
+     [
+      "OW share",
+      "64.2 → 65.4% (+1.2)"
+     ],
+     [
+      "ODSP share",
+      "81.0 → 83.8% (+2.8)"
+     ],
+     [
+      "Gap widened in",
+      "8 of 13 changes"
+     ],
+     [
+      "OW cases, 2023 Q1",
+      "1,499"
+     ],
+     [
+      "ODSP cases, 2023 Q1",
+      "3,560"
+     ]
+    ],
+    "warn": "Small caseload (1,499 OW cases in 2023 Q1): its shares move more from quarter to quarter, so single quarters are less reliable.",
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "During",
+     "widened 1.7"
+    ],
+    "sum": "Widened by 1.7 pp: the OW share rose 1.2 pp and the ODSP share rose 2.8 pp."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2019 Q4 → 2023 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2019 Q4 → 2023 Q1: the 15 CMAs' gaps spanned 13.0–20.1 pp at the start and 11.9–19.1 pp at the end (a range of 7.1 pp, then 7.2 pp). Greater Sudbury narrowed 5.7 pp, the most; Guelph widened 1.7 pp, the least. Rank correlation between the start gap and the narrowing: +0.46.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 17.4"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 19.8"
+    ],
+    [
+     "521",
+     "Kingston 13.4"
+    ],
+    [
+     "529",
+     "Peterborough 13.6"
+    ],
+    [
+     "532",
+     "Oshawa 19.2"
+    ],
+    [
+     "535",
+     "Toronto 18.1"
+    ],
+    [
+     "537",
+     "Hamilton 20.1"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 13.0"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 19.6"
+    ],
+    [
+     "543",
+     "Brantford 16.4"
+    ],
+    [
+     "550",
+     "Guelph 16.8"
+    ],
+    [
+     "555",
+     "London 18.9"
+    ],
+    [
+     "559",
+     "Windsor 19.0"
+    ],
+    [
+     "568",
+     "Barrie 14.2"
+    ],
+    [
+     "580",
+     "Sudbury 17.7"
+    ],
+    [
+     "595",
+     "Thunder Bay 16.4"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "14.9 Ontario"
+    ],
+    [
+     "505",
+     "19.1 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "12.3 Kingston"
+    ],
+    [
+     "529",
+     "12.6 Peterborough"
+    ],
+    [
+     "532",
+     "16.3 Oshawa"
+    ],
+    [
+     "535",
+     "15.1 Toronto"
+    ],
+    [
+     "537",
+     "17.3 Hamilton"
+    ],
+    [
+     "539",
+     "12.8 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "17.0 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "15.2 Brantford"
+    ],
+    [
+     "550",
+     "18.4 Guelph"
+    ],
+    [
+     "555",
+     "15.0 London"
+    ],
+    [
+     "559",
+     "14.6 Windsor"
+    ],
+    [
+     "568",
+     "12.8 Barrie"
+    ],
+    [
+     "580",
+     "11.9 Sudbury"
+    ],
+    [
+     "595",
+     "17.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl on",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "61.5",
+     "65.5",
+     "+4.0",
+     "78.9",
+     "80.4",
+     "+1.5",
+     "17.4",
+     "14.9",
+     "+2.5",
+     "232,089",
+     "368,176"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "63.4",
+     "69.8",
+     "+6.4",
+     "81.0",
+     "81.7",
+     "+0.7",
+     "17.7",
+     "11.9",
+     "+5.7",
+     "2,964",
+     "6,252"
+    ],
+    [
+     "559",
+     "Windsor",
+     "56.5",
+     "61.7",
+     "+5.2",
+     "75.5",
+     "76.3",
+     "+0.8",
+     "19.0",
+     "14.6",
+     "+4.4",
+     "7,220",
+     "12,503"
+    ],
+    [
+     "555",
+     "London",
+     "60.1",
+     "64.5",
+     "+4.3",
+     "79.0",
+     "79.5",
+     "+0.5",
+     "18.9",
+     "15.0",
+     "+3.9",
+     "10,422",
+     "17,282"
+    ],
+    [
+     "535",
+     "Toronto",
+     "61.7",
+     "66.5",
+     "+4.8",
+     "79.8",
+     "81.7",
+     "+1.8",
+     "18.1",
+     "15.1",
+     "+3.0",
+     "95,988",
+     "116,865"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "61.5",
+     "64.4",
+     "+2.9",
+     "80.7",
+     "80.7",
+     "±0.0",
+     "19.2",
+     "16.3",
+     "+2.8",
+     "5,061",
+     "10,079"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "58.1",
+     "62.1",
+     "+4.0",
+     "78.2",
+     "79.5",
+     "+1.3",
+     "20.1",
+     "17.3",
+     "+2.7",
+     "10,502",
+     "22,264"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "59.9",
+     "63.2",
+     "+3.3",
+     "79.5",
+     "80.2",
+     "+0.7",
+     "19.6",
+     "17.0",
+     "+2.6",
+     "7,896",
+     "12,272"
+    ],
+    [
+     "568",
+     "Barrie",
+     "65.5",
+     "69.0",
+     "+3.6",
+     "79.6",
+     "81.8",
+     "+2.2",
+     "14.2",
+     "12.8",
+     "+1.4",
+     "2,298",
+     "5,208"
+    ],
+    [
+     "543",
+     "Brantford",
+     "59.0",
+     "61.8",
+     "+2.8",
+     "75.4",
+     "77.0",
+     "+1.6",
+     "16.4",
+     "15.2",
+     "+1.2",
+     "1,982",
+     "5,523"
+    ],
+    [
+     "521",
+     "Kingston",
+     "66.4",
+     "69.2",
+     "+2.8",
+     "79.8",
+     "81.5",
+     "+1.7",
+     "13.4",
+     "12.3",
+     "+1.1",
+     "2,338",
+     "6,645"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "65.4",
+     "67.4",
+     "+2.0",
+     "79.0",
+     "79.9",
+     "+1.0",
+     "13.6",
+     "12.6",
+     "+1.0",
+     "2,608",
+     "4,917"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "61.7",
+     "63.6",
+     "+1.9",
+     "81.5",
+     "82.6",
+     "+1.1",
+     "19.8",
+     "19.1",
+     "+0.7",
+     "15,689",
+     "25,066"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "65.3",
+     "67.6",
+     "+2.2",
+     "78.3",
+     "80.4",
+     "+2.1",
+     "13.0",
+     "12.8",
+     "+0.2",
+     "10,831",
+     "15,321"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "65.6",
+     "65.9",
+     "+0.3",
+     "82.0",
+     "83.7",
+     "+1.7",
+     "16.4",
+     "17.8",
+     "−1.4",
+     "2,381",
+     "5,014"
+    ],
+    [
+     "550",
+     "Guelph",
+     "64.2",
+     "65.4",
+     "+1.2",
+     "81.0",
+     "83.8",
+     "+2.8",
+     "16.8",
+     "18.4",
+     "−1.7",
+     "1,499",
+     "3,560"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2019 Q4",
+    "2023 Q1",
+    "Change",
+    "2019 Q4",
+    "2023 Q1",
+    "Change",
+    "2019 Q4",
+    "2023 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "67",
+    "80"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "period=pre&cma=505",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Ottawa–Gatineau14.8 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Ottawa–Gatineau",
+    "per": "2003 Q1 → 2019 Q4 · 67 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "24.6 → 19.8 pp"
+     ],
+     [
+      "Narrowed by",
+      "4.8 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "15 of 15"
+     ],
+     [
+      "OW share",
+      "52.9 → 61.7% (+8.8)"
+     ],
+     [
+      "ODSP share",
+      "77.5 → 81.5% (+4.0)"
+     ],
+     [
+      "Gap widened in",
+      "35 of 67 changes"
+     ],
+     [
+      "OW cases, 2019 Q4",
+      "17,412"
+     ],
+     [
+      "ODSP cases, 2019 Q4",
+      "26,098"
+     ]
+    ],
+    "warn": null,
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "Before",
+     "narrowed 4.8"
+    ],
+    "sum": "Narrowed by 4.8 pp: the OW share rose 8.8 pp and the ODSP share rose 4.0 pp."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2003 Q1 → 2019 Q4: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2003 Q1 → 2019 Q4: the 15 CMAs' gaps spanned 23.8–36.0 pp at the start and 13.0–20.1 pp at the end (a range of 12.2 pp, then 7.1 pp). Oshawa narrowed 16.8 pp, the most; Ottawa–Gatineau narrowed 4.8 pp, the least. Rank correlation between the start gap and the narrowing: +0.76: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 26.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 24.6"
+    ],
+    [
+     "521",
+     "Kingston 23.8"
+    ],
+    [
+     "529",
+     "Peterborough 25.8"
+    ],
+    [
+     "532",
+     "Oshawa 36.0"
+    ],
+    [
+     "535",
+     "Toronto 27.1"
+    ],
+    [
+     "537",
+     "Hamilton 34.5"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 28.4"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 29.4"
+    ],
+    [
+     "543",
+     "Brantford 31.4"
+    ],
+    [
+     "550",
+     "Guelph 26.3"
+    ],
+    [
+     "555",
+     "London 30.2"
+    ],
+    [
+     "559",
+     "Windsor 32.2"
+    ],
+    [
+     "568",
+     "Barrie 30.3"
+    ],
+    [
+     "580",
+     "Sudbury 24.1"
+    ],
+    [
+     "595",
+     "Thunder Bay 32.4"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "17.4 Ontario"
+    ],
+    [
+     "505",
+     "19.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "13.4 Kingston"
+    ],
+    [
+     "529",
+     "13.6 Peterborough"
+    ],
+    [
+     "532",
+     "19.2 Oshawa"
+    ],
+    [
+     "535",
+     "18.1 Toronto"
+    ],
+    [
+     "537",
+     "20.1 Hamilton"
+    ],
+    [
+     "539",
+     "13.0 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "19.6 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "16.4 Brantford"
+    ],
+    [
+     "550",
+     "16.8 Guelph"
+    ],
+    [
+     "555",
+     "18.9 London"
+    ],
+    [
+     "559",
+     "19.0 Windsor"
+    ],
+    [
+     "568",
+     "14.2 Barrie"
+    ],
+    [
+     "580",
+     "17.7 Sudbury"
+    ],
+    [
+     "595",
+     "16.4 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl on",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "49.5",
+     "61.5",
+     "+12.0",
+     "76.4",
+     "78.9",
+     "+2.5",
+     "26.9",
+     "17.4",
+     "+9.5",
+     "235,501",
+     "379,015"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "45.4",
+     "61.5",
+     "+16.1",
+     "81.4",
+     "80.7",
+     "−0.7",
+     "36.0",
+     "19.2",
+     "+16.8",
+     "6,258",
+     "10,273"
+    ],
+    [
+     "568",
+     "Barrie",
+     "47.9",
+     "65.5",
+     "+17.6",
+     "78.2",
+     "79.6",
+     "+1.4",
+     "30.3",
+     "14.2",
+     "+16.1",
+     "2,470",
+     "5,358"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "47.6",
+     "65.6",
+     "+18.0",
+     "80.0",
+     "82.0",
+     "+2.0",
+     "32.4",
+     "16.4",
+     "+16.1",
+     "2,586",
+     "5,363"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "47.2",
+     "65.3",
+     "+18.1",
+     "75.6",
+     "78.3",
+     "+2.7",
+     "28.4",
+     "13.0",
+     "+15.4",
+     "9,034",
+     "15,919"
+    ],
+    [
+     "543",
+     "Brantford",
+     "41.9",
+     "59.0",
+     "+17.0",
+     "73.4",
+     "75.4",
+     "+2.0",
+     "31.4",
+     "16.4",
+     "+15.0",
+     "2,047",
+     "5,834"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "43.1",
+     "58.1",
+     "+15.0",
+     "77.6",
+     "78.2",
+     "+0.6",
+     "34.5",
+     "20.1",
+     "+14.5",
+     "11,383",
+     "23,456"
+    ],
+    [
+     "559",
+     "Windsor",
+     "46.4",
+     "56.5",
+     "+10.1",
+     "78.7",
+     "75.5",
+     "−3.1",
+     "32.2",
+     "19.0",
+     "+13.3",
+     "6,953",
+     "12,499"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "50.7",
+     "65.4",
+     "+14.7",
+     "76.5",
+     "79.0",
+     "+2.5",
+     "25.8",
+     "13.6",
+     "+12.2",
+     "2,911",
+     "5,168"
+    ],
+    [
+     "555",
+     "London",
+     "46.9",
+     "60.1",
+     "+13.3",
+     "77.1",
+     "79.0",
+     "+1.9",
+     "30.2",
+     "18.9",
+     "+11.3",
+     "11,704",
+     "17,333"
+    ],
+    [
+     "521",
+     "Kingston",
+     "50.6",
+     "66.4",
+     "+15.8",
+     "74.5",
+     "79.8",
+     "+5.3",
+     "23.8",
+     "13.4",
+     "+10.5",
+     "2,494",
+     "7,064"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "49.4",
+     "59.9",
+     "+10.5",
+     "78.8",
+     "79.5",
+     "+0.6",
+     "29.4",
+     "19.6",
+     "+9.8",
+     "8,827",
+     "12,525"
+    ],
+    [
+     "550",
+     "Guelph",
+     "52.4",
+     "64.2",
+     "+11.8",
+     "78.8",
+     "81.0",
+     "+2.2",
+     "26.3",
+     "16.8",
+     "+9.6",
+     "1,694",
+     "3,505"
+    ],
+    [
+     "535",
+     "Toronto",
+     "52.1",
+     "61.7",
+     "+9.6",
+     "79.3",
+     "79.8",
+     "+0.6",
+     "27.1",
+     "18.1",
+     "+9.0",
+     "96,449",
+     "123,467"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "53.3",
+     "63.4",
+     "+10.1",
+     "77.4",
+     "81.0",
+     "+3.7",
+     "24.1",
+     "17.7",
+     "+6.4",
+     "3,365",
+     "6,562"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "52.9",
+     "61.7",
+     "+8.8",
+     "77.5",
+     "81.5",
+     "+4.0",
+     "24.6",
+     "19.8",
+     "+4.8",
+     "17,412",
+     "26,098"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2003 Q1",
+    "2019 Q4",
+    "Change",
+    "2003 Q1",
+    "2019 Q4",
+    "Change",
+    "2003 Q1",
+    "2019 Q4",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "0",
+    "67"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "start=2010Q1&end=2015Q4&cma=559",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Windsor11.4 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Windsor",
+    "per": "2010 Q1 → 2015 Q4 · 23 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "20.7 → 18.3 pp"
+     ],
+     [
+      "Narrowed by",
+      "2.4 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "11 of 15"
+     ],
+     [
+      "OW share",
+      "55.9 → 57.4% (+1.5)"
+     ],
+     [
+      "ODSP share",
+      "76.6 → 75.7% (−0.9)"
+     ],
+     [
+      "Gap widened in",
+      "10 of 23 changes"
+     ],
+     [
+      "OW cases, 2015 Q4",
+      "8,167"
+     ],
+     [
+      "ODSP cases, 2015 Q4",
+      "10,704"
+     ]
+    ],
+    "warn": null,
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "Before",
+     "narrowed 2.4"
+    ],
+    "sum": "Narrowed by 2.4 pp: the OW share rose 1.5 pp and the ODSP share fell 0.9 pp."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2010 Q1 → 2015 Q4: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2010 Q1 → 2015 Q4: the 15 CMAs' gaps spanned 13.7–23.1 pp at the start and 11.3–20.7 pp at the end (a range of 9.4 pp, then 9.4 pp). Peterborough narrowed 4.2 pp, the most; Barrie widened 1.0 pp, the least. Rank correlation between the start gap and the narrowing: +0.00.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 18.2"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 20.8"
+    ],
+    [
+     "521",
+     "Kingston 14.5"
+    ],
+    [
+     "529",
+     "Peterborough 17.4"
+    ],
+    [
+     "532",
+     "Oshawa 21.4"
+    ],
+    [
+     "535",
+     "Toronto 19.3"
+    ],
+    [
+     "537",
+     "Hamilton 19.2"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 15.9"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 20.9"
+    ],
+    [
+     "543",
+     "Brantford 19.6"
+    ],
+    [
+     "550",
+     "Guelph 18.9"
+    ],
+    [
+     "555",
+     "London 18.2"
+    ],
+    [
+     "559",
+     "Windsor 20.7"
+    ],
+    [
+     "568",
+     "Barrie 13.7"
+    ],
+    [
+     "580",
+     "Sudbury 16.8"
+    ],
+    [
+     "595",
+     "Thunder Bay 23.1"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "16.8 Ontario"
+    ],
+    [
+     "505",
+     "17.3 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.3 Kingston"
+    ],
+    [
+     "529",
+     "13.3 Peterborough"
+    ],
+    [
+     "532",
+     "17.7 Oshawa"
+    ],
+    [
+     "535",
+     "19.1 Toronto"
+    ],
+    [
+     "537",
+     "16.7 Hamilton"
+    ],
+    [
+     "539",
+     "12.0 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "18.1 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "16.4 Brantford"
+    ],
+    [
+     "550",
+     "16.7 Guelph"
+    ],
+    [
+     "555",
+     "15.7 London"
+    ],
+    [
+     "559",
+     "18.3 Windsor"
+    ],
+    [
+     "568",
+     "14.7 Barrie"
+    ],
+    [
+     "580",
+     "14.1 Sudbury"
+    ],
+    [
+     "595",
+     "20.7 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl on",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "59.0",
+     "61.5",
+     "+2.5",
+     "77.3",
+     "78.3",
+     "+1.0",
+     "18.2",
+     "16.8",
+     "+1.5",
+     "246,215",
+     "338,163"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "61.8",
+     "64.6",
+     "+2.9",
+     "79.2",
+     "77.9",
+     "−1.3",
+     "17.4",
+     "13.3",
+     "+4.2",
+     "3,196",
+     "4,563"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "60.4",
+     "65.5",
+     "+5.0",
+     "76.3",
+     "77.5",
+     "+1.2",
+     "15.9",
+     "12.0",
+     "+3.9",
+     "9,746",
+     "14,844"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "58.9",
+     "62.5",
+     "+3.5",
+     "80.3",
+     "80.2",
+     "−0.1",
+     "21.4",
+     "17.7",
+     "+3.7",
+     "6,399",
+     "9,039"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "59.6",
+     "64.1",
+     "+4.5",
+     "80.4",
+     "81.4",
+     "+1.0",
+     "20.8",
+     "17.3",
+     "+3.4",
+     "18,545",
+     "23,676"
+    ],
+    [
+     "521",
+     "Kingston",
+     "61.7",
+     "67.2",
+     "+5.5",
+     "76.1",
+     "78.5",
+     "+2.3",
+     "14.5",
+     "11.3",
+     "+3.2",
+     "2,701",
+     "6,543"
+    ],
+    [
+     "543",
+     "Brantford",
+     "53.4",
+     "57.3",
+     "+3.9",
+     "73.0",
+     "73.7",
+     "+0.7",
+     "19.6",
+     "16.4",
+     "+3.2",
+     "1,999",
+     "5,400"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "57.4",
+     "61.2",
+     "+3.8",
+     "78.3",
+     "79.3",
+     "+1.0",
+     "20.9",
+     "18.1",
+     "+2.8",
+     "8,172",
+     "11,026"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "61.5",
+     "65.8",
+     "+4.3",
+     "78.3",
+     "79.9",
+     "+1.6",
+     "16.8",
+     "14.1",
+     "+2.7",
+     "3,190",
+     "5,997"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "56.7",
+     "60.6",
+     "+3.8",
+     "75.9",
+     "77.3",
+     "+1.3",
+     "19.2",
+     "16.7",
+     "+2.5",
+     "12,901",
+     "21,705"
+    ],
+    [
+     "555",
+     "London",
+     "59.4",
+     "63.0",
+     "+3.6",
+     "77.7",
+     "78.7",
+     "+1.1",
+     "18.2",
+     "15.7",
+     "+2.5",
+     "12,642",
+     "14,835"
+    ],
+    [
+     "559",
+     "Windsor",
+     "55.9",
+     "57.4",
+     "+1.5",
+     "76.6",
+     "75.7",
+     "−0.9",
+     "20.7",
+     "18.3",
+     "+2.4",
+     "8,167",
+     "10,704"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "55.2",
+     "59.8",
+     "+4.5",
+     "78.3",
+     "80.5",
+     "+2.1",
+     "23.1",
+     "20.7",
+     "+2.4",
+     "2,367",
+     "5,111"
+    ],
+    [
+     "550",
+     "Guelph",
+     "60.1",
+     "64.8",
+     "+4.7",
+     "79.1",
+     "81.5",
+     "+2.4",
+     "18.9",
+     "16.7",
+     "+2.3",
+     "1,655",
+     "3,084"
+    ],
+    [
+     "535",
+     "Toronto",
+     "59.9",
+     "60.3",
+     "+0.5",
+     "79.2",
+     "79.4",
+     "+0.3",
+     "19.3",
+     "19.1",
+     "+0.2",
+     "100,402",
+     "111,722"
+    ],
+    [
+     "568",
+     "Barrie",
+     "64.9",
+     "65.6",
+     "+0.8",
+     "78.6",
+     "80.3",
+     "+1.7",
+     "13.7",
+     "14.7",
+     "−1.0",
+     "3,285",
+     "4,577"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2010 Q1",
+    "2015 Q4",
+    "Change",
+    "2010 Q1",
+    "2015 Q4",
+    "Change",
+    "2010 Q1",
+    "2015 Q4",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "28",
+    "51"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "period=post&cma=595",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Thunder Bay12.8 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Thunder Bay",
+    "per": "2023 Q1 → 2026 Q1 · 12 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "17.8 → 12.8 pp"
+     ],
+     [
+      "Narrowed by",
+      "5.0 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "2 of 15"
+     ],
+     [
+      "OW share",
+      "65.9 → 71.3% (+5.4)"
+     ],
+     [
+      "ODSP share",
+      "83.7 → 84.1% (+0.4)"
+     ],
+     [
+      "Gap widened in",
+      "5 of 12 changes"
+     ],
+     [
+      "OW cases, 2026 Q1",
+      "2,057"
+     ],
+     [
+      "ODSP cases, 2026 Q1",
+      "4,896"
+     ]
+    ],
+    "warn": "Small caseload (2,057 OW cases in 2026 Q1): its shares move more from quarter to quarter, so single quarters are less reliable.",
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "After",
+     "narrowed 5.0"
+    ],
+    "sum": "Narrowed by 5.0 pp: the OW share rose 5.4 pp and the ODSP share rose 0.4 pp. The change came mostly from the OW share."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2023 Q1 → 2026 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2023 Q1 → 2026 Q1: the 15 CMAs' gaps spanned 11.9–19.1 pp at the start and 9.1–14.8 pp at the end (a range of 7.2 pp, then 5.7 pp). Guelph narrowed 6.9 pp, the most; Greater Sudbury narrowed 0.6 pp, the least. Rank correlation between the start gap and the narrowing: +0.85: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 14.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 19.1"
+    ],
+    [
+     "521",
+     "Kingston 12.3"
+    ],
+    [
+     "529",
+     "Peterborough 12.6"
+    ],
+    [
+     "532",
+     "Oshawa 16.3"
+    ],
+    [
+     "535",
+     "Toronto 15.1"
+    ],
+    [
+     "537",
+     "Hamilton 17.3"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 12.8"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 17.0"
+    ],
+    [
+     "543",
+     "Brantford 15.2"
+    ],
+    [
+     "550",
+     "Guelph 18.4"
+    ],
+    [
+     "555",
+     "London 15.0"
+    ],
+    [
+     "559",
+     "Windsor 14.6"
+    ],
+    [
+     "568",
+     "Barrie 12.8"
+    ],
+    [
+     "580",
+     "Sudbury 11.9"
+    ],
+    [
+     "595",
+     "Thunder Bay 17.8"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "11.4 Ontario"
+    ],
+    [
+     "505",
+     "14.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.2 Kingston"
+    ],
+    [
+     "529",
+     "9.1 Peterborough"
+    ],
+    [
+     "532",
+     "12.0 Oshawa"
+    ],
+    [
+     "535",
+     "10.8 Toronto"
+    ],
+    [
+     "537",
+     "12.9 Hamilton"
+    ],
+    [
+     "539",
+     "11.7 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "12.7 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "10.3 Brantford"
+    ],
+    [
+     "550",
+     "11.6 Guelph"
+    ],
+    [
+     "555",
+     "12.0 London"
+    ],
+    [
+     "559",
+     "11.4 Windsor"
+    ],
+    [
+     "568",
+     "9.9 Barrie"
+    ],
+    [
+     "580",
+     "11.3 Sudbury"
+    ],
+    [
+     "595",
+     "12.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl on",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "65.5",
+     "69.7",
+     "+4.1",
+     "80.4",
+     "81.1",
+     "+0.6",
+     "14.9",
+     "11.4",
+     "+3.5",
+     "291,970",
+     "379,726"
+    ],
+    [
+     "550",
+     "Guelph",
+     "65.4",
+     "72.2",
+     "+6.8",
+     "83.8",
+     "83.7",
+     "−0.1",
+     "18.4",
+     "11.6",
+     "+6.9",
+     "2,045",
+     "3,692"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "65.9",
+     "71.3",
+     "+5.4",
+     "83.7",
+     "84.1",
+     "+0.4",
+     "17.8",
+     "12.8",
+     "+5.0",
+     "2,057",
+     "4,896"
+    ],
+    [
+     "543",
+     "Brantford",
+     "61.8",
+     "68.9",
+     "+7.1",
+     "77.0",
+     "79.2",
+     "+2.2",
+     "15.2",
+     "10.3",
+     "+4.9",
+     "2,606",
+     "5,665"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "62.1",
+     "67.3",
+     "+5.2",
+     "79.5",
+     "80.2",
+     "+0.7",
+     "17.3",
+     "12.9",
+     "+4.5",
+     "14,278",
+     "22,579"
+    ],
+    [
+     "535",
+     "Toronto",
+     "66.5",
+     "71.3",
+     "+4.8",
+     "81.7",
+     "82.1",
+     "+0.4",
+     "15.1",
+     "10.8",
+     "+4.4",
+     "125,611",
+     "118,210"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "63.6",
+     "67.9",
+     "+4.4",
+     "82.6",
+     "82.7",
+     "±0.0",
+     "19.1",
+     "14.8",
+     "+4.3",
+     "19,146",
+     "25,195"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "64.4",
+     "69.3",
+     "+4.9",
+     "80.7",
+     "81.3",
+     "+0.6",
+     "16.3",
+     "12.0",
+     "+4.3",
+     "6,306",
+     "10,299"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "63.2",
+     "68.5",
+     "+5.3",
+     "80.2",
+     "81.2",
+     "+1.0",
+     "17.0",
+     "12.7",
+     "+4.2",
+     "10,098",
+     "12,826"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "67.4",
+     "71.6",
+     "+4.3",
+     "79.9",
+     "80.8",
+     "+0.8",
+     "12.6",
+     "9.1",
+     "+3.4",
+     "2,918",
+     "4,993"
+    ],
+    [
+     "559",
+     "Windsor",
+     "61.7",
+     "65.2",
+     "+3.5",
+     "76.3",
+     "76.6",
+     "+0.3",
+     "14.6",
+     "11.4",
+     "+3.2",
+     "8,496",
+     "12,794"
+    ],
+    [
+     "555",
+     "London",
+     "64.5",
+     "67.2",
+     "+2.7",
+     "79.5",
+     "79.2",
+     "−0.3",
+     "15.0",
+     "12.0",
+     "+3.0",
+     "11,320",
+     "18,517"
+    ],
+    [
+     "568",
+     "Barrie",
+     "69.0",
+     "72.6",
+     "+3.6",
+     "81.8",
+     "82.5",
+     "+0.7",
+     "12.8",
+     "9.9",
+     "+2.9",
+     "3,162",
+     "5,494"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "67.6",
+     "69.3",
+     "+1.8",
+     "80.4",
+     "81.0",
+     "+0.7",
+     "12.8",
+     "11.7",
+     "+1.1",
+     "10,921",
+     "15,589"
+    ],
+    [
+     "521",
+     "Kingston",
+     "69.2",
+     "71.5",
+     "+2.3",
+     "81.5",
+     "82.7",
+     "+1.2",
+     "12.3",
+     "11.2",
+     "+1.1",
+     "2,851",
+     "6,610"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "69.8",
+     "72.3",
+     "+2.5",
+     "81.7",
+     "83.6",
+     "+1.9",
+     "11.9",
+     "11.3",
+     "+0.6",
+     "3,028",
+     "6,105"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2023 Q1",
+    "2026 Q1",
+    "Change",
+    "2023 Q1",
+    "2026 Q1",
+    "Change",
+    "2023 Q1",
+    "2026 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "80",
+    "92"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "period=all&cma=550",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Guelph11.6 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Selected CMA",
+    "name": "Guelph",
+    "per": "2003 Q1 → 2026 Q1 · 92 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "26.3 → 11.6 pp"
+     ],
+     [
+      "Narrowed by",
+      "14.8 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "12 of 15"
+     ],
+     [
+      "OW share",
+      "52.4 → 72.2% (+19.7)"
+     ],
+     [
+      "ODSP share",
+      "78.8 → 83.7% (+5.0)"
+     ],
+     [
+      "Gap widened in",
+      "46 of 92 changes"
+     ],
+     [
+      "OW cases, 2026 Q1",
+      "2,045"
+     ],
+     [
+      "ODSP cases, 2026 Q1",
+      "3,692"
+     ]
+    ],
+    "warn": "Small caseload (2,045 OW cases in 2026 Q1): its shares move more from quarter to quarter, so single quarters are less reliable.",
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "Before",
+     "narrowed 9.6",
+     "During",
+     "widened 1.7",
+     "After",
+     "narrowed 6.9"
+    ],
+    "sum": "Narrowed by 14.8 pp: the OW share rose 19.7 pp and the ODSP share rose 5.0 pp."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2003 Q1 → 2026 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2003 Q1 → 2026 Q1: the 15 CMAs' gaps spanned 23.8–36.0 pp at the start and 9.1–14.8 pp at the end (a range of 12.2 pp, then 5.7 pp). Oshawa narrowed 24.0 pp, the most; Ottawa–Gatineau narrowed 9.8 pp, the least. Rank correlation between the start gap and the narrowing: +0.94: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 26.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 24.6"
+    ],
+    [
+     "521",
+     "Kingston 23.8"
+    ],
+    [
+     "529",
+     "Peterborough 25.8"
+    ],
+    [
+     "532",
+     "Oshawa 36.0"
+    ],
+    [
+     "535",
+     "Toronto 27.1"
+    ],
+    [
+     "537",
+     "Hamilton 34.5"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 28.4"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 29.4"
+    ],
+    [
+     "543",
+     "Brantford 31.4"
+    ],
+    [
+     "550",
+     "Guelph 26.3"
+    ],
+    [
+     "555",
+     "London 30.2"
+    ],
+    [
+     "559",
+     "Windsor 32.2"
+    ],
+    [
+     "568",
+     "Barrie 30.3"
+    ],
+    [
+     "580",
+     "Sudbury 24.1"
+    ],
+    [
+     "595",
+     "Thunder Bay 32.4"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "11.4 Ontario"
+    ],
+    [
+     "505",
+     "14.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.2 Kingston"
+    ],
+    [
+     "529",
+     "9.1 Peterborough"
+    ],
+    [
+     "532",
+     "12.0 Oshawa"
+    ],
+    [
+     "535",
+     "10.8 Toronto"
+    ],
+    [
+     "537",
+     "12.9 Hamilton"
+    ],
+    [
+     "539",
+     "11.7 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "12.7 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "10.3 Brantford"
+    ],
+    [
+     "550",
+     "11.6 Guelph"
+    ],
+    [
+     "555",
+     "12.0 London"
+    ],
+    [
+     "559",
+     "11.4 Windsor"
+    ],
+    [
+     "568",
+     "9.9 Barrie"
+    ],
+    [
+     "580",
+     "11.3 Sudbury"
+    ],
+    [
+     "595",
+     "12.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl on",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "49.5",
+     "69.7",
+     "+20.1",
+     "76.4",
+     "81.1",
+     "+4.6",
+     "26.9",
+     "11.4",
+     "+15.5",
+     "291,970",
+     "379,726"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "45.4",
+     "69.3",
+     "+23.9",
+     "81.4",
+     "81.3",
+     "−0.1",
+     "36.0",
+     "12.0",
+     "+24.0",
+     "6,306",
+     "10,299"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "43.1",
+     "67.3",
+     "+24.2",
+     "77.6",
+     "80.2",
+     "+2.6",
+     "34.5",
+     "12.9",
+     "+21.7",
+     "14,278",
+     "22,579"
+    ],
+    [
+     "543",
+     "Brantford",
+     "41.9",
+     "68.9",
+     "+26.9",
+     "73.4",
+     "79.2",
+     "+5.8",
+     "31.4",
+     "10.3",
+     "+21.1",
+     "2,606",
+     "5,665"
+    ],
+    [
+     "559",
+     "Windsor",
+     "46.4",
+     "65.2",
+     "+18.8",
+     "78.7",
+     "76.6",
+     "−2.1",
+     "32.2",
+     "11.4",
+     "+20.8",
+     "8,496",
+     "12,794"
+    ],
+    [
+     "568",
+     "Barrie",
+     "47.9",
+     "72.6",
+     "+24.7",
+     "78.2",
+     "82.5",
+     "+4.3",
+     "30.3",
+     "9.9",
+     "+20.4",
+     "3,162",
+     "5,494"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "47.6",
+     "71.3",
+     "+23.7",
+     "80.0",
+     "84.1",
+     "+4.1",
+     "32.4",
+     "12.8",
+     "+19.7",
+     "2,057",
+     "4,896"
+    ],
+    [
+     "555",
+     "London",
+     "46.9",
+     "67.2",
+     "+20.3",
+     "77.1",
+     "79.2",
+     "+2.1",
+     "30.2",
+     "12.0",
+     "+18.2",
+     "11,320",
+     "18,517"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "47.2",
+     "69.3",
+     "+22.1",
+     "75.6",
+     "81.0",
+     "+5.4",
+     "28.4",
+     "11.7",
+     "+16.7",
+     "10,921",
+     "15,589"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "50.7",
+     "71.6",
+     "+20.9",
+     "76.5",
+     "80.8",
+     "+4.3",
+     "25.8",
+     "9.1",
+     "+16.7",
+     "2,918",
+     "4,993"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "49.4",
+     "68.5",
+     "+19.1",
+     "78.8",
+     "81.2",
+     "+2.4",
+     "29.4",
+     "12.7",
+     "+16.7",
+     "10,098",
+     "12,826"
+    ],
+    [
+     "535",
+     "Toronto",
+     "52.1",
+     "71.3",
+     "+19.2",
+     "79.3",
+     "82.1",
+     "+2.8",
+     "27.1",
+     "10.8",
+     "+16.4",
+     "125,611",
+     "118,210"
+    ],
+    [
+     "550",
+     "Guelph",
+     "52.4",
+     "72.2",
+     "+19.7",
+     "78.8",
+     "83.7",
+     "+5.0",
+     "26.3",
+     "11.6",
+     "+14.8",
+     "2,045",
+     "3,692"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "53.3",
+     "72.3",
+     "+19.0",
+     "77.4",
+     "83.6",
+     "+6.2",
+     "24.1",
+     "11.3",
+     "+12.8",
+     "3,028",
+     "6,105"
+    ],
+    [
+     "521",
+     "Kingston",
+     "50.6",
+     "71.5",
+     "+20.9",
+     "74.5",
+     "82.7",
+     "+8.2",
+     "23.8",
+     "11.2",
+     "+12.7",
+     "2,851",
+     "6,610"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "52.9",
+     "67.9",
+     "+15.0",
+     "77.5",
+     "82.7",
+     "+5.2",
+     "24.6",
+     "14.8",
+     "+9.8",
+     "19,146",
+     "25,195"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Change",
+    "2003 Q1",
+    "2026 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "0",
+    "92"
+   ],
+   "dots": 720
+  },
+  {
+   "query": "period=post&cma=ont",
+   "errors": [],
+   "h1": "The gap between OW and ODSP narrowed in every CMA",
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "steps": [
+    [
+     "Scene 1 of 7",
+     "Start with Ontario",
+     "In 2003 Q1, 49.5 of every 100 OW cases were a single person without children. In ODSP it was 76.4 of every 100: a gap of 26.9 percentage points."
+    ],
+    [
+     "Scene 2 of 7",
+     "Both shares rose, OW much more",
+     "By 2026 Q1 the OW share was 69.7% (+20.1 pp) and the ODSP share 81.1% (+4.6 pp). The gap shrank to 11.4 pp; the hatched band between the lines is the gap."
+    ],
+    [
+     "Scene 3 of 7",
+     "Now every CMA",
+     "Each dot is one of the 15 CMAs in one year (its first quarter): blue for OW, orange for ODSP. The two clouds never overlap: in all 93 quarters the lowest ODSP share was above the highest OW share. The space between them went from 20.1 pp to 4.0 pp."
+    ],
+    [
+     "Scene 4 of 7",
+     "The OW cloud did the moving",
+     "The middle (median) CMA's OW share went from 47.9% to 69.3% (+21.4 pp); its ODSP share from 77.6% to 81.3% (+3.7 pp). The OW share rose in every CMA (15.0–26.9 pp); the ODSP share changed −2.1 to +8.2 pp."
+    ],
+    [
+     "Scene 5 of 7",
+     "Every gap narrowed, and they converged",
+     "Each line is one CMA's gap, every quarter; dashed is Ontario. In 2003 Q1 the gaps spanned 23.8–36.0 pp; by 2026 Q1, 9.1–14.8 pp. Oshawa narrowed the most (36.0 → 12.0); Ottawa–Gatineau the least (24.6 → 14.8) and kept the widest gap."
+    ],
+    [
+     "Scene 6 of 7",
+     "Smaller by the end, not every quarter",
+     "Each CMA's gap widened in 36–46 of its 92 quarter-to-quarter changes. During the pandemic (2019 Q4 – 2023 Q1) it widened in Guelph (+1.7 pp) and Thunder Bay (+1.4 pp)."
+    ],
+    [
+     "Scene 7 of 7",
+     "Your turn",
+     "Below: every CMA and any period. Hover a dot to zip one CMA's two shares together, click to select it, and drag the strip to change the period.",
+     "Go to the explorer ↓"
+    ]
+   ],
+   "scAnn": [
+    [
+     "0",
+     [
+      "2003 Q1",
+      "76.4%",
+      "ODSP",
+      "49.5%",
+      "Ontario Works (OW)",
+      "gap 26.9 pp"
+     ]
+    ],
+    [
+     "1",
+     [
+      "49.5%",
+      "76.4%",
+      "81.1% ODSP",
+      "69.7% OW",
+      "gap 26.9 pp",
+      "11.4 pp"
+     ]
+    ],
+    [
+     "2",
+     [
+      "ODSP share",
+      "OW share",
+      "20.1 ppbetween the clouds",
+      "4.0 pp"
+     ]
+    ],
+    [
+     "3",
+     [
+      "ODSP median77.6% → 81.3%",
+      "OW median47.9% → 69.3%"
+     ]
+    ],
+    [
+     "4",
+     [
+      "23.8–36.0 pp",
+      "9.1–14.8 pp",
+      "Oshawa36.0 → 12.0",
+      "Ottawa–Gatineau24.6 → 14.8"
+     ]
+    ],
+    [
+     "5",
+     [
+      "Pandemic",
+      "Guelph+1.7 pp (pandemic)",
+      "Thunder Bay+1.4 pp (pandemic)"
+     ]
+    ],
+    [
+     "6",
+     []
+    ]
+   ],
+   "scCap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+   "f1Title": "Share of cases that are a single person without children, OW (blue) and ODSP (orange): every CMA, every year (first quarter), 2003–2026",
+   "f1Take": "The clouds never overlap. In all 93 quarters the lowest ODSP share among the 15 CMAs was above the highest OW share. The space between the clouds went from 20.1 pp in 2003 Q1 to 4.0 pp in 2026 Q1, mostly because the OW cloud rose: the median CMA's OW share went from 47.9% to 69.3%, its ODSP share from 77.6% to 81.3%.",
+   "gutter": [
+    "20.1 pp",
+    "4.0 pp"
+   ],
+   "zlbl": [
+    "Ontario11.4 pp, 2026 Q1"
+   ],
+   "card": {
+    "mode": "Figure 2b · Ontario as a whole (reference)",
+    "name": "Ontario (all)",
+    "per": "2023 Q1 → 2026 Q1 · 12 quarterly changes",
+    "stats": [
+     [
+      "Gap",
+      "14.9 → 11.4 pp"
+     ],
+     [
+      "Narrowed by",
+      "3.5 pp"
+     ],
+     [
+      "Rank by narrowing",
+      "reference, not ranked"
+     ],
+     [
+      "OW share",
+      "65.5 → 69.7% (+4.1)"
+     ],
+     [
+      "ODSP share",
+      "80.4 → 81.1% (+0.6)"
+     ],
+     [
+      "Gap widened in",
+      "2 of 12 changes"
+     ],
+     [
+      "OW cases, 2026 Q1",
+      "291,970"
+     ],
+     [
+      "ODSP cases, 2026 Q1",
+      "379,726"
+     ]
+    ],
+    "warn": null,
+    "bars": [
+     "← widened",
+     "narrowed →",
+     "After",
+     "narrowed 3.5"
+    ],
+    "sum": "Narrowed by 3.5 pp: the OW share rose 4.1 pp and the ODSP share rose 0.6 pp. The change came mostly from the OW share."
+   },
+   "f2Title": "Every CMA's gap at the start and end of the period, 2023 Q1 → 2026 Q1: the steeper a line falls, the more the gap narrowed",
+   "f2Read": "2023 Q1 → 2026 Q1: the 15 CMAs' gaps spanned 11.9–19.1 pp at the start and 9.1–14.8 pp at the end (a range of 7.2 pp, then 5.7 pp). Guelph narrowed 6.9 pp, the most; Greater Sudbury narrowed 0.6 pp, the least. Rank correlation between the start gap and the narrowing: +0.85: CMAs with wider gaps at the start narrowed more.",
+   "f2L": [
+    [
+     "ont",
+     "Ontario 14.9"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau 19.1"
+    ],
+    [
+     "521",
+     "Kingston 12.3"
+    ],
+    [
+     "529",
+     "Peterborough 12.6"
+    ],
+    [
+     "532",
+     "Oshawa 16.3"
+    ],
+    [
+     "535",
+     "Toronto 15.1"
+    ],
+    [
+     "537",
+     "Hamilton 17.3"
+    ],
+    [
+     "539",
+     "St. Cath.–Niagara 12.8"
+    ],
+    [
+     "541",
+     "Kitchener–C–W 17.0"
+    ],
+    [
+     "543",
+     "Brantford 15.2"
+    ],
+    [
+     "550",
+     "Guelph 18.4"
+    ],
+    [
+     "555",
+     "London 15.0"
+    ],
+    [
+     "559",
+     "Windsor 14.6"
+    ],
+    [
+     "568",
+     "Barrie 12.8"
+    ],
+    [
+     "580",
+     "Sudbury 11.9"
+    ],
+    [
+     "595",
+     "Thunder Bay 17.8"
+    ]
+   ],
+   "f2R": [
+    [
+     "ont",
+     "11.4 Ontario"
+    ],
+    [
+     "505",
+     "14.8 Ottawa–Gatineau"
+    ],
+    [
+     "521",
+     "11.2 Kingston"
+    ],
+    [
+     "529",
+     "9.1 Peterborough"
+    ],
+    [
+     "532",
+     "12.0 Oshawa"
+    ],
+    [
+     "535",
+     "10.8 Toronto"
+    ],
+    [
+     "537",
+     "12.9 Hamilton"
+    ],
+    [
+     "539",
+     "11.7 St. Cath.–Niagara"
+    ],
+    [
+     "541",
+     "12.7 Kitchener–C–W"
+    ],
+    [
+     "543",
+     "10.3 Brantford"
+    ],
+    [
+     "550",
+     "11.6 Guelph"
+    ],
+    [
+     "555",
+     "12.0 London"
+    ],
+    [
+     "559",
+     "11.4 Windsor"
+    ],
+    [
+     "568",
+     "9.9 Barrie"
+    ],
+    [
+     "580",
+     "11.3 Sudbury"
+    ],
+    [
+     "595",
+     "12.8 Thunder Bay"
+    ]
+   ],
+   "f2Classes": {
+    "505": "sl",
+    "521": "sl",
+    "529": "sl",
+    "532": "sl",
+    "535": "sl",
+    "537": "sl",
+    "539": "sl",
+    "541": "sl",
+    "543": "sl",
+    "550": "sl",
+    "555": "sl",
+    "559": "sl",
+    "568": "sl",
+    "580": "sl",
+    "595": "sl",
+    "ont": "sl ont on"
+   },
+   "hlDots": [],
+   "table": [
+    [
+     "ont",
+     "Ontario (all)",
+     "65.5",
+     "69.7",
+     "+4.1",
+     "80.4",
+     "81.1",
+     "+0.6",
+     "14.9",
+     "11.4",
+     "+3.5",
+     "291,970",
+     "379,726"
+    ],
+    [
+     "550",
+     "Guelph",
+     "65.4",
+     "72.2",
+     "+6.8",
+     "83.8",
+     "83.7",
+     "−0.1",
+     "18.4",
+     "11.6",
+     "+6.9",
+     "2,045",
+     "3,692"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "65.9",
+     "71.3",
+     "+5.4",
+     "83.7",
+     "84.1",
+     "+0.4",
+     "17.8",
+     "12.8",
+     "+5.0",
+     "2,057",
+     "4,896"
+    ],
+    [
+     "543",
+     "Brantford",
+     "61.8",
+     "68.9",
+     "+7.1",
+     "77.0",
+     "79.2",
+     "+2.2",
+     "15.2",
+     "10.3",
+     "+4.9",
+     "2,606",
+     "5,665"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "62.1",
+     "67.3",
+     "+5.2",
+     "79.5",
+     "80.2",
+     "+0.7",
+     "17.3",
+     "12.9",
+     "+4.5",
+     "14,278",
+     "22,579"
+    ],
+    [
+     "535",
+     "Toronto",
+     "66.5",
+     "71.3",
+     "+4.8",
+     "81.7",
+     "82.1",
+     "+0.4",
+     "15.1",
+     "10.8",
+     "+4.4",
+     "125,611",
+     "118,210"
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "63.6",
+     "67.9",
+     "+4.4",
+     "82.6",
+     "82.7",
+     "±0.0",
+     "19.1",
+     "14.8",
+     "+4.3",
+     "19,146",
+     "25,195"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "64.4",
+     "69.3",
+     "+4.9",
+     "80.7",
+     "81.3",
+     "+0.6",
+     "16.3",
+     "12.0",
+     "+4.3",
+     "6,306",
+     "10,299"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "63.2",
+     "68.5",
+     "+5.3",
+     "80.2",
+     "81.2",
+     "+1.0",
+     "17.0",
+     "12.7",
+     "+4.2",
+     "10,098",
+     "12,826"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "67.4",
+     "71.6",
+     "+4.3",
+     "79.9",
+     "80.8",
+     "+0.8",
+     "12.6",
+     "9.1",
+     "+3.4",
+     "2,918",
+     "4,993"
+    ],
+    [
+     "559",
+     "Windsor",
+     "61.7",
+     "65.2",
+     "+3.5",
+     "76.3",
+     "76.6",
+     "+0.3",
+     "14.6",
+     "11.4",
+     "+3.2",
+     "8,496",
+     "12,794"
+    ],
+    [
+     "555",
+     "London",
+     "64.5",
+     "67.2",
+     "+2.7",
+     "79.5",
+     "79.2",
+     "−0.3",
+     "15.0",
+     "12.0",
+     "+3.0",
+     "11,320",
+     "18,517"
+    ],
+    [
+     "568",
+     "Barrie",
+     "69.0",
+     "72.6",
+     "+3.6",
+     "81.8",
+     "82.5",
+     "+0.7",
+     "12.8",
+     "9.9",
+     "+2.9",
+     "3,162",
+     "5,494"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "67.6",
+     "69.3",
+     "+1.8",
+     "80.4",
+     "81.0",
+     "+0.7",
+     "12.8",
+     "11.7",
+     "+1.1",
+     "10,921",
+     "15,589"
+    ],
+    [
+     "521",
+     "Kingston",
+     "69.2",
+     "71.5",
+     "+2.3",
+     "81.5",
+     "82.7",
+     "+1.2",
+     "12.3",
+     "11.2",
+     "+1.1",
+     "2,851",
+     "6,610"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "69.8",
+     "72.3",
+     "+2.5",
+     "81.7",
+     "83.6",
+     "+1.9",
+     "11.9",
+     "11.3",
+     "+0.6",
+     "3,028",
+     "6,105"
+    ]
+   ],
+   "tableHead": [
+    "Area",
+    "2023 Q1",
+    "2026 Q1",
+    "Change",
+    "2023 Q1",
+    "2026 Q1",
+    "Change",
+    "2023 Q1",
+    "2026 Q1",
+    "Narrowed by",
+    "OW",
+    "ODSP"
+   ],
+   "period": [
+    "80",
+    "92"
+   ],
+   "dots": 720
+  }
+ ],
+ "interactions": {
+  "hoverDot": {
+   "card": "Toronto",
+   "mode": "Figure 2b · Preview · click to select",
+   "tip": true,
+   "tipText": "Toronto · 2015 Q1\nOW share\n60.5% (61,561 of 101,787)\nODSP share\n79.1% (86,550 of 109,401)\nGap\n18.6 pp\nBlue dot = OW share · click to select",
+   "prevZip": 1,
+   "ghostZip": 1,
+   "dimmed": true,
+   "f2prev": [
+    "535"
+   ],
+   "zlbl": [
+    "Toronto10.8 pp, 2026 Q1"
+   ]
+  },
+  "clickDot": {
+   "card": "Toronto",
+   "mode": "Figure 2b · Selected CMA",
+   "selZip": 1,
+   "prevZip": 0,
+   "tblOn": [
+    "535"
+   ],
+   "f2on": [
+    "535"
+   ]
+  },
+  "hoverF2": {
+   "card": "Ottawa–Gatineau",
+   "mode": "Figure 2b · Preview · click to select",
+   "prevZip": 1,
+   "zlbl": [
+    "Ottawa–Gatineau14.8 pp, 2026 Q1"
+   ],
+   "onDots": [
+    "505"
+   ]
+  },
+  "afterLeave": {
+   "card": "Toronto",
+   "prevZip": 0
+  },
+  "keys": {
+   "n": 16,
+   "focusPreview": "Thunder Bay",
+   "focusKept": true,
+   "focused": "595",
+   "selected": [
+    "595"
+   ],
+   "card": "Thunder Bay",
+   "mode": "Figure 2b · Selected CMA"
+  },
+  "preset": {
+   "per": "2019 Q4 → 2023 Q1 · 13 quarterly changes",
+   "f2": "Every CMA's gap at the start and end of the period, 2019 Q4 → 2023 Q1: the steeper a line falls, the more the gap narrowed",
+   "period": [
+    "67",
+    "80"
+   ]
+  },
+  "brush": {
+   "per": "2010 Q1 → 2015 Q4 · 23 quarterly changes",
+   "period": [
+    "28",
+    "51"
+   ],
+   "enclosure": true
+  },
+  "errors": [],
+  "touch": {
+   "card": "Windsor",
+   "mode": "Figure 2b · Selected CMA",
+   "tip": true,
+   "tblOn": [
+    "559"
+   ],
+   "scrollW": 400,
+   "clientW": 400
+  },
+  "touchErrors": []
+ },
+ "cardHeights": [
+  {
+   "width": 1360,
+   "query": "period=all",
+   "heights": [
+    644
+   ],
+   "areas": 16
+  },
+  {
+   "width": 1360,
+   "query": "period=during",
+   "heights": [
+    600
+   ],
+   "areas": 16
+  },
+  {
+   "width": 1100,
+   "query": "period=all",
+   "heights": [
+    659
+   ],
+   "areas": 16
+  },
+  {
+   "width": 1100,
+   "query": "period=during",
+   "heights": [
+    615
+   ],
+   "areas": 16
+  },
+  {
+   "width": 1001,
+   "query": "period=all",
+   "heights": [
+    659
+   ],
+   "areas": 16
+  },
+  {
+   "width": 1001,
+   "query": "period=during",
+   "heights": [
+    615
+   ],
+   "areas": 16
+  },
+  {
+   "width": 820,
+   "query": "period=all",
+   "heights": [
+    634
+   ],
+   "areas": 16
+  },
+  {
+   "width": 820,
+   "query": "period=during",
+   "heights": [
+    590
+   ],
+   "areas": 16
+  },
+  {
+   "width": 400,
+   "query": "period=all",
+   "heights": [
+    672
+   ],
+   "areas": 16
+  },
+  {
+   "width": 400,
+   "query": "period=during",
+   "heights": [
+    628
+   ],
+   "areas": 16
+  }
+ ],
+ "story": {
+  "forward": [
+   {
+    "scene": 0,
+    "on": [
+     0
+    ],
+    "pressed": 0,
+    "graphicTop": 8
+   },
+   {
+    "scene": 1,
+    "on": [
+     1
+    ],
+    "pressed": 1,
+    "graphicTop": 8
+   },
+   {
+    "scene": 2,
+    "on": [
+     2
+    ],
+    "pressed": 2,
+    "graphicTop": 8
+   },
+   {
+    "scene": 3,
+    "on": [
+     3
+    ],
+    "pressed": 3,
+    "graphicTop": 8
+   },
+   {
+    "scene": 4,
+    "on": [
+     4
+    ],
+    "pressed": 4,
+    "graphicTop": 8
+   },
+   {
+    "scene": 5,
+    "on": [
+     5
+    ],
+    "pressed": 5,
+    "graphicTop": 8
+   },
+   {
+    "scene": 6,
+    "on": [
+     6
+    ],
+    "pressed": 6,
+    "graphicTop": 8
+   }
+  ],
+  "back": {
+   "scene": 3,
+   "dotOpacity": 0.35,
+   "gapsOpacity": 0,
+   "medOpacity": 1,
+   "dotFill": "rgb(42, 120, 214)",
+   "ow": "#2a78d6"
+  },
+  "chip6": {
+   "scene": 5,
+   "on": [
+    5
+   ],
+   "stepTop": 99.359375,
+   "vh": 900
+  },
+  "chip1": {
+   "scene": 0,
+   "lineOffset": 965.3883056640625
+  },
+  "errors": [],
+  "layouts": [
+   {
+    "width": 1360,
+    "k": 0,
+    "scene": 0,
+    "texts": 12,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 1,
+    "scene": 1,
+    "texts": 20,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 2 of 7. Ontario as a whole, every quarter 2003 Q1 – 2026 Q1; hatched band = the gap",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 2,
+    "scene": 2,
+    "texts": 18,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 3 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange); thin lines = Ontario as a whole",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 3,
+    "scene": 3,
+    "texts": 16,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 4 of 7. Every CMA, every year: the black lines join the median CMA's share in each year (solid = OW, dashed = ODSP)",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 4,
+    "scene": 4,
+    "texts": 18,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 5 of 7. Every CMA's gap (ODSP share − OW share), every quarter; dashed = Ontario; grey area = lowest to highest CMA gap",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 5,
+    "scene": 5,
+    "texts": 17,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 6 of 7. Every CMA's gap, every quarter, with the pandemic highlighted; dashed = Ontario",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 1360,
+    "k": 6,
+    "scene": 6,
+    "texts": 14,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 7 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange)",
+    "scrollW": 1360,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 676,
+     "h": 678
+    }
+   },
+   {
+    "width": 820,
+    "k": 0,
+    "scene": 0,
+    "texts": 12,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 1,
+    "scene": 1,
+    "texts": 20,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 2 of 7. Ontario as a whole, every quarter 2003 Q1 – 2026 Q1; hatched band = the gap",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 2,
+    "scene": 2,
+    "texts": 18,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 3 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange); thin lines = Ontario as a whole",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 3,
+    "scene": 3,
+    "texts": 16,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 4 of 7. Every CMA, every year: the black lines join the median CMA's share in each year (solid = OW, dashed = ODSP)",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 4,
+    "scene": 4,
+    "texts": 18,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 5 of 7. Every CMA's gap (ODSP share − OW share), every quarter; dashed = Ontario; grey area = lowest to highest CMA gap",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 5,
+    "scene": 5,
+    "texts": 17,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 6 of 7. Every CMA's gap, every quarter, with the pandemic highlighted; dashed = Ontario",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 820,
+    "k": 6,
+    "scene": 6,
+    "texts": 14,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 7 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange)",
+    "scrollW": 820,
+    "layout": {
+     "r": 2.7,
+     "fits": true,
+     "w": 732,
+     "h": 501
+    }
+   },
+   {
+    "width": 400,
+    "k": 0,
+    "scene": 0,
+    "texts": 12,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 1 of 7. Ontario as a whole, 2003 Q1: share of cases that are a single person without children",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 1,
+    "scene": 1,
+    "texts": 17,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 2 of 7. Ontario as a whole, every quarter 2003 Q1 – 2026 Q1; hatched band = the gap",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 2,
+    "scene": 2,
+    "texts": 15,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 3 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange); thin lines = Ontario as a whole",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 3,
+    "scene": 3,
+    "texts": 13,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 4 of 7. Every CMA, every year: the black lines join the median CMA's share in each year (solid = OW, dashed = ODSP)",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 4,
+    "scene": 4,
+    "texts": 15,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 5 of 7. Every CMA's gap (ODSP share − OW share), every quarter; dashed = Ontario; grey area = lowest to highest CMA gap",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 5,
+    "scene": 5,
+    "texts": 14,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 6 of 7. Every CMA's gap, every quarter, with the pandemic highlighted; dashed = Ontario",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   },
+   {
+    "width": 400,
+    "k": 6,
+    "scene": 6,
+    "texts": 11,
+    "overlaps": [],
+    "outside": [],
+    "cap": "Figure 1 · scene 7 of 7. Every CMA, every year (first quarter): OW shares (blue) and ODSP shares (orange)",
+    "scrollW": 400,
+    "layout": {
+     "r": 1.6,
+     "fits": false,
+     "w": 346,
+     "h": 389
+    }
+   }
+  ],
+  "phone": [
+   {
+    "scene": 0,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 590,
+    "cardBottom": 743,
+    "vh": 820
+   },
+   {
+    "scene": 1,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 591,
+    "cardBottom": 766,
+    "vh": 820
+   },
+   {
+    "scene": 2,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 590,
+    "cardBottom": 787,
+    "vh": 820
+   },
+   {
+    "scene": 3,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 590,
+    "cardBottom": 788,
+    "vh": 820
+   },
+   {
+    "scene": 4,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 591,
+    "cardBottom": 812,
+    "vh": 820
+   },
+   {
+    "scene": 5,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 590,
+    "cardBottom": 789,
+    "vh": 820
+   },
+   {
+    "scene": 6,
+    "graphicTop": 0,
+    "graphicBottom": 508,
+    "cardTop": 590,
+    "cardBottom": 772,
+    "vh": 820
+   }
+  ],
+  "phoneErrors": []
+ }
+}

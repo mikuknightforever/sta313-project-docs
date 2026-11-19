@@ -1,0 +1,1192 @@
+{
+ "summary": {
+  "states": 8,
+  "fields": 232,
+  "mismatches": 0,
+  "facts": {
+   "convergence rule beats the 10-year trend 19 quarters ahead": true,
+   "no-change rule beats the 10-year trend 19 quarters ahead": true,
+   "no projected gap had to be clipped at 0": true
+  },
+  "mae_19q": {
+   "conv": 2.5805,
+   "naive": 2.6232,
+   "trend": 5.8465
+  },
+  "bias_19q": {
+   "conv": -1.3852,
+   "naive": -1.125,
+   "trend": 4.1253
+  },
+  "phi": {
+   "1": 0.952,
+   "4": 0.8697,
+   "8": 0.7822,
+   "19": 0.6337
+  },
+  "n_19q": 525
+ },
+ "mismatches": [],
+ "results": [
+  {
+   "state": "theme=light",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2019Q4&cma=532",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2026Q1",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2028Q2&cma=535",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=naive&cma=550",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2030Q4&rule=trend&cma=559",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "view=tiles&t=2030Q4&cma=595",
+   "field": "slider",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "defTest",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "tNow",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "moments",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "labels",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "tiles",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "cls",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "hatch",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "olabel",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "f2Ends",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "f2On",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "skill",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "skillHead",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "skillNote",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "outTitle",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "out",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "outHead",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "take",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "outCard",
+   "ok": true
+  },
+  {
+   "state": "t=2021Q1&cma=550",
+   "field": "slider",
+   "ok": true
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 # Q2 设计说明：单人无子女案件占比与两个项目的差距（v1 候选 A–C）/ Q2 Design Rationale: Single-Person Shares and the OW–ODSP Gap (v1 candidates A–C)
 
-状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。**2026-11-18 新增并列的额外版本 D（两团点云 + 拉链，§12）和 D2（D + "每 100 个案件"开场，§13）。**
-Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). **2026-11-18: extra versions D (two clouds + zipper, §12) and D2 (D + a "100 cases" opening, §13) added in parallel.** Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
+状态：v1 = 三个可运行的候选版本，2026-11-13，待小组选择（tag `q2-v1`）。三个版本之间**没有重复的图表类型**（§7）。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）和 Q1 候选（[design/q1/Q1_DESIGN.md](../q1/Q1_DESIGN.md)）为准。**2026-11-18 新增并列的额外版本 D（两团点云 + 拉链，§12）、D2（D + "每 100 个案件"开场，§13）、E（滚动讲故事，§14）和 F（随时间变化的热力地图 + 经过检验的展望，§15）。**
+Status: v1 = three runnable candidates, 2026-11-13, awaiting the group's choice. No chart type is repeated across the three (§7). **2026-11-18: extra versions D (two clouds + zipper, §12), D2 (D + a "100 cases" opening, §13) E (a scroll story, §14) and F (a map over time with a tested outlook, §15) added in parallel.** Website copy is in English; this document is bilingual. Method and standards follow Q3 v2 and the Q1 candidates.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
 - 研究问题 / Research question: *How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?*
@@ -349,7 +349,7 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 8. **B 的读者测试**：如果考虑 B，先找 2–3 位组外同学试读图 1。/ Reader test for B.
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
-11. **额外版本 D / D2**（2026-11-18，§12、§13）：是替换还是并入 A–C；用 D 还是带开场的 D2；是否再做"滚动驱动"版本（同一组点随叙事步骤变形）；D / D2 是否也要做读者测试。/ Extra versions D / D2: replace or join A–C; D or D2; scroll-driven version; reader test.
+11. **额外版本 D / D2 / E / F**（2026-11-18，§12–§15）：是替换还是并入 A–C；用 D、带开场的 D2、滚动故事 E，还是带展望的地图 F；描述性项目里是否保留展望；是否要做读者测试。/ Extra versions D / D2 / E / F: replace or join A–C; which one; keep an outlook?; reader test.
 
 ## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
 
@@ -438,3 +438,89 @@ Status: parallel extra version; D is unchanged (D2 copies D's files and marks it
 - **数字复核**（[verify.py](variants/d2-clouds-waffle/verify.py)，标准库）：D 的全部 253 个字段，加上 11 个状态下开场的那段话、三个大数字、季度读数和滑块范围，以及 7 个季度（2003 Q1、2003 Q2、2009 Q4、2016 Q1、2020 Q1、2023 Q1、2026 Q1）的大数字和绘制面积：共 **313 个字段，0 处不一致**。
 - **浏览器检查**（[verify_browser.py](variants/d2-clouds-waffle/verify_browser.py)）：D 的 16 项，加上开场 6 项，共 **22 项全部通过**：12 种版面下开场的文字和方格不重叠、不出界；正常动态效果下自动播放一次、从第一个季度播到最后一个、按钮变成 Replay；减少动态效果时不自动播放；方向键逐季移动；Play / Pause；选 "During" 后滑块范围变成 2019 Q4 – 2023 Q1、那段话随之更新。为了结果可重复，其余检查都在"减少动态效果"下运行（开场停在时期的第一个季度）。
 - 局限：方格靠计数和面积读，精度低于位置，所以数字都印在旁边；只画全省；页面多了一段动画；没有读者测试。
+
+## 14. 额外版本 E：滚动讲故事，七个场景（2026-11-18）/ Extra version E: a scroll story in seven scenes
+
+状态：并列的额外版本（即之前讨论的"方案 2"），放在 [variants/e-scroll/](variants/e-scroll/index.html)；故事之后接 D 的完整探索区（复制 D 的代码，改动标 "E"：去掉叙事步骤按钮、图号改为 2a、2b、3）。D、D2 不变。
+Status: parallel extra version ("plan 2"); the story is followed by version D's full explorer (copied, changes marked "E"). D and D2 are unchanged.
+
+### 14.1 设计 / Design
+
+- **为什么用滚动**：结论本身是一串有先后的事实（全省两个占比 → 随时间 → 每个 CMA → 哪个项目在动 → 差距收敛 → 例外）。滚动按这个顺序讲，用**同一组点**，读者不用在每一步重新学一种图（L5 animated transitions 的 object constancy；L6 martini glass：先作者引导的"杯颈"，再进入探索区的"杯口"）。
+- **布局**：宽屏左侧文字、右侧图表固定（sticky）；手机图表固定在上方 62% 屏高，文字在下方滚动。某一步的文字经过视口中线（手机为 74% 处）时切换场景（IntersectionObserver）。每个场景是**完整状态**，往回滚也正确。
+- **七个场景**（所有数字由 CSV 计算）：
+  1. 全省 2003 Q1 的两个点（49.5% 与 76.4%），左侧括号标出差距 26.9 pp。
+  2. 两个点移到 2003 年的位置，两条线画到 2026 Q1（69.7% 与 81.1%），中间斜纹带 = 差距（26.9 → 11.4 pp）。
+  3. 720 个点从全省的位置飞到各自的位置，形成两团点云（同 D）；标出两团之间的空白 20.1 → 4.0 pp。
+  4. 点云变淡，两条黑线连起每年的中位数 CMA（OW 47.9% → 69.3%，ODSP 77.6% → 81.3%）。
+  5. 纵轴从"占比"换成"差距"；每个 CMA 的两个点并成一个点（落在它当年差距的高度），再换成每个 CMA 的逐季度差距线和最低–最高包络；标出起止范围（23.8–36.0 → 9.1–14.8 pp）和缩小最多 / 最少的 Oshawa、Ottawa–Gatineau。
+  6. 疫情期加深，突出疫情期间差距扩大的 Guelph（+1.7 pp）、Thunder Bay（+1.4 pp），在 2019 Q4 和 2023 Q1 打点。
+  7. "Your turn"：图回到点云，链接到下方探索区。
+- **无障碍和不依赖滚动**：图上方有 1–7 号按钮，可直接跳到任一场景（键盘可达）；页面开头有 "Skip the story" 链接；系统"减少动态效果"时没有过渡动画；每个场景的说明文字（Figure 1 caption）随场景更新，SVG 的 aria-label 同步。
+- **颜色与编码**：沿用全站 OW 蓝 / ODSP 橙；差距一律中性灰（斜纹、差距线、包络）；没有新颜色；没用 Q3 的青绿 ↔ 紫。
+
+### 14.2 考虑过但没采用 / Rejected
+
+- 按滚动进度连续插值（scrubbing）：中间状态难以读懂、也难以测试；改为离散场景 + 过渡动画。/ Scroll scrubbing.
+- 场景 5 之后再接斜线图：探索区的图 3 已经是斜线图，故事里用逐季度差距线更能显示"不是每个季度都在缩小"。/ A slopegraph scene.
+- 把探索区放进固定图表的最后一个场景：固定图表放不下卡片和表格，交互区和叙事区分开更清楚。/ Exploring inside the pinned chart.
+- 靶心图（之前讨论的方案 3）：径向长度精度低，也看不出是哪个项目在动。/ The radial target: radial length is less precise and does not show which program moved.
+
+### 14.3 自检 / Self-check
+
+- **数字复核**（[verify.py](variants/e-scroll/verify.py)，标准库）：8 个页面状态的探索区全部字段（同 D：卡片、图 2、图 3、表 1 共 1,664 个单元格等），加上七个场景的文字、每个场景的标注和 21 个场景说明（7 个场景 × 3 种宽度）：共 **317 个字段，0 处不一致**。
+- **浏览器检查**（[verify_browser.py](variants/e-scroll/verify_browser.py)）：探索区 15 项（同 D，去掉叙事步骤那一项）+ 故事 9 项，共 **24 项全部通过**：真实滚动时七个场景按顺序出现、文字和按钮同步标记；宽屏图表一直固定；往回滚到场景 4 时点云恢复（点显示、差距线隐藏、中位数线显示）；按钮跳到场景 6 再跳回场景 1（两条线重新收起）；7 个场景 × 1360 / 820 / 400 px 文字不重叠、不超出图表、没有横向滚动；手机上图表固定在顶部、当前文字显示在图表下方；控制台无错误。
+- 自检中发现并修复：场景 6 右侧标签超出图表被截断；场景说明换行时把图表底部挤掉（改为固定预留说明区高度，手机隐藏提示）；手机上点场景按钮时文字被固定的图挡住（改为滚到图下方）；场景 2 的疫情带改用按季度的位置；场景 1 大字与小字重叠 2 px。
+
+### 14.4 局限 / Limitations
+
+- 开发量最大；滚动页面依赖 IntersectionObserver（现代浏览器都支持）。
+- 手机上故事里的点半径只有 1.6 px，相邻年份会略有交叠（作为讲故事的点云纹理；精确读数在探索区和表 1）。
+- 场景 4 用中位数 CMA 概括一团点，不代表任何一个 CMA。
+- 没有读者测试；页面很长（故事 + 探索区 + 表格）。
+
+## 15. 额外版本 F：随时间变化的热力地图 + 经过检验的展望（2026-11-18）/ Extra version F: a map over time with a tested outlook
+
+状态：并列的额外版本，放在 [variants/f-heatmap/](variants/f-heatmap/index.html)。用户（Q2 负责人）要求"随着时间进度条不断更新的热力地图，带点预测性，呼应政策受众"。A–E 不变。
+Status: parallel extra version requested by the Q2 owner (a heat map that updates with a time slider, with a predictive element for the policy audience). A–E are unchanged.
+
+### 15.1 与之前决定的关系 / Relation to earlier decisions
+
+- 本文件 §3、§6 和 Q3 都没有用填色地图（choropleth），因为 CMA 面积相差约 10 倍，大面积地区会主导画面，颜色读数也不如位置精确；之前做过的空间检验（Moran's I，各项 p 均大于 0.08；只是讨论用，脚本和结果不在仓库和页面上）也没有发现明显的地理聚集。F 应负责人要求改用填色地图，并做了三项补偿：**一键切换到等大方格**（消除面积影响）；**地图上直接印出数值**（宽屏）、卡片和图 2 给出精确值；**用颜色表示的只是 5 pp 一级的分级**，分级按显示的一位小数判断，颜色与数字一致。
+- 颜色：中性灰阶（浅 → 深 = 差距小 → 大，深色主题反过来），**不用任何色相**：蓝 / 橙是两个项目，Q3 的青绿 ↔ 紫只表示 Q3 的含义，"差距一律中性灰"是 Q2 的约定。相邻分级的 OKLab 亮度差浅色主题 ≥ 0.083、深色主题 ≥ 0.098（本次用脚本核对）。展望期的季度在颜色上叠加斜纹，地图角落写 "OUTLOOK · … RULE"。
+
+### 15.2 展望：先检验，再决定画什么 / The outlook: tested before it was drawn
+
+最初的想法是把每个 CMA 过去的直线趋势外推到 2030 年。核对数据后发现这样做**不可靠**：结果对拟合窗口极其敏感（例如 Toronto 用最近 5 年外推到 2030 Q4 为 −1.3 pp，用 15 年为 10.4 pp）；回测中直线外推 19 个季度后的平均误差是 4.9–5.9 pp，比"保持不变"（2.6 pp）还差。因此页面改为三条简单、透明的规则，并把每条规则在过去的表现放在旁边：
+
+| 规则 / Rule | 做法 / Method | 回测：19 个季度后的平均误差 / Mean miss 19 quarters ahead | 平均偏差 / Bias |
+| --- | --- | ---: | --- |
+| Convergence（收敛）| 差距向 15 个 CMA 的中位数靠拢：中位数保持 2026 Q1 的水平，偏离按过去的速度缩小（每 h 个季度的收缩系数 φ_h = 偏离的合并最小二乘斜率，只用当时已有的数据；2026 Q1 时 φ_1 = 0.95、φ_4 = 0.87、φ_8 = 0.78、φ_19 = 0.63）| 2.58 pp | 投射偏高 1.39 pp |
+| No change（不变）| 保持 2026 Q1 的值 | 2.62 pp | 投射偏高 1.13 pp |
+| 10-year trend（10 年趋势）| 最近 40 个季度的最小二乘直线外推 | 5.85 pp | 投射偏低 4.13 pp |
+
+- 回测：从每个有 10 年数据在前的季度（2012 Q4 起）出发，只用当时已有的数据计算，再与之后的实际值比较；19 个季度后共 525 次投射。"可能范围"是同一距离下过去误差的第 10–90 百分位（中间 80%），加在投射值上。
+- 结论（页面原样写出）：收敛规则与"不变"几乎一样（2.58 对 2.62），**10 年趋势外推明显更差**。这本身对政策受众有用：不要把各地过去的趋势直接延长。展望写明"是推算，不是预报"，不知道未来的政策、待遇标准、案件增长或经济变化。
+- 全部回测和展望都在浏览器里由 CSV 计算（`f.js` 的 `outlook()`）；全省（Ontario）不做展望，只作参照线。
+
+### 15.3 视图与交互 / Views and interactions
+
+- **时间控制**：Play / Pause（每季度 85 ms，到 2026 Q1 停顿约 1 秒再进入展望；减少动态效果时变慢）、季度滑块（2003 Q1 – 2030 Q4，共 112 个位置，方向键逐季）、关键时刻按钮（2003 Q1、2019 Q4、2023 Q1、2026 Q1、2030 Q4）、滑块下方的时间条（实际数据段 + 斜纹展望段）。
+- **图 1a**：南部主图 + Thunder Bay 插图，投影和构图与 Q3 相同；标签只在建图时放置一次（为数值预留宽度），播放时位置不动、只换数字。或切换为等大方格（位置同候选 C 的网格），每格印出数值。
+- **图 1b 卡片**（交互同 Q3：悬停预览、点击选中）：所选季度的差距（展望期为投射值 + 可能范围）、颜色分级、排名（1 = 最宽）、相对 2003 Q1 的变化、两个占比和案件数（展望期写 "not projected"），以及三条规则 2030 Q4 的值。卡片对 15 个 CMA、数据期和展望期高度恒定（自动检查）。
+- **图 2**：选中 CMA 的逐季度差距 + 三条规则到 2030 Q4（选中的规则为粗线和可能范围带），左侧色条重复地图的分级，竖虚线跟随滑块。10 年趋势从拟合直线出发，所以在 2026 Q1 处可能跳一下（图注写明）。
+- **表 1**：三条规则 1 年、2 年、19 个季度后的平均误差和平均偏差；**表 2**：2030 Q4 每个 CMA 在三条规则下的值和可能范围，按所选规则排序，点击行选中。
+- 第 3 步的结论卡片多一张 "About the outlook"。
+
+### 15.4 自检 / Self-check
+
+- **数字复核**（[verify.py](variants/f-heatmap/verify.py)，只用标准库）：独立重算中位数、收敛系数 φ、全部回测误差及其分位数、三条规则的全部展望值，然后比较 8 个页面状态（数据期、展望期、三条规则、地图和方格）的全部文字：导语、测试说明、时间读数、关键时刻、卡片全部条目、15 个地图标签或方格数值、15 个颜色分级、斜纹数量、展望标签、图 2 标题 / 读数 / 端点标签、表 1 和注释、表 2 全部单元格、结论句和 "About the outlook" 卡片：**232 个字段，0 处不一致**；另核对 3 条事实（收敛和不变都优于 10 年趋势；没有投射值需要截到 0）。
+- **浏览器检查**（[verify_browser.py](variants/f-heatmap/verify_browser.py)）：**16 项全部通过**：12 种版面（3 宽度 × 2 主题 × 地图 2003 Q1 / 方格 2030 Q4）无横向滚动、无控制台错误、文字不重叠不出界、地图标签放置无冲突；卡片高度恒定（4 种宽度 × 15 个 CMA × 数据期和展望期）；悬停预览和描边；点击选中（卡片、图 2、表 2 联动）；键盘 Tab 到达 15 个 CMA、Enter 选中并保留焦点；滑块 End / Home（斜纹和展望标签出现 / 消失）；Play / Pause；关键时刻；切换规则（卡片、图 2、表 2、地图标签）；表 2 行选中；等大方格的悬停和点击；手机点按。
+- 自检中修复：插图两行小字重叠；时间条 "2030" 与 "Outlook →" 重叠；展望期结论句比数据期多一行导致卡片高度变化；手机上图 2 的 "Pandemic" 与 "Outlook" 重叠。
+
+### 15.5 局限 / Limitations
+
+- 填色地图的面积偏差和颜色精度问题只是被补偿，没有消失；方格位置是近似的。
+- 展望只是机械推算；最好的规则也只与"不变"相当。19 个季度后的可能范围宽约 8 pp（收敛约 7.8、不变约 8.5），10 年趋势约 15 pp；范围来自全部 CMA 的合并误差，所以每个 CMA 的宽度相同。课程项目以描述为主，是否保留展望需要小组决定。
+- 收敛规则用 15 个 CMA 的中位数作参照，样本小；小 CMA 的单季波动会进入回测误差。
+- 没有读者测试。
