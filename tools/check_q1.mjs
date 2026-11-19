@@ -70,7 +70,7 @@ if (tasks.includes("keys")) {
 if (tasks.includes("facts")) {
   await open("theme=light", 1360);
   report.facts = await ev(`JSON.parse(JSON.stringify(window.__facts, (k, v) => (k === 'rows' ? undefined : v)))`);
-  report.text = await ev("[...document.querySelectorAll('.lead, .story-text, .card li, table, .note, figcaption, .pitch')].map(e => e.innerText).concat([...document.querySelectorAll('svg text')].map(t => t.textContent)).join(String.fromCharCode(10))");
+  report.text = await ev("[...document.querySelectorAll('.lead, .story-text, .card li, table, .note, figcaption, .pitch, #planeDef')].map(e => e.innerText).concat([...document.querySelectorAll('svg text')].map(t => t.textContent)).join(String.fromCharCode(10))");
   writeFileSync(`${SCRATCH}/q1_${PREFIX}_dump.json`, JSON.stringify(report, null, 1));
   delete report.facts; report.text = report.text.length + " chars dumped";
 }

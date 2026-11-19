@@ -1,0 +1,149 @@
+{
+  "title": "Ontario single-household welfare-income adequacy: 2020 and 2024 historical snapshots",
+  "verified_on": "2026-11-17",
+  "dataset": "adequacy.csv",
+  "purpose": "Historical course visualization. Separate model-household snapshots, not current benefit advice, observed recipient income, or a population poverty rate.",
+  "rows": 4,
+  "currency": "Nominal CAD in the indicated calendar year; published nearest-dollar figures",
+  "plotting_rule": "Show snapshots as separate panels or a year selector. Do not connect years into a trend, interpolate missing years, or describe a measured improvement/deterioration: the 2020 benchmark is a publication-vintage estimate and the snapshots are from different editions.",
+  "formulas": {
+    "income_adequacy_percent": "100 * income / threshold",
+    "income_shortfall_cad": "max(0, threshold - income)",
+    "deep_income_poverty_reference": "75 percent of MBM"
+  },
+  "shared_assumptions": [
+    "One unattached adult, no children",
+    "Assistance from January 1 through December 31",
+    "No employment earnings; maximum standard assistance under report assumptions",
+    "Toronto private-market rental housing, utilities included in rent",
+    "Previous-year income tax return filed",
+    "Special-needs or individually requested assistance generally excluded"
+  ],
+  "interpretation": [
+    "Numerator is total modeled welfare income including federal and provincial credits, not the OW or ODSP payment alone.",
+    "No eligibility coverage, take-up, unmet need, or causal policy effectiveness is estimated.",
+    "MBM is intended for disposable income but Maytree compares total transfer income; this may understate inadequacy.",
+    "Extra costs of disability are not in the shared single-person MBM. An ODSP ratio above OW does not establish better program performance.",
+    "Toronto thresholds must not be represented as a province-wide cost-of-living benchmark.",
+    "Published income and threshold levels are rounded; calculated ratios are approximate and dollar gaps can differ from the reports by one dollar."
+  ],
+  "sources": [
+    {
+      "id": "maytree2020",
+      "title": "Welfare in Canada, 2020",
+      "url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2020.pdf",
+      "sections": "Printed pp.2-5 methodology; pp.94-100 Ontario. PDF p.97 components; PDF p.103 adequacy.",
+      "read_method": "Full PDF text via web tool",
+      "details_file": "adequacy-2020.sources.json"
+    },
+    {
+      "id": "maytree2024",
+      "title": "Welfare in Canada, 2024",
+      "url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2024.pdf",
+      "publication": "July 2025",
+      "sections": "Printed pp.6-10 methodology; pp.137-143 Ontario components and adequacy; pp.145-146 base-year history. PDF pp.141-147.",
+      "read_method": "Full PDF text via web tool",
+      "mbm_base_evidence": "Methodology lists bases 2000, 2008, 2018; Ontario history marks the 2018 rebasing and uses it through 2024."
+    },
+    {
+      "id": "lcf2024threshold",
+      "title": "London Community Foundation: London & Middlesex Vital Signs, Good Health & Wellbeing",
+      "url": "https://www.lcfvitalsigns.ca/health-wellbeing",
+      "sections": "Table: Demographic income comparison against official poverty and deep-income poverty lines in Ontario, 2024",
+      "read_method": "Opened full page, table rows 80-84 in web extraction",
+      "role": "Direct numerical transcription of 29329 single-person MBM; table attributes figures to Maytree. NOT a London MBM threshold: Maytree geographic definition is Toronto."
+    },
+    {
+      "id": "isac2024threshold",
+      "title": "Income Security Advocacy Centre: Federal Budget 2025 Recommendations",
+      "url": "https://incomesecurity.org/wp-content/uploads/2025/08/ISAC-2025-Federal-Pre-Budget-Submission-to-the-Department-of-Finance.pdf",
+      "sections": "PDF/printed p.3, chart of welfare income and Official Poverty Line (2024)",
+      "read_method": "Opened full PDF text; chart labels explicitly state 17826 and 29329",
+      "role": "Independent transcription corroboration of the 2024 Maytree threshold, not a separate primary measurement."
+    }
+  ],
+  "threshold_provenance": {
+    "2020": {
+      "amount": 24722,
+      "base": 2018,
+      "status": "Maytree estimate made by uprating 2019 Toronto threshold with city CPI; official 2020 threshold unavailable at publication",
+      "source": "maytree2020"
+    },
+    "2024": {
+      "amount": 29329,
+      "base": 2018,
+      "status": "2024 report-published 2018-base benchmark; official Statistics Canada release vintage not independently verified. The explicit CPI-estimation passage in the 2024 methodology refers to LIM, not MBM.",
+      "sources": [
+        "maytree2024",
+        "lcf2024threshold",
+        "isac2024threshold"
+      ],
+      "not_back_calculated": "Not derived by dividing income by a rounded adequacy percentage.",
+      "methodology_check": {
+        "checked_on": "2026-11-17",
+        "url": "https://maytree.com/wp-content/uploads/Welfare_in_Canada_2024.pdf#page=12",
+        "printed_page": 8,
+        "pdf_page_1_based": 12,
+        "evidence": "The paragraph states that 2024 LIM thresholds were unavailable and estimated by increasing 2023 levels in line with national CPI. The adjacent MBM-over-time section states comparisons use current MBM thresholds and 2000, 2008 and 2018 bases. Neither passage states 2024 MBM was unavailable or that it was uprated by Maytree.",
+        "conclusion": "Do not transfer the LIM estimation statement to MBM. Retain Maytree report-published benchmark wording without claiming an independently verified official release date or final-data status."
+      }
+    }
+  },
+  "components": {
+    "2020": {
+      "OW": {
+        "basic_social_assistance": 8796,
+        "federal_tax_credits_and_benefits": 807,
+        "provincial_tax_credits_and_benefits": 706,
+        "total": 10309
+      },
+      "ODSP": {
+        "basic_social_assistance": 14028,
+        "federal_tax_credits_and_benefits": 896,
+        "provincial_tax_credits_and_benefits": 731,
+        "total": 15655
+      },
+      "included_pandemic_payment": "GST/HST one-time top-up 290 for each single household, already included in federal credits and total",
+      "excluded": [
+        "CERB and CRB: model households do not meet employment-income assumptions",
+        "EI and CPP: model not eligible",
+        "Federal 600 disability payment: model households not eligible through qualifying federal programs",
+        "Ontario Emergency Benefit: separate application and fewer than half received it under report inclusion rule"
+      ]
+    },
+    "2024": {
+      "OW": {
+        "basic_social_assistance": 8796,
+        "federal_tax_credits_and_benefits": 875,
+        "provincial_tax_credits_and_benefits": 785,
+        "total": 10455
+      },
+      "ODSP": {
+        "basic_social_assistance": 16056,
+        "federal_tax_credits_and_benefits": 953,
+        "provincial_tax_credits_and_benefits": 816,
+        "total": 17826
+      },
+      "additional_social_assistance": 0,
+      "child_benefits": 0,
+      "federal_details": "Both singles: basic GST/HST credit 332.50 and Canada Carbon Rebate 542; disability example also GST/HST supplement 78.97. 2023 Grocery Rebate absent in 2024.",
+      "provincial_details": "Ontario Trillium Benefit. Basic ODSP increased 4.5 percent in July 2024; basic OW unchanged.",
+      "rounding": "Rounded displayed components sum to 10456 for OW and 17825 for ODSP, while reported totals are 10455 and 17826. Preserve the published totals; do not recalculate from rounded components."
+    }
+  },
+  "source_anomalies": [
+    "2020 Ontario component table prints ODSP total 15665, but narrative, cross-Canada table, graph and component sum support 15655.",
+    "2020 printed OW gap and 2024 printed ODSP gap differ by one dollar from subtraction of published rounded levels. Use one transparent calculation from the stored levels."
+  ],
+  "excluded_latest_edition": {
+    "year": 2025,
+    "url": "https://maytree.com/changing-systems/data-measuring/welfare-in-canada/ontario/",
+    "reason": "Latest page applies 2023-base MBM for recent years. Deliberately not merged into the 2018-base historical snapshots. The 2024 edition is not labeled latest."
+  },
+  "download_limits": "Public XLSX/PDF downloads via executor were blocked by the environment proxy. Full report/page text was read with web tools. No original workbook retrieval or full time-series reproduction is claimed.",
+  "supporting_files": [
+    "adequacy.csv",
+    "adequacy-2020.csv",
+    "adequacy-2020.sources.json"
+  ]
+}

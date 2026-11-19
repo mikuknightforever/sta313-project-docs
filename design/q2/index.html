@@ -24,11 +24,11 @@
 </head>
 <body>
 <div class="page">
-  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
+  <p class="cand" role="note">Q2 · candidate variants v1 (2026-11-13) plus extra versions D, D2, E and F (2026-11-18) — for the group to compare and choose. Design rationale: <a href="Q2_DESIGN.md">Q2_DESIGN.md</a> · References: <a href="REFERENCES.md">REFERENCES.md</a></p>
   <header class="q-head">
     <p class="eyebrow">Part 2 of 3 · Family composition · OW and ODSP, 15 CMAs</p>
-    <h1>Q2: three candidate designs, no chart type repeated</h1>
-    <p class="lead">All three answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
+    <h1>Q2: three candidate designs and four extra versions</h1>
+    <p class="lead">All seven answer both parts of the same question for the same audience — <i>How have the shares of cases involving a single person without children changed over time in OW and ODSP across CMAs, and where has the gap between the two programs narrowed the most?</i> — with the same data, colours, story steps and page skeleton as Parts 1 and 3. Every number on every candidate is computed from the course CSVs in the browser.</p>
     <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
   </header>
 
@@ -69,6 +69,54 @@
       </dl>
       <p class="links"><a href="variants/c-tilemap/index.html"><b>Open C →</b></a> <a href="screenshots/c-desktop-light.png">desktop</a> <a href="screenshots/c-desktop-dark.png">dark</a> <a href="screenshots/c-mobile-light.png">phone</a> <a href="screenshots/c-state.png">interaction</a></p>
     </article>
+    <article class="vcard">
+      <img src="screenshots/d-thumb.png" alt="Extra version D: for every year, each CMA's OW share is a blue dot and its ODSP share an orange dot; the blue cloud climbs toward the orange one, and Ontario's two series are joined into a zipper">
+      <h2>D · Two clouds + zipper <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">One dot per CMA per year for each program: a blue cloud climbing toward an almost flat orange one. Hover a dot to zip that CMA's two dots together (each tooth = that year's gap) and preview it in a fixed card, as in Part 3; slopes rank the start and end gaps.</p>
+      <dl>
+        <dt>Motivation</dt><dd>One picture shows, for every CMA at once, how both shares moved, which program moved and how far apart the programs are.</dd>
+        <dt>Appeal</dt><dd>The two clouds never overlap, and the empty space between them closes; hovering zips one CMA's dots together.</dd>
+        <dt>Cost</dt><dd>Readers must learn that sideways position means nothing; yearly columns use the first quarter; small dots on phones; the space between the clouds is not any one CMA's gap.</dd>
+        <dt>Course basis</dt><dd>L8 swarm plot (quantity × ordered time) and slopegraph · L3 position on a common scale · L4-1 similarity, connectedness · L5 linked highlighting, details on demand, brushing · L6 contrast, annotation.</dd>
+      </dl>
+      <p class="links"><a href="variants/d-clouds/index.html"><b>Open D →</b></a> <a href="screenshots/d-desktop-light.png">desktop</a> <a href="screenshots/d-desktop-dark.png">dark</a> <a href="screenshots/d-mobile-light.png">phone</a> <a href="screenshots/d-hover-light.png">hover</a> <a href="screenshots/d-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/d2-thumb.png" alt="Extra version D2: an opening with two 10 by 10 waffles for Ontario, blue squares for OW single-person cases with the gap hatched up to the ODSP level, orange squares for ODSP">
+      <h2>D2 · D + "100 cases" opening <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Version D with an opening for Ontario: out of every 100 cases, how many are a single person without children? Blue squares fill up while the hatched gap to ODSP shrinks, playing through the selected period; then Figure 1a breaks it into the 15 CMAs.</p>
+      <dl>
+        <dt>Motivation</dt><dd>"Of every 100 cases" can be counted; it gives the headline in a form anyone can read before the detail.</dd>
+        <dt>Appeal</dt><dd>The squares play by themselves when the opening scrolls into view; the hatched gap visibly shrinks.</dd>
+        <dt>Cost</dt><dd>Squares are read by counting and area, so exact numbers are printed beside them; Ontario only; one more animation (none with reduced motion). Otherwise as D.</dd>
+        <dt>Course basis</dt><dd>As D, plus L6 narrative: a concrete hook before the martini glass; animation as navigation through time (L5), with a slider and Play / Pause.</dd>
+      </dl>
+      <p class="links"><a href="variants/d2-clouds-waffle/index.html"><b>Open D2 →</b></a> <a href="screenshots/d2-desktop-light.png">desktop</a> <a href="screenshots/d2-desktop-dark.png">dark</a> <a href="screenshots/d2-mobile-light.png">phone</a> <a href="screenshots/d2-opening-light.png">opening</a> <a href="screenshots/d2-hover-light.png">hover</a> <a href="screenshots/d2-state.png">interaction</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/e-thumb.png" alt="Extra version E: a pinned chart beside scrolling text; scene 3 shows the two clouds of CMA dots with numbered scene buttons above">
+      <h2>E · Scroll story, seven scenes <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">One set of dots tells the finding as the reader scrolls: Ontario's two shares, their lines over time, the same for every CMA as two clouds, the median lines, each CMA's gap converging, and the pandemic exceptions. Version D's explorer follows the story.</p>
+      <dl>
+        <dt>Motivation</dt><dd>The finding is a sequence; scrolling tells it in order with one chart, so the reader never re-learns an encoding.</dd>
+        <dt>Appeal</dt><dd>Two dots become two lines, then 720 dots forming two clouds, then each CMA's pair of dots collapses into its gap.</dd>
+        <dt>Cost</dt><dd>The most work; scroll pages are harder to make accessible and test, so numbered scene buttons, reduced-motion support and the full explorer are included; tiny dots on phones.</dd>
+        <dt>Course basis</dt><dd>L6 narrative structure (martini glass: author-driven stem, then the explorer) · L5 animated transitions with object constancy · L8 swarm plot · L3 position on a common scale.</dd>
+      </dl>
+      <p class="links"><a href="variants/e-scroll/index.html"><b>Open E →</b></a> <a href="screenshots/e-scene-1-light.png">scene 1</a> <a href="screenshots/e-scene-3-light.png">scene 3</a> <a href="screenshots/e-scene-5-light.png">scene 5</a> <a href="screenshots/e-scene-6-light.png">scene 6</a> <a href="screenshots/e-scene-5-mobile-light.png">phone</a> <a href="screenshots/e-desktop-dark.png">dark</a> <a href="screenshots/e-state.png">explorer</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/f-thumb.png" alt="Extra version F: a map of the 15 CMAs filled in shades of grey by their gap in 2003 Q1, with a card for Ottawa–Gatineau beside it">
+      <h2>F · Map over time + tested outlook <span class="tag">extra version, 2026-11-18</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">A filled map of the CMAs (or equal tiles) plays through 93 quarters as the gaps fade from dark to light, then steps into a hatched outlook to 2030 from three simple rules, each shown with how far off it was in the past.</p>
+      <dl>
+        <dt>Motivation</dt><dd>Policy analysts look across the province at once and ask what comes next; the outlook is honest about its accuracy.</dd>
+        <dt>Appeal</dt><dd>Press Play: Ontario fades from dark to light; at 2026 Q1 the map turns hatched and steps into the outlook.</dd>
+        <dt>Cost</dt><dd>A choropleth (area bias, colour less precise; equal tiles and printed values offset this); the best rule is barely better than "no change", and the trend rule is clearly worse.</dd>
+        <dt>Course basis</dt><dd>L7 choropleth caveats and an equal-area tile alternative · L5 navigation through time (slider, Play), selection, details on demand · L4-2 sequential neutral ramp · L6 annotation.</dd>
+      </dl>
+      <p class="links"><a href="variants/f-heatmap/index.html"><b>Open F →</b></a> <a href="screenshots/f-desktop-light.png">desktop</a> <a href="screenshots/f-desktop-dark.png">dark</a> <a href="screenshots/f-mobile-light.png">phone</a> <a href="screenshots/f-outlook-light.png">outlook</a> <a href="screenshots/f-tiles-light.png">tiles</a> <a href="screenshots/f-figure2-light.png">Figure 2</a> <a href="screenshots/f-tables-light.png">tables</a></p>
+    </article>
   </section>
 
   <section class="block">
@@ -82,6 +130,13 @@
         <tr><td>B</td><td>2</td><td>Diverging stacked bars (decomposition)</td><td>Two-part bars + net tick</td><td>length from zero; hue = program; side of zero = widens / narrows</td><td>Where + which program</td><td>No</td></tr>
         <tr><td>C</td><td>1</td><td>Tile grid map of floating-column small multiples</td><td>Equal tiles + yearly floating columns with end caps</td><td>tile position = rough geography; column bottom / top = OW / ODSP share; length = gap; x in tile = year</td><td>Both</td><td>Both are maps, different marks from Part 3's proportional-symbol map (open question: one site-wide map panel?)</td></tr>
         <tr><td>C</td><td>2</td><td>Waterfall</td><td>Floating bars + connectors</td><td>vertical position / length; step up = widened, down = narrowed</td><td>When it narrowed</td><td>No</td></tr>
+        <tr><td>D</td><td>1a</td><td>Beeswarm strips over time ("two clouds") with a zipper on demand</td><td>Dots (one per CMA, year, program); for the focused CMA two threads + teeth</td><td>x = year (first quarter); y = share; hue = program; sideways offset only avoids overlap; tooth length = gap</td><td>Both</td><td>No: the only swarm on the site</td></tr>
+        <tr><td>D</td><td>1b</td><td>Analysis card: gap sparkline + period bars</td><td>Line; bars from zero</td><td>x = time; y = gap · length from zero = change in a period</td><td>When; details</td><td>Same component as Part 3's card (on purpose: same interaction logic)</td></tr>
+        <tr><td>D</td><td>2</td><td>Slopegraph of start and end gaps</td><td>Lines between two axes</td><td>y = gap at the start and end quarter; slope = change</td><td>Where</td><td>No; same data as A's dumbbell in another form, and it shows the gaps converging</td></tr>
+        <tr><td>E</td><td>1</td><td>Scroll story with animated transitions (one SVG, seven scenes)</td><td>Ontario dots and lines; the 720 CMA dots; median lines; each CMA's quarterly gap line and the lowest–highest envelope</td><td>y = share (scenes 1–4, 7) or gap (5–6); x = time; hue = program; the same dots move between scenes</td><td>Both, in order</td><td>No: the only scroll story on the site. Figures 2a, 2b, 3 are D's explorer</td></tr>
+        <tr><td>F</td><td>1a</td><td>Choropleth map of CMAs over time (or equal tiles), with an outlook</td><td>CMA polygons (or equal tiles); hatching for projected quarters</td><td>fill = gap class (neutral ramp, 5 pp classes); time = slider / Play; hatch = projection</td><td>Where, when; outlook</td><td>Both are maps; Part 3 uses proportional circles on the same base map, F fills the polygons (open question: one site-wide map?)</td></tr>
+        <tr><td>F</td><td>2</td><td>Time series of one CMA with three projection lines and a likely-range band</td><td>Lines + band</td><td>x = time; y = gap; band = middle 80% of past misses</td><td>When; outlook</td><td>Close to Part 3's Figure 4 (one CMA's line); the projections and band are new</td></tr>
+        <tr><td>D2</td><td>Opening</td><td>Waffle (unit) chart, one per program, animated through time</td><td>100 squares; partly filled squares for fractions; hatching for the gap</td><td>number of filled squares = share per 100 cases; hue = program; hatched squares in the OW waffle = gap; time = slider / Play</td><td>How Ontario's shares changed (headline)</td><td>No. Figures 1a, 1b and 2 are D's</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -89,15 +144,15 @@
   <section class="block">
     <div class="block-head"><div><h2>Side by side</h2><p class="sub">A starting point for the meeting; details and evidence in Q2_DESIGN.md §8 and §10.</p></div></div>
     <div class="tbl-wrap"><table class="cmp">
-      <thead><tr><th>Criterion</th><th>A · Dumbbell + lines</th><th>B · Comets + decomposition</th><th>C · Tile map + waterfall</th></tr></thead>
+      <thead><tr><th>Criterion</th><th>A · Dumbbell + lines</th><th>B · Comets + decomposition</th><th>C · Tile map + waterfall</th><th>D · Two clouds + zipper (extra)</th></tr></thead>
       <tbody>
-        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (diagonal reference lines)</td><td>Medium–high (many small panels, one structure)</td></tr>
-        <tr><td>Analytical depth</td><td>Medium: ranking + one area's full trend</td><td>High: both shares, gap, contributions, quarter slider</td><td>Medium–high: every area's full trend, geography, phases</td></tr>
-        <tr><td>Creativity (R10)</td><td>Low</td><td>High</td><td>High</td></tr>
-        <tr><td>Development effort left</td><td>Low</td><td>Medium (reader test, overlap)</td><td>Medium–high (second map decision, grid sign-off)</td></tr>
-        <tr><td>Consistency with Parts 1 and 3</td><td>High</td><td>Medium (new form, same colours and skeleton)</td><td>Medium (a second map)</td></tr>
-        <tr><td>Visual diversity for the site</td><td>Low (repeats Part 1 lines)</td><td>High</td><td>Medium–high</td></tr>
-        <tr><td>Agreed baseline</td><td>Used</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td></tr>
+        <tr><td>Clarity for a first-time reader</td><td>High</td><td>Medium (diagonal reference lines)</td><td>Medium–high (many small panels, one structure)</td><td>Medium–high (familiar axes; the swarm offsets and the zipper each need a sentence)</td></tr>
+        <tr><td>Analytical depth</td><td>Medium: ranking + one area's full trend</td><td>High: both shares, gap, contributions, quarter slider</td><td>Medium–high: every area's full trend, geography, phases</td><td>High: both shares of every area every year, gap on demand, card with phases, slopes, brushing</td></tr>
+        <tr><td>Creativity (R10)</td><td>Low</td><td>High</td><td>High</td><td>High</td></tr>
+        <tr><td>Development effort left</td><td>Low</td><td>Medium (reader test, overlap)</td><td>Medium–high (second map decision, grid sign-off)</td><td>Low–medium (reader test, phone dot size)</td></tr>
+        <tr><td>Consistency with Parts 1 and 3</td><td>High</td><td>Medium (new form, same colours and skeleton)</td><td>Medium (a second map)</td><td>High (Part 3's hover card and period brush, same colours)</td></tr>
+        <tr><td>Visual diversity for the site</td><td>Low (repeats Part 1 lines)</td><td>High</td><td>Medium–high</td><td>High</td></tr>
+        <tr><td>Agreed baseline</td><td>Used</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td><td>Not used (reason on the page)</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -107,6 +162,7 @@
     <div class="rec">
       <p><b>Use B as the main view and add C's waterfall as the "when" view for the selected CMA.</b> B is the only candidate that shows which program moved — the OW share rose in every CMA while the ODSP share changed far less — and its Figure 2 still ranks the CMAs. Its form is new to the site and every novelty has a function (45° = no gap, direction = which program). C's waterfall covers B's weak spot, time, using the same before / during / after periods as Parts 1 and 3.</p>
       <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
+      <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing? <b>D2</b> is D with a "100 cases" opening for Ontario; it is the more inviting first screen, at the cost of one more animation and a less precise encoding (counting squares) that is backed by printed numbers. <b>E</b> tells the same finding as a seven-scene scroll story before D's explorer: the most memorable and the most work; scenes can also be reached with numbered buttons. <b>F</b> answers the policy question "what comes next?" with a map over time and a tested outlook; its back-test shows that extending each CMA's 10-year trend would have missed by more than twice as much as assuming no change.</p>
     </div>
   </section>
 
@@ -119,6 +175,7 @@
       <li>Default period (2003 Q1 → 2026 Q1) and phase cut points (2019 Q4, 2023 Q1).</li>
       <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
       <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
+      <li>Whether extra version D (or D2, with the "100 cases" opening, E, the scroll story, or F, the map with an outlook) replaces or joins A–C; whether an outlook belongs in a descriptive project at all.</li>
     </ol>
   </section>
 </div>

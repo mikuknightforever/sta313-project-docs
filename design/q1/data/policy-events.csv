@@ -1,0 +1,9 @@
+id,level,start,end,date_precision,short,label,source_name,source_url
+CERB,federal,2020-03-15,2020-09-26,day,CERB,"Canada Emergency Response Benefit: $2,000 per 4 weeks, March 15 – September 26, 2020",Canada Revenue Agency,https://www.canada.ca/en/revenue-agency/services/benefits/apply-for-cerb-with-cra.html
+CRB,federal,2020-09-27,2021-10-23,day,CRB,"Canada Recovery Benefit: 2-week periods, September 27, 2020 – October 23, 2021",Canada Revenue Agency,https://www.canada.ca/en/revenue-agency/services/benefits/recovery-benefit.html
+P1,provincial,2018-07-31,,day,1,OW and ODSP rate increase set at 1.5% (half the 3% planned before); basic income pilot cancelled,Global News (2018-07-31),https://globalnews.ca/news/4363514/ontario-tories-basic-income-social-assistance
+P2,provincial,2018-11-22,,day,2,Social assistance reform plan announced after a 100-day review,Global News (2018-11-22),https://globalnews.ca/news/4640798/ontario-tories-social-assistance-reform
+P3,provincial,2020-04-23,,day,3,"Ontario Works rules for CERB filed: CERB counted as earned income, partly exempt (O. Reg. 168/20)",Ontario e-Laws,https://www.ontario.ca/laws/regulation/r20168
+P4,provincial,2022-09-01,,month,4,ODSP rates raised 5%,CP24; Ontario Poverty Reduction Strategy 2022 annual report,https://www.cp24.com/news/five-per-cent-increase-in-odsp-funding-to-be-available-in-september-1.6020747
+P5,provincial,2023-02-01,,day,5,"ODSP monthly earnings exemption raised from $200 to $1,000",HALCO (2023-01-19),https://www.halco.org/2023/news/changes-to-the-way-that-the-ontario-disability-support-program-odsp-deals-with-employment-income
+P6,provincial,2023-07-01,,month,6,ODSP rates adjusted for inflation each year from July 2023,Ontario Poverty Reduction Strategy 2022 annual report,https://www.ontario.ca/page/poverty-reduction-strategy-2022-annual-report

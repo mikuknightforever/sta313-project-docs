@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · E · The closing gap</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+<link rel="stylesheet" href="e.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 extra version <b>E · Scroll story: one set of dots, seven scenes</b> (added 2026-11-18; "plan 2"; an alternative to the baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1</p>
+    <h1 id="h1">How the gap between OW and ODSP closed</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this version">
+    <p><b>Motivation.</b> The finding is a sequence: Ontario's two shares, how they moved, the same for every CMA, which program moved, how the gaps converged, and the exceptions. Scrolling tells it in that order with one set of dots, so the reader never has to re-learn a chart.</p>
+    <p><b>Appeal.</b> The same dots move between scenes: two dots become two lines, the lines split into 720 dots that form two clouds, and each CMA's pair of dots collapses into its gap, line by line converging.</p>
+    <p><b>Cost.</b> The most work of all versions; scroll-driven pages are harder to make accessible and to test, so every scene can also be reached with numbered buttons, the motion stops with reduced-motion settings, and the full explorer (version D) follows the story.</p>
+  </div>
+  <p class="challenge" role="note"><b>This version does not use the agreed dumbbell baseline</b>, because a dumbbell shows two moments and only the size of the gap. The story shows which program moved and how the gaps converged; the ranking is kept in Figure 3 (start and end gaps) and Table 1.</p>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Share of cases</h3><p>Single-person cases without children ÷ all cases × 100, for one program, one CMA, one quarter. It describes who is on the caseload, not how many single residents receive assistance.</p></div>
+        <div><h3>Gap</h3><p>ODSP share − OW share, in percentage points (pp), for one CMA. In the story it is the hatched band (Ontario) and, from scene 5, the height of each CMA's line.</p></div>
+        <div><h3>Space between the clouds</h3><p>The lowest ODSP share among the 15 CMAs minus the highest OW share in the same quarter. It compares the two groups of CMAs, so it is smaller than every single CMA's gap.</p></div>
+        <div><h3>Narrowed by</h3><p>Gap at the start quarter − gap at the end quarter (default 2003 Q1 → 2026 Q1). Positive means narrower; it does not mean narrower every quarter.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter, so hover shows the counts. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <p class="skip"><a href="#explore">Skip the story and go to the explorer ↓</a></p>
+
+  <section class="scrolly" id="story" aria-label="Story in seven scenes">
+    <div class="sc-graphic" id="scG">
+      <div class="sc-top">
+        <div class="sc-chips seg" id="scChips" role="group" aria-label="Go to scene"></div>
+        <span class="hint" id="scHint">Scroll, or use the numbers</span>
+      </div>
+      <div class="sc-chart chart" id="scChart"></div>
+      <p class="sc-cap" id="scCap"></p>
+    </div>
+    <div class="sc-steps" id="scSteps"></div>
+  </section>
+
+  <section class="block" id="explore">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>Explore every CMA and any period</h2>
+      <p class="sub">Hover or tap a dot to preview that CMA in Figure 2b; click it to select it for Figures 2b and 3 and Table 1. Drag across the strip to change the period.</p></div>
+    </div>
+
+    <div class="period-panel" role="group" aria-label="Period">
+      <div class="toolbar tight"><div class="period" id="period" role="group" aria-label="Start and end quarter"></div></div>
+      <p class="strip-label">Ontario's gap (ODSP share − OW share), every quarter 2003–2026. Drag across the strip to choose any range of quarters; Figures 2a, 2b and 3 and Table 1 follow it.</p>
+      <div class="chart" id="periodStrip"></div>
+    </div>
+
+    <figure class="fig" id="fig1">
+      <figcaption><b>Figure 2a.</b> <span id="f1Title"></span></figcaption>
+      <div class="key" id="f1Key"></div>
+      <div class="map-grid">
+        <div class="chart" id="f1"></div>
+        <aside class="card-panel" id="card" aria-live="polite" aria-label="Figure 2b, analysis of one CMA"></aside>
+      </div>
+      <p class="note" id="f1Note"></p>
+      <p class="takeaway" id="f1Take"></p>
+    </figure>
+
+    <figure class="fig" id="fig2">
+      <figcaption><b>Figure 3.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2"></div>
+      <p class="readout" id="f2Read" aria-live="polite"></p>
+      <p class="note" id="f2Note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>Exact values for every CMA</h2><p class="sub">Same period as above. Click a row to select it in every figure.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> Shares, gaps and case counts for the selected period</figcaption><div id="tbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA) and for Ontario, quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot). Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="e.js"></script>
+</body>
+</html>

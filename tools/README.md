@@ -63,6 +63,10 @@ Note: Q1's `views` and `mob3d` rewrite D's `d3d-*.png` screenshots; `shots` over
 for v in "a-timeline a" "b-change b" "c-longview c" "d-paths d"; do set -- $v; node tools/check_q1.mjs $1 $2 "" facts; done
 python tools/verify_q1.py
 
+# Q1 D + insight 5–9（插入面版本：叠加层的全部数字 / every overlay number）
+for m in plans gates trend porcupine ghost; do node tools/check_q1.mjs d-insight-$m ins-$m "" facts; done
+python tools/verify_q1_insight.py
+
 # Q2 A–C（6 个页面状态 / six page states）
 ST="theme=light;theme=light&step=2;theme=light&step=3;theme=light&step=4;theme=light&step=0&period=pre&cma=532;theme=light&step=0&period=post&cma=505"
 for v in "a-dumbbell a" "b-arrows b" "c-tilemap c"; do set -- $v; STATES="$ST" node tools/check_q2.mjs $1 $2 "" texts; done
@@ -75,6 +79,26 @@ python tools/verify_q3.py
 
 预期结果 / Expected: 事实字段全部 0 处不一致。Q1 A、B、C 会列出几个"unexplained"数字（235,501 的四舍五入、16.75 年、正则多抓的逗号），已在 `design/q1/Q1_DESIGN.md` §10.3 逐条说明；Q2 0 个未解释；Q3 95 项 0 处不一致。
 All fact fields match. Q1 A, B and C list a few "unexplained" numbers that Q1_DESIGN.md §10.3 explains one by one; Q2 has none; Q3 checks 95 items with 0 mismatches.
+
+Q3 失业率额外版本的检查脚本在它自己的目录里（Python Playwright + 本机 Edge，以及只用标准库的数字复核），用法见 [design/q3/unemployment-prototype/README.md](../design/q3/unemployment-prototype/README.md)。/ The Q3 unemployment extra version keeps its own checks (Python Playwright + installed Edge, and a standard-library number check) in its folder.
+
+```bash
+python design/q3/unemployment-prototype/verify_browser.py
+python design/q3/unemployment-prototype/verify.py
+```
+
+Q2 额外版本 D、D2、E、F 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。/ Q2 extra versions D, D2, E and F work the same way.
+
+```bash
+python design/q2/variants/d-clouds/verify_browser.py
+python design/q2/variants/d-clouds/verify.py
+python design/q2/variants/d2-clouds-waffle/verify_browser.py   # D2 = D + 开场 / D + the opening
+python design/q2/variants/d2-clouds-waffle/verify.py
+python design/q2/variants/e-scroll/verify_browser.py           # E = 滚动故事 + D 的探索区 / scroll story + D's explorer
+python design/q2/variants/e-scroll/verify.py
+python design/q2/variants/f-heatmap/verify_browser.py          # F = 热力地图 + 展望 / map over time + outlook
+python design/q2/variants/f-heatmap/verify.py
+```
 
 ## 分析脚本 / Analysis（`tools/analysis/`）
 

@@ -1,0 +1,53 @@
+{
+  "layouts": [
+    {
+      "width": 1360,
+      "theme": "light",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    },
+    {
+      "width": 1360,
+      "theme": "dark",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    },
+    {
+      "width": 820,
+      "theme": "light",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    },
+    {
+      "width": 820,
+      "theme": "dark",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    },
+    {
+      "width": 400,
+      "theme": "light",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    },
+    {
+      "width": 400,
+      "theme": "dark",
+      "horizontal_overflow": 0,
+      "svg_text_outside_viewbox": []
+    }
+  ],
+  "interactions": [
+    "All four phase filters update both plots and the table, excluding unavailable YoY.",
+    "Counts/index, OW/ODSP and trajectory-path switches work.",
+    "Keyboard slider retrieves first/last/adjacent quarters and labels missing YoY.",
+    "Both annual snapshots display independently verified incomes, thresholds, ratios and assumptions.",
+    "Touch controls work at 400px.",
+    "Self-contained standalone.html produces identical data without additional network resources."
+  ],
+  "errors": [],
+  "offline_network_requests": [],
+  "portable_open_mode": "HTTP standalone document; this host blocks file:// navigation",
+  "passed": true,
+  "limitations": "Automated checks plus screenshot review; not a human usability study or a full accessibility audit. file:// navigation is blocked by this managed browser, so the portable document was checked over HTTP without additional resources."
+}

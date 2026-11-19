@@ -1,7 +1,7 @@
 # Q1 设计说明：OW 与 ODSP 的总体趋势（v1 候选 A–D）/ Q1 Design Rationale: OW and ODSP Overall Trends (v1 candidates A–D)
 
-状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v3：v2 在图 1a 增加了可选的 3D 时空路径视图（§7.1），v3 再加了第四个正视图 "OW − ODSP over time"（§7.2）；D v1、D v2 存档在 `archive/`。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
-Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice (tag `q1-v1`). Candidate D is now v3: v2 added an optional 3D space-time view (§7.1), v3 a fourth flat view, "OW − ODSP over time" (§7.2); D v1 and D v2 are archived in `archive/`. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
+状态：v1 = 四个可运行的候选版本，2026-11-12，待小组选择（tag `q1-v1`）。候选 D 已更新为 v3：v2 在图 1a 增加了可选的 3D 时空路径视图（§7.1），v3 再加了第四个正视图 "OW − ODSP over time"（§7.2）；D v1、D v2 存档在 `archive/`。另有参照面版本 1–4（§7.3）和插入面版本 5–9（§7.4，2026-11-16），都不改 D v3。网站文字为英文；本说明中英双语。做法和质量标准以 Q3 v2（[design/q3/Q3_DESIGN.md](../q3/Q3_DESIGN.md)）为准。
+Status: v1 = four runnable candidates, 2026-11-12, awaiting the group's choice (tag `q1-v1`). Candidate D is now v3: v2 added an optional 3D space-time view (§7.1), v3 a fourth flat view, "OW − ODSP over time" (§7.2); D v1 and D v2 are archived in `archive/`. Reference-plane versions 1–4 (§7.3) and insight-surface versions 5–9 (§7.4) leave D v3 unchanged. Website copy is in English; this document is bilingual. Method and standards follow Q3 v2.
 
 - 总览 / Overview: [index.html](index.html) · 运行方法 / Run: [README.md](README.md) · 参考 / References: [REFERENCES.md](REFERENCES.md)
 - 当前页面 / Current pages: [A](variants/a-timeline/index.html) · [B](variants/b-change/index.html) · [C](variants/c-longview/index.html) · [D（v3）](variants/d-paths/index.html)；旧版本只在 [archive/](archive/README.md)，仅供对照。/ Older versions live only in the archive, for comparison.
@@ -265,6 +265,58 @@ Four parallel versions add one indicator-defined reference plane each to D v3's 
 
 **图表类型与多样性 / Chart types**：参照面是现有时空立方体里的参照结构，不是新的图表类型；版本 3 新增的 "OW + ODSP over time" 是单折线时间图，与 D 自己的 "OW over time" 和 Q3 图 1b 的单折线是同一类型（由同一个投影得到，所以没有另做一种图）。
 
+### 7.4 插入面版本：D + insight 5–9（2026-11-16）/ Insight-surface versions: D + insight 5–9
+
+**为什么做 / Why.** 版本 1–4 的面都由 OW、ODSP 自己定义，回答"是什么"。组员建议把受众看作决策机构、把 Q1 讲成"重大公共事件中的政府应对"；用户提出用公开的政策目标画一个"目标案件数面"。核查结果：安省**没有公布** OW、ODSP 的案件数目标；减贫战略 2020–2025 的目标（2024 年每年 60,000 名受助人进入就业）是离开援助的流量，课程数据测不到。但安省财政问责办公室（FAO）每年公布案件数预测，并测算预算拨款能资助多少案件，所以版本 5 用这些公开数字。版本 6–9 是另外四种"决策视角"的叠加层。五个页面共用 `shared/d-insight.js`（从 `d-planes.js` 复制，参照面换成叠加层，由 `<body data-insight="…">` 选择）；D v3 和版本 1–4 没有改动。
+Planes 1–4 describe the series; versions 5–9 add decision-oriented overlays. Ontario publishes no caseload target, but the FAO publishes projections and the caseload the budget funds (version 5). D v3 and versions 1–4 are unchanged.
+
+**共同做法 / Shared rules**
+- 每个叠加层都是立方体世界坐标（指数单位，X = ODSP、Y = OW、Z = 时间）里的点集，所以三个正视图会**自动**给出它的 2D 读法：例如版本 7 的帘幕在 "OW over time" 里就是 OW 与轨道之间的面积，在 "OW + ODSP over time" 里就是合计与合计轨道之间的差。/ Every overlay is a point set in world coordinates, so the flat views read it in 2D automatically.
+- 立方体盒子包住曲线和叠加层的全部点，切换开关不会改变盒子大小；超出数据的时间（版本 5 到 2029 年、版本 8 到 2028 年）用虚线框标出 "After the data"。版本 5、6 的立方体从 2015 Q1 开始（它们的内容集中在 2018–2029 年），页面标题注明，完整路径仍在 D v3 和图 1b。/ The box holds every overlay point; time past the data is outlined; versions 5 and 6 start at 2015 Q1, as the title says.
+- 3D 中叠加层画在曲线**下层**；时间窗和闸门画在远处的地面和后墙上（像曲线的阴影），不画横穿盒子的整面平面——第一版这样画时，6 个闸门在 2018–2023 年叠成一堵灰墙，已改。/ Overlays sit under the path; time windows and gates lie on the far floor and wall (an early version with full planes formed a grey wall and was replaced).
+- 每个版本有：叠加层开关（L5 filtering）、定义卡、读数面板的专用行、图下的文字读法、**图 1d**（2D 表或图，给出精确数字）、结论卡片中的一句计算出的故事和一条 "do not show"。/ Each version has a toggle, a definition card, readout rows, a written reading, Figure 1d (exact numbers), and computed card lines.
+- 外部数据（版本 5、6）放在 `design/q1/data/`，每行都有来源，见 [data/README.md](data/README.md)；页面在浏览器里读取并计算所有派生数字。/ External data live in `design/q1/data/` with sources.
+
+| 版本 / Version | 叠加层的定义 / Definition | 与曲线的关系（pandas 复核）/ Relation to the path | 稳健性 / Robustness | 2D 读法 / Flat reading |
+| --- | --- | --- | --- | --- |
+| 5 · Plans vs path | FAO 2024 年 6 月、2025 年 10 月的预测；2026 年预算的"资助案件容量"（FAO 测算）和 FAO 2026 年估计（容量 + FAO 估计的缺口）。按财年中点放进立方体；两条 2026 年线之间的直纹面 = 资助缺口 | 2024 年预测 OW 误差 −0.2% / +0.7% / +1.0%（2023-24 至 2025-26），ODSP +0.0% / +1.4% / +3.1%；2025 年预测 2025-26 OW +7.6%、ODSP +2.5%；2026-27 资助 OW 246,430 件 = 2025-26 平均 291,605 的 −15.5%，比 FAO 估计少 56,534 件（OW 疫情跌幅 65,998 件的 86%）；OW 同比 ≤ −15.5% 只出现在 2021 Q1–Q3 | 误差以 FAO 自己的财年实际为准（同一来源）；本页四个季末月份的财年平均与 FAO 的 12 个月平均相差 ≤ 1%（2020-21 OW −2.8%、2022-23 和 2023-24 OW +1.2% 除外） | OW / ODSP 时间视图中是普通的"预测 vs 实际"图；图 1d 按财年列出全部数字 |
+| 6 · Support window and rule changes | 联邦收入支持窗口：CERB（2020-03-15 – 09-26）、CRB（2020-09-27 – 2021-10-23）；6 个省级 OW / ODSP 规则变化（编号闸门）。每个变化与"变化前最后一个季末"比较前后四个季度 | OW 从 2019 Q4 的 235,501 降到窗口内最低 178,872（2021 Q3，CRB 结束前最后一个季末），同期 ODSP −1.7%；2021 Q4 OW +8.4%，是 2003 年以来第二大的季度增幅（仅次于 2009 Q1 +9.4%）；CRB 结束后四个季度 OW +21.2%（之前四个季度 −16.0%）；2022–2023 年三次 ODSP 变化之后，ODSP 四个季度内变化 ≤ 0.3% | 不涉及估计；季度数据只能对齐到季末，日期精度在 CSV 中注明（两条只确认到月份） | 时间视图中是斜线带和竖直虚线；图 1d 列出每个变化的前后变化和来源，点按钮把滑块移到该季度（L5 navigation） |
+| 7 · Pre-pandemic track | 2015 Q1 – 2019 Q4 对数线性趋势（ODSP +3.1%/年、OW −1.2%/年）延伸到 2026 Q1；轨道与曲线同季度点之间的直纹面 = 帘幕；新增正视图 "OW + ODSP over time"（yaw 90°、pitch 58.1°） | 2026 Q1：ODSP 比轨道低 82,406 件（−17.8%），OW 高 68,199 件（+30.5%），合计只差 −14,207 件；OW 2021 Q3 最低（−24.2%），2023 Q1 回到轨道上方 | 拟合窗口 2010–2019、2017–2019：ODSP 低 15.3–21.3%，OW 高 24.8–45.2%——方向不变，大小随窗口变化（图 1d 并列三种窗口） | OW、ODSP 时间视图中帘幕就是缺口面积；合计视图中帘幕几乎消失（"合计掩盖了相反的偏离"）；图 1b 加了两条虚线轨道 |
+| 8 · Two-year-rule rays | 从每个季度出发，把过去 8 个季度的增长率再延续 8 个季度，得到一条射线；灰色射线从每个 Q4 出发，黑色射线从滑块季度出发，虚线连到 8 个季度后的实际值 | 77 个起点（2005 Q1 – 2024 Q1）：OW 平均误差 12.8%（2018 年以前的起点 9.8%），ODSP 2.4%；最大 OW −44.3%（从 2021 Q3 预测 2023 Q3），最大 ODSP +7.6%（从 2020 Q1）；从 2019 Q4 出发 OW +15.7%、ODSP +6.8% | 规则是本页构造的简单基准，不是任何机构的方法；射线离开盒子处用小圆圈标出，数值在读数面板 | 图 1d 是按起点季度画的误差折线（OW、ODSP 两条，0 线、疫情带）；图 1b 显示当前射线 |
+| 9 · 2008 recession ghost | 2008 Q3 – 2014 Q4 两个项目的相对变化，从 2019 Q4 重新起步（锚点 = C.D. Howe 商业周期委员会所定 2008 年 10 月、2020 年 2 月两个峰值之前的最后一个季末） | +6 季度：2008 年后 OW +28.3%，2019 年后 −20.8%；+25 季度：OW 120.6 vs 124.0（相近），ODSP 134.4 vs 100.2；原 2008–2014 段用粗灰线标出 | 一次历史经验只是对照；FAO 2024 年报告本身用"2008-09 衰退后的经验"类比 OW 的走势 | Path 视图最直观（影子向右、实际垂直）；图 1d 列出同一季度数的成对指数 |
+
+**可能的误读和应对 / Misreadings and safeguards**
+- 版本 5："funded case capacity" 被读成政府目标——定义卡、结论卡和数据说明都写明是 FAO 的测算；FAO 的财年平均和本页季末快照口径不同——误差只和 FAO 自己的实际比较，并写出两种平均的差。/ Capacity is not a target; misses use the FAO's own actuals.
+- 版本 6：日期对齐被读成因果——定义卡、图下文字、图 1d 注释和 "do not show" 卡片都写明 "dates line up; they do not show cause"；联邦窗口用斜线纹理而不是颜色，避免和疫情灰带、OW 蓝、ODSP 橙冲突。/ Alignment is not cause; hatching, not a new colour.
+- 版本 7：轨道被读成"没有疫情会怎样"——写明是描述性参照、不是反事实，并给出三种拟合窗口。/ A track is not a counterfactual.
+- 版本 8：规则被读成官方预测方法——写明是本页的简单基准；版本 5 才是官方预测。/ The rule is our benchmark.
+- 版本 9：影子被读成预测——写明是一次历史经验的对照，锚点的选择有来源。/ The ghost is a comparison.
+
+**课程依据 / Course basis**：L2 派生数据（轨道、缺口、规则误差、影子）· L3 判断"在哪一侧、离多远"在 3D 中只做定性，精确值在正视图和图 1d · L4-1 参照结构与地标（预测线、轨道、影子）、enclosure（联邦窗口）· L5 filtering（开关）、navigation（图 1d 按钮、滑块选射线起点）、change of view（版本 7 的合计视图）· L6 annotation（直接标签、来源）· L7 时空立方体：版本 6 是 time cutting 的应用（时间窗和闸门），版本 5、8、9 的轨迹与曲线共享时间轴，正视图是 flattening（Bach et al., 2014）。叠加层都有明确定义，曲线与它的关系就是结论本身，不是装饰。
+
+**对评分的影响 / Grading impact**（相对 D v3）
+
+| 要求 | 5 Plans | 6 Gates | 7 Track | 8 Rays | 9 Ghost |
+| --- | --- | --- | --- | --- | --- |
+| R5 课程数据为主 | 持平（外部数字只作参照，有来源）| 持平（同左）| 加分（只用课程数据）| 加分 | 加分 |
+| R7 编码合理 | 加分：预测与实际同一坐标 | 加分：纹理 + 位置，不加新颜色 | 加分：缺口 = 长度 / 面积 | 持平 | 加分 |
+| R8 分析能力 | 加分（新数字：误差、缺口）| 加分（前后变化）| 加分（相反缺口、合计）| 加分（误差）| 加分 |
+| R9 清楚可导航 | 小幅减分（线多，3D 稍挤）| 持平 | 持平 | 小幅减分（要先理解规则）| 持平 |
+| R10 创意 | 加分 | 加分 | 加分 | 加分 | 加分 |
+| R12 理由深入 | 加分 | 加分 | 加分 | 加分 | 加分 |
+| R15 与受众对齐 | 加分（预算与规划）| 加分（决策与事件）| 加分 | 持平 | 加分 |
+
+**开发与测试 / Build and verification**（2026-11-16，与 §7.3 相同的方法）
+- 数字：`tools/verify_q1_insight.py` 用 pandas 从课程 CSV 和 `design/q1/data/` 独立重算 64 项（误差、缺口、轨道、规则误差、影子、前后变化、图 1d 表格），按页面的格式比对页面导出文字：**64 / 64 一致**。外部数字的抄录用 2026 年报告的增长率复算检查（见 [data/README.md](data/README.md)）。/ 64 of 64 numbers match pandas.
+- 版面：5 个页面 × 48–57 个状态（每个视图、每个开关选项、深色、指数模式、滑块 2021 Q3 / 2019 Q4、步骤 2）× 1360 / 820 / 400 px，共 261 个状态 0 处横向滚动、文字重叠或裁切；第一轮在版本 5、6（立方体从 2015 Q1 开始）的 400 px 正视图里发现 17 处标签重叠（参考线标签与数据标签、"Pandemic" 与 "OW relatively higher"），已改为数据标签优先、参考标签让位后复测为 0。/ 261 states clean after fixing 17 phone-width overlaps.
+- 3D：每个页面两组全角度扫描（yaw −20°–110°、pitch −50°–85°，1360 和 400 px，浅色默认 + 深色指数模式滑块 2021 Q3），共 4,200 个角度 0 处问题。/ 4,200 angles clean.
+- 交互：图 1d 的 8 个按钮都把滑块移到对应季度并保留焦点；开关切到 None 时清除全部叠加元素并注明；版本 7 从 3D 动画到 "OW + ODSP over time" 停在 pitch 58.15°，与直接打开逐点相差 0 px；版本 8 拖动滑块时射线、读数和图 1d 竖线同步；版本 5 只画 2015 Q1 以后的 45 个点，滑块下限为 2015 Q1；悬停提示出现各版本的专用行。键盘：Tab 可到达全部控件（24–41 个），四组分段按钮 Enter 可用。截图 `screenshots/dins-*`（浅色、深色、手机、交互状态、缩略图）0 处问题，无控制台错误。/ Interactions, keyboard and screenshots checked.
+- 没有做的：真人读者测试（与 D 的其他版本一样，列为待决定事项）。/ Not done: a reader test.
+
+**考虑过但没有做 / Considered, not built**：失业率推算的 OW 面（违反"失业率只作背景"；疫情前只有 12 个季度；但关系断开这一点——疫情前 r = 0.82、2022 年后 r = 0.97、全期 r = −0.01——可作为值得调查的问题）；累计偏离面积（OW 低于 2019 Q4 水平的累计 −334,634 案件·季度、之后 +473,443，和版本 4、7 重复，面积是较弱的通道）；每千名劳动力案件数（劳动力数据只从 2017 年开始，没有人口数据）；减贫战略就业目标和 2021 年 Recovery & Renewal（见 [data/README.md](data/README.md)）。
+
+**顺带发现 / Side finding**：数据字典（`characteristics_data_dictionary_en.xlsx`，OW 页）写明全省 OW 案件数 "Includes estimates for First Nations cases"。这很可能就是 §1 中"全省 OW `cases` 带小数、原因未核实"的原因（估计值不是整数），建议小组确认后更新页面上的 "shown as published" 说明。/ The dictionary says province-wide OW cases include estimates for First Nations cases, which likely explains the decimals.
+
 ## 8. 版本比较 / Comparison
 
 | 维度 / Criterion | A · 时间线 | B · 变化 | C · 长时段 | D · 路径 |
@@ -406,3 +458,6 @@ Method: export every fact each page computes, recompute independently in pandas 
 12. **参照面版本**（§7.3）：选哪一个或哪几个并入 D（我的建议：版本 1 占比面 + 版本 2 时间切面；版本 3 作为开关里的备选），还是都不加。并入时先给 D v3 存档。/ Which plane version(s) to merge into D, if any.
 13. **D v3 的两个标签问题**（§7.3 "开发与测试"）：是否把新版本中的修复回补到 D v3（属于 bug 修复，不算大版本）？/ Back-port the two label fixes to D v3?
 14. **新增的派生指标**：版本 1 的 OW 占比和版本 3 的合计都由两个项目的案件数计算，没有引入外部变量；是否同意把它们写进 Q1 的指标范围和报告？/ Accept OW share and the combined total as Q1 measures?
+15. **插入面版本**（§7.4）：选哪一个或哪几个（我的建议：只选版本 7；或按 6 → 7 → 5 合并成 D 的三个叙事步骤，只保留一个叠加层开关）。/ Which insight overlay(s), if any.
+16. **外部参照数据**：是否接受版本 5（FAO 报告）和版本 6（政策日期）引入的外部数字；FAO 每年更新，最终提交前再核对一次。/ Accept the sourced external numbers of versions 5 and 6?
+17. **OW 小数的原因**：数据字典写明全省 OW 案件数包括第一民族案件的估计值（§7.4 顺带发现），是否据此更新第 8 条和页面上的 "shown as published"。/ Use the dictionary note to explain the decimal OW counts?

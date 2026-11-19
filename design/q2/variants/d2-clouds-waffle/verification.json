@@ -1,0 +1,1595 @@
+{
+ "summary": {
+  "states": 11,
+  "fields": 313,
+  "mismatches": 0,
+  "table_cells_compared": 2288,
+  "facts": {
+   "clouds separated in every quarter": true,
+   "space 2003 Q1 → 2026 Q1 shrank": true,
+   "OW median rose more than twice the ODSP median change": true,
+   "OW share rose and gap narrowed in every CMA (h1)": true,
+   "every CMA-quarter has ODSP share above OW share": true
+  },
+  "space_first": [
+   "2003 Q1",
+   20.0696
+  ],
+  "space_last": [
+   "2026 Q1",
+   3.9861
+  ],
+  "space_min": [
+   "2026 Q1",
+   3.9861
+  ]
+ },
+ "mismatches": [],
+ "results": [
+  {
+   "state": "theme=light",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "theme=light",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=2",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=3",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=4",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&cma=532",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=during&cma=550",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=pre&cma=505",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&start=2010Q1&end=2015Q4&cma=559",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=595",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=all&cma=550",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "h1",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "lead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "story",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f1Take",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f1Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "gutter",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "zlbl",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.mode",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.name",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.per",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.stats",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.warn",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.bars",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "card.sum",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f2Title",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f2L",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f2R",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f2Read",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "hlDots",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "f2Classes",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "table",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "tableHead",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "period",
+   "ok": true
+  },
+  {
+   "state": "step=0&period=post&cma=ont",
+   "field": "hero",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=0",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=1",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=27",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=52",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=68",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=80",
+   "field": "sqOD",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "ow",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "od",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "gap",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "q",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "sqOW",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "sqGap",
+   "ok": true
+  },
+  {
+   "state": "opening i=92",
+   "field": "sqOD",
+   "ok": true
+  }
+ ]
+}

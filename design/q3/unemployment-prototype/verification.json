@@ -1,0 +1,15 @@
+{
+ "compared": 299,
+ "mismatches": 0,
+ "failures": [],
+ "rho": {
+  "pre": 0.4357,
+  "during": 0.1357,
+  "post": -0.4357
+ },
+ "windows": {
+  "pre": "2011 Q1 – 2019 Q4",
+  "during": "2020 Q1 – 2023 Q1",
+  "post": "2023 Q2 – 2026 Q1"
+ }
+}

@@ -1,0 +1,56 @@
+/* Q2 extra version D — two clouds + zipper. Only this version's components; tokens come from shared/q2.css.
+   Period panel, map-grid and card-panel follow Q3 v2 (design/q3/prototype/q3.css) so the interaction reads the same. */
+.period-panel{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:8px 14px 4px;margin:4px 0 14px}
+.strip-label{font-size:12.5px;color:var(--ink2);margin:6px 0 0}
+.map-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(286px,1fr);gap:16px;align-items:start}
+@media (max-width:1000px){.map-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Figure 1a: the two clouds */
+.dot{stroke:var(--surface);stroke-width:.7px}
+.dot.ow{fill:var(--ow)} .dot.od{fill:var(--odsp)}
+.dots.focus .dot{opacity:.28}
+.dots.focus .dot.on,.dot.hl{opacity:1}
+.dot.hl{stroke:var(--ink);stroke-width:1.2px}
+.dot.on{stroke:var(--ink);stroke-width:1.6px}
+.zip .tooth{stroke:var(--ink2);stroke-width:1px;stroke-opacity:.75}
+.zip .tooth.end{stroke:var(--ink);stroke-width:2.6px}
+.zip .thread{fill:none;stroke:var(--ink);stroke-width:1.3px;stroke-opacity:.85}
+.zip.prev .thread{stroke-dasharray:4 3}
+.zip.ghost{opacity:.4}
+.zip .ont{fill:var(--surface);stroke:var(--ink);stroke-width:1.6px}
+.gutter line{stroke:var(--ink2);stroke-width:1.2px}
+.gutter .cap{stroke-width:1.2px}
+.zlbl{fill:var(--ink);font:600 12px var(--sans);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.glbl{fill:var(--ink2);font:12px var(--sans);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.glbl tspan.big{fill:var(--ink);font-weight:650}
+.plbl{font:600 12px var(--sans);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.hitzone{fill:transparent;cursor:pointer;touch-action:pan-y}
+
+/* Figure 1b: card (as Q3 Figure 2b) */
+.card-panel{border-left:1px solid var(--grid);padding-left:16px;min-height:430px}
+@media (max-width:1000px){.card-panel{border-left:0;border-top:1px solid var(--grid);padding:12px 0 0;min-height:0}}
+.card-panel h3{font:600 clamp(16px,1.5vw,19px)/1.25 var(--serif);margin:0;white-space:nowrap} /* one line for every name, so the card never changes height */
+.card-panel .mode{font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+.card-panel .per{font-size:12.5px;color:var(--ink2);margin:2px 0 10px}
+.card-panel .stats{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;font-size:13px;margin:0}
+.card-panel .stats dt{color:var(--ink2)}
+.card-panel .stats dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.card-panel .stats dd i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.card-panel .warn{font-size:12px;color:var(--ink2);background:var(--btn);border-radius:6px;padding:4px 8px;margin:8px 0 0}
+.card-panel h4{font-size:12.5px;font-weight:600;margin:12px 0 2px;color:var(--ink)}
+.card-panel .sum{font-size:13.5px;margin:10px 0 4px;min-height:4.8em} /* three lines kept: no jump on hover */
+.takeaway{font-size:13.5px;margin:6px 0 2px}
+
+/* Figure 2: slopes */
+#f2{max-width:760px;margin:0 auto}
+.sl{fill:none;stroke:var(--axis);stroke-width:1.4px}
+.sl.hl{stroke:var(--ink2);stroke-width:1.8px}
+.sl.on{stroke:var(--ink);stroke-width:2.8px}
+.sl.prev{stroke:var(--ink);stroke-width:2px;stroke-dasharray:5 3}
+.sl.ont{stroke-dasharray:2 3}
+.sdot{fill:var(--axis)} .sdot.hl{fill:var(--ink2)} .sdot.on,.sdot.prev{fill:var(--ink)}
+.slbl{fill:var(--muted);font:11.5px var(--sans);cursor:pointer;outline:none}
+.slbl.hl{fill:var(--ink2);font-weight:600} .slbl.on,.slbl.prev{fill:var(--ink);font-weight:650}
+.slbl:focus-visible{text-decoration:underline;fill:var(--ink)}
+.slbl.ont{font-style:italic}
+.lead-ln{stroke:var(--grid);stroke-width:1px;fill:none}

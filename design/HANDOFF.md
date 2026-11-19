@@ -1,6 +1,6 @@
 # 交接说明：可视化设计工作 / Handoff: Visualization Design Work
 
-最后更新 / Last updated: 2026-11-14 · 分支 / Branch: `eric_roughwork`
+最后更新 / Last updated: 2026-11-18 · 分支 / Branch: `eric_roughwork`
 
 这份文件让你在**另一台设备或一个新的 Claude 会话**里接着做 Q1–Q3 的可视化设计，不需要原来的聊天记录。新会话先读这份文件，再读下面链接的设计文档。
 This file lets you continue the Q1–Q3 visualization work on **another device or in a new Claude session** without the original chat. A new session should read this file first, then the design documents linked below.
@@ -23,11 +23,13 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 
 ## 2. 当前进度 / Status
 
+**2026-11-17 新增独立 Q1 候选 / Additional Q1 candidate:** [crisis-prototype/README.md](q1/crisis-prototype/README.md) 将问题深化为“危机压力 → 案件响应 → 收入充分性”，包含离线可打开的 `standalone.html`、新外部情景数据、来源记录与独立验证。它不替换下表候选，是否全站采用仍待小组决定。用户在本次讨论中明确要求初级原型并推送到 docs 仓库；不包含网站公开部署。/ An additional candidate connects pressure, caseload response and income adequacy, with portable HTML, sourced household scenarios and independent checks. Existing candidates are retained. Group adoption and public hosting remain separate decisions.
+
 | 部分 / Part | 当前版本（稳定路径）/ Current | Tag | 设计说明 / Rationale | 待决定 / Open questions |
 | --- | --- | --- | --- | --- |
-| Q1 | 候选 A–C（v1）、D v3、D + 参照面 1–4；页面入口表见 [q1/README.md](q1/README.md) | `q1-v1` = `a193c19`（A–D v1）· `q1-v2` = `e836bb9`（D v2，已存档）· `q1-v3` = `eb2586e`（D v3 `14e6474` + 参照面 1–4） | [q1/Q1_DESIGN.md](q1/Q1_DESIGN.md)（D：§7、§7.1 3D、§7.2 OW − ODSP 视图、§7.3 参照面） | Q1_DESIGN §11（14 条） |
-| Q2 | 候选 A–C：[q2/variants/](q2/variants/)，总览 [q2/index.html](q2/index.html) | `q2-v1` = `ab9e8dd` | [q2/Q2_DESIGN.md](q2/Q2_DESIGN.md) | Q2_DESIGN §11（10 条） |
-| Q3 | v2 原型：[q3/prototype/](q3/prototype/index.html)；v1 存档在 [q3/archive/](q3/archive/README.md) | `q3-v1` = `55e5870` · `q3-v2` = `a336f1a` | [q3/Q3_DESIGN.md](q3/Q3_DESIGN.md) | Q3_DESIGN 第 9–10 节 |
+| Q1 | 候选 A–C（v1）、D v3、D + 参照面 1–4、D + 插入面 5–9（2026-11-16，未提交）；页面入口表和插入面比较见 [q1/README.md](q1/README.md) | `q1-v1` = `a193c19`（A–D v1）· `q1-v2` = `e836bb9`（D v2，已存档）· `q1-v3` = `eb2586e`（D v3 `14e6474` + 参照面 1–4） | [q1/Q1_DESIGN.md](q1/Q1_DESIGN.md)（D：§7、§7.1 3D、§7.2 OW − ODSP 视图、§7.3 参照面、§7.4 插入面） | Q1_DESIGN §11（17 条） |
+| Q2 | 候选 A–C：[q2/variants/](q2/variants/)，总览 [q2/index.html](q2/index.html)；额外版本 D（两团点云 + 拉链，2026-11-18，并列）：[q2/variants/d-clouds/](q2/variants/d-clouds/index.html)；D2（D + "每 100 个案件"开场）：[q2/variants/d2-clouds-waffle/](q2/variants/d2-clouds-waffle/index.html)；E（滚动讲故事 + D 的探索区）：[q2/variants/e-scroll/](q2/variants/e-scroll/index.html)；F（随时间变化的热力地图 + 经过检验的展望）：[q2/variants/f-heatmap/](q2/variants/f-heatmap/index.html) | `q2-v1` = `ab9e8dd` | [q2/Q2_DESIGN.md](q2/Q2_DESIGN.md)（D 见 §12，D2 见 §13，E 见 §14，F 见 §15） | Q2_DESIGN §11（11 条） |
+| Q3 | v2 原型：[q3/prototype/](q3/prototype/index.html)；v1 存档在 [q3/archive/](q3/archive/README.md)；额外版本 v2 + CMA 失业率（2026-11-18，并列）：[q3/unemployment-prototype/](q3/unemployment-prototype/README.md) | `q3-v1` = `55e5870` · `q3-v2` = `a336f1a` | [q3/Q3_DESIGN.md](q3/Q3_DESIGN.md)（额外版本：§11） | Q3_DESIGN 第 9–10 节；额外版本见其 README |
 
 - 每次迭代的记录：[DESIGN_LOG.md](DESIGN_LOG.md)。/ Iteration log.
 - 外部数据：2021 年 CMA 边界 `datasets/EXTERNAL/CMA-BOUNDARIES/`（Q3 地图用，Q2 C 用来排网格位置）。/ External CMA boundaries.
@@ -35,11 +37,11 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 - 测试与复核脚本：[tools/README.md](../tools/README.md)。/ Check and verification scripts.
 
 **当前推荐（都由小组最终决定）/ Current recommendations (the group decides)**
-- Q1：以 A 为底，加 B 的分阶段图；D 作为可选附加。D 的 3D 只连接视图、不提供新信息，作为可选视图保留；参照面建议版本 1（OW 占比面）+ 版本 2（时间切面）。
-- Q2：B（彗星图 + 分解条）为主体，加 C 的瀑布图；B 的读者测试不通过就退回 A + B 的分解条。
+- Q1：以 A 为底，加 B 的分阶段图；D 作为可选附加。D 的 3D 只连接视图、不提供新信息，作为可选视图保留；参照面建议版本 1（OW 占比面）+ 版本 2（时间切面）。插入面建议只选版本 7（疫情前轨道），或按 6 → 7 → 5 合并为三个叙事步骤（见 q1/README.md 的比较）。
+- Q2：B（彗星图 + 分解条）为主体，加 C 的瀑布图；B 的读者测试不通过就退回 A + B 的分解条。2026-11-18 新增的额外版本 D、D2（D + 开场方格图）、E（滚动讲故事）和 F（热力地图 + 展望）还没有纳入这条推荐，由用户和小组决定用哪个。
 - Q3：v2 原型。
 
-**最重要的待决定问题 / Key open decisions**：各问题选哪个版本；是否全站共用一个地图板块（Q3 已有比例符号地图，Q2 C 是网格地图）；D v3 的两个手机端标签问题是否回补（只在参照面版本里修了，见 Q1_DESIGN §7.3）；研究文档第 3、4 节需要按选定版本更新；`report.pdf`（R17）、在线部署（R3）、开发计划和分工（R16）还没开始。
+**最重要的待决定问题 / Key open decisions**：各问题选哪个版本；是否全站共用一个地图板块（Q3 已有比例符号地图，Q2 C 是网格地图，Q2 F 是填色地图）；D v3 的两个手机端标签问题是否回补（只在参照面版本里修了，见 Q1_DESIGN §7.3）；研究文档第 3、4 节需要按选定版本更新；`report.pdf`（R17）、在线部署（R3）、开发计划和分工（R16）还没开始。
 
 ## 3. 工作规则（用户的长期要求，务必遵守）/ Working rules (standing instructions)
 
@@ -67,7 +69,11 @@ This file lets you continue the Q1–Q3 visualization work on **another device o
 - D v3（`design/q1/variants/d-paths/`）在手机宽度下有两处标签重叠：滑块拖到 2021 Q3 时个别 3D 角度当前季度标签压住刻度或轴标题；"OW over time" / "ODSP over time" 视图中 "Pandemic" 与 "2026 Q1" 重叠。参照面版本（`shared/d-planes.js`）已修复，D v3 未改。/ Two phone-width label issues remain in D v3.
 - `design/prompts/` 下有两个用户自己的 prompt 文件未提交（`Q1_D_plane_options_prompt.md`、`Q1_D_surface_options_prompt.md`）。/ Two untracked prompt files.
 - GitHub 上不能直接打开页面（没开 GitHub Pages），只能本地预览。/ No GitHub Pages yet.
-- 全省 OW 案件数带小数的原因未核实（页面写 "shown as published"）。/ Decimal OW counts unexplained.
+- 全省 OW 案件数带小数：数据字典写明全省数字包括第一民族案件的估计值，很可能是原因（Q1_DESIGN §7.4），待小组确认后更新页面说明。/ Decimal OW counts: the dictionary says they include First Nations estimates.
+- 插入面版本 5、6 使用外部参照数据（`design/q1/data/`，FAO 报告和政策日期，每行有来源）；FAO 数字每年更新，提交前要再核对。复核脚本 `tools/verify_q1_insight.py`。/ Versions 5–6 use sourced external data; re-check FAO numbers before submission.
+- Q3 v2 图 4 在 1360 / 820 px 选中 Peterborough 时右端标签超出图框（失业率额外版本继承，两处都未改）。/ Q3 v2 Figure 4's end label overflows its frame for Peterborough at 1360 / 820 px (also in the unemployment extra version; not fixed in either).
+- 在 2026-11-18 用的这台电脑上：没有 Node（`tools/check_q*.mjs` 不能跑），pandas 的 DLL 被 Windows 应用程序控制阻止。Q3 失业率版本和 Q2 额外版本 D、D2、E、F 因此用 Playwright（Python + 本机 Edge）和标准库复核，脚本在各自目录里。/ On the 2026-11-18 machine there is no Node and pandas is blocked by Application Control; the Q3 unemployment version and Q2 extra versions D, D2, E and F are checked with Python Playwright + Edge and the standard library.
+- Q3 失业率数据（StatCan 表 14-10-0459-01）会被 StatCan 修订；提交前运行 `python design/q3/data/fetch_unemployment.py --check`。/ Re-check the StatCan unemployment data before submission.
 
 ## 5. 原来的会话记录 / Original session transcript
 

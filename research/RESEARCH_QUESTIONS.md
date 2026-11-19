@@ -72,6 +72,8 @@ Our primary audience is policy analysts at Ontario's Ministry of Children, Commu
 
 ## 3. Q1 填写区：总体趋势 / Q1 Workspace: Overall Trends
 
+**2026-11-17 研究深化候选 / Research extension candidate:** 本次讨论确认以“重大危机中社会援助能否提供足够支持”为 Q1 的引导问题，实际分析分为经济压力、在册案件响应、特定家庭的收入充分性。已有[初级原型与方法说明](../design/q1/crisis-prototype/README.md)。保留下面的原始小组框架供对照；本原型是独立候选，未声称全组已采纳。新原型用季度观测，并将 Toronto 年度家庭情景与全省季度趋势明确分开。/ The current discussion approved a Q1 policy motivation around sufficient support during a crisis. A separate initial prototype examines economic pressure, recorded caseload responses, and income adequacy for specified households. The earlier group framework below is retained for comparison; group adoption is not claimed. The prototype uses quarterly observations and distinguishes annual Toronto household examples from provincial quarterly trends.
+
 **研究问题 / Research question**  
 COVID-19 疫情前、期间及之后，OW 与 ODSP 的案件数量变化趋势有何不同？  
 How did OW and ODSP caseload trends differ before, during, and after the COVID-19 pandemic?

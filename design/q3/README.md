@@ -61,3 +61,7 @@ URL 参数可以直接打开某个状态 / URL parameters open a specific state:
 - v1（`55e5870`，tag `q3-v1`）：图 2 为 CMA × 季度热力图。可运行存档 / runnable archive: [archive/q3-prototype_2026-11-12_v1/](archive/q3-prototype_2026-11-12_v1/README.md)。/ Figure 2 was a CMA × quarter heatmap.
 - v2（`a336f1a`，tag `q3-v2`，当前 / current）：图 2 改为比例符号地图 + 悬停分析卡片，时期刷选移到第 2 步顶部。/ Figure 2 is a proportional-symbol map with a hover analysis card; the period brush moved to the top of Step 2.
 - 版本索引 / Version index: [archive/README.md](archive/README.md)
+
+**额外版本（并列，不替换当前版本）/ Extra version (parallel, does not replace the current one)**
+
+- [unemployment-prototype/](unemployment-prototype/README.md)（2026-11-18）：v2 + CMA 失业率。图 2b 卡片底部加失业率区块，新增图 5a（失业率 × 长期占比散点图）和图 5b（选中 CMA 的失业率走势），交互与地图相同（悬停预览、点击选中、跟随时期选择）。数据为 StatCan 表 14-10-0459-01，放在 [data/](data/README.md)。打开 <http://localhost:8000/design/q3/unemployment-prototype/>。/ v2 plus local unemployment rates: a card block in Figure 2b, Figure 5a (unemployment × long-term share) and Figure 5b (the selected CMA over time), with the map's interaction logic. Data in `data/`.

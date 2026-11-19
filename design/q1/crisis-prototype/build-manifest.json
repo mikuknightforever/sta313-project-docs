@@ -1,0 +1,32 @@
+{
+  "description": "Offline package of index.html; all displayed statistical values are derived from embedded CSVs in the browser.",
+  "inputs": {
+    "ow": {
+      "path": "datasets/ONT-SA/selected/ont-sa-characteristic-ow-ont.csv",
+      "sha256": "cc3b10897eae905acc3b4fb2083f9ecb103ae03754a48cf94fbffbdb779fbda2"
+    },
+    "odsp": {
+      "path": "datasets/ONT-SA/selected/ont-sa-characteristic-odsp-ont.csv",
+      "sha256": "4378bdc5324fa5c1d479179427fe0ce4162a7bc90bfc9cff532afd5cd634bdbd"
+    },
+    "unemployment": {
+      "path": "datasets/ONT-SA/selected/1410028701_databaseLoadingData.csv",
+      "sha256": "700a7503fec2deec6dc9781bfe1e29f6cc62e57612d589441554634a4f6f1b55"
+    },
+    "adequacy": {
+      "path": "design/q1/crisis-prototype/data/adequacy.csv",
+      "sha256": "91dde98ef9246ff0dce1540bc73f00f5ec74ba44ec6fe92c132ffc35eed6a23d"
+    },
+    "events": {
+      "path": "design/q1/crisis-prototype/data/policy-events.csv",
+      "sha256": "fd4c846bd407c757ccefd34a7f7d58cdd1d60b1c495b18881a701434cea271c2"
+    }
+  },
+  "implementation": {
+    "index.html": "e2d4907e2b59f1749a86655e0cc4ad441f16cce12ae2200cc50719f0ff3ebcba",
+    "styles.css": "b04455e40cffb2f740d22f0c525af7de76a0859a2faf89df4ee874d856344258",
+    "app.js": "feef4a371c9254cfe499ff1a96de2bf09e2552f9a7a5cf605d7ab3e3aac78b1b",
+    "analysis.js": "9eb0f53389344e87c43c8085facb4eaf499ef922a6ae788185850d1a9b92e6f2"
+  },
+  "standalone_sha256": "629d25a4fd8a5a236149fcf00c8228895e1e28dd0e2734acb732a7fa40bb6b9d"
+}
