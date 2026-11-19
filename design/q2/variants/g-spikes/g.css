@@ -1,0 +1,4 @@
+/* Q2 extra version G — spike map. Shared styles in ../../shared/q2-maplab.css. */
+.spikes g{cursor:pointer}
+.spikes path.mk{stroke-linejoin:round}
+.whisk{stroke-linecap:round}

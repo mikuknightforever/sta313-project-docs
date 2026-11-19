@@ -1,0 +1,30 @@
+/* Q2 extra version J — bivariate map. Rows (lightness) = gap size, columns (hue) = change against a year earlier.
+   Light theme: lighter = smaller gap; dark theme: darker = smaller gap (more contrast = wider gap in both). Within a row the
+   narrowed colour leans lighter and the widened one darker (reversed in the dark theme), as in the change palette.
+   Worst pair, OKLab x 100, over normal vision and Machado 2009 protan / deutan / tritan, land colour included: 5.0 light, 5.5 dark. */
+:root{
+  --b0:#d3e4f1; --b1:#d2d1cc; --b2:#dbb4c5;
+  --b3:#95abbc; --b4:#999893; --b5:#be6993;
+  --b6:#576c7b; --b7:#5c5b56; --b8:#7a2b56;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --b0:#1b2e3b; --b1:#3e3d39; --b2:#7f2c59;
+    --b3:#40627a; --b4:#73726d; --b5:#c65b93;
+    --b6:#94a4b0; --b7:#b9b7b2; --b8:#f2bcd4;
+  }
+}
+:root[data-theme="dark"]{
+  --b0:#1b2e3b; --b1:#3e3d39; --b2:#7f2c59;
+  --b3:#40627a; --b4:#73726d; --b5:#c65b93;
+  --b6:#94a4b0; --b7:#b9b7b2; --b8:#f2bcd4;
+}
+.mk:not(.outl){cursor:pointer;outline:none}
+.mk:not(.outl):focus-visible{stroke:var(--d512);stroke-width:3px}
+.bikey{display:inline-flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.bikey table{border-collapse:separate;border-spacing:2px;width:auto;margin:0;font-size:11px}
+.bikey th,.bikey td{border:0;padding:0 3px;text-align:right;color:var(--ink2);font-weight:500}
+.bikey th.col{text-align:center;font-size:10.5px}
+.bikey td i{display:block;width:30px;height:16px;border-radius:2px;border:1px solid var(--ring)}
+.bikey-t{font-size:12px;color:var(--ink2);max-width:22em}
+.maplbl .dir{font-weight:700}

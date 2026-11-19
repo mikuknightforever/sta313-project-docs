@@ -1,0 +1,7 @@
+/* Q2 extra version K — 3D prism map. Shared styles in ../../shared/q2-maplab.css. */
+.prism{cursor:pointer;outline:none}
+.prism:focus-visible path.mk{stroke:var(--d512);stroke-width:3px}
+.prism .wall{fill:var(--wall);stroke:var(--cma-line);stroke-width:.35px}
+.prism .hatchov{pointer-events:none}
+.tbframe{fill:none;stroke:var(--ring);stroke-dasharray:3 2}
+.plabels text{pointer-events:none}
