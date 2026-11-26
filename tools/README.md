@@ -87,7 +87,7 @@ python design/q3/unemployment-prototype/verify_browser.py
 python design/q3/unemployment-prototype/verify.py
 ```
 
-Q2 额外版本 D、D2、E、F 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。/ Q2 extra versions D, D2, E and F work the same way.
+Q2 额外版本 D、D2、E、F、G–K 也一样（先跑浏览器检查导出页面内容，再用标准库复核数字）。G–K 共用一套脚本，可只跑其中几个（如 `g k`）；`--no-shots` 跳过截图。/ Q2 extra versions D, D2, E, F and G–K work the same way; G–K share one pair of scripts.
 
 ```bash
 python design/q2/variants/d-clouds/verify_browser.py
@@ -98,6 +98,8 @@ python design/q2/variants/e-scroll/verify_browser.py           # E = 滚动故�
 python design/q2/variants/e-scroll/verify.py
 python design/q2/variants/f-heatmap/verify_browser.py          # F = 热力地图 + 展望 / map over time + outlook
 python design/q2/variants/f-heatmap/verify.py
+python tools/check_q2_maplab.py                                # G–K = F 的五种地图形式 / five map forms of F（14 项 × 5）
+python tools/verify_q2_maplab.py                               # 每个标记的数值文字和颜色级别 + 全部文字 / every mark and every sentence
 ```
 
 ## 分析脚本 / Analysis（`tools/analysis/`）

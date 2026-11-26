@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Q2 · H · Hexagon map</title>
+<link rel="stylesheet" href="../../shared/q2.css">
+<link rel="stylesheet" href="../../shared/q2-maplab.css">
+<link rel="stylesheet" href="h.css">
+</head>
+<body>
+<div class="page">
+  <p class="cand" role="note">Q2 extra version <b>H · Equal hexagons with a sparkline in every CMA, over time, with a tested outlook</b> (added 2026-11-18; a map form of version F; an alternative to the baseline) — prototype for group comparison. <a href="../../index.html">← All candidates</a></p>
+
+  <header class="q-head">
+    <p class="eyebrow">Part 2 of 3 · Family composition of OW and ODSP cases, 15 CMAs · Quarterly, 2003 Q1 – 2026 Q1, outlook to 2030 Q4</p>
+    <h1 id="h1">Fifteen equal hexagons, each carrying its own 2003–2030 line</h1>
+    <p class="lead" id="lead">Loading data…</p>
+    <div class="head-tools"><button type="button" class="ghost" id="themeBtn">Dark theme</button></div>
+  </header>
+
+  <div class="pitch" aria-label="Why this version">
+    <p><b>Motivation.</b> Equal hexagons in rough map positions give every CMA the same weight, and the line inside each one shows its whole record and outlook, so a single quarter is never read alone.</p>
+    <p><b>Appeal.</b> A tidy honeycomb that changes colour as you play, with a dot running along each CMA's own line.</p>
+    <p><b>Cost.</b> Positions are approximate (Thunder Bay is far north-west); the lines are small; colour encodes the classes, the printed number the value.</p>
+  </div>
+  <p class="challenge" role="note"><b>This version does not use the agreed dumbbell baseline.</b> It shares version F's data, outlook rules, card, Figure 2 and tables; only Figure 1a differs. Exact values are in the card, Figure 2 and Table 2.</p>
+
+  <section class="defs" aria-label="Definitions">
+    <details open>
+      <summary>Read this first: what the numbers measure</summary>
+      <div class="def-grid">
+        <div><h3>Gap, and its change</h3><p>Gap = ODSP share − OW share of cases that are a single person without children, in percentage points (pp), for one CMA in one quarter. Change = gap now − gap a year (four quarters) earlier: positive = wider, negative = narrower.</p></div>
+        <div><h3>Outlook</h3><p>2026 Q2 – 2030 Q4, hatched. Each rule extends a CMA's gap mechanically from the data up to 2026 Q1. It is a projection, not a forecast: it knows nothing about future policy or the economy.</p></div>
+        <div><h3>The three rules</h3><p><b>Convergence</b>: the gap keeps moving toward the middle CMA's gap at the rate seen in the past. <b>No change</b>: it stays at its 2026 Q1 value. <b>10-year trend</b>: it follows its straight-line trend of the last 10 years.</p></div>
+        <div><h3>How the rules were tested</h3><p id="defTest">Each rule was run from every past quarter that has 10 years of data before it, using only the data up to that quarter, and compared with what happened. The "likely range" is the middle 80% of those past misses.</p></div>
+        <div><h3>Cases, small CMAs, pandemic</h3><p>A case can include more than one person. Shares in small CMAs move more from quarter to quarter. Pandemic: March 2020 – May 2023 (2020 Q1 – 2023 Q1 in quarterly data).</p></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="block" id="s1">
+    <div class="block-head"><span class="step-no">1</span>
+      <div><h2>The gap on the map, quarter by quarter</h2>
+      <p class="sub">Press Play, drag the quarter slider or pick a moment. Hover, tap or Tab to a CMA to read it in Figure 1b; click it to follow it in Figure 2.</p></div>
+    </div>
+    <div class="time-panel" role="group" aria-label="Quarter">
+      <div class="toolbar tight">
+        <button type="button" class="ghost play" id="playBtn">Play</button>
+        <div class="seg" id="momentSeg" role="group" aria-label="Key moments"></div>
+      </div>
+      <div class="slider-row">
+        <input type="range" id="tSlider" min="0" max="111" step="1" value="0" aria-label="Quarter">
+        <div class="chart" id="tBar"></div>
+      </div>
+      <p class="now" id="tNow" aria-live="off"></p>
+    </div>
+    <div class="toolbar">
+      <span class="lab-t">Show</span><div class="seg" id="modeSeg" role="group" aria-label="Show"></div>
+      <span class="lab-t">Outlook rule</span><div class="seg" id="ruleSeg" role="group" aria-label="Outlook rule"></div>
+    </div>
+    <figure class="fig" id="fig1">
+      <figcaption><b>Figure 1a.</b> <span id="f1Title"></span></figcaption>
+      <div class="key" id="f1Key"></div>
+      <div class="map-grid">
+        <div class="chart" id="f1"></div>
+        <aside class="card-panel" id="card" aria-live="polite" aria-label="Figure 1b, one CMA in the selected quarter"></aside>
+      </div>
+      <p class="note" id="f1Note"></p>
+      <p class="takeaway" id="f1Take"></p>
+    </figure>
+    <figure class="fig" id="fig2">
+      <figcaption><b>Figure 2.</b> <span id="f2Title"></span></figcaption>
+      <div class="chart" id="f2"></div>
+      <p class="readout" id="f2Read" aria-live="polite"></p>
+      <p class="note" id="f2Note"></p>
+    </figure>
+  </section>
+
+  <section class="block" id="s2">
+    <div class="block-head"><span class="step-no">2</span>
+      <div><h2>The outlook: three rules, tested on the past</h2><p class="sub">How far off each rule would have been, and what each projects for 2030 Q4. Click a row to follow that CMA.</p></div>
+    </div>
+    <figure class="fig"><figcaption><b>Table 1.</b> How far off each rule was in the past (average miss, percentage points)</figcaption><div id="skill" class="narrow-tbl"></div><p class="note" id="skillNote"></p></figure>
+    <figure class="fig"><figcaption><b>Table 2.</b> <span id="outTitle"></span></figcaption><div id="outTbl"></div></figure>
+  </section>
+
+  <section class="block" id="s3">
+    <div class="block-head"><span class="step-no">3</span><div><h2>What this supports, and what it does not</h2></div></div>
+    <div class="cards" id="cards"></div>
+    <p class="source">Source: Government of Ontario, Ontario Works and ODSP case characteristics by census metropolitan area (CMA), quarterly 2003 Q1 – 2026 Q1 (STA313 course data snapshot); CMA boundaries: Statistics Canada, 2021 Census cartographic boundary files. The outlook is computed on this page from those data only. Descriptive comparisons only.</p>
+  </section>
+</div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="../../shared/q2-common.js"></script>
+<script src="../../shared/q2-maplab.js"></script>
+<script src="h.js"></script>
+</body>
+</html>

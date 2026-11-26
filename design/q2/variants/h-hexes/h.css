@@ -1,0 +1,8 @@
+/* Q2 extra version H — hexagon map. Shared styles in ../../shared/q2-maplab.css. */
+.hex{cursor:pointer;outline:none}
+.hex:focus-visible path.mk{stroke:var(--d512);stroke-width:3px}
+.hex text{pointer-events:none}
+.hex .hn{font-weight:600} .hex .hv{font-weight:700;font-variant-numeric:tabular-nums}
+.hex .spk{fill:none;stroke-width:1.3px;pointer-events:none;opacity:.85}
+.hex .spk.out{stroke-dasharray:2 2}
+.hex .spd{pointer-events:none}

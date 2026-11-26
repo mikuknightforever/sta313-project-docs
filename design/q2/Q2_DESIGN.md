@@ -350,6 +350,7 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
 11. **额外版本 D / D2 / E / F**（2026-11-18，§12–§15）：是替换还是并入 A–C；用 D、带开场的 D2、滚动故事 E，还是带展望的地图 F；描述性项目里是否保留展望；是否要做读者测试。/ Extra versions D / D2 / E / F: replace or join A–C; which one; keep an outlook?; reader test.
+12. **如果保留 F 的思路，用哪种地图形式**（§16）：F 填色、G 尖刺、H 六边形、I 六个时刻并排、J 双变量、K 3D；"变化"是否按"比一年前"计算；变化色板的洋红与 Q3 的紫色是否需要全站再核一次。/ If F's idea is kept, which map form (§16); is "change" measured against a year earlier; site-wide check of the magenta next to Part 3's violet.
 
 ## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
 
@@ -523,4 +524,44 @@ Status: parallel extra version requested by the Q2 owner (a heat map that update
 - 填色地图的面积偏差和颜色精度问题只是被补偿，没有消失；方格位置是近似的。
 - 展望只是机械推算；最好的规则也只与"不变"相当。19 个季度后的可能范围宽约 8 pp（收敛约 7.8、不变约 8.5），10 年趋势约 15 pp；范围来自全部 CMA 的合并误差，所以每个 CMA 的宽度相同。课程项目以描述为主，是否保留展望需要小组决定。
 - 收敛规则用 15 个 CMA 的中位数作参照，样本小；小 CMA 的单季波动会进入回测误差。
+- 没有读者测试。
+
+## 16. 额外版本 G–K：F 的五种地图形式（2026-11-18）/ Extra versions G–K: five map forms of F
+
+状态：五个并列的额外版本，放在 [variants/g-spikes/](variants/g-spikes/index.html)、[h-hexes/](variants/h-hexes/index.html)、[i-multiples/](variants/i-multiples/index.html)、[j-bivariate/](variants/j-bivariate/index.html)、[k-prisms/](variants/k-prisms/index.html)。用户（Q2 负责人）讨论 F 时问了三件事：热力图还能怎么优化；"差距的变化"是不是相对起点；能否用两种颜色区分"缩小"和"扩大"；以及有没有更好、更醒目的地图形式。之后要求"这些方案都做一个版本"。A–F 不变。
+Status: five parallel extra versions. While discussing F, the Q2 owner asked how the heat map could improve, whether "change" is measured from the start, for one colour for narrowing and another for widening, and for better, more striking map forms; then asked for each form as its own version. A–F are unchanged.
+
+### 16.1 共同部分 / What G–K share
+
+- **只换图 1a**：页面结构、导语、时间控制、卡片、图 2、表 1、表 2、结论卡片都和 F 相同，由共用引擎 [shared/q2-maplab.js](shared/q2-maplab.js) + [shared/q2-maplab.css](shared/q2-maplab.css) 提供（从 F 的 `f.js` 移植，F 本身不改）；每个版本只写自己的图 1a（`g.js` … `k.js`）。/ Only Figure 1a differs; the rest is a shared engine ported from F (F unchanged).
+- **"变化"按比一年前计算，不按起点**：核对数据后，相对 2003 Q1 更宽的只有 1,380 个 CMA-季度中的 76 个，2008 Q3 之后一个都没有，所以"相对起点"几乎全是"缩小"，第二种颜色几乎用不上；相对一年前（同季度，消除季节性）更宽的有 1,335 个中的 378 个，2021 Q1 全部 15 个 CMA 都比一年前宽。因此变化 = 差距(t) − 差距(t − 4 个季度)，前四个季度没有可比的年份，显示 "—"。G、H、I、K 有 "Show" 开关（Gap size / Change vs a year earlier），J 把两者放在一张双变量图里。/ Change = gap now − gap four quarters earlier: against 2003 Q1 only 76 of 1,380 CMA-quarters were wider (none after 2008 Q3), against a year earlier 378 of 1,335 were.
+- **变化的五级颜色**（按显示的一位小数分级）：缩小 1.5+ / 缩小 0.5–1.5 / ±0.5 以内 / 扩大 0.5–1.5 / 扩大 1.5+。浅色主题 `#e2eaee #b3c3cc #93918a #b5478a #661149`（缩小 = 浅石板灰，扩大 = 深洋红，亮度单调，"越深越差"），深色主题 `#262f34 #3d505a #686660 #cc5f9b #f4b6d8`。最初试过对称的灰 ↔ 洋红发散色板，色觉模拟不过关，改为按亮度排序。相邻级别的最小 OKLab 距离（×100，正常视觉 + Machado 2009 红 / 绿 / 蓝色盲完全模拟）：浅色 9.5、深色 8.5。蓝 / 橙仍只表示两个项目，Q3 的青绿 ↔ 紫不用。/ Five change classes, lightness-ordered slate → magenta; worst neighbouring pair ΔE 9.5 light, 8.5 dark across normal and simulated CVD.
+- **卡片多一行 "Against a year earlier"**（带颜色块和 ▲ / ▼）；关键时刻多一个 **2021 Q1**（比一年前变宽的 CMA 最多的季度，在浏览器里计算）；结论句加一句 "Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter."。展望、回测和三条规则与 F 完全相同。/ A new card row, a 2021 Q1 key moment and one more take-away sentence; the outlook is F's.
+
+### 16.2 五种形式 / The five forms
+
+| 版本 / Version | 图 1a / Figure 1a | 为什么值得做 / Why | 代价 / Cost |
+| --- | --- | --- | --- |
+| G · 尖刺 / 箭头地图 | CMA 形状只作底图（中性），每个 CMA 中心一根三角尖刺，高度 = 差距（同一比例，图例 10 / 20 / 30 pp），颜色重复分级；变化模式下变成上 / 下箭头（长度 = 变化）；展望期尖刺加斜纹，旁边细线 = 可能范围 / spikes on neutral shapes; arrows in change mode | 长度比颜色读得准；形状不带数据，大 CMA 不再主导；与 Q3 的比例符号地图同一思路 / length beats colour; no area bias | 大多伦多地区拥挤（名字放得下才显示）；小 CMA 的一年变化波动大 |
+| H · 六边形 + 小折线 | 15 个等大六边形，位置用候选 C 的网格；填色 = 分级（或变化级别），印出数值；每格内一条 2003–2030 的小折线（同一纵轴 5–40 pp，展望为虚线），圆点标出当前季度；手机上 3 列 / equal hexagons with printed values and a sparkline each | 每个 CMA 权重相同，单个季度总能放回它自己的历史里看 / equal weight; every quarter in its own context | 位置是近似的（Thunder Bay 实际远在西北）；小折线很小 |
+| I · 六个时刻并排 | 六张小地图（2003 Q1、2019 Q4、2021 Q1、2023 Q1、2026 Q1、2030 Q4），桌面 3 列、手机 2 列；每张写出范围（或"比一年前宽的有 k 个"）；悬停一个 CMA 在六张图上同时描边；滑块仍控制卡片和图 2，滑块所在的那张图描边并标 ◂ / six small maps of key moments, linked highlighting | 不靠记忆比较动画里的前后帧；最适合打印和放进报告 / no reliance on memory; printable | 地图小；时刻是挑选的；Thunder Bay 用角落小方块表示 |
+| J · 双变量地图 | 3 × 3 色键：亮度 = 差距大小（12 以下 / 12–20 / 20 以上），色相 = 比一年前（缩小 0.5 以上 = 石板灰、±0.5 内 = 灰、扩大 0.5 以上 = 洋红），名字后的 ▲ / ▼ / • 重复方向；无 "Show" 开关 / a 3 × 3 bivariate key, arrows as a second cue | 一张图同时回答"这里差距大不大"和"还在扩大吗" / both questions in one map | 色键要先学，五种里最难读；分级粗 |
+| K · 3D 柱体地图 | 用 Part 3 的投影倾斜（Flat / 35° / 50°，默认 50°），每个 CMA 升高到与差距成比例的高度，顶面颜色 = 分级（或变化级别）；SVG 画家算法由后往前画，边界简化到约 1.5 px；Thunder Bay 画在左上角（不在真实位置） / extruded CMAs on a tilted map, with a Flat view | 最醒目；高度直观 / the most striking | 课程明确提醒 3D 会扭曲长度、遮挡后面的柱体；数值只能看卡片、图 2、表 2；作为对照保留 |
+
+### 16.3 J 的配色重做 / J's palette, redone
+
+第一版九色的最近一对只有 OKLab 距离 2.1（正常视觉），深色主题在红色盲模拟下只有 1.5，几乎分不出。改为：每行（差距大小）内"缩小"稍浅、"扩大"稍深（深色主题相反），与变化色板一致；石板灰的彩度上限 0.055，避免看成 OW 的蓝色；把地图底色也算进去一起搜索。结果：浅色 `#d3e4f1 #d2d1cc #dbb4c5 / #95abbc #999893 #be6993 / #576c7b #5c5b56 #7a2b56`，深色 `#1b2e3b #3e3d39 #7f2c59 / #40627a #73726d #c65b93 / #94a4b0 #b9b7b2 #f2bcd4`；九色与底色之间最近一对在四种视觉下浅色 5.0、深色 5.5。仍然偏低，所以名字后保留 ▲ / ▼ / •。/ The first nine colours were too close (worst pair 2.1, 1.5 under simulated protanopia); with a lightness lean by direction, capped slate chroma and the land colour included, the worst pair is 5.0 light, 5.5 dark; arrows stay as a second cue.
+
+### 16.4 自检 / Self-check
+
+- **数字复核**（[tools/verify_q2_maplab.py](../../tools/verify_q2_maplab.py)，只用标准库）：从 CSV 独立重算差距、比一年前的变化、全部颜色分级（大小五 / 六级、变化五级、J 的九格）、收敛系数、全部回测误差和分位数、三条规则的全部展望值和全部文字，再和页面导出的内容逐字比较。G、H、K 各 6 个状态 126 个字段 + 90 个地图标记，I 4 个状态 84 个字段 + 360 个标记（6 张图 × 15），J 4 个状态 84 个字段 + 60 个标记：**共 546 个字段、690 个地图标记（每个标记核对数值文字和颜色级别），0 处不一致**。篡改测试（改一个标记的颜色级别、一个卡片箭头）两处都被抓到。/ 546 fields and 690 marks (value text and colour class), 0 mismatches; a tamper test is caught.
+- **浏览器检查**（[tools/check_q2_maplab.py](../../tools/check_q2_maplab.py)，Playwright + 本机 Edge）：每个版本 14 项，**5 × 14 = 70 项全部通过**：12 种版面（3 宽度 × 2 主题 × 两种状态）无横向滚动、无控制台错误、文字不重叠不出界、地图标签无冲突；卡片高度恒定（4 宽度 × 15 个 CMA × 数据期和展望期）；悬停预览、点击选中（卡片、图 2、表 2 联动）；键盘 Tab 到达 15 个 CMA、Enter 选中并保留焦点；滑块 End / Home；切换变化模式；Play / Pause；切换规则；手机点按。每个版本写出 `browser-verification.json` 和 `verification.json`，截图在 `screenshots/{g,h,i,j,k}-*.png`。
+- 自检中修复：G 在 400 px 宽的变化模式下名字重叠（改为放得下才显示）；H 选中时把六边形提到最上层会丢失键盘焦点（改为另画描边层）；I 窄面板标题出界（窄时用短标题）；J 展望标签压住 Windsor（移到右上角）；K 柱体过高（0.34 → 0.24）、边界简化 0.9 → 1.4 px、去掉位置不对的 Thunder Bay 框，以及 Ontario 轮廓伸出图外、挡住上方按钮（加裁剪、关闭指针事件）；J 配色（§16.3）。
+
+### 16.5 局限 / Limitations
+
+- 比一年前的变化在小 CMA 里波动很大，单个季度的箭头或洋红不一定代表趋势；卡片的小案件量提醒仍在。
+- G 的尖刺在大多伦多地区重叠，部分名字隐藏；H 的位置是近似的；I 只给六个时刻；J 的色键需要学习、配色距离仍偏低；K 的 3D 有遮挡和透视误差，只作对照。
+- 展望部分的局限与 F 相同（§15.5）。
+- 变化色板的洋红（色相约 350°）与 Q3 的紫色（约 300°）不同但相近，全站并排时需要再看一次。
 - 没有读者测试。

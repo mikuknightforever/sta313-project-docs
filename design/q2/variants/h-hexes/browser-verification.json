@@ -1,0 +1,2415 @@
+{
+ "version": "h",
+ "base": "http://127.0.0.1:53721/design/q2/variants/h-hexes/index.html",
+ "layout": [
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 20,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 7,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 3,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 3,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "t=2003Q1",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 3,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "t=2021Q1&show=yoy",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "figs": {
+    "f1": {
+     "texts": 30,
+     "overlaps": [],
+     "outside": []
+    },
+    "f2": {
+     "texts": 14,
+     "overlaps": [],
+     "outside": []
+    },
+    "tBar": {
+     "texts": 3,
+     "overlaps": [],
+     "outside": []
+    }
+   },
+   "labelOverlaps": 0
+  }
+ ],
+ "cardHeights": [
+  {
+   "width": 1360,
+   "heights": [
+    501
+   ],
+   "n": 30
+  },
+  {
+   "width": 1001,
+   "heights": [
+    497
+   ],
+   "n": 30
+  },
+  {
+   "width": 820,
+   "heights": [
+    491
+   ],
+   "n": 30
+  },
+  {
+   "width": 400,
+   "heights": [
+    510
+   ],
+   "n": 30
+  }
+ ],
+ "states": [
+  {
+   "query": "t=2003Q1",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Gap between the ODSP and OW single-person shares in each CMA, 2003 Q1",
+   "tNow": "2003 Q1 · before the pandemic",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Ottawa–Gatineau",
+    "per": "2003 Q1 · before the pandemic",
+    "stats": [
+     [
+      "Gap",
+      "24.6 pp"
+     ],
+     [
+      "Likely range",
+      "— (data)"
+     ],
+     [
+      "Against a year earlier",
+      "— (no earlier year)"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "13 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "±0.0 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "52.9% · 77.5%"
+     ],
+     [
+      "OW cases",
+      "18,345"
+     ],
+     [
+      "Convergence",
+      "13.6 pp (8.1–15.9)"
+     ],
+     [
+      "No change",
+      "14.8 pp (9.0–17.5)"
+     ],
+     [
+      "10-year trend",
+      "16.1 pp (11.9–26.7)"
+     ]
+    ],
+    "sum": "In 2003 Q1, Ottawa–Gatineau's gap was 24.6 pp: rank 13 of 15 (±0.0 pp since 2003 Q1).",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     0,
+     "32.4",
+     5,
+     null
+    ],
+    [
+     "580",
+     0,
+     "24.1",
+     3,
+     null
+    ],
+    [
+     "505",
+     0,
+     "24.6",
+     3,
+     null
+    ],
+    [
+     "568",
+     0,
+     "30.3",
+     5,
+     null
+    ],
+    [
+     "529",
+     0,
+     "25.8",
+     4,
+     null
+    ],
+    [
+     "521",
+     0,
+     "23.8",
+     3,
+     null
+    ],
+    [
+     "541",
+     0,
+     "29.4",
+     4,
+     null
+    ],
+    [
+     "550",
+     0,
+     "26.3",
+     4,
+     null
+    ],
+    [
+     "535",
+     0,
+     "27.1",
+     4,
+     null
+    ],
+    [
+     "532",
+     0,
+     "36.0",
+     5,
+     null
+    ],
+    [
+     "559",
+     0,
+     "32.2",
+     5,
+     null
+    ],
+    [
+     "555",
+     0,
+     "30.2",
+     5,
+     null
+    ],
+    [
+     "543",
+     0,
+     "31.4",
+     5,
+     null
+    ],
+    [
+     "537",
+     0,
+     "34.5",
+     5,
+     null
+    ],
+    [
+     "539",
+     0,
+     "28.4",
+     4,
+     null
+    ]
+   ],
+   "hatch": 0,
+   "f2Title": "Ottawa–Gatineau: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Ottawa–Gatineau: 24.6 pp in 2003 Q1, 14.8 pp in 2026 Q1. For 2030 Q4 the rules give 13.6 (convergence), 14.8 (no change) and 16.1 pp (10-year trend); they differ by 2.5 pp.",
+   "f2Ends": [
+    "Convergence 13.6",
+    "No change 14.8",
+    "10-year trend 16.1"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the convergence rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the convergence rule, the 2030 Q4 gaps would span 10.0–13.6 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  },
+  {
+   "query": "t=2003Q1&show=yoy",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Change in each CMA's gap against a year earlier, 2003 Q1",
+   "tNow": "2003 Q1 · before the pandemic",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Ottawa–Gatineau",
+    "per": "2003 Q1 · before the pandemic",
+    "stats": [
+     [
+      "Gap",
+      "24.6 pp"
+     ],
+     [
+      "Likely range",
+      "— (data)"
+     ],
+     [
+      "Against a year earlier",
+      "— (no earlier year)"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "13 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "±0.0 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "52.9% · 77.5%"
+     ],
+     [
+      "OW cases",
+      "18,345"
+     ],
+     [
+      "Convergence",
+      "13.6 pp (8.1–15.9)"
+     ],
+     [
+      "No change",
+      "14.8 pp (9.0–17.5)"
+     ],
+     [
+      "10-year trend",
+      "16.1 pp (11.9–26.7)"
+     ]
+    ],
+    "sum": "In 2003 Q1, Ottawa–Gatineau's gap was 24.6 pp: rank 13 of 15 (±0.0 pp since 2003 Q1).",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "580",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "505",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "568",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "529",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "521",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "541",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "550",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "535",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "532",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "559",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "555",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "543",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "537",
+     0,
+     "—",
+     2,
+     null
+    ],
+    [
+     "539",
+     0,
+     "—",
+     2,
+     null
+    ]
+   ],
+   "hatch": 0,
+   "f2Title": "Ottawa–Gatineau: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Ottawa–Gatineau: 24.6 pp in 2003 Q1, 14.8 pp in 2026 Q1. For 2030 Q4 the rules give 13.6 (convergence), 14.8 (no change) and 16.1 pp (10-year trend); they differ by 2.5 pp.",
+   "f2Ends": [
+    "Convergence 13.6",
+    "No change 14.8",
+    "10-year trend 16.1"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the convergence rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the convergence rule, the 2030 Q4 gaps would span 10.0–13.6 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  },
+  {
+   "query": "t=2021Q1&show=yoy",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Change in each CMA's gap against a year earlier, 2021 Q1",
+   "tNow": "2021 Q1 · during the pandemic",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Ottawa–Gatineau",
+    "per": "2021 Q1 · during the pandemic",
+    "stats": [
+     [
+      "Gap",
+      "22.1 pp"
+     ],
+     [
+      "Likely range",
+      "— (data)"
+     ],
+     [
+      "Against a year earlier",
+      "+2.9 pp ▲"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "1 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "−2.5 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "59.7% · 81.8%"
+     ],
+     [
+      "OW cases",
+      "13,737"
+     ],
+     [
+      "Convergence",
+      "13.6 pp (8.1–15.9)"
+     ],
+     [
+      "No change",
+      "14.8 pp (9.0–17.5)"
+     ],
+     [
+      "10-year trend",
+      "16.1 pp (11.9–26.7)"
+     ]
+    ],
+    "sum": "In 2021 Q1, Ottawa–Gatineau's gap was 22.1 pp: the widest of the 15 CMAs (−2.5 pp since 2003 Q1).",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     72,
+     "+1.3",
+     3,
+     null
+    ],
+    [
+     "580",
+     72,
+     "+1.2",
+     3,
+     null
+    ],
+    [
+     "505",
+     72,
+     "+2.9",
+     4,
+     null
+    ],
+    [
+     "568",
+     72,
+     "+2.6",
+     4,
+     null
+    ],
+    [
+     "529",
+     72,
+     "+1.4",
+     3,
+     null
+    ],
+    [
+     "521",
+     72,
+     "+2.0",
+     4,
+     null
+    ],
+    [
+     "541",
+     72,
+     "+2.3",
+     4,
+     null
+    ],
+    [
+     "550",
+     72,
+     "+1.3",
+     3,
+     null
+    ],
+    [
+     "535",
+     72,
+     "+1.4",
+     3,
+     null
+    ],
+    [
+     "532",
+     72,
+     "+1.4",
+     3,
+     null
+    ],
+    [
+     "559",
+     72,
+     "+2.0",
+     4,
+     null
+    ],
+    [
+     "555",
+     72,
+     "+1.2",
+     3,
+     null
+    ],
+    [
+     "543",
+     72,
+     "+2.5",
+     4,
+     null
+    ],
+    [
+     "537",
+     72,
+     "+1.1",
+     3,
+     null
+    ],
+    [
+     "539",
+     72,
+     "+1.7",
+     4,
+     null
+    ]
+   ],
+   "hatch": 0,
+   "f2Title": "Ottawa–Gatineau: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Ottawa–Gatineau: 24.6 pp in 2003 Q1, 14.8 pp in 2026 Q1. For 2030 Q4 the rules give 13.6 (convergence), 14.8 (no change) and 16.1 pp (10-year trend); they differ by 2.5 pp.",
+   "f2Ends": [
+    "Convergence 13.6",
+    "No change 14.8",
+    "10-year trend 16.1"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the convergence rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the convergence rule, the 2030 Q4 gaps would span 10.0–13.6 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  },
+  {
+   "query": "t=2019Q4&cma=532",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Gap between the ODSP and OW single-person shares in each CMA, 2019 Q4",
+   "tNow": "2019 Q4 · before the pandemic",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Oshawa",
+    "per": "2019 Q4 · before the pandemic",
+    "stats": [
+     [
+      "Gap",
+      "19.2 pp"
+     ],
+     [
+      "Likely range",
+      "— (data)"
+     ],
+     [
+      "Against a year earlier",
+      "−0.2 pp ▼"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "4 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "−16.8 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "61.5% · 80.7%"
+     ],
+     [
+      "OW cases",
+      "6,258"
+     ],
+     [
+      "Convergence",
+      "11.9 pp (6.4–14.1)"
+     ],
+     [
+      "No change",
+      "12.0 pp (6.3–14.8)"
+     ],
+     [
+      "10-year trend",
+      "11.3 pp (7.1–21.9)"
+     ]
+    ],
+    "sum": "In 2019 Q4, Oshawa's gap was 19.2 pp: rank 4 of 15 (−16.8 pp since 2003 Q1).",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     67,
+     "16.4",
+     2,
+     null
+    ],
+    [
+     "580",
+     67,
+     "17.7",
+     2,
+     null
+    ],
+    [
+     "505",
+     67,
+     "19.8",
+     2,
+     null
+    ],
+    [
+     "568",
+     67,
+     "14.2",
+     1,
+     null
+    ],
+    [
+     "529",
+     67,
+     "13.6",
+     1,
+     null
+    ],
+    [
+     "521",
+     67,
+     "13.4",
+     1,
+     null
+    ],
+    [
+     "541",
+     67,
+     "19.6",
+     2,
+     null
+    ],
+    [
+     "550",
+     67,
+     "16.8",
+     2,
+     null
+    ],
+    [
+     "535",
+     67,
+     "18.1",
+     2,
+     null
+    ],
+    [
+     "532",
+     67,
+     "19.2",
+     2,
+     null
+    ],
+    [
+     "559",
+     67,
+     "19.0",
+     2,
+     null
+    ],
+    [
+     "555",
+     67,
+     "18.9",
+     2,
+     null
+    ],
+    [
+     "543",
+     67,
+     "16.4",
+     2,
+     null
+    ],
+    [
+     "537",
+     67,
+     "20.1",
+     3,
+     null
+    ],
+    [
+     "539",
+     67,
+     "13.0",
+     1,
+     null
+    ]
+   ],
+   "hatch": 0,
+   "f2Title": "Oshawa: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Oshawa: 36.0 pp in 2003 Q1, 12.0 pp in 2026 Q1. For 2030 Q4 the rules give 11.9 (convergence), 12.0 (no change) and 11.3 pp (10-year trend); they differ by 0.7 pp.",
+   "f2Ends": [
+    "Convergence 11.9",
+    "No change 12.0",
+    "10-year trend 11.3"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the convergence rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the convergence rule, the 2030 Q4 gaps would span 10.0–13.6 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  },
+  {
+   "query": "t=2030Q4&rule=trend&cma=559",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Gap between the ODSP and OW single-person shares in each CMA, 2030 Q4 (outlook, 10-year trend rule)",
+   "tNow": "2030 Q4 · outlook, 10-year trend ruleprojection",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Windsor",
+    "per": "2030 Q4 · outlook, 10-year trend rule",
+    "stats": [
+     [
+      "Gap",
+      "8.4 pp (projected)"
+     ],
+     [
+      "Likely range",
+      "4.2–19.0 pp"
+     ],
+     [
+      "Against a year earlier",
+      "−0.9 pp ▼"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "14 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "−23.8 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "not projected"
+     ],
+     [
+      "OW cases",
+      "—"
+     ],
+     [
+      "Convergence",
+      "11.5 pp (6.0–13.7)"
+     ],
+     [
+      "No change",
+      "11.4 pp (5.7–14.2)"
+     ],
+     [
+      "10-year trend",
+      "8.4 pp (4.2–19.0)"
+     ]
+    ],
+    "sum": "If its gap follows its straight-line trend of the last 10 years, it would be about 8.4 pp in 2030 Q4 (likely 4.2–19.0 pp). This is a projection, not a forecast.",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     111,
+     "13.0",
+     1,
+     null
+    ],
+    [
+     "580",
+     111,
+     "11.7",
+     1,
+     null
+    ],
+    [
+     "505",
+     111,
+     "16.1",
+     2,
+     null
+    ],
+    [
+     "568",
+     111,
+     "9.0",
+     0,
+     null
+    ],
+    [
+     "529",
+     111,
+     "9.8",
+     0,
+     null
+    ],
+    [
+     "521",
+     111,
+     "12.9",
+     1,
+     null
+    ],
+    [
+     "541",
+     111,
+     "11.3",
+     1,
+     null
+    ],
+    [
+     "550",
+     111,
+     "11.3",
+     1,
+     null
+    ],
+    [
+     "535",
+     111,
+     "6.7",
+     0,
+     null
+    ],
+    [
+     "532",
+     111,
+     "11.3",
+     1,
+     null
+    ],
+    [
+     "559",
+     111,
+     "8.4",
+     0,
+     null
+    ],
+    [
+     "555",
+     111,
+     "11.3",
+     1,
+     null
+    ],
+    [
+     "543",
+     111,
+     "9.2",
+     0,
+     null
+    ],
+    [
+     "537",
+     111,
+     "13.3",
+     1,
+     null
+    ],
+    [
+     "539",
+     111,
+     "12.9",
+     1,
+     null
+    ]
+   ],
+   "hatch": 15,
+   "f2Title": "Windsor: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Windsor: 32.2 pp in 2003 Q1, 11.4 pp in 2026 Q1. For 2030 Q4 the rules give 11.5 (convergence), 11.4 (no change) and 8.4 pp (10-year trend); they differ by 3.1 pp.",
+   "f2Ends": [
+    "Convergence 11.5",
+    "No change 11.4",
+    "10-year trend 8.4"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the 10-year trend rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the 10-year trend rule, the 2030 Q4 gaps would span 6.7–16.1 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  },
+  {
+   "query": "t=2028Q2&show=yoy&cma=535",
+   "errors": [],
+   "lead": "From 2003 Q1 to 2026 Q1, the share of cases that are a single person without children rose in both programs across Ontario: OW 49.5% → 69.7%, ODSP 76.4% → 81.1%. The gap between the programs went from 26.9 to 11.4 percentage points. It was smaller at the end than at the start in all 15 CMAs: by the most in Oshawa (36.0 → 12.0), by the least in Ottawa–Gatineau (24.6 → 14.8).",
+   "defTest": "Each rule was run from every quarter from 2012 Q4 (the first with 10 years of data before it) to 2025 Q4, using only the data up to that quarter, and compared with what happened later. The \"likely range\" is the middle 80% of those past misses at the same distance ahead.",
+   "f1Title": "Change in each CMA's gap against a year earlier, 2028 Q2 (outlook, convergence rule)",
+   "tNow": "2028 Q2 · outlook, convergence ruleprojection",
+   "moments": [
+    "2003 Q1",
+    "2019 Q4",
+    "2021 Q1",
+    "2023 Q1",
+    "2026 Q1 (latest)",
+    "2030 Q4 (outlook)"
+   ],
+   "card": {
+    "mode": "Figure 1b · Selected CMA",
+    "name": "Toronto",
+    "per": "2028 Q2 · outlook, convergence rule",
+    "stats": [
+     [
+      "Gap",
+      "11.0 pp (projected)"
+     ],
+     [
+      "Likely range",
+      "7.0–12.7 pp"
+     ],
+     [
+      "Against a year earlier",
+      "+0.1 pp ▲"
+     ],
+     [
+      "Rank (1 = widest gap)",
+      "12 of 15"
+     ],
+     [
+      "Change since 2003 Q1",
+      "−16.2 pp"
+     ],
+     [
+      "OW · ODSP share",
+      "not projected"
+     ],
+     [
+      "OW cases",
+      "—"
+     ],
+     [
+      "Convergence",
+      "11.1 pp (5.6–13.3)"
+     ],
+     [
+      "No change",
+      "10.8 pp (5.0–13.5)"
+     ],
+     [
+      "10-year trend",
+      "6.7 pp (2.5–17.3)"
+     ]
+    ],
+    "sum": "If its gap keeps moving toward the middle CMA's gap at the past rate, it would be about 11.0 pp in 2028 Q2 (likely 7.0–12.7 pp). This is a projection, not a forecast.",
+    "warn": null
+   },
+   "marks": [
+    [
+     "595",
+     101,
+     "−0.1",
+     2,
+     null
+    ],
+    [
+     "580",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "505",
+     101,
+     "−0.2",
+     2,
+     null
+    ],
+    [
+     "568",
+     101,
+     "+0.1",
+     2,
+     null
+    ],
+    [
+     "529",
+     101,
+     "+0.2",
+     2,
+     null
+    ],
+    [
+     "521",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "541",
+     101,
+     "−0.1",
+     2,
+     null
+    ],
+    [
+     "550",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "535",
+     101,
+     "+0.1",
+     2,
+     null
+    ],
+    [
+     "532",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "559",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "555",
+     101,
+     "±0.0",
+     2,
+     null
+    ],
+    [
+     "543",
+     101,
+     "+0.1",
+     2,
+     null
+    ],
+    [
+     "537",
+     101,
+     "−0.1",
+     2,
+     null
+    ],
+    [
+     "539",
+     101,
+     "±0.0",
+     2,
+     null
+    ]
+   ],
+   "hatch": 15,
+   "f2Title": "Toronto: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "f2Read": "Toronto: 27.1 pp in 2003 Q1, 10.8 pp in 2026 Q1. For 2030 Q4 the rules give 11.1 (convergence), 10.8 (no change) and 6.7 pp (10-year trend); they differ by 4.4 pp.",
+   "f2Ends": [
+    "Convergence 11.1",
+    "No change 10.8",
+    "10-year trend 6.7"
+   ],
+   "skill": [
+    [
+     "best",
+     "Convergence",
+     "1.1",
+     "1.7",
+     "2.6",
+     "1.4 too high"
+    ],
+    [
+     "",
+     "No change",
+     "1.2",
+     "1.8",
+     "2.6",
+     "1.1 too high"
+    ],
+    [
+     "",
+     "10-year trend",
+     "2.6",
+     "3.5",
+     "5.8",
+     "4.1 too low"
+    ]
+   ],
+   "skillNote": "Average miss = mean of |actual gap − projected gap| over the 15 CMAs and every starting quarter from 2012 Q4 on, using only the data up to that quarter (750 projections 1 year ahead, 525 for 19 quarters ahead, the last starting in 2021 Q2). \"Too low\" means the rule projected a narrower gap than happened. Bold: the smallest miss 19 quarters ahead (convergence 2.58, no change 2.62, 10-year trend 5.85 to two decimals). \"No change\" is the yardstick: a rule that cannot clearly beat it adds little.",
+   "outTitle": "Outlook for 2030 Q4, sorted by the convergence rule (likely range in brackets)",
+   "out": [
+    [
+     "505",
+     "Ottawa–Gatineau",
+     "14.8",
+     "13.6 (8.1–15.9)",
+     "14.8 (9.0–17.5)",
+     "16.1 (11.9–26.7)"
+    ],
+    [
+     "537",
+     "Hamilton",
+     "12.9",
+     "12.4 (6.9–14.7)",
+     "12.9 (7.1–15.7)",
+     "13.3 (9.0–23.9)"
+    ],
+    [
+     "595",
+     "Thunder Bay",
+     "12.8",
+     "12.3 (6.8–14.6)",
+     "12.8 (7.0–15.5)",
+     "13.0 (8.8–23.6)"
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo",
+     "12.7",
+     "12.3 (6.8–14.6)",
+     "12.7 (7.0–15.5)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "532",
+     "Oshawa",
+     "12.0",
+     "11.9 (6.4–14.1)",
+     "12.0 (6.3–14.8)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "555",
+     "London",
+     "12.0",
+     "11.8 (6.3–14.1)",
+     "12.0 (6.2–14.7)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara",
+     "11.7",
+     "11.7 (6.1–13.9)",
+     "11.7 (6.0–14.5)",
+     "12.9 (8.7–23.5)"
+    ],
+    [
+     "550",
+     "Guelph",
+     "11.6",
+     "11.6 (6.1–13.8)",
+     "11.6 (5.8–14.3)",
+     "11.3 (7.1–21.9)"
+    ],
+    [
+     "559",
+     "Windsor",
+     "11.4",
+     "11.5 (6.0–13.7)",
+     "11.4 (5.7–14.2)",
+     "8.4 (4.2–19.0)"
+    ],
+    [
+     "580",
+     "Greater Sudbury",
+     "11.3",
+     "11.4 (5.9–13.7)",
+     "11.3 (5.5–14.1)",
+     "11.7 (7.5–22.4)"
+    ],
+    [
+     "521",
+     "Kingston",
+     "11.2",
+     "11.3 (5.8–13.6)",
+     "11.2 (5.4–13.9)",
+     "12.9 (8.6–23.5)"
+    ],
+    [
+     "535",
+     "Toronto",
+     "10.8",
+     "11.1 (5.6–13.3)",
+     "10.8 (5.0–13.5)",
+     "6.7 (2.5–17.3)"
+    ],
+    [
+     "543",
+     "Brantford",
+     "10.3",
+     "10.8 (5.3–13.0)",
+     "10.3 (4.6–13.1)",
+     "9.2 (5.0–19.8)"
+    ],
+    [
+     "568",
+     "Barrie",
+     "9.9",
+     "10.5 (5.0–12.8)",
+     "9.9 (4.1–12.6)",
+     "9.0 (4.7–19.6)"
+    ],
+    [
+     "529",
+     "Peterborough",
+     "9.1",
+     "10.0 (4.5–12.3)",
+     "9.1 (3.4–11.9)",
+     "9.8 (5.5–20.4)"
+    ]
+   ],
+   "take": "Narrower overall, with setbacks. In 2003 Q1, 12 of the 15 CMAs had a gap of 25 pp or more; in 2026 Q1, none did, and the widest gap was 14.8 pp (Ottawa–Gatineau). Against a year earlier, though, the gap widened in 15 of the 15 CMAs in 2021 Q1, the most of any quarter. On the convergence rule, the 2030 Q4 gaps would span 10.0–13.6 pp (2026 Q1: 9.1–14.8 pp); for one CMA the three rules differ by up to 4.4 pp (Toronto), a reminder that the outlook is a projection.",
+   "outCard": "About the outlook\nTested from 2012 Q4 on, 19 quarters ahead the rules missed by 2.6 pp (convergence), 2.6 pp (no change) and 5.8 pp (10-year trend) on average.\nThe rules know nothing about future policy, benefit rates, caseload growth or the economy; a change in either program would break them.\nThey disagree most for Toronto: 4.4 pp apart in 2030 Q4.\nA projected gap is not a target, and a narrower gap does not mean that needs converged."
+  }
+ ],
+ "interactions": {
+  "hover": {
+   "card": "Toronto",
+   "mode": "Figure 1b · Preview · click to select"
+  },
+  "click": {
+   "card": "Toronto",
+   "mode": "Figure 1b · Selected CMA",
+   "f2": "Toronto: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4",
+   "row": [
+    "535"
+   ]
+  },
+  "keys": {
+   "n": 15,
+   "kept": true,
+   "card": "Toronto",
+   "f2": "Toronto: the gap every quarter, 2003 Q1 – 2026 Q1, and the three outlook rules to 2030 Q4"
+  },
+  "end": {
+   "t": 111,
+   "now": "2030 Q4 · outlook, convergence ruleprojection",
+   "hatch": 15,
+   "panel": []
+  },
+  "home": {
+   "t": 0,
+   "hatch": 0,
+   "panel": []
+  },
+  "mode": {
+   "title": "Change in each CMA's gap against a year earlier, 2021 Q1",
+   "cls": [
+    3,
+    3,
+    4,
+    4,
+    3,
+    4,
+    4,
+    3,
+    3,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4
+   ],
+   "now": "2021 Q1 · during the pandemic"
+  },
+  "play": {
+   "playing": {
+    "t": 86,
+    "btn": "Pause"
+   },
+   "paused": {
+    "btn": "Play",
+    "state": "paused"
+   }
+  },
+  "rule": {
+   "title": "Outlook for 2030 Q4, sorted by the 10-year trend rule (likely range in brackets)",
+   "on": "trend"
+  },
+  "errors": [],
+  "touch": {
+   "card": "Windsor",
+   "scrollW": 400,
+   "clientW": 400
+  },
+  "touchErrors": []
+ }
+}
