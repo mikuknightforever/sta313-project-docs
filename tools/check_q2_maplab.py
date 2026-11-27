@@ -1,7 +1,7 @@
-"""Browser checks for Q2 extra versions G–K (the map-lab versions), headless Edge or Chrome via Playwright.
+"""Browser checks for Q2 extra versions G–M (the map-lab versions; L and M are the isometric block versions), headless Edge or Chrome via Playwright.
 
 Usage (from the repository root):
-    python tools/check_q2_maplab.py                 # all five versions, checks + screenshots
+    python tools/check_q2_maplab.py                 # all seven versions, checks + screenshots
     python tools/check_q2_maplab.py g h --no-shots  # some versions, checks only
 
 Needs `pip install playwright` and an installed Edge (channel "msedge") or Chrome (BROWSER_CHANNEL=chrome).
@@ -21,6 +21,8 @@ VERSIONS = {
     "i": dict(folder="i-multiples", modes=True, hit='#f1 g.panel[data-t="92"] .mk:not(.outl)', focus="#f1 .mk[tabindex]", labels=False),
     "j": dict(folder="j-bivariate", modes=False, hit="#f1 path.mk:not(.outl)", focus="#f1 path.mk:not(.outl)", labels=True),
     "k": dict(folder="k-prisms", modes=True, hit="#f1 g.prism", focus="#f1 g.prism", labels=False),
+    "l": dict(folder="l-blocks", modes=False, hit="#f1 g.blk", focus="#f1 g.blk", labels=False, blocks=True),
+    "m": dict(folder="m-block-treemap", modes=False, hit="#f1 g.blk", focus="#f1 g.blk", labels=False, blocks=True),
 }
 pick = [a for a in sys.argv[1:] if a in VERSIONS] or list(VERSIONS)
 
@@ -68,6 +70,7 @@ DUMP_JS = r"""() => {
     skillNote: document.getElementById('skillNote').textContent, outTitle: document.getElementById('outTitle').textContent,
     out: [...document.querySelectorAll('#outTbl tbody tr')].map(tr => [tr.dataset.id, ...[...tr.cells].map(td => td.textContent)]),
     take: document.getElementById('f1Take').innerText, outCard: document.getElementById('outCard').innerText,
+    blk: [...document.querySelectorAll('#f1 .mk[data-a]')].map(m => [m.dataset.id, +m.dataset.z, m.dataset.h, +m.dataset.a, m.dataset.w ? +m.dataset.w : null]),
   };
 }"""
 
@@ -89,6 +92,7 @@ def center(page, sel):
 def states_for(v):
     if v == "i": return ["show=level", "show=yoy", "t=2021Q1&cma=550", "t=2030Q4&rule=naive&show=yoy"]
     if v == "j": return ["t=2003Q1", "t=2018Q1", "t=2021Q1&cma=550", "t=2030Q4&rule=trend"]
+    if v in ("l", "m"): return ["t=2003Q1", "t=2019Q4", "t=2021Q1&cma=550", "t=2030Q4&rule=trend&cma=559", "t=2028Q2&cma=535"]
     return ["t=2003Q1", "t=2003Q1&show=yoy", "t=2021Q1&show=yoy", "t=2019Q4&cma=532", "t=2030Q4&rule=trend&cma=559", "t=2028Q2&show=yoy&cma=535"]
 
 
@@ -149,6 +153,21 @@ with sync_playwright() as p:
             pg.locator("#momentSeg button").nth(2).click(); pg.wait_for_timeout(250)
             I["mode"] = pg.evaluate("() => ({ title: f1Title.textContent, cls: [...document.querySelectorAll('#f1 .mk[data-v]')].map(m => +m.dataset.c), now: tNow.textContent })")
             if SHOTS: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-change-light.png"))
+        if cfg.get("blocks"):  # painter's order after every turn, the top view, and back
+            ORDER_JS = """() => { const g = [...document.querySelectorAll('#f1 g.blk')].map(e => e.__data__), e = 1e-9;
+              const behind = (a, b) => (a.u1 <= b.u0 + e && a.v0 < b.v1 - e && b.v0 < a.v1 - e) || (a.v1 <= b.v0 + e && a.u0 < b.u1 - e && b.u0 < a.u1 - e) || (a.u1 <= b.u0 + e && a.v1 <= b.v0 + e);
+              let bad = 0; for (let i = 0; i < g.length; i++) for (let j = i + 1; j < g.length; j++) if (behind(g[j], g[i])) bad++;
+              return { n: g.length, bad, walls: document.querySelectorAll('#f1 g.blk path.wall[d]').length, scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth }; }"""
+            I["turns"] = []
+            for k in range(4):
+                I["turns"].append(pg.evaluate(ORDER_JS))
+                if SHOTS and k == 1: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-turn-light.png"))
+                pg.click("#turnBtn"); pg.wait_for_timeout(250)
+            pg.locator("#viewSeg button", has_text="Top view").click(); pg.wait_for_timeout(250)
+            I["topview"] = pg.evaluate(ORDER_JS)
+            if SHOTS: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-top-light.png"))
+            pg.locator("#viewSeg button", has_text="Isometric").click(); pg.wait_for_timeout(250)
+            I["iso"] = pg.evaluate(ORDER_JS)
         pg.click("#playBtn"); pg.wait_for_timeout(1200); playing = pg.evaluate("() => ({ t: +tSlider.value, btn: playBtn.textContent })")
         pg.click("#playBtn"); pg.wait_for_timeout(250)
         I["play"] = {"playing": playing, "paused": pg.evaluate("() => ({ btn: playBtn.textContent, state: document.body.dataset.play })")}
@@ -188,6 +207,9 @@ with sync_playwright() as p:
             "touch tap selects, no horizontal scroll at 400 px": I["touch"]["card"] == "Windsor" and I["touch"]["scrollW"] <= I["touch"]["clientW"] and not I["touchErrors"],
             "no console errors in states / interactions": not any(s["errors"] for s in out["states"]) and not I["errors"],
         }
+        if cfg.get("blocks"):
+            checks["blocks drawn back to front after each of 4 turns (15 blocks, 0 order errors)"] = all(t["n"] == 15 and t["bad"] == 0 and t["scrollW"] <= t["clientW"] for t in I["turns"])
+            checks["top view draws no walls; isometric view draws them again"] = I["topview"]["n"] == 15 and I["topview"]["walls"] == 0 and I["iso"]["walls"] > 0
         summary[v] = checks
         print(f"--- {v.upper()} ({cfg['folder']})")
         for k, ok in checks.items(): print(("PASS " if ok else "FAIL ") + k)

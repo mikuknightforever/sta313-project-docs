@@ -1,4 +1,4 @@
-"""Independent number check for Q2 extra versions G–K (Python standard library only; no pandas, no JS).
+"""Independent number check for Q2 extra versions G–M (Python standard library only; no pandas, no JS).
 
 Run tools/check_q2_maplab.py first: it writes browser-verification.json in each version folder. This script
 recomputes from the four course CSVs the gaps, the change against a year earlier, every colour class, the outlook
@@ -14,7 +14,7 @@ from decimal import Decimal, ROUND_HALF_UP
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SEL = ROOT / "datasets" / "ONT-SA" / "selected"
 MINUS = "−"
-FOLDERS = {"g": "g-spikes", "h": "h-hexes", "i": "i-multiples", "j": "j-bivariate", "k": "k-prisms"}
+FOLDERS = {"g": "g-spikes", "h": "h-hexes", "i": "i-multiples", "j": "j-bivariate", "k": "k-prisms", "l": "l-blocks", "m": "m-block-treemap"}
 
 
 def _q(x, p): return Decimal(abs(x)).quantize(Decimal(1).scaleb(-p), rounding=ROUND_HALF_UP)
@@ -151,6 +151,8 @@ def expected(ver, query):
         X["f1Title"] = (f"Change in each CMA's gap against a year earlier, {LAB[t]}" if mode == "yoy" else f"Gap between the ODSP and OW single-person shares in each CMA, {LAB[t]}") + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
     elif ver == "i":
         X["f1Title"] = ("Change in each CMA's gap against a year earlier" if mode == "yoy" else "Gap between the ODSP and OW single-person shares in each CMA") + f" at six key moments ({', '.join(LAB[m] for m in MOM)})"
+    elif ver in ("l", "m"):
+        X["f1Title"] = f"Gap (height) and its change against a year earlier (top colour) in each CMA, {LAB[t]}" + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
     else:
         X["f1Title"] = f"Gap size and its change against a year earlier in each CMA, {LAB[t]}" + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
     stats = [["Gap", f"{f1(v)} pp" + (" (projected)" if out else "")], ["Likely range", f"{f1(b['lo'])}–{f1(b['hi'])} pp" if out else "— (data)"],
@@ -169,6 +171,9 @@ def expected(ver, query):
         i = c["id"]
         if ver == "i":
             for tp in MOM: txt, k = shown(i, tp, rule, mode); marks.append([i, tp, txt, k, None])
+        elif ver in ("l", "m"):
+            vv = val(i, t, rule); dd = chg(i, t, rule)
+            marks.append([i, t, f"{f1(vv)} / {'—' if dd is None else spp(dd)}", 2 if dd is None else chgcls(dd), f1(vv)])
         elif ver == "j":
             vv = val(i, t, rule); dd = chg(i, t, rule); lev = 0 if jsr1(vv) < 12 else 1 if jsr1(vv) < 20 else 2
             dr = 1 if dd is None else 0 if jsr1(dd) <= -0.5 else 2 if jsr1(dd) >= 0.5 else 1
@@ -229,6 +234,18 @@ for ver in pick:
                 if key == "outCard": pv = "\n".join(s.strip() for s in pv.split("\n") if s.strip())
                 ok = pv == v; results.append(ok)
                 if not ok: mism.append({"state": st["query"], "field": key, "page": pv if key != "marks" else [m for m in pv if m not in v][:5], "expected": v if key != "marks" else [m for m in v if m not in pv][:5]})
+    if ver in ("l", "m"):  # heights on one scale; M: footprints = average single-person cases (OW + ODSP), areas proportional
+        WGT = {c["id"]: statistics.fmean(r["owF"] + r["odF"] for r in c["rows"]) for c in CMAS}
+        for st in dump["states"]:
+            ratios = [z / float(h) for _, z, h, a, w in st["blk"]]; mz = statistics.median(ratios)
+            ok = len(st["blk"]) == 15 and all(abs(r - mz) <= 0.002 * mz + 0.01 for r in ratios); results.append(ok)
+            if not ok: mism.append({"state": st["query"], "field": "heights not proportional to the gap", "page": ratios, "expected": mz})
+            if ver == "m":
+                ws = {i: w for i, z, h, a, w in st["blk"]}; ar = {i: a for i, z, h, a, w in st["blk"]}
+                okw = all(ws[i] == int(_q(WGT[i], 0)) for i in WGT); results.append(okw)
+                if not okw: mism.append({"state": st["query"], "field": "footprint weights", "page": ws, "expected": {i: int(_q(WGT[i], 0)) for i in WGT}})
+                k = [ar[i] / WGT[i] for i in WGT]; oka = max(k) / min(k) - 1 < 1e-4; results.append(oka)
+                if not oka: mism.append({"state": st["query"], "field": "footprint area not proportional to weight", "page": k, "expected": "constant"})
     n_marks = sum(len(s["marks"]) for s in dump["states"])
     summary = {"version": ver, "states": len(dump["states"]), "fields": len(results), "marks_compared": n_marks, "mismatches": len(mism),
                "widest_widening": [LAB[WIDt], WIDn], "mae_19q": {x: round(BT[x]["mae"][HZ], 4) for x in RL}}

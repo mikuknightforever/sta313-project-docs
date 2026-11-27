@@ -1,0 +1,19 @@
+{
+ "summary": {
+  "version": "l",
+  "states": 5,
+  "fields": 110,
+  "marks_compared": 75,
+  "mismatches": 0,
+  "widest_widening": [
+   "2021 Q1",
+   15
+  ],
+  "mae_19q": {
+   "conv": 2.5805,
+   "naive": 2.6232,
+   "trend": 5.8465
+  }
+ },
+ "mismatches": []
+}

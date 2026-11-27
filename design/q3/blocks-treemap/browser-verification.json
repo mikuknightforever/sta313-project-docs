@@ -1,0 +1,2469 @@
+{
+ "version": "b",
+ "layout": [
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "texts": 19,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 1360,
+   "theme": "light",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "texts": 17,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "texts": 19,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 1360,
+   "theme": "dark",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 1360,
+   "clientW": 1360,
+   "texts": 17,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "texts": 21,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 820,
+   "theme": "light",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "texts": 18,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "texts": 21,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 820,
+   "theme": "dark",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 820,
+   "clientW": 820,
+   "texts": 18,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "texts": 14,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 400,
+   "theme": "light",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "texts": 12,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "period=post",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "texts": 14,
+   "overlaps": [],
+   "outside": []
+  },
+  {
+   "width": 400,
+   "theme": "dark",
+   "state": "period=pre&view=top",
+   "errors": [],
+   "scrollW": 400,
+   "clientW": 400,
+   "texts": 12,
+   "overlaps": [],
+   "outside": []
+  }
+ ],
+ "states": [
+  {
+   "query": "period=post",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "52.1",
+     "+5.2 pp",
+     3,
+     43.08,
+     0.016561,
+     2943,
+     "46.9",
+     0
+    ],
+    [
+     "555",
+     "51.8",
+     "+4.9 pp",
+     3,
+     42.87,
+     0.063112,
+     11215,
+     "46.9",
+     0
+    ],
+    [
+     "539",
+     "51.2",
+     "+4.3 pp",
+     3,
+     42.36,
+     0.06156,
+     10939,
+     "46.9",
+     0
+    ],
+    [
+     "595",
+     "54.6",
+     "+7.7 pp",
+     4,
+     45.16,
+     0.012223,
+     2172,
+     "46.9",
+     0
+    ],
+    [
+     "541",
+     "53.0",
+     "+6.1 pp",
+     4,
+     43.81,
+     0.051186,
+     9095,
+     "46.9",
+     0
+    ],
+    [
+     "559",
+     "48.1",
+     "+1.2 pp",
+     2,
+     39.79,
+     0.04517,
+     8026,
+     "46.9",
+     0
+    ],
+    [
+     "568",
+     "43.1",
+     "−3.8 pp",
+     1,
+     35.66,
+     0.015946,
+     2834,
+     "46.9",
+     0
+    ],
+    [
+     "543",
+     "48.5",
+     "+1.6 pp",
+     2,
+     40.13,
+     0.01308,
+     2324,
+     "46.9",
+     0
+    ],
+    [
+     "550",
+     "46.3",
+     "−0.5 pp",
+     2,
+     38.35,
+     0.010081,
+     1791,
+     "46.9",
+     0
+    ],
+    [
+     "535",
+     "44.6",
+     "−2.3 pp",
+     1,
+     36.88,
+     0.679745,
+     120786,
+     "46.9",
+     0
+    ],
+    [
+     "537",
+     "49.3",
+     "+2.4 pp",
+     3,
+     40.79,
+     0.071793,
+     12757,
+     "46.9",
+     0
+    ],
+    [
+     "532",
+     "49.6",
+     "+2.7 pp",
+     3,
+     41.04,
+     0.032524,
+     5779,
+     "46.9",
+     0
+    ],
+    [
+     "505",
+     "46.8",
+     "−0.1 pp",
+     2,
+     38.73,
+     0.10366,
+     18420,
+     "46.9",
+     0
+    ],
+    [
+     "529",
+     "59.0",
+     "+12.1 pp",
+     4,
+     48.8,
+     0.015568,
+     2766,
+     "46.9",
+     0
+    ],
+    [
+     "521",
+     "53.5",
+     "+6.6 pp",
+     4,
+     44.23,
+     0.014659,
+     2605,
+     "46.9",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 52.1%, +5.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 5 of 15; average 2,943 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 51.8%, +4.9 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 6 of 15; average 11,215 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 51.2%, +4.3 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 7 of 15; average 10,939 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 54.6%, +7.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 2 of 15; average 2,172 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 53.0%, +6.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 4 of 15; average 9,095 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 48.1%, +1.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 11 of 15; average 8,026 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 43.1%, −3.8 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 15 of 15; average 2,834 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 48.5%, +1.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 10 of 15; average 2,324 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 46.3%, −0.5 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 13 of 15; average 1,791 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 44.6%, −2.3 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 14 of 15; average 120,786 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 49.3%, +2.4 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 9 of 15; average 12,757 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 49.6%, +2.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 8 of 15; average 5,779 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 46.8%, −0.1 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 12 of 15; average 18,420 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 59.0%, +12.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 1 of 15; average 2,766 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 53.5%, +6.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 3 of 15; average 2,605 OW cases."
+    ]
+   ],
+   "labels": [
+    "Peterborough59.0%",
+    "Toronto44.6%",
+    "Ottawa46.8%",
+    "Hamilton49.3%",
+    "London51.8%",
+    "Niagara51.2%",
+    "Windsor48.1%",
+    "Sudbury52.1%",
+    "Barrie43.1%",
+    "Guelph46.3%"
+   ],
+   "f2Period": "after the pandemic (2023 Q2 – 2026 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nPeterborough\n\nLong-term share after the pandemic (2023 Q2 – 2026 Q1)\n\nLong-term share\n59.0%\nOntario, same period\n46.9%\nDifference\n+12.1 pp\nRank among 15 CMAs\n1 of 15\nAverage OW cases\n2,766\n\nSmall CMA: its share moves more from quarter to quarter, so single quarters are less reliable.\n\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+0.4 pp · #3\nDuring\n+5.6 pp · #2\nAfter\n+12.1 pp · #1\n\nClose to Ontario before the pandemic, above it during and after; highest of the 15 CMAs after the pandemic. Above Ontario in 53 of 93 quarters."
+  },
+  {
+   "query": "period=pre",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "34.4",
+     "−5.4 pp",
+     1,
+     28.44,
+     0.021648,
+     3288,
+     "39.8",
+     0
+    ],
+    [
+     "555",
+     "40.0",
+     "+0.2 pp",
+     2,
+     33.12,
+     0.072544,
+     11018,
+     "39.8",
+     0
+    ],
+    [
+     "539",
+     "36.4",
+     "−3.4 pp",
+     1,
+     30.16,
+     0.055106,
+     8370,
+     "39.8",
+     0
+    ],
+    [
+     "595",
+     "33.8",
+     "−6.0 pp",
+     0,
+     27.96,
+     0.014565,
+     2212,
+     "39.8",
+     0
+    ],
+    [
+     "559",
+     "42.0",
+     "+2.2 pp",
+     3,
+     34.73,
+     0.051211,
+     7778,
+     "39.8",
+     0
+    ],
+    [
+     "541",
+     "37.5",
+     "−2.3 pp",
+     1,
+     31.05,
+     0.050476,
+     7666,
+     "39.8",
+     0
+    ],
+    [
+     "568",
+     "30.0",
+     "−9.8 pp",
+     0,
+     24.85,
+     0.01756,
+     2667,
+     "39.8",
+     0
+    ],
+    [
+     "543",
+     "31.8",
+     "−8.0 pp",
+     0,
+     26.31,
+     0.012558,
+     1907,
+     "39.8",
+     0
+    ],
+    [
+     "550",
+     "31.3",
+     "−8.5 pp",
+     0,
+     25.93,
+     0.008946,
+     1359,
+     "39.8",
+     0
+    ],
+    [
+     "535",
+     "43.5",
+     "+3.7 pp",
+     3,
+     36.01,
+     0.63591,
+     96583,
+     "39.8",
+     0
+    ],
+    [
+     "537",
+     "39.3",
+     "−0.5 pp",
+     2,
+     32.56,
+     0.079481,
+     12072,
+     "39.8",
+     0
+    ],
+    [
+     "505",
+     "39.3",
+     "−0.5 pp",
+     2,
+     32.49,
+     0.112536,
+     17092,
+     "39.8",
+     0
+    ],
+    [
+     "532",
+     "39.9",
+     "+0.1 pp",
+     2,
+     33.01,
+     0.03707,
+     5630,
+     "39.8",
+     0
+    ],
+    [
+     "529",
+     "40.2",
+     "+0.4 pp",
+     2,
+     33.29,
+     0.019213,
+     2918,
+     "39.8",
+     0
+    ],
+    [
+     "521",
+     "35.1",
+     "−4.7 pp",
+     1,
+     29.08,
+     0.018045,
+     2741,
+     "39.8",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 34.4%, −5.4 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 11 of 15; average 3,288 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 40.0%, +0.2 pp above Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 4 of 15; average 11,018 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 36.4%, −3.4 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 9 of 15; average 8,370 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 33.8%, −6.0 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 12 of 15; average 2,212 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 42.0%, +2.2 pp above Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 2 of 15; average 7,778 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 37.5%, −2.3 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 8 of 15; average 7,666 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 30.0%, −9.8 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 15 of 15; average 2,667 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 31.8%, −8.0 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 13 of 15; average 1,907 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 31.3%, −8.5 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 14 of 15; average 1,359 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 43.5%, +3.7 pp above Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 1 of 15; average 96,583 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 39.3%, −0.5 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 6 of 15; average 12,072 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 39.3%, −0.5 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 7 of 15; average 17,092 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 39.9%, +0.1 pp above Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 5 of 15; average 5,630 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 40.2%, +0.4 pp above Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 3 of 15; average 2,918 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 35.1%, −4.7 pp below Ontario before the pandemic (2003 Q1 – 2019 Q4); rank 10 of 15; average 2,741 OW cases."
+    ]
+   ],
+   "labels": [
+    "Toronto43.5%",
+    "Ottawa39.3%",
+    "Hamilton39.3%",
+    "London40.0%",
+    "Niagara36.4%",
+    "Windsor42.0%",
+    "Kitchener–Waterloo37.5%",
+    "Oshawa39.9%",
+    "Sudbury34.4%",
+    "Peterborough40.2%",
+    "Brantford31.8%"
+   ],
+   "f2Period": "before the pandemic (2003 Q1 – 2019 Q4)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nToronto\n\nLong-term share before the pandemic (2003 Q1 – 2019 Q4)\n\nLong-term share\n43.5%\nOntario, same period\n39.8%\nDifference\n+3.7 pp\nRank among 15 CMAs\n1 of 15\nAverage OW cases\n96,583\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+3.7 pp · #1\nDuring\n+1.6 pp · #4\nAfter\n−2.3 pp · #14\n\nAbove Ontario before the pandemic, close to it during, below it after; highest of the 15 CMAs before the pandemic. Above Ontario in 82 of 93 quarters."
+  },
+  {
+   "query": "period=during&cma=535",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "57.2",
+     "−1.8 pp",
+     2,
+     47.35,
+     0.021632,
+     2930,
+     "59.0",
+     0
+    ],
+    [
+     "555",
+     "57.5",
+     "−1.5 pp",
+     2,
+     47.6,
+     0.074098,
+     10036,
+     "59.0",
+     0
+    ],
+    [
+     "539",
+     "56.2",
+     "−2.9 pp",
+     1,
+     46.47,
+     0.061729,
+     8360,
+     "59.0",
+     0
+    ],
+    [
+     "595",
+     "57.7",
+     "−1.3 pp",
+     2,
+     47.74,
+     0.016848,
+     2282,
+     "59.0",
+     0
+    ],
+    [
+     "541",
+     "64.2",
+     "+5.2 pp",
+     3,
+     53.13,
+     0.057261,
+     7755,
+     "59.0",
+     0
+    ],
+    [
+     "559",
+     "54.9",
+     "−4.2 pp",
+     1,
+     45.39,
+     0.044954,
+     6088,
+     "59.0",
+     0
+    ],
+    [
+     "568",
+     "50.9",
+     "−8.1 pp",
+     0,
+     42.13,
+     0.015815,
+     2142,
+     "59.0",
+     0
+    ],
+    [
+     "543",
+     "55.4",
+     "−3.6 pp",
+     1,
+     45.87,
+     0.013082,
+     1772,
+     "59.0",
+     0
+    ],
+    [
+     "550",
+     "54.8",
+     "−4.2 pp",
+     1,
+     45.33,
+     0.010513,
+     1424,
+     "59.0",
+     0
+    ],
+    [
+     "535",
+     "60.6",
+     "+1.6 pp",
+     2,
+     50.12,
+     0.634513,
+     85938,
+     "59.0",
+     0
+    ],
+    [
+     "537",
+     "60.4",
+     "+1.4 pp",
+     2,
+     49.96,
+     0.074417,
+     10079,
+     "59.0",
+     0
+    ],
+    [
+     "505",
+     "59.4",
+     "+0.4 pp",
+     2,
+     49.12,
+     0.109675,
+     14854,
+     "59.0",
+     0
+    ],
+    [
+     "532",
+     "65.4",
+     "+6.3 pp",
+     4,
+     54.08,
+     0.037064,
+     5020,
+     "59.0",
+     0
+    ],
+    [
+     "529",
+     "64.6",
+     "+5.6 pp",
+     3,
+     53.43,
+     0.019134,
+     2592,
+     "59.0",
+     0
+    ],
+    [
+     "521",
+     "59.1",
+     "+0.1 pp",
+     2,
+     48.9,
+     0.016133,
+     2185,
+     "59.0",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 57.2%, −1.8 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 10 of 15; average 2,930 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 57.5%, −1.5 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 9 of 15; average 10,036 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 56.2%, −2.9 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 11 of 15; average 8,360 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 57.7%, −1.3 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 8 of 15; average 2,282 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 64.2%, +5.2 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 3 of 15; average 7,755 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 54.9%, −4.2 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 13 of 15; average 6,088 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 50.9%, −8.1 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 15 of 15; average 2,142 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 55.4%, −3.6 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 12 of 15; average 1,772 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 54.8%, −4.2 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 14 of 15; average 1,424 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 60.6%, +1.6 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 4 of 15; average 85,938 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 60.4%, +1.4 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 5 of 15; average 10,079 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 59.4%, +0.4 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 6 of 15; average 14,854 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 65.4%, +6.3 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 1 of 15; average 5,020 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 64.6%, +5.6 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 2 of 15; average 2,592 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 59.1%, +0.1 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 7 of 15; average 2,185 OW cases."
+    ]
+   ],
+   "labels": [
+    "Toronto60.6%",
+    "Ottawa59.4%",
+    "Hamilton60.4%",
+    "London57.5%",
+    "Niagara56.2%",
+    "Windsor54.9%",
+    "Oshawa65.4%",
+    "Sudbury57.2%",
+    "Peterborough64.6%",
+    "Barrie50.9%",
+    "Guelph54.8%"
+   ],
+   "f2Period": "during the pandemic (2020 Q1 – 2023 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nToronto\n\nLong-term share during the pandemic (2020 Q1 – 2023 Q1)\n\nLong-term share\n60.6%\nOntario, same period\n59.0%\nDifference\n+1.6 pp\nRank among 15 CMAs\n4 of 15\nAverage OW cases\n85,938\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+3.7 pp · #1\nDuring\n+1.6 pp · #4\nAfter\n−2.3 pp · #14\n\nAbove Ontario before the pandemic, close to it during, below it after; ranked 4 of 15 during the pandemic. Above Ontario in 82 of 93 quarters."
+  },
+  {
+   "query": "period=latest",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "50.3",
+     "+0.2 pp",
+     2,
+     41.64,
+     0.016253,
+     3028,
+     "50.1",
+     0
+    ],
+    [
+     "555",
+     "53.8",
+     "+3.7 pp",
+     3,
+     44.54,
+     0.060761,
+     11320,
+     "50.1",
+     0
+    ],
+    [
+     "539",
+     "55.6",
+     "+5.5 pp",
+     3,
+     46.03,
+     0.05862,
+     10921,
+     "50.1",
+     0
+    ],
+    [
+     "595",
+     "51.4",
+     "+1.3 pp",
+     2,
+     42.56,
+     0.011041,
+     2057,
+     "50.1",
+     0
+    ],
+    [
+     "541",
+     "52.7",
+     "+2.6 pp",
+     3,
+     43.62,
+     0.054202,
+     10098,
+     "50.1",
+     0
+    ],
+    [
+     "559",
+     "52.8",
+     "+2.8 pp",
+     3,
+     43.73,
+     0.045603,
+     8496,
+     "50.1",
+     0
+    ],
+    [
+     "568",
+     "44.2",
+     "−5.8 pp",
+     1,
+     36.61,
+     0.016972,
+     3162,
+     "50.1",
+     0
+    ],
+    [
+     "543",
+     "48.1",
+     "−2.0 pp",
+     2,
+     39.78,
+     0.013988,
+     2606,
+     "50.1",
+     0
+    ],
+    [
+     "550",
+     "48.0",
+     "−2.1 pp",
+     1,
+     39.69,
+     0.010977,
+     2045,
+     "50.1",
+     0
+    ],
+    [
+     "535",
+     "50.5",
+     "+0.4 pp",
+     2,
+     41.8,
+     0.67423,
+     125611,
+     "50.1",
+     0
+    ],
+    [
+     "537",
+     "51.4",
+     "+1.3 pp",
+     2,
+     42.49,
+     0.076639,
+     14278,
+     "50.1",
+     0
+    ],
+    [
+     "532",
+     "48.6",
+     "−1.5 pp",
+     2,
+     40.23,
+     0.033848,
+     6306,
+     "50.1",
+     0
+    ],
+    [
+     "505",
+     "48.6",
+     "−1.4 pp",
+     2,
+     40.25,
+     0.102768,
+     19146,
+     "50.1",
+     0
+    ],
+    [
+     "529",
+     "58.0",
+     "+7.9 pp",
+     4,
+     47.95,
+     0.015663,
+     2918,
+     "50.1",
+     0
+    ],
+    [
+     "521",
+     "53.7",
+     "+3.6 pp",
+     3,
+     44.43,
+     0.015303,
+     2851,
+     "50.1",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 50.3%, +0.2 pp above Ontario in the latest quarter (2026 Q1); rank 10 of 15; average 3,028 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 53.8%, +3.7 pp above Ontario in the latest quarter (2026 Q1); rank 3 of 15; average 11,320 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 55.6%, +5.5 pp above Ontario in the latest quarter (2026 Q1); rank 2 of 15; average 10,921 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 51.4%, +1.3 pp above Ontario in the latest quarter (2026 Q1); rank 7 of 15; average 2,057 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 52.7%, +2.6 pp above Ontario in the latest quarter (2026 Q1); rank 6 of 15; average 10,098 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 52.8%, +2.8 pp above Ontario in the latest quarter (2026 Q1); rank 5 of 15; average 8,496 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 44.2%, −5.8 pp below Ontario in the latest quarter (2026 Q1); rank 15 of 15; average 3,162 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 48.1%, −2.0 pp below Ontario in the latest quarter (2026 Q1); rank 13 of 15; average 2,606 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 48.0%, −2.1 pp below Ontario in the latest quarter (2026 Q1); rank 14 of 15; average 2,045 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 50.5%, +0.4 pp above Ontario in the latest quarter (2026 Q1); rank 9 of 15; average 125,611 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 51.4%, +1.3 pp above Ontario in the latest quarter (2026 Q1); rank 8 of 15; average 14,278 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 48.6%, −1.5 pp below Ontario in the latest quarter (2026 Q1); rank 12 of 15; average 6,306 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 48.6%, −1.4 pp below Ontario in the latest quarter (2026 Q1); rank 11 of 15; average 19,146 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 58.0%, +7.9 pp above Ontario in the latest quarter (2026 Q1); rank 1 of 15; average 2,918 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 53.7%, +3.6 pp above Ontario in the latest quarter (2026 Q1); rank 4 of 15; average 2,851 OW cases."
+    ]
+   ],
+   "labels": [
+    "Peterborough58.0%",
+    "Toronto50.5%",
+    "Ottawa48.6%",
+    "Hamilton51.4%",
+    "London53.8%",
+    "Niagara55.6%",
+    "Kitchener–Waterloo52.7%",
+    "Windsor52.8%",
+    "Barrie44.2%",
+    "Guelph48.0%"
+   ],
+   "f2Period": "in the latest quarter (2026 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nPeterborough\n\nLong-term share in the latest quarter (2026 Q1)\n\nLong-term share\n58.0%\nOntario, same period\n50.1%\nDifference\n+7.9 pp\nRank among 15 CMAs\n1 of 15\nAverage OW cases\n2,918\n\nSmall CMA: its share moves more from quarter to quarter, so single quarters are less reliable.\n\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+0.4 pp · #3\nDuring\n+5.6 pp · #2\nAfter\n+12.1 pp · #1\n\nClose to Ontario before the pandemic, above it during and after; highest of the 15 CMAs in the latest quarter. Above Ontario in 53 of 93 quarters."
+  },
+  {
+   "query": "period=all&cma=550",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "39.4",
+     "−3.9 pp",
+     1,
+     32.61,
+     0.020883,
+     3193,
+     "43.3",
+     0
+    ],
+    [
+     "555",
+     "43.8",
+     "+0.5 pp",
+     2,
+     36.27,
+     0.071322,
+     10906,
+     "43.3",
+     0
+    ],
+    [
+     "539",
+     "41.5",
+     "−1.8 pp",
+     2,
+     34.33,
+     0.056894,
+     8700,
+     "43.3",
+     0
+    ],
+    [
+     "595",
+     "39.9",
+     "−3.4 pp",
+     1,
+     32.98,
+     0.014497,
+     2217,
+     "43.3",
+     0
+    ],
+    [
+     "541",
+     "43.5",
+     "+0.2 pp",
+     2,
+     36,
+     0.051422,
+     7863,
+     "43.3",
+     0
+    ],
+    [
+     "559",
+     "44.3",
+     "+1.0 pp",
+     2,
+     36.62,
+     0.049531,
+     7574,
+     "43.3",
+     0
+    ],
+    [
+     "568",
+     "34.2",
+     "−9.1 pp",
+     0,
+     28.34,
+     0.017102,
+     2615,
+     "43.3",
+     0
+    ],
+    [
+     "543",
+     "37.4",
+     "−5.9 pp",
+     1,
+     30.94,
+     0.012701,
+     1942,
+     "43.3",
+     0
+    ],
+    [
+     "550",
+     "37.1",
+     "−6.2 pp",
+     0,
+     30.66,
+     0.00931,
+     1424,
+     "43.3",
+     0
+    ],
+    [
+     "535",
+     "45.8",
+     "+2.5 pp",
+     3,
+     37.87,
+     0.64231,
+     98218,
+     "43.3",
+     0
+    ],
+    [
+     "537",
+     "43.2",
+     "−0.1 pp",
+     2,
+     35.76,
+     0.077701,
+     11882,
+     "43.3",
+     0
+    ],
+    [
+     "532",
+     "44.4",
+     "+1.1 pp",
+     2,
+     36.74,
+     0.036387,
+     5564,
+     "43.3",
+     0
+    ],
+    [
+     "505",
+     "42.8",
+     "−0.5 pp",
+     2,
+     35.4,
+     0.110851,
+     16951,
+     "43.3",
+     0
+    ],
+    [
+     "529",
+     "45.7",
+     "+2.4 pp",
+     3,
+     37.79,
+     0.018656,
+     2853,
+     "43.3",
+     0
+    ],
+    [
+     "521",
+     "40.2",
+     "−3.1 pp",
+     1,
+     33.29,
+     0.017301,
+     2646,
+     "43.3",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 39.4%, −3.9 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 12 of 15; average 3,193 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 43.8%, +0.5 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 5 of 15; average 10,906 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 41.5%, −1.8 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 9 of 15; average 8,700 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 39.9%, −3.4 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 11 of 15; average 2,217 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 43.5%, +0.2 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 6 of 15; average 7,863 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 44.3%, +1.0 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 4 of 15; average 7,574 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 34.2%, −9.1 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 15 of 15; average 2,615 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 37.4%, −5.9 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 13 of 15; average 1,942 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 37.1%, −6.2 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 14 of 15; average 1,424 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 45.8%, +2.5 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 1 of 15; average 98,218 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 43.2%, −0.1 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 7 of 15; average 11,882 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 44.4%, +1.1 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 3 of 15; average 5,564 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 42.8%, −0.5 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 8 of 15; average 16,951 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 45.7%, +2.4 pp above Ontario across all years (2003 Q1 – 2026 Q1); rank 2 of 15; average 2,853 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 40.2%, −3.1 pp below Ontario across all years (2003 Q1 – 2026 Q1); rank 10 of 15; average 2,646 OW cases."
+    ]
+   ],
+   "labels": [
+    "Guelph37.1%",
+    "Toronto45.8%",
+    "Ottawa42.8%",
+    "Hamilton43.2%",
+    "London43.8%",
+    "Niagara41.5%",
+    "Windsor44.3%",
+    "Oshawa44.4%",
+    "Sudbury39.4%",
+    "Kingston40.2%",
+    "Barrie34.2%"
+   ],
+   "f2Period": "across all years (2003 Q1 – 2026 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nGuelph\n\nLong-term share across all years (2003 Q1 – 2026 Q1)\n\nLong-term share\n37.1%\nOntario, same period\n43.3%\nDifference\n−6.2 pp\nRank among 15 CMAs\n14 of 15\nAverage OW cases\n1,424\n\nSmall CMA: its share moves more from quarter to quarter, so single quarters are less reliable.\n\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n−8.5 pp · #14\nDuring\n−4.2 pp · #14\nAfter\n−0.5 pp · #13\n\nBelow Ontario before and during the pandemic, close to it after; among the three lowest across all years. Above Ontario in 6 of 93 quarters."
+  },
+  {
+   "query": "from=2015Q1&to=2019Q4&cma=529",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "44.1",
+     "−8.0 pp",
+     0,
+     36.48,
+     0.020717,
+     3377,
+     "52.0",
+     0
+    ],
+    [
+     "555",
+     "53.1",
+     "+1.1 pp",
+     2,
+     43.94,
+     0.078754,
+     12838,
+     "52.0",
+     0
+    ],
+    [
+     "539",
+     "50.4",
+     "−1.7 pp",
+     2,
+     41.68,
+     0.058542,
+     9543,
+     "52.0",
+     0
+    ],
+    [
+     "595",
+     "47.3",
+     "−4.7 pp",
+     1,
+     39.15,
+     0.015326,
+     2498,
+     "52.0",
+     0
+    ],
+    [
+     "541",
+     "50.5",
+     "−1.5 pp",
+     2,
+     41.79,
+     0.053565,
+     8732,
+     "52.0",
+     0
+    ],
+    [
+     "559",
+     "55.2",
+     "+3.2 pp",
+     3,
+     45.68,
+     0.046834,
+     7635,
+     "52.0",
+     0
+    ],
+    [
+     "568",
+     "44.6",
+     "−7.4 pp",
+     0,
+     36.94,
+     0.016869,
+     2750,
+     "52.0",
+     0
+    ],
+    [
+     "543",
+     "43.9",
+     "−8.1 pp",
+     0,
+     36.34,
+     0.012416,
+     2024,
+     "52.0",
+     0
+    ],
+    [
+     "550",
+     "44.8",
+     "−7.2 pp",
+     0,
+     37.1,
+     0.010499,
+     1711,
+     "52.0",
+     0
+    ],
+    [
+     "535",
+     "55.0",
+     "+2.9 pp",
+     3,
+     45.5,
+     0.623849,
+     101696,
+     "52.0",
+     0
+    ],
+    [
+     "537",
+     "53.2",
+     "+1.2 pp",
+     2,
+     44.03,
+     0.077445,
+     12625,
+     "52.0",
+     0
+    ],
+    [
+     "505",
+     "50.8",
+     "−1.2 pp",
+     2,
+     42.04,
+     0.116667,
+     19018,
+     "52.0",
+     0
+    ],
+    [
+     "532",
+     "55.3",
+     "+3.2 pp",
+     3,
+     45.73,
+     0.039172,
+     6386,
+     "52.0",
+     0
+    ],
+    [
+     "529",
+     "54.4",
+     "+2.4 pp",
+     3,
+     45.01,
+     0.019707,
+     3212,
+     "52.0",
+     0
+    ],
+    [
+     "521",
+     "48.3",
+     "−3.8 pp",
+     1,
+     39.96,
+     0.016506,
+     2691,
+     "52.0",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 44.1%, −8.0 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 14 of 15; average 3,377 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 53.1%, +1.1 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 6 of 15; average 12,838 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 50.4%, −1.7 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 9 of 15; average 9,543 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 47.3%, −4.7 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 11 of 15; average 2,498 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 50.5%, −1.5 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 8 of 15; average 8,732 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 55.2%, +3.2 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 2 of 15; average 7,635 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 44.6%, −7.4 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 13 of 15; average 2,750 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 43.9%, −8.1 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 15 of 15; average 2,024 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 44.8%, −7.2 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 12 of 15; average 1,711 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 55.0%, +2.9 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 3 of 15; average 101,696 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 53.2%, +1.2 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 5 of 15; average 12,625 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 50.8%, −1.2 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 7 of 15; average 19,018 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 55.3%, +3.2 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 1 of 15; average 6,386 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 54.4%, +2.4 pp above Ontario in the selected period (2015 Q1 – 2019 Q4); rank 4 of 15; average 3,212 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 48.3%, −3.8 pp below Ontario in the selected period (2015 Q1 – 2019 Q4); rank 10 of 15; average 2,691 OW cases."
+    ]
+   ],
+   "labels": [
+    "Peterborough54.4%",
+    "Toronto55.0%",
+    "Ottawa50.8%",
+    "London53.1%",
+    "Hamilton53.2%",
+    "Niagara50.4%",
+    "Windsor55.2%",
+    "Oshawa55.3%",
+    "Sudbury44.1%",
+    "Barrie44.6%",
+    "Guelph44.8%"
+   ],
+   "f2Period": "in the selected period (2015 Q1 – 2019 Q4)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nPeterborough\n\nLong-term share in the selected period (2015 Q1 – 2019 Q4)\n\nLong-term share\n54.4%\nOntario, same period\n52.0%\nDifference\n+2.4 pp\nRank among 15 CMAs\n4 of 15\nAverage OW cases\n3,212\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+0.4 pp · #3\nDuring\n+5.6 pp · #2\nAfter\n+12.1 pp · #1\n\nClose to Ontario before the pandemic, above it during and after; ranked 4 of 15 in the selected period. Above Ontario in 53 of 93 quarters."
+  },
+  {
+   "query": "period=post&view=top",
+   "errors": [],
+   "marks": [
+    [
+     "580",
+     "52.1",
+     "+5.2 pp",
+     3,
+     0,
+     0.016561,
+     2943,
+     "46.9",
+     0
+    ],
+    [
+     "555",
+     "51.8",
+     "+4.9 pp",
+     3,
+     0,
+     0.063112,
+     11215,
+     "46.9",
+     0
+    ],
+    [
+     "539",
+     "51.2",
+     "+4.3 pp",
+     3,
+     0,
+     0.06156,
+     10939,
+     "46.9",
+     0
+    ],
+    [
+     "595",
+     "54.6",
+     "+7.7 pp",
+     4,
+     0,
+     0.012223,
+     2172,
+     "46.9",
+     0
+    ],
+    [
+     "541",
+     "53.0",
+     "+6.1 pp",
+     4,
+     0,
+     0.051186,
+     9095,
+     "46.9",
+     0
+    ],
+    [
+     "559",
+     "48.1",
+     "+1.2 pp",
+     2,
+     0,
+     0.04517,
+     8026,
+     "46.9",
+     0
+    ],
+    [
+     "568",
+     "43.1",
+     "−3.8 pp",
+     1,
+     0,
+     0.015946,
+     2834,
+     "46.9",
+     0
+    ],
+    [
+     "543",
+     "48.5",
+     "+1.6 pp",
+     2,
+     0,
+     0.01308,
+     2324,
+     "46.9",
+     0
+    ],
+    [
+     "550",
+     "46.3",
+     "−0.5 pp",
+     2,
+     0,
+     0.010081,
+     1791,
+     "46.9",
+     0
+    ],
+    [
+     "535",
+     "44.6",
+     "−2.3 pp",
+     1,
+     0,
+     0.679745,
+     120786,
+     "46.9",
+     0
+    ],
+    [
+     "537",
+     "49.3",
+     "+2.4 pp",
+     3,
+     0,
+     0.071793,
+     12757,
+     "46.9",
+     0
+    ],
+    [
+     "532",
+     "49.6",
+     "+2.7 pp",
+     3,
+     0,
+     0.032524,
+     5779,
+     "46.9",
+     0
+    ],
+    [
+     "505",
+     "46.8",
+     "−0.1 pp",
+     2,
+     0,
+     0.10366,
+     18420,
+     "46.9",
+     0
+    ],
+    [
+     "529",
+     "59.0",
+     "+12.1 pp",
+     4,
+     0,
+     0.015568,
+     2766,
+     "46.9",
+     0
+    ],
+    [
+     "521",
+     "53.5",
+     "+6.6 pp",
+     4,
+     0,
+     0.014659,
+     2605,
+     "46.9",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 52.1%, +5.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 5 of 15; average 2,943 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 51.8%, +4.9 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 6 of 15; average 11,215 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 51.2%, +4.3 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 7 of 15; average 10,939 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 54.6%, +7.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 2 of 15; average 2,172 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 53.0%, +6.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 4 of 15; average 9,095 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 48.1%, +1.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 11 of 15; average 8,026 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 43.1%, −3.8 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 15 of 15; average 2,834 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 48.5%, +1.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 10 of 15; average 2,324 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 46.3%, −0.5 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 13 of 15; average 1,791 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 44.6%, −2.3 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 14 of 15; average 120,786 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 49.3%, +2.4 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 9 of 15; average 12,757 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 49.6%, +2.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 8 of 15; average 5,779 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 46.8%, −0.1 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 12 of 15; average 18,420 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 59.0%, +12.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 1 of 15; average 2,766 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 53.5%, +6.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 3 of 15; average 2,605 OW cases."
+    ]
+   ],
+   "labels": [
+    "Peterborough59.0%",
+    "Toronto44.6%",
+    "Ottawa46.8%",
+    "Hamilton49.3%",
+    "London51.8%",
+    "Niagara51.2%",
+    "Kitchener–Waterloo53.0%",
+    "Windsor48.1%",
+    "Oshawa49.6%",
+    "Sudbury52.1%",
+    "Barrie43.1%",
+    "Kingston53.5%",
+    "Brantford48.5%",
+    "Guelph46.3%"
+   ],
+   "f2Period": "after the pandemic (2023 Q2 – 2026 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Top view: heights not drawn",
+   "card": "FIGURE 2B · SELECTED CMA\n\nPeterborough\n\nLong-term share after the pandemic (2023 Q2 – 2026 Q1)\n\nLong-term share\n59.0%\nOntario, same period\n46.9%\nDifference\n+12.1 pp\nRank among 15 CMAs\n1 of 15\nAverage OW cases\n2,766\n\nSmall CMA: its share moves more from quarter to quarter, so single quarters are less reliable.\n\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+0.4 pp · #3\nDuring\n+5.6 pp · #2\nAfter\n+12.1 pp · #1\n\nClose to Ontario before the pandemic, above it during and after; highest of the 15 CMAs after the pandemic. Above Ontario in 53 of 93 quarters."
+  },
+  {
+   "query": "period=post&turn=1",
+   "errors": [],
+   "marks": [
+    [
+     "595",
+     "54.6",
+     "+7.7 pp",
+     4,
+     45.16,
+     0.012223,
+     2172,
+     "46.9",
+     0
+    ],
+    [
+     "559",
+     "48.1",
+     "+1.2 pp",
+     2,
+     39.79,
+     0.04517,
+     8026,
+     "46.9",
+     0
+    ],
+    [
+     "550",
+     "46.3",
+     "−0.5 pp",
+     2,
+     38.35,
+     0.010081,
+     1791,
+     "46.9",
+     0
+    ],
+    [
+     "543",
+     "48.5",
+     "+1.6 pp",
+     2,
+     40.13,
+     0.01308,
+     2324,
+     "46.9",
+     0
+    ],
+    [
+     "568",
+     "43.1",
+     "−3.8 pp",
+     1,
+     35.66,
+     0.015946,
+     2834,
+     "46.9",
+     0
+    ],
+    [
+     "580",
+     "52.1",
+     "+5.2 pp",
+     3,
+     43.08,
+     0.016561,
+     2943,
+     "46.9",
+     0
+    ],
+    [
+     "541",
+     "53.0",
+     "+6.1 pp",
+     4,
+     43.81,
+     0.051186,
+     9095,
+     "46.9",
+     0
+    ],
+    [
+     "539",
+     "51.2",
+     "+4.3 pp",
+     3,
+     42.36,
+     0.06156,
+     10939,
+     "46.9",
+     0
+    ],
+    [
+     "555",
+     "51.8",
+     "+4.9 pp",
+     3,
+     42.87,
+     0.063112,
+     11215,
+     "46.9",
+     0
+    ],
+    [
+     "535",
+     "44.6",
+     "−2.3 pp",
+     1,
+     36.88,
+     0.679745,
+     120786,
+     "46.9",
+     0
+    ],
+    [
+     "532",
+     "49.6",
+     "+2.7 pp",
+     3,
+     41.04,
+     0.032524,
+     5779,
+     "46.9",
+     0
+    ],
+    [
+     "521",
+     "53.5",
+     "+6.6 pp",
+     4,
+     44.23,
+     0.014659,
+     2605,
+     "46.9",
+     0
+    ],
+    [
+     "529",
+     "59.0",
+     "+12.1 pp",
+     4,
+     48.8,
+     0.015568,
+     2766,
+     "46.9",
+     0
+    ],
+    [
+     "537",
+     "49.3",
+     "+2.4 pp",
+     3,
+     40.79,
+     0.071793,
+     12757,
+     "46.9",
+     0
+    ],
+    [
+     "505",
+     "46.8",
+     "−0.1 pp",
+     2,
+     38.73,
+     0.10366,
+     18420,
+     "46.9",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "595",
+     "Thunder Bay: long-term share 54.6%, +7.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 2 of 15; average 2,172 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 48.1%, +1.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 11 of 15; average 8,026 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 46.3%, −0.5 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 13 of 15; average 1,791 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 48.5%, +1.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 10 of 15; average 2,324 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 43.1%, −3.8 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 15 of 15; average 2,834 OW cases."
+    ],
+    [
+     "580",
+     "Greater Sudbury: long-term share 52.1%, +5.2 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 5 of 15; average 2,943 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 53.0%, +6.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 4 of 15; average 9,095 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 51.2%, +4.3 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 7 of 15; average 10,939 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 51.8%, +4.9 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 6 of 15; average 11,215 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 44.6%, −2.3 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 14 of 15; average 120,786 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 49.6%, +2.7 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 8 of 15; average 5,779 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 53.5%, +6.6 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 3 of 15; average 2,605 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 59.0%, +12.1 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 1 of 15; average 2,766 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 49.3%, +2.4 pp above Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 9 of 15; average 12,757 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 46.8%, −0.1 pp below Ontario after the pandemic (2023 Q2 – 2026 Q1); rank 12 of 15; average 18,420 OW cases."
+    ]
+   ],
+   "labels": [
+    "Peterborough59.0%",
+    "Toronto44.6%",
+    "Ottawa46.8%",
+    "Hamilton49.3%",
+    "London51.8%",
+    "Niagara51.2%",
+    "Kitchener–Waterloo53.0%",
+    "Windsor48.1%",
+    "Sudbury52.1%",
+    "Guelph46.3%"
+   ],
+   "f2Period": "after the pandemic (2023 Q2 – 2026 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nPeterborough\n\nLong-term share after the pandemic (2023 Q2 – 2026 Q1)\n\nLong-term share\n59.0%\nOntario, same period\n46.9%\nDifference\n+12.1 pp\nRank among 15 CMAs\n1 of 15\nAverage OW cases\n2,766\n\nSmall CMA: its share moves more from quarter to quarter, so single quarters are less reliable.\n\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+0.4 pp · #3\nDuring\n+5.6 pp · #2\nAfter\n+12.1 pp · #1\n\nClose to Ontario before the pandemic, above it during and after; highest of the 15 CMAs after the pandemic. Above Ontario in 53 of 93 quarters."
+  }
+ ],
+ "cross": [
+  {
+   "query": "period=post",
+   "diff": {}
+  },
+  {
+   "query": "period=during&cma=535",
+   "diff": {}
+  },
+  {
+   "query": "from=2015Q1&to=2019Q4&cma=529",
+   "diff": {}
+  },
+  {
+   "query": "period=pre&cma=559",
+   "diff": {}
+  }
+ ],
+ "interactions": {
+  "hover": {
+   "card": "Toronto",
+   "mode": "Figure 2b · Preview · click the block to select",
+   "outline": true
+  },
+  "click": {
+   "card": "Toronto",
+   "f4": "Toronto: long-term share vs Ontario and the other CMAs",
+   "f3sel": [
+    "535"
+   ],
+   "outline": true
+  },
+  "keys": {
+   "n": 15,
+   "kept": true,
+   "card": "Toronto",
+   "f4": "Toronto: long-term share vs Ontario and the other CMAs"
+  },
+  "turns": [
+   {
+    "n": 15,
+    "bad": 0,
+    "walls": 30,
+    "scrollW": 1360,
+    "clientW": 1360
+   },
+   {
+    "n": 15,
+    "bad": 0,
+    "walls": 30,
+    "scrollW": 1360,
+    "clientW": 1360
+   },
+   {
+    "n": 15,
+    "bad": 0,
+    "walls": 30,
+    "scrollW": 1360,
+    "clientW": 1360
+   },
+   {
+    "n": 15,
+    "bad": 0,
+    "walls": 30,
+    "scrollW": 1360,
+    "clientW": 1360
+   }
+  ],
+  "top": {
+   "n": 15,
+   "bad": 0,
+   "walls": 0,
+   "scrollW": 1360,
+   "clientW": 1360
+  },
+  "iso": {
+   "n": 15,
+   "bad": 0,
+   "walls": 30,
+   "scrollW": 1360,
+   "clientW": 1360
+  },
+  "period": {
+   "query": "period=during (clicked)",
+   "marks": [
+    [
+     "580",
+     "57.2",
+     "−1.8 pp",
+     2,
+     47.35,
+     0.021632,
+     2930,
+     "59.0",
+     0
+    ],
+    [
+     "555",
+     "57.5",
+     "−1.5 pp",
+     2,
+     47.6,
+     0.074098,
+     10036,
+     "59.0",
+     0
+    ],
+    [
+     "539",
+     "56.2",
+     "−2.9 pp",
+     1,
+     46.47,
+     0.061729,
+     8360,
+     "59.0",
+     0
+    ],
+    [
+     "595",
+     "57.7",
+     "−1.3 pp",
+     2,
+     47.74,
+     0.016848,
+     2282,
+     "59.0",
+     0
+    ],
+    [
+     "541",
+     "64.2",
+     "+5.2 pp",
+     3,
+     53.13,
+     0.057261,
+     7755,
+     "59.0",
+     0
+    ],
+    [
+     "559",
+     "54.9",
+     "−4.2 pp",
+     1,
+     45.39,
+     0.044954,
+     6088,
+     "59.0",
+     0
+    ],
+    [
+     "568",
+     "50.9",
+     "−8.1 pp",
+     0,
+     42.13,
+     0.015815,
+     2142,
+     "59.0",
+     0
+    ],
+    [
+     "543",
+     "55.4",
+     "−3.6 pp",
+     1,
+     45.87,
+     0.013082,
+     1772,
+     "59.0",
+     0
+    ],
+    [
+     "550",
+     "54.8",
+     "−4.2 pp",
+     1,
+     45.33,
+     0.010513,
+     1424,
+     "59.0",
+     0
+    ],
+    [
+     "535",
+     "60.6",
+     "+1.6 pp",
+     2,
+     50.12,
+     0.634513,
+     85938,
+     "59.0",
+     0
+    ],
+    [
+     "537",
+     "60.4",
+     "+1.4 pp",
+     2,
+     49.96,
+     0.074417,
+     10079,
+     "59.0",
+     0
+    ],
+    [
+     "505",
+     "59.4",
+     "+0.4 pp",
+     2,
+     49.12,
+     0.109675,
+     14854,
+     "59.0",
+     0
+    ],
+    [
+     "532",
+     "65.4",
+     "+6.3 pp",
+     4,
+     54.08,
+     0.037064,
+     5020,
+     "59.0",
+     0
+    ],
+    [
+     "529",
+     "64.6",
+     "+5.6 pp",
+     3,
+     53.43,
+     0.019134,
+     2592,
+     "59.0",
+     0
+    ],
+    [
+     "521",
+     "59.1",
+     "+0.1 pp",
+     2,
+     48.9,
+     0.016133,
+     2185,
+     "59.0",
+     0
+    ]
+   ],
+   "aria": [
+    [
+     "580",
+     "Greater Sudbury: long-term share 57.2%, −1.8 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 10 of 15; average 2,930 OW cases."
+    ],
+    [
+     "555",
+     "London: long-term share 57.5%, −1.5 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 9 of 15; average 10,036 OW cases."
+    ],
+    [
+     "539",
+     "St. Catharines–Niagara: long-term share 56.2%, −2.9 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 11 of 15; average 8,360 OW cases."
+    ],
+    [
+     "595",
+     "Thunder Bay: long-term share 57.7%, −1.3 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 8 of 15; average 2,282 OW cases."
+    ],
+    [
+     "541",
+     "Kitchener–Cambridge–Waterloo: long-term share 64.2%, +5.2 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 3 of 15; average 7,755 OW cases."
+    ],
+    [
+     "559",
+     "Windsor: long-term share 54.9%, −4.2 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 13 of 15; average 6,088 OW cases."
+    ],
+    [
+     "568",
+     "Barrie: long-term share 50.9%, −8.1 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 15 of 15; average 2,142 OW cases."
+    ],
+    [
+     "543",
+     "Brantford: long-term share 55.4%, −3.6 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 12 of 15; average 1,772 OW cases."
+    ],
+    [
+     "550",
+     "Guelph: long-term share 54.8%, −4.2 pp below Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 14 of 15; average 1,424 OW cases."
+    ],
+    [
+     "535",
+     "Toronto: long-term share 60.6%, +1.6 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 4 of 15; average 85,938 OW cases."
+    ],
+    [
+     "537",
+     "Hamilton: long-term share 60.4%, +1.4 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 5 of 15; average 10,079 OW cases."
+    ],
+    [
+     "505",
+     "Ottawa–Gatineau: long-term share 59.4%, +0.4 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 6 of 15; average 14,854 OW cases."
+    ],
+    [
+     "532",
+     "Oshawa: long-term share 65.4%, +6.3 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 1 of 15; average 5,020 OW cases."
+    ],
+    [
+     "529",
+     "Peterborough: long-term share 64.6%, +5.6 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 2 of 15; average 2,592 OW cases."
+    ],
+    [
+     "521",
+     "Kingston: long-term share 59.1%, +0.1 pp above Ontario during the pandemic (2020 Q1 – 2023 Q1); rank 7 of 15; average 2,185 OW cases."
+    ]
+   ],
+   "labels": [
+    "Toronto60.6%",
+    "Ottawa59.4%",
+    "Hamilton60.4%",
+    "London57.5%",
+    "Niagara56.2%",
+    "Windsor54.9%",
+    "Oshawa65.4%",
+    "Sudbury57.2%",
+    "Peterborough64.6%",
+    "Barrie50.9%",
+    "Guelph54.8%"
+   ],
+   "f2Period": "during the pandemic (2020 Q1 – 2023 Q1)",
+   "legend": "Top colour: long-term share minus Ontario's\n6+ pp lower\n2–6 pp lower\nWithin 2 pp\n2–6 pp higher\n6+ pp higher\n· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period",
+   "card": "FIGURE 2B · SELECTED CMA\n\nToronto\n\nLong-term share during the pandemic (2020 Q1 – 2023 Q1)\n\nLong-term share\n60.6%\nOntario, same period\n59.0%\nDifference\n+1.6 pp\nRank among 15 CMAs\n4 of 15\nAverage OW cases\n85,938\nDifference from Ontario, every quarter (pp)\n−10\n0\n+10\n2005\n2010\n2015\n2020\n2025\nabove Ontario\nbelow Ontario\nDifference by pandemic period (pp) and rank · grey = within 2 pp\nBefore\n+3.7 pp · #1\nDuring\n+1.6 pp · #4\nAfter\n−2.3 pp · #14\n\nAbove Ontario before the pandemic, close to it during, below it after; ranked 4 of 15 during the pandemic. Above Ontario in 82 of 93 quarters."
+  },
+  "errors": [],
+  "touch": {
+   "card": "Windsor",
+   "scrollW": 400,
+   "clientW": 400
+  },
+  "touchErrors": []
+ }
+}
