@@ -177,6 +177,30 @@
       </dl>
       <p class="links"><a href="variants/k-prisms/index.html"><b>Open K →</b></a> <a href="screenshots/k-desktop-light.png">desktop</a> <a href="screenshots/k-desktop-dark.png">dark</a> <a href="screenshots/k-mobile-light.png">phone</a> <a href="screenshots/k-change-light.png">change</a> <a href="screenshots/k-outlook-light.png">outlook</a> <a href="screenshots/k-hover-light.png">hover</a></p>
     </article>
+    <article class="vcard">
+      <img src="screenshots/l-thumb.png" alt="Extra version L: isometric grey blocks on equal tiles in rough map positions, each block's height its gap in 2003 Q1, with 10, 20 and 30 pp reference blocks">
+      <h2>L · Isometric block tiles <span class="tag">extra version, 2026-11-26</span> <span class="tag">after a teammate's example</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Each CMA is a block on an equal tile in a rough map position: height = gap, top colour = change against a year earlier. Turn 90° or switch to the top view to see blocks a taller one hides. F's outlook, card, Figure 2 and tables.</p>
+      <dl>
+        <dt>Motivation</dt><dd>A teammate's isometric-block idea on the map, with one attribute per channel and equal footprints, so area carries no data.</dd>
+        <dt>Appeal</dt><dd>Press Play: the whole board sinks over two decades, and the tops flare magenta together in 2021 Q1.</dd>
+        <dt>Cost</dt><dd>3D: occlusion (Turn 90° and the top view help); heights on different spots are read less precisely than positions on one axis; tile positions are approximate.</dd>
+        <dt>Course basis</dt><dd>L3 length for the main quantity and a separable colour channel for the second · L7 equal area + glyphs and the elevation-map caveats (distortion, occlusion) · L4-2 luminance-ordered diverging colour.</dd>
+      </dl>
+      <p class="links"><a href="variants/l-blocks/index.html"><b>Open L →</b></a> <a href="screenshots/l-desktop-light.png">desktop</a> <a href="screenshots/l-desktop-dark.png">dark</a> <a href="screenshots/l-mobile-light.png">phone</a> <a href="screenshots/l-turn-light.png">turned</a> <a href="screenshots/l-top-light.png">top view</a> <a href="screenshots/l-outlook-light.png">outlook</a></p>
+    </article>
+    <article class="vcard">
+      <img src="screenshots/m-thumb.png" alt="Extra version M: an isometric treemap of the 15 CMAs, Toronto the largest footprint, blocks grouped on slabs by location, each block's height its gap in 2003 Q1">
+      <h2>M · Isometric block treemap <span class="tag">extra version, 2026-11-26</span> <span class="tag">closest to a teammate's example</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Like the example: footprint = average single-person cases (OW + ODSP), height = gap, top colour = change against a year earlier; CMAs grouped on base slabs by location (north, southwest, Toronto area, east).</p>
+      <dl>
+        <dt>Motivation</dt><dd>Weighs each CMA by how many single-person cases it has, so the large CMAs' gaps carry visible weight.</dd>
+        <dt>Appeal</dt><dd>Toronto's block dominates; one picture shows where the cases are and how wide their gap is.</dd>
+        <dt>Cost</dt><dd>Geography reduced to four groups; footprint × height can be misread as volume (it has no meaning here); small CMAs get small tops and their names may be hidden.</dd>
+        <dt>Course basis</dt><dd>L3 area channel for size (lower rank, so values are printed), L3 length for the gap · L4-1 enclosure for the groups instead of hue · L7 elevation-map caveats.</dd>
+      </dl>
+      <p class="links"><a href="variants/m-block-treemap/index.html"><b>Open M →</b></a> <a href="screenshots/m-desktop-light.png">desktop</a> <a href="screenshots/m-desktop-dark.png">dark</a> <a href="screenshots/m-mobile-light.png">phone</a> <a href="screenshots/m-turn-light.png">turned</a> <a href="screenshots/m-top-light.png">top view</a> <a href="screenshots/m-outlook-light.png">outlook</a></p>
+    </article>
   </section>
 
   <section class="block">
@@ -202,7 +226,9 @@
         <tr><td>I</td><td>1a</td><td>Small-multiple choropleths at six moments</td><td>Six maps of CMA polygons; Thunder Bay as a corner square</td><td>fill = gap class (or change class); panel = moment</td><td>Where, when (six moments); outlook</td><td>No</td></tr>
         <tr><td>J</td><td>1a</td><td>Bivariate choropleth over time</td><td>CMA polygons in nine colours; ▲ / ▼ / • on labels</td><td>lightness = gap size (3 classes); hue = change against a year earlier (3 classes); time = slider / Play</td><td>Where + whether it is closing</td><td>No</td></tr>
         <tr><td>K</td><td>1a</td><td>3D prism map over time (oblique, with a flat view)</td><td>Extruded CMA polygons (walls + top face)</td><td>height = gap; top fill = gap class (or change class); time = slider / Play</td><td>Where, when (roughly); outlook</td><td>No</td></tr>
-        <tr><td>G–K</td><td>1b, 2, tables</td><td>As F</td><td colspan="3">Same card (with a new "Against a year earlier" row), Figure 2, Table 1 and Table 2 as F</td><td>As F</td></tr>
+        <tr><td>L</td><td>1a</td><td>Isometric block tile map over time (with a top view and four turns)</td><td>Extruded equal tiles (top + two visible walls)</td><td>tile position = rough geography; height = gap; top fill = change against a year earlier (5 classes); walls = shading only</td><td>Where, when; outlook</td><td>No</td></tr>
+        <tr><td>M</td><td>1a</td><td>Isometric block treemap over time</td><td>Extruded treemap rectangles on location-group slabs</td><td>footprint area = average single-person cases (fixed); height = gap; top fill = change against a year earlier; slab = location group</td><td>Where (weighted by cases), when; outlook</td><td>No</td></tr>
+        <tr><td>G–M</td><td>1b, 2, tables</td><td>As F</td><td colspan="3">Same card (with a new "Against a year earlier" row), Figure 2, Table 1 and Table 2 as F</td><td>As F</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -230,6 +256,7 @@
       <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
       <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing? <b>D2</b> is D with a "100 cases" opening for Ontario; it is the more inviting first screen, at the cost of one more animation and a less precise encoding (counting squares) that is backed by printed numbers. <b>E</b> tells the same finding as a seven-scene scroll story before D's explorer: the most memorable and the most work; scenes can also be reached with numbered buttons. <b>F</b> answers the policy question "what comes next?" with a map over time and a tested outlook; its back-test shows that extending each CMA's 10-year trend would have missed by more than twice as much as assuming no change.</p>
       <p><b>Map forms of F (G–K), added 2026-11-18:</b> the same page with a different Figure 1a. All five can also show the change against a year earlier (against 2003 Q1, only 76 of 1,380 CMA-quarters were wider and none after 2008 Q3, so that comparison shows little; against a year earlier, 378 of 1,335 were wider). If the group wants a map, <b>G</b> (spikes) is the most precise: length on neutral shapes, no area bias. <b>H</b> (hexagons with their own lines) is the most complete per CMA. <b>I</b> (six moments) avoids relying on animation and is the easiest to print or put in a report. <b>J</b> (bivariate) answers "wide and still widening?" in one map but needs its key learned. <b>K</b> (3D) is the most eye-catching and the least accurate; keep it only as a contrast or teaser.</p>
+      <p><b>Block versions (L, M), added 2026-11-26 after a teammate's isometric-treemap example:</b> L puts the gap in height and its change in colour on equal tiles; M sizes each block by its single-person cases, as the example does. Both use an orthographic (isometric) view, so equal heights are equal pixels, and offer Turn 90° and a top view against occlusion. The course lists elevation maps with exactly these trade-offs (big differences visible, but geographic distortion and possible occlusion), so if the group wants a 3D look, L is the safer choice and M the more faithful to the example; the precise reading stays with the card, Figure 2 and Table 2.</p>
     </div>
   </section>
 
@@ -243,7 +270,7 @@
       <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
       <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
       <li>Whether extra version D (or D2, with the "100 cases" opening, E, the scroll story, or F, the map with an outlook) replaces or joins A–C; whether an outlook belongs in a descriptive project at all.</li>
-        <li>If F's idea is kept, which map form: F (filled), G (spikes), H (hexagons), I (six moments), J (bivariate) or K (3D); and whether "change" means against a year earlier (G–K) or something else.</li>
+        <li>If F's idea is kept, which map form: F (filled), G (spikes), H (hexagons), I (six moments), J (bivariate), K (3D), L (block tiles) or M (block treemap); and whether "change" means against a year earlier (G–K) or something else.</li>
     </ol>
   </section>
 </div>

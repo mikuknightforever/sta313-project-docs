@@ -350,7 +350,7 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
 11. **额外版本 D / D2 / E / F**（2026-11-18，§12–§15）：是替换还是并入 A–C；用 D、带开场的 D2、滚动故事 E，还是带展望的地图 F；描述性项目里是否保留展望；是否要做读者测试。/ Extra versions D / D2 / E / F: replace or join A–C; which one; keep an outlook?; reader test.
-12. **如果保留 F 的思路，用哪种地图形式**（§16）：F 填色、G 尖刺、H 六边形、I 六个时刻并排、J 双变量、K 3D；"变化"是否按"比一年前"计算；变化色板的洋红与 Q3 的紫色是否需要全站再核一次。/ If F's idea is kept, which map form (§16); is "change" measured against a year earlier; site-wide check of the magenta next to Part 3's violet.
+12. **如果保留 F 的思路，用哪种地图形式**（§16、§17）：F 填色、G 尖刺、H 六边形、I 六个时刻并排、J 双变量、K 3D、L 等轴测方块、M 等轴测树图；"变化"是否按"比一年前"计算；变化色板的洋红与 Q3 的紫色是否需要全站再核一次。/ If F's idea is kept, which map form (§16); is "change" measured against a year earlier; site-wide check of the magenta next to Part 3's violet.
 
 ## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
 
@@ -565,3 +565,33 @@ Status: five parallel extra versions. While discussing F, the Q2 owner asked how
 - 展望部分的局限与 F 相同（§15.5）。
 - 变化色板的洋红（色相约 350°）与 Q3 的紫色（约 300°）不同但相近，全站并排时需要再看一次。
 - 没有读者测试。
+
+## 17. 额外版本 L、M：等轴测方块（2026-11-26）/ Extra versions L and M: isometric blocks
+
+状态：两个并列的额外版本，放在 [variants/l-blocks/](variants/l-blocks/index.html) 和 [variants/m-block-treemap/](variants/m-block-treemap/index.html)。组员拿来一张等轴测树图（"Causes of untimely death"：每类死因一个立体块，面积 = 损失的生命年，颜色 = 年变化率，色相 = 大类），提议 Q2、Q3 的地图都做一个"每个地区一个立体块"的版本。负责人要求先各做几个版本，并对照课件说明高度、颜色、深浅各自的意义。A–K 不变；Q3 的两个方块版本见 Q3_DESIGN §12。
+Status: two parallel extra versions. A teammate shared an isometric treemap and proposed a "one 3D block per region" version for the maps of Parts 2 and 3; the owner asked for several versions, with each channel's meaning checked against the lectures. A–K are unchanged; Part 3's block versions are in Q3_DESIGN §12.
+
+### 17.1 每个通道表示什么，以及课件依据 / What each channel means, and why
+
+| 通道 / Channel | L（等大方格 / equal tiles） | M（树图 / treemap） | 课件依据 / Lecture basis |
+| --- | --- | --- | --- |
+| 高度 / Height | 差距（pp），所有方块同一比例（参照块 10 / 20 / 30 pp） | 同左（参照块 10 / 20 pp） | L3：有序数量用量级通道，长度排名靠前；等轴测是正交投影，同样的值在画面任何位置都是同样的像素，没有透视缩短 |
+| 顶面颜色 / Top colour | 比一年前的变化，5 级（G–K 的石板灰 → 洋红色板，按亮度排序） | 同左 | L3 可分离通道：高度看大小、颜色看方向，各读各的；L4-2 有序数据用亮度，围绕 0 发散 |
+| 底面 / Footprint | 等大，不带数据（L7 "等面积 + 字形"，避免面积偏差） | 平均单人案件数（OW + ODSP，2003 Q1 – 2026 Q1，固定不随滑块变），面积严格成比例 | L3 面积通道排名较低，所以数值印在顶面和卡片上 |
+| 分组 / Groups | — | 北部、西南和中部、多伦多地区、东部四个底座（只用于排布，不是官方区域） | L4-1 包围（enclosure）；不用色相，因为蓝 / 橙是两个项目、青绿 ↔ 紫留给 Q3 |
+| 侧面 / Side faces | 顶面颜色加深 | 同左 | 只是光照形状线索，不带数据 |
+
+- **3D 的风险**（L7 的"Elevation maps"一页：能显示大的差异、便于比较，但有地理变形和遮挡）以及补偿：固定的等轴测视角（无透视）；方块之间留空；"Turn 90°"按钮把地面转四个方向，被高块挡住的方块会露出来；俯视按钮把方块变成平面方格（只看颜色和印出的数值）；参照块给出高度比例；北向箭头随旋转；精确数值在卡片、图 2 和表 2。
+- **M 的体积没有意义**（底面 = 案件数，高度 = 差距，相乘不是任何量），图注写明"不要读体积"。前四个季度没有一年前可比，顶面用中间灰（与 J 相同，图注写明）。
+
+### 17.2 自检 / Self-check
+
+- **浏览器检查**（[tools/check_q2_maplab.py](../../tools/check_q2_maplab.py) 加入 L、M）：每个版本 16 项（G–K 的 14 项 + 方块专属 2 项：四个旋转方向的画家算法顺序都正确、俯视不画侧面），**2 × 16 = 32 项全部通过**。
+- **数字复核**（[tools/verify_q2_maplab.py](../../tools/verify_q2_maplab.py) 加入 L、M）：各 5 个状态、每个方块的数值文字和颜色级别（各 75 个标记），加上每个状态的高度与差距成比例；M 另核对底面权重（每个 CMA 的平均单人案件数，从 CSV 独立重算）和面积与权重严格成比例：**L 110 项、M 120 项，0 处不一致**。篡改测试（改一个底面面积）被抓到。
+- 自检中修复：M 起初把四个组按方块树图排，有的组被埋在后面、组名压在别的方块上，改为四个组按西 → 东并排成条带，每组都碰到前沿、组名放在前沿外；高度比例尺与北部条带重叠，改放到树图上方单独一条；"NORTH" 被画面左缘截断，改为贴边内移；400 px 下 Windsor 的名字与北向箭头 "N"、"East" 与展望标签重叠，改为比例尺和箭头文字优先、M 的展望标签移到上方条带；M 图注里的参照块写成了 10 / 20 / 30（实际是 10 / 20）。
+
+### 17.3 局限 / Limitations
+
+- 高度站在不同位置上（基线不对齐），比同一坐标轴上的位置读得粗；高块会挡住后面的块（旋转和俯视只是缓解）。
+- 方格位置是近似的（Thunder Bay 远在西北）；M 把地理简化成四个组，小 CMA 的顶面和名字很小，名字放不下时隐藏。
+- 一年变化在小 CMA 里波动大；展望的局限同 §15.5。没有读者测试。

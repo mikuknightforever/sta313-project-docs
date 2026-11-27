@@ -1,0 +1,17 @@
+/* Q2 block versions L and M (isometric blocks). Shared map-lab styles in q2-maplab.css. */
+.plate{fill:var(--land);stroke:var(--land-line);stroke-width:.8px}
+.blk{cursor:pointer;outline:none}
+.blk:focus-visible path.mk{stroke:var(--d512);stroke-width:3px}
+.blk .wall{stroke:var(--surface);stroke-width:.5px;stroke-opacity:.7}
+.blk .hatchov{pointer-events:none}
+.slab-t{fill:var(--wall);stroke:var(--land-line);stroke-width:.6px}
+.slab-l{fill:var(--cma-line)}
+.slab-r{fill:var(--land-line)}
+.rtop{fill:var(--h2);stroke:var(--ink2);stroke-width:.6px}
+.rwall-l{fill:var(--h4)}
+.rwall-r{fill:var(--h3)}
+.northa line{stroke:var(--ink2);stroke-width:1.4px}
+.northa path{fill:var(--ink2)}
+.glbl{fill:var(--ink2);font:650 10.5px var(--sans);letter-spacing:.05em;text-transform:uppercase;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.blabels text{pointer-events:none}
+.turn-btn{margin-left:4px}

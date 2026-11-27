@@ -341,3 +341,22 @@ Every map and card number was exported from the DOM and recomputed independently
 **解释边界 / Limits**：失业率只作背景（全站规则）；它数的是劳动力中的人，不是 OW 案件；是抽样估计，小 CMA 波动大（同一张表有标准误，未使用）；相关只是描述，15 个点时一个地区就能明显改变系数。/ Background only; people, not cases; survey estimates; descriptive correlations sensitive to single CMAs.
 
 **自检 / Self-check**：数字 299 项 0 处不一致（标准库复核，pandas 在本机被应用程序控制阻止）；12 种版面 × 交互检查 12 项全部通过；继承自 v2 的图 4 标签越界未改。详见 [unemployment-prototype/README.md](unemployment-prototype/README.md#验证--checks2026-11-18)。/ 299 checks, 0 mismatches; 12 browser checks pass; the Figure 4 label overflow inherited from v2 is unchanged.
+
+## 12. 额外版本 A、B：等轴测方块地图（2026-11-26）/ Extra versions A and B: isometric block maps
+
+状态：两个并列的额外版本，放在 [blocks-tiles/](blocks-tiles/index.html)（A）和 [blocks-treemap/](blocks-treemap/index.html)（B），v2 原型不变。一位组员拿来一张等轴测树图（"Causes of untimely death"），提议 Q2、Q3 的地图都做一个"每个地区一个立体块"的版本；Q2 负责人要求两部分都先做几个版本，并对照课件说明高度、颜色、深浅的意义。Q2 的两个版本见 Q2_DESIGN §17。
+Status: two parallel extra versions; v2 is unchanged. A teammate proposed a "one 3D block per region" version after an isometric treemap; Part 2's two versions are in Q2_DESIGN §17.
+
+**只换图 2a**：`blocks-shared/q3-blocks.js` 是 v2 `q3.js` 的副本，只改了 `renderMap` / `renderMapLegend`、卡片里"click the block"一行、选中 / 悬停的描边层和 `view`、`turn` 两个 URL 参数。时期选择、卡片（图 2b）、图 3、图 4、结论和第 1、3 步与 v2 完全相同（浏览器检查在 4 个状态下逐字比较）。/ Only Figure 2a differs; the rest is checked to be identical to v2.
+
+| 通道 / Channel | A · 浮雕方格 / relief tiles | B · 方块树图 / block treemap | 课件依据 / Lecture basis |
+| --- | --- | --- | --- |
+| 高度 / Height | 长期占比 − 全省（pp）：高于全省的方块从底板升起，低于的陷进底板；±20 pp 同一比例（单季最大差 16.3 pp） | 长期占比（%），从 0 起，同一比例；每块上的虚线 = 全省占比（低于全省的块，虚线是浮在上方的"盖子"） | L3：有序数量用长度；A 把 Q3 的问题（高于全省吗）放进高度，几个 pp 的差也看得见；B 保留绝对占比 |
+| 顶面颜色 / Top colour | 同一差值的 5 级（v2 的青绿 ↔ 灰 ↔ 紫，±2 / ±6 pp） | 与全省的差，5 级 | L4-2 发散色板以基线（全省）为中点；A 是冗余编码，v2 的色键照用 |
+| 底面 / Footprint | 等大方格，近似地图位置（与 Q2 C 的网格相同），不带数据 | 时期内平均 OW 案件数（v2 圆面积的含义），面积严格成比例；按北部、西南和中部、多伦多地区、东部四个底座分组（只用于排布） | L7 等面积 + 字形 / L3 面积通道；L4-1 包围 |
+| 体积 / Volume | 不读 | 底面 × 高度 = 平均案件数 × 长期占比 = 平均长期案件数（Σ 长期 ÷ 季度数），正好成立 | — |
+| 侧面 / Side faces | 顶面颜色加深，只是形状线索 | 同左 | — |
+
+- **3D 的风险与补偿**同 Q2 §17（L7 的 elevation maps：变形、遮挡）：正交等轴测视角；"Turn 90°" 四个方向；俯视按钮（只看颜色和印出的数值）；参照块（A：+10 / −10 pp；B：20% / 40%）和北向箭头；被挡住的方块仍能用 Tab、图 3 和卡片读到。A 的下陷块按"洞"画：底面在 −深度，只画两面后墙，并裁剪到底板上的开口。
+- **自检**：浏览器检查（[tools/check_q3_blocks.py](../../tools/check_q3_blocks.py)）每个版本 12 项，**2 × 12 = 24 项全部通过**：12 种版面无横向滚动、无控制台错误、图 2a 文字不重叠不出界；图 2a 以外与 v2 逐字相同（4 个状态）；悬停预览和描边、点击（卡片、图 3、图 4 跟随）、键盘到达 15 块、四个旋转方向的画家算法顺序、俯视、切换时期、手机点按。数字复核（[tools/verify_q3_blocks.py](../../tools/verify_q3_blocks.py)，只用标准库）从 CSV 重算 9 个状态（5 个预设时期、自定义 2015 Q1 – 2019 Q4、俯视、旋转、点击切换时期）中每块的占比、全省值、差值、颜色级别、平均案件数、排名、无障碍标签、可见标签和时期文字，并检查高度同一比例、B 的面积与案件数严格成比例：**A 306 项、B 315 项，0 处不一致**；篡改测试（改一块的差值）被抓到。
+- **局限**：A 不再显示案件规模（在卡片和图 3）；B 中几个 pp 的差相对整块高度很小（靠虚线和颜色），地理简化成四组；高度站在不同位置，读得比同一坐标轴粗；没有读者测试。
