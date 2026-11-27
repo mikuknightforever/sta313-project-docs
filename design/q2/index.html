@@ -201,6 +201,18 @@
       </dl>
       <p class="links"><a href="variants/m-block-treemap/index.html"><b>Open M →</b></a> <a href="screenshots/m-desktop-light.png">desktop</a> <a href="screenshots/m-desktop-dark.png">dark</a> <a href="screenshots/m-mobile-light.png">phone</a> <a href="screenshots/m-turn-light.png">turned</a> <a href="screenshots/m-top-light.png">top view</a> <a href="screenshots/m-outlook-light.png">outlook</a></p>
     </article>
+    <article class="vcard">
+      <img src="screenshots/n-thumb.png" alt="Extra version N: a tilted, north-up map of southern Ontario with each CMA's own boundary raised as a block whose height is its gap in 2003 Q1; Thunder Bay in a box in the north-west corner">
+      <h2>N · Map blocks <span class="tag">extra version, 2026-11-26</span> <span class="tag">M's colours on K's shapes</span> <span class="tag">not the agreed baseline</span></h2>
+      <p class="one">Version M's encoding (height = gap, top colour = change against a year earlier, shaded sides) on version K's real CMA boundaries, north up and tilted, with Turn 90°, a top view, reference blocks and a north arrow.</p>
+      <dl>
+        <dt>Motivation</dt><dd>Readers see Ontario itself rather than tiles or a treemap, while keeping M's colours, which separate size (height) from direction (colour).</dd>
+        <dt>Appeal</dt><dd>The recognisable map rises and sinks as it plays; the tops flare magenta together in 2021 Q1.</dd>
+        <dt>Cost</dt><dd>Large CMAs cover more of the map again (area carries no data); tall blocks hide blocks behind them; Thunder Bay is drawn out of position.</dd>
+        <dt>Course basis</dt><dd>L3 length and a separable colour channel · L7 elevation maps (distortion, occlusion) and the choropleth's area caveat · L4-2 luminance-ordered diverging colour.</dd>
+      </dl>
+      <p class="links"><a href="variants/n-map-blocks/index.html"><b>Open N →</b></a> <a href="screenshots/n-desktop-light.png">desktop</a> <a href="screenshots/n-desktop-dark.png">dark</a> <a href="screenshots/n-mobile-light.png">phone</a> <a href="screenshots/n-turn-light.png">turned</a> <a href="screenshots/n-top-light.png">top view</a> <a href="screenshots/n-outlook-light.png">outlook</a></p>
+    </article>
   </section>
 
   <section class="block">
@@ -228,7 +240,8 @@
         <tr><td>K</td><td>1a</td><td>3D prism map over time (oblique, with a flat view)</td><td>Extruded CMA polygons (walls + top face)</td><td>height = gap; top fill = gap class (or change class); time = slider / Play</td><td>Where, when (roughly); outlook</td><td>No</td></tr>
         <tr><td>L</td><td>1a</td><td>Isometric block tile map over time (with a top view and four turns)</td><td>Extruded equal tiles (top + two visible walls)</td><td>tile position = rough geography; height = gap; top fill = change against a year earlier (5 classes); walls = shading only</td><td>Where, when; outlook</td><td>No</td></tr>
         <tr><td>M</td><td>1a</td><td>Isometric block treemap over time</td><td>Extruded treemap rectangles on location-group slabs</td><td>footprint area = average single-person cases (fixed); height = gap; top fill = change against a year earlier; slab = location group</td><td>Where (weighted by cases), when; outlook</td><td>No</td></tr>
-        <tr><td>G–M</td><td>1b, 2, tables</td><td>As F</td><td colspan="3">Same card (with a new "Against a year earlier" row), Figure 2, Table 1 and Table 2 as F</td><td>As F</td></tr>
+        <tr><td>N</td><td>1a</td><td>Map blocks over time: the CMAs' own boundaries extruded, north up and tilted (with a top view and four turns)</td><td>Extruded CMA polygons (top + viewer-facing walls)</td><td>position and shape = geography; height = gap; top fill = change against a year earlier (5 classes); walls = shading only</td><td>Where, when; outlook</td><td>Close to K (same shapes); M's colours</td></tr>
+        <tr><td>G–N</td><td>1b, 2, tables</td><td>As F</td><td colspan="3">Same card (with a new "Against a year earlier" row), Figure 2, Table 1 and Table 2 as F</td><td>As F</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -256,7 +269,7 @@
       <p><b>Condition:</b> a quick reader test of B's comet chart with 2–3 people outside the group. If it fails, fall back to <b>A plus B's decomposition bars</b>. Consider C's tile map only if the group wants one site-wide map panel.</p>
       <p><b>Added 2026-11-18, not yet weighed by the group:</b> extra version D shows B's "which program moved" and C's full time span in one picture, and reuses Part 3's hover card and period brush. It needs the same kind of quick reader test as B: can a reader say what a zipper tooth is, and that sideways position inside a year means nothing? <b>D2</b> is D with a "100 cases" opening for Ontario; it is the more inviting first screen, at the cost of one more animation and a less precise encoding (counting squares) that is backed by printed numbers. <b>E</b> tells the same finding as a seven-scene scroll story before D's explorer: the most memorable and the most work; scenes can also be reached with numbered buttons. <b>F</b> answers the policy question "what comes next?" with a map over time and a tested outlook; its back-test shows that extending each CMA's 10-year trend would have missed by more than twice as much as assuming no change.</p>
       <p><b>Map forms of F (G–K), added 2026-11-18:</b> the same page with a different Figure 1a. All five can also show the change against a year earlier (against 2003 Q1, only 76 of 1,380 CMA-quarters were wider and none after 2008 Q3, so that comparison shows little; against a year earlier, 378 of 1,335 were wider). If the group wants a map, <b>G</b> (spikes) is the most precise: length on neutral shapes, no area bias. <b>H</b> (hexagons with their own lines) is the most complete per CMA. <b>I</b> (six moments) avoids relying on animation and is the easiest to print or put in a report. <b>J</b> (bivariate) answers "wide and still widening?" in one map but needs its key learned. <b>K</b> (3D) is the most eye-catching and the least accurate; keep it only as a contrast or teaser.</p>
-      <p><b>Block versions (L, M), added 2026-11-26 after a teammate's isometric-treemap example:</b> L puts the gap in height and its change in colour on equal tiles; M sizes each block by its single-person cases, as the example does. Both use an orthographic (isometric) view, so equal heights are equal pixels, and offer Turn 90° and a top view against occlusion. The course lists elevation maps with exactly these trade-offs (big differences visible, but geographic distortion and possible occlusion), so if the group wants a 3D look, L is the safer choice and M the more faithful to the example; the precise reading stays with the card, Figure 2 and Table 2.</p>
+      <p><b>Block versions (L, M), added 2026-11-26 after a teammate's isometric-treemap example:</b> L puts the gap in height and its change in colour on equal tiles; M sizes each block by its single-person cases, as the example does. Both use an orthographic (isometric) view, so equal heights are equal pixels, and offer Turn 90° and a top view against occlusion. The course lists elevation maps with exactly these trade-offs (big differences visible, but geographic distortion and possible occlusion), so if the group wants a 3D look, L is the safer choice and M the more faithful to the example; <b>N</b> (added the same day) keeps M's colours on the real CMA boundaries, as in K, for readers who want to see Ontario itself; the precise reading stays with the card, Figure 2 and Table 2.</p>
     </div>
   </section>
 
@@ -270,7 +283,7 @@
       <li>C's yearly columns use each year's first quarter rather than an annual mean; B stretches its vertical scale on phones.</li>
       <li>Whether to offer a four-quarter moving average for small CMAs, and whether to extract one site-wide stylesheet.</li>
       <li>Whether extra version D (or D2, with the "100 cases" opening, E, the scroll story, or F, the map with an outlook) replaces or joins A–C; whether an outlook belongs in a descriptive project at all.</li>
-        <li>If F's idea is kept, which map form: F (filled), G (spikes), H (hexagons), I (six moments), J (bivariate), K (3D), L (block tiles) or M (block treemap); and whether "change" means against a year earlier (G–K) or something else.</li>
+        <li>If F's idea is kept, which map form: F (filled), G (spikes), H (hexagons), I (six moments), J (bivariate), K (3D), L (block tiles), M (block treemap) or N (map blocks); and whether "change" means against a year earlier (G–K) or something else.</li>
     </ol>
   </section>
 </div>

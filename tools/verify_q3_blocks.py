@@ -68,7 +68,7 @@ def expected(query):
     for i, d in enumerate(st): d["rank"] = i + 1; d["diff"] = d["share"] - ont; d["ont"] = ont
     la, lb = LABEL[a], LABEL[b]
     per = f"{PHRASE[pid]} ({la if la == lb else la + ' – ' + lb})"
-    return st, per, p.get("view") == "top"
+    return st, per, p.get("view") == "top", p.get("shape") == "map"
 
 
 pick = [a for a in sys.argv[1:] if a in FOLDERS] or list(FOLDERS)
@@ -83,7 +83,7 @@ for ver in pick:
         global n; n += 1
         if not ok: mism.append({"state": state, "field": field, "page": page, "expected": exp})
     for s in states:
-        st, per, top = expected(s["query"]); by = {x["code"]: x for x in st}; q = s["query"]
+        st, per, top, mapshape = expected(s["query"]); by = {x["code"]: x for x in st}; q = s["query"]
         chk(s["f2Period"] == per, q, "f2Period", s["f2Period"], per)
         chk(len(s["marks"]) == 15, q, "15 blocks", len(s["marks"]), 15)
         for code, share, diff, c, z, area, w, ont, pit in s["marks"]:
@@ -106,7 +106,7 @@ for ver in pick:
             base = [(m[c][4], by[c]["diff"] if rel else by[c]["share"]) for c in by if abs(by[c]["diff"] if rel else by[c]["share"]) >= 0.5]
             r = [z / v for z, v in base]; k = statistics.median(r)
             chk(k > 0 and all(abs(x - k) <= 0.004 * k + 0.02 for x in r), q, "heights on one scale", r, k)
-        if not rel:
+        if not rel and not mapshape:  # (map shapes: the footprint is geography, not caseload)
             ka = [m[c][5] / by[c]["avg"] for c in by]
             chk(max(ka) / min(ka) - 1 < 1e-4, q, "footprint area ∝ average cases", ka, "constant")
     summary = {"version": ver, "folder": folder, "states": len(states), "checks": n, "mismatches": len(mism)}

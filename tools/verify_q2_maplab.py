@@ -1,4 +1,4 @@
-"""Independent number check for Q2 extra versions G–M (Python standard library only; no pandas, no JS).
+"""Independent number check for Q2 extra versions G–N (Python standard library only; no pandas, no JS).
 
 Run tools/check_q2_maplab.py first: it writes browser-verification.json in each version folder. This script
 recomputes from the four course CSVs the gaps, the change against a year earlier, every colour class, the outlook
@@ -14,7 +14,7 @@ from decimal import Decimal, ROUND_HALF_UP
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SEL = ROOT / "datasets" / "ONT-SA" / "selected"
 MINUS = "−"
-FOLDERS = {"g": "g-spikes", "h": "h-hexes", "i": "i-multiples", "j": "j-bivariate", "k": "k-prisms", "l": "l-blocks", "m": "m-block-treemap"}
+FOLDERS = {"g": "g-spikes", "h": "h-hexes", "i": "i-multiples", "j": "j-bivariate", "k": "k-prisms", "l": "l-blocks", "m": "m-block-treemap", "n": "n-map-blocks"}
 
 
 def _q(x, p): return Decimal(abs(x)).quantize(Decimal(1).scaleb(-p), rounding=ROUND_HALF_UP)
@@ -151,7 +151,7 @@ def expected(ver, query):
         X["f1Title"] = (f"Change in each CMA's gap against a year earlier, {LAB[t]}" if mode == "yoy" else f"Gap between the ODSP and OW single-person shares in each CMA, {LAB[t]}") + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
     elif ver == "i":
         X["f1Title"] = ("Change in each CMA's gap against a year earlier" if mode == "yoy" else "Gap between the ODSP and OW single-person shares in each CMA") + f" at six key moments ({', '.join(LAB[m] for m in MOM)})"
-    elif ver in ("l", "m"):
+    elif ver in ("l", "m", "n"):
         X["f1Title"] = f"Gap (height) and its change against a year earlier (top colour) in each CMA, {LAB[t]}" + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
     else:
         X["f1Title"] = f"Gap size and its change against a year earlier in each CMA, {LAB[t]}" + (f" (outlook, {RL[rule][1].lower()} rule)" if out else "")
@@ -171,7 +171,7 @@ def expected(ver, query):
         i = c["id"]
         if ver == "i":
             for tp in MOM: txt, k = shown(i, tp, rule, mode); marks.append([i, tp, txt, k, None])
-        elif ver in ("l", "m"):
+        elif ver in ("l", "m", "n"):
             vv = val(i, t, rule); dd = chg(i, t, rule)
             marks.append([i, t, f"{f1(vv)} / {'—' if dd is None else spp(dd)}", 2 if dd is None else chgcls(dd), f1(vv)])
         elif ver == "j":
@@ -234,11 +234,12 @@ for ver in pick:
                 if key == "outCard": pv = "\n".join(s.strip() for s in pv.split("\n") if s.strip())
                 ok = pv == v; results.append(ok)
                 if not ok: mism.append({"state": st["query"], "field": key, "page": pv if key != "marks" else [m for m in pv if m not in v][:5], "expected": v if key != "marks" else [m for m in v if m not in pv][:5]})
-    if ver in ("l", "m"):  # heights on one scale; M: footprints = average single-person cases (OW + ODSP), areas proportional
+    if ver in ("l", "m", "n"):  # heights on one scale; M: footprints = average single-person cases (OW + ODSP), areas proportional
         WGT = {c["id"]: statistics.fmean(r["owF"] + r["odF"] for r in c["rows"]) for c in CMAS}
-        for st in dump["states"]:
-            ratios = [z / float(h) for _, z, h, a, w in st["blk"]]; mz = statistics.median(ratios)
-            ok = len(st["blk"]) == 15 and all(abs(r - mz) <= 0.002 * mz + 0.01 for r in ratios); results.append(ok)
+        for st in dump["states"]:  # pixel height ÷ the exact recomputed gap must be one constant (z is printed to 0.01 px)
+            qp = dict(kv.split("=") for kv in st["query"].split("&")); tq = LAB.index(qp["t"][:4] + " " + qp["t"][4:]) if "t" in qp else 0; rq = qp.get("rule", "conv")
+            ratios = [z / val(i, tq, rq) for i, z, h, a, w in st["blk"]]; mz = statistics.median(ratios)
+            ok = len(st["blk"]) == 15 and all(abs(r - mz) <= 0.001 * mz for r in ratios); results.append(ok)
             if not ok: mism.append({"state": st["query"], "field": "heights not proportional to the gap", "page": ratios, "expected": mz})
             if ver == "m":
                 ws = {i: w for i, z, h, a, w in st["blk"]}; ar = {i: a for i, z, h, a, w in st["blk"]}

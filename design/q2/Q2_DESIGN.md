@@ -350,7 +350,7 @@ The Ontario OW count 235,500.5 rounds to 235,501 in JavaScript and 235,500 in Py
 9. **小 CMA 的波动**：目前显示原始季度值并在提示中给出案件数；是否需要可选的四季度移动平均？/ Optional smoothing for small CMAs?
 10. **全站共用样式**：CSS 变量和工具函数现在在 Q1、Q2 各复制一份，是否抽成一个全站文件？/ A site-wide stylesheet and helpers?
 11. **额外版本 D / D2 / E / F**（2026-11-18，§12–§15）：是替换还是并入 A–C；用 D、带开场的 D2、滚动故事 E，还是带展望的地图 F；描述性项目里是否保留展望；是否要做读者测试。/ Extra versions D / D2 / E / F: replace or join A–C; which one; keep an outlook?; reader test.
-12. **如果保留 F 的思路，用哪种地图形式**（§16、§17）：F 填色、G 尖刺、H 六边形、I 六个时刻并排、J 双变量、K 3D、L 等轴测方块、M 等轴测树图；"变化"是否按"比一年前"计算；变化色板的洋红与 Q3 的紫色是否需要全站再核一次。/ If F's idea is kept, which map form (§16); is "change" measured against a year earlier; site-wide check of the magenta next to Part 3's violet.
+12. **如果保留 F 的思路，用哪种地图形式**（§16、§17）：F 填色、G 尖刺、H 六边形、I 六个时刻并排、J 双变量、K 3D、L 等轴测方块、M 等轴测树图、N 地图方块；"变化"是否按"比一年前"计算；变化色板的洋红与 Q3 的紫色是否需要全站再核一次。/ If F's idea is kept, which map form (§16); is "change" measured against a year earlier; site-wide check of the magenta next to Part 3's violet.
 
 ## 12. 额外版本 D：两团点云 + 拉链（2026-11-18）/ Extra version D: two clouds and a zipper
 
@@ -595,3 +595,13 @@ Status: two parallel extra versions. A teammate shared an isometric treemap and 
 - 高度站在不同位置上（基线不对齐），比同一坐标轴上的位置读得粗；高块会挡住后面的块（旋转和俯视只是缓解）。
 - 方格位置是近似的（Thunder Bay 远在西北）；M 把地理简化成四个组，小 CMA 的顶面和名字很小，名字放不下时隐藏。
 - 一年变化在小 CMA 里波动大；展望的局限同 §15.5。没有读者测试。
+
+### 17.4 版本 N：M 的配色放到 K 的地图形状上（2026-11-26）/ Version N: M's colours on K's map shapes
+
+负责人看过 L、M 后认为 M 的配色好，但形状应该参考 K：不用方块，用地图的形状。N 放在 [variants/n-map-blocks/](variants/n-map-blocks/index.html)，M 保留以便比较。
+The owner liked M's colours but wanted K's map shapes instead of rectangles; M is kept for comparison.
+
+- **编码与 M 相同**：高度 = 差距（同一比例，参照块 10 / 20 pp），顶面颜色 = 比一年前的变化（5 级），侧面 = 顶面颜色加深，并按朝向深浅不同（光从西北来），只是形状线索。**形状与 K 相同**：2021 年人口普查边界，Part 3 的投影，Douglas–Peucker 简化（约 1.2 个单位），Thunder Bay 放在西北角的框里、不在真实位置。
+- **视图**：北向朝上的平行倾斜视图（屏幕 y = 地面 y × 0.62 − 高度），同样的值在画面任何位置都是同样的像素；"3D / Top view"和"Turn 90°"与 L、M 相同，北向箭头随旋转。只画面向读者（朝南）的墙；方块按最靠前一点排序，由后往前画（与 K 相同）。几何在 `design/shared/iso-blocks.js`（`mapGround`、`turnShapes`、`oblique`、`prism`、`pit`），Q3 的地图形状也用它。
+- **代价**：面积重新变成地理大小（大 CMA 占地多，面积不带数据，图注写明）；高块挡住后面的块。
+- **自检**：浏览器检查 16 项全部通过（G–K 的 14 项 + 四个旋转方向的绘制顺序、俯视不画墙）；数字复核 110 项、75 个标记 0 处不一致。这次把 L、M、N 的"高度成比例"检查改为与 CSV 重算的精确差距比较（容差 0.1%），原来与印出的一位小数比较，N 的高度比例最陡，一位小数的取整误差就超过了容差；L、M 在新检查下仍是 0 处不一致。L、M 的浏览器检查在共用渲染文件修改后重跑，32 项全部通过。
