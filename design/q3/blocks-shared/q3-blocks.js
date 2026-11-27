@@ -34,7 +34,7 @@
   const cssVar = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
   const divColor = v => cssVar(DIV_VARS[divIdx(v)]);
 
-  const S = { step: 1, mode: "count", iso: null, period: null, cma: null, sort: "share", detail: "share", hover: null, view: "iso", turn: 0 };
+  const S = { step: 1, mode: "count", iso: null, period: null, cma: null, sort: "share", detail: "share", hover: null, view: "iso", turn: 0, shape: "boxes" };
   let ONT, CMA, DATES, BY_CMA, NAMES, PERIODS, Q, GEOJ, OUTLINE, MAP = null;
 
   // ---------- load ----------
@@ -106,6 +106,7 @@
     if (["share", "cases", "name"].includes(U.get("sort"))) { S.sort = U.get("sort"); document.getElementById("sortSel").value = S.sort; }
     if (U.get("view") === "top") S.view = "top";
     if (/^[0-3]$/.test(U.get("turn") || "")) S.turn = +U.get("turn");
+    if (U.get("shape") === "map") S.shape = "map";
     buildControls();
     renderAll();
     document.body.dataset.ready = "1";
@@ -437,8 +438,12 @@
   // B · block treemap (body[data-layout="treemap"]): footprint = average OW cases in the period (area-true, as v2's
   //     circles); height = long-term share from 0; dashed line on each block = Ontario's share; top colour = difference.
   //     Footprint × height = average cases × share = average number of long-term cases (Σ long-term ÷ quarters).
+  // Shape switch (both): "Map" draws each CMA as its 2021 Census boundary instead, on a north-up tilted view (as Part 2's
+  //     version K / N), with the same height and colour; the footprint then shows location only.
   const LAYOUT = document.body.dataset.layout === "treemap" ? "treemap" : "tiles", REL = LAYOUT === "tiles";
-  const VIEWS = [{ id: "iso", label: "Isometric" }, { id: "top", label: "Top view" }];
+  const VIEWS = [{ id: "iso", label: "3D" }, { id: "top", label: "Top view" }];
+  const SHAPES = [{ id: "boxes", label: REL ? "Tiles" : "Treemap" }, { id: "map", label: "Map" }];
+  let GM = null;                              // map ground (CMA boundaries), built once
   const DIFF_MAX = 20;                         // relief scale: ±20 pp (largest single-quarter difference: 16.3 pp)
   let SHARE_MAX = null;                        // treemap scale: 0 – highest quarterly CMA share, rounded up to 10
   const SLAB = 5;                              // base slab (px) under each location group (treemap)
@@ -447,9 +452,11 @@
     d3.select("#viewSeg").selectAll("button").data(VIEWS).join("button").attr("type", "button").text(d => d.label)
       .on("click", (e, d) => { S.view = d.id; syncView(); renderMap(); renderMapLegend(); applyHighlight(); });
     d3.select("#turnBtn").on("click", () => { S.turn = (S.turn + 1) % 4; renderMap(); applyHighlight(); });
+    d3.select("#shapeSeg").selectAll("button").data(SHAPES).join("button").attr("type", "button").text(d => d.label)
+      .on("click", (e, d) => { S.shape = d.id; syncView(); renderMap(); applyHighlight(); });
     syncView();
   }
-  const syncView = () => d3.selectAll("#viewSeg button").attr("aria-pressed", d => String(d.id === S.view));
+  const syncView = () => { d3.selectAll("#viewSeg button").attr("aria-pressed", d => String(d.id === S.view)); d3.selectAll("#shapeSeg button").attr("aria-pressed", d => String(d.id === S.shape)); };
   function declutter(nodes, pad = 1) {
     const kept = [];
     nodes.forEach(n => { const b = n.getBBox(), box = { x0: b.x - pad, x1: b.x + b.width + pad, y0: b.y - pad, y1: b.y + b.height + pad };
@@ -459,6 +466,7 @@
 
   function renderMap() {
     blockControls();
+    if (S.shape === "map") return renderMapShapes();
     const w = W("f2map"), n = w < 560, top = S.view === "top", pad = 10;
     if (SHARE_MAX === null) SHARE_MAX = Math.ceil(d3.max(CMA, d => d.share) / 10) * 10;
     const st = rankedStats(S.period.range), by = new Map(st.map(d => [d.code, d])), ids = st.map(d => d.code);
@@ -553,13 +561,103 @@
     lab.append("tspan").attr("x", d => d.lx[0]).attr("dy", "-0.2em").text(d => shortName(d.code));
     lab.append("tspan").attr("class", "v").attr("x", d => d.lx[0]).attr("dy", "1.15em").text(d => (REL ? pp(d.diff) : pct(d.share)));
     declutter([...svg.selectAll(".ruler text, .northa text").nodes(), ...lab.nodes()], 1); // scale and arrow labels win
-    // interaction (as v2's circles): hover / focus previews in Figure 2b, click / Enter selects
+    wire(gb, per);
+    document.getElementById("f2Period").textContent = per;
+    renderMapLegend();
+  }
+  // interaction (as v2's circles): hover / focus previews in Figure 2b, click / Enter selects
+  function wire(gb, per) {
     gb.selectAll("g.blk").attr("tabindex", 0).attr("role", "button")
       .on("pointerenter", (e, d) => setHover(d.code)).on("pointerleave", () => setHover(null))
       .on("focus", (e, d) => setHover(d.code)).on("blur", () => setHover(null))
       .on("click", (e, d) => selectCMA(d.code))
       .on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectCMA(d.code); } })
       .attr("aria-label", d => `${d.name}: long-term share ${pct(d.share)}, ${pp(d.diff)} ${d.diff >= 0 ? "above" : "below"} Ontario ${per}; rank ${d.rank} of 15; average ${int(d.avgCases)} OW cases.`);
+  }
+
+  // ---- Shape = Map: the CMAs' own boundaries, north up, tilted (parallel view) ----
+  function cube(g, cx, yb, s, z, c) {         // reference block in the same tilted view
+    const yf = yb + s * c;
+    g.append("path").attr("class", "rwall-l").attr("d", poly([[cx, yf], [cx + s, yf], [cx + s, yf - z], [cx, yf - z]]));
+    g.append("path").attr("class", "rtop").attr("d", poly([[cx, yb - z], [cx + s, yb - z], [cx + s, yf - z], [cx, yf - z]]));
+    return [cx + s / 2, yb - z - 5];
+  }
+  function pitCube(g, defs, cx, yb, s, d, c) { // reference hole (a lower value) in a small plate
+    const yf = yb + s * c;
+    g.append("path").attr("class", "rplate").attr("d", poly([[cx - 6, yb - 4], [cx + s + 6, yb - 4], [cx + s + 6, yf + 4], [cx - 6, yf + 4]]));
+    defs.append("clipPath").attr("id", "rpitm").append("path").attr("d", poly([[cx, yb], [cx + s, yb], [cx + s, yf], [cx, yf]]));
+    const pg = g.append("g").attr("clip-path", "url(#rpitm)");
+    pg.append("path").attr("class", "rtop").attr("d", poly([[cx, yb + d], [cx + s, yb + d], [cx + s, yf + d], [cx, yf + d]]));
+    pg.append("path").attr("class", "rwall-l").attr("d", poly([[cx, yb], [cx + s, yb], [cx + s, yb + d], [cx, yb + d]]));
+    return [cx + s / 2, yf + 17];
+  }
+  function renderMapShapes() {
+    const w = W("f2map"), n = w < 560, top = S.view === "top", pad = 10;
+    if (SHARE_MAX === null) SHARE_MAX = Math.ceil(d3.max(CMA, d => d.share) / 10) * 10;
+    const st = rankedStats(S.period.range), by = new Map(st.map(d => [d.code, d]));
+    if (!GM) GM = Iso.mapGround(GEOJ.features, st.map(d => d.code));
+    const T = Iso.turnShapes(GM, S.turn), zfull = top ? 0 : (REL ? 0.11 : 0.15) * (w - 2 * pad), kz = zfull / (REL ? DIFF_MAX : SHARE_MAX);
+    const RB = top ? 0 : 48 + (REL ? 10 : 40) * kz;
+    const F = Iso.oblique(T.W, T.H, w, zfull + 18 + RB, pad, 0.62, top), P = F.P, per = periodPhrase(S.period);
+    const host = d3.select("#f2map"); host.selectAll("*").remove();
+    const svg = host.append("svg").attr("width", w).attr("height", F.h).attr("role", "group").attr("aria-label", REL
+      ? "Relief map of the 15 CMAs, tilted, north up: each CMA rises above or sinks into the land by its difference from Ontario's long-term share."
+      : "Map of the 15 CMAs, tilted, north up: each CMA raised to its long-term share, a dashed line at Ontario's share, colour = difference from Ontario.");
+    const defs = svg.append("defs");
+    defs.append("clipPath").attr("id", "mclip").append("rect").attr("width", w).attr("height", F.h);
+    svg.append("path").attr("class", "plate").attr("clip-path", "url(#mclip)").attr("d", Iso.landPath(OUTLINE, GM, S.turn, F));
+    const b = T.tbBox; svg.append("path").attr("class", "tbbox").attr("d", poly([P(b.x, b.y), P(b.x + b.w, b.y), P(b.x + b.w, b.y + b.h), P(b.x, b.y + b.h)]));
+    const [tlx, tly] = P(b.x + 4, b.y + b.h); svg.append("text").attr("class", "lbl tblbl").attr("x", tlx).attr("y", tly - 4).style("font-size", "10px").text("Thunder Bay (not to position)");
+    const nodes = T.shapes.map(s => ({ ...s, code: s.id, ...by.get(s.id) }));
+    const pits = REL && !top ? nodes.filter(d => d.diff < 0) : [], raised = nodes.filter(d => !pits.includes(d));
+    const gb = svg.append("g").attr("class", "blocks");
+    const draw = d => {
+      const g = gb.append("g").attr("class", "blk hit").datum(d).attr("data-code", d.code), col = divColor(d.diff), hpx = REL ? d.diff * kz : d.share * kz;
+      let outline, ztop = 0;
+      if (pits.includes(d)) {
+        const f = Iso.pit(d, -hpx, F), cid = `mpit${d.code}`;
+        defs.append("clipPath").attr("id", cid).append("path").attr("d", f.open);
+        const pg = g.append("g").attr("clip-path", `url(#${cid})`);
+        pg.append("path").attr("class", "sym").attr("d", f.floor).style("fill", col);
+        f.walls.forEach(e => pg.append("path").attr("class", "wall").attr("d", e.d).style("fill", Iso.shade(col, e.shade)));
+        g.append("path").attr("class", "rim").attr("d", f.open);
+        outline = f.open;
+      } else {
+        ztop = hpx; const f = Iso.prism(d, 0, ztop, F);
+        f.walls.forEach(e => g.append("path").attr("class", "wall").attr("d", e.d).style("fill", Iso.shade(col, e.shade)));
+        g.append("path").attr("class", "sym").attr("d", f.top).style("fill", col);
+        outline = f.top;
+        if (!REL && !top) { const zo = d.ont * kz; g.append("path").attr("class", "ring").attr("d", d.share >= d.ont ? Iso.ringFront(d, zo, F) : Iso.lid(d, zo, F)); }
+      }
+      g.attr("data-outline", outline);
+      g.select("path.sym").attr("data-code", d.code).attr("data-share", f1(d.share)).attr("data-diff", pp(d.diff)).attr("data-c", divIdx(d.diff))
+        .attr("data-z", hpx.toFixed(2)).attr("data-a", d.area.toFixed(1)).attr("data-w", Math.round(d.avgCases)).attr("data-ont", f1(d.ont)).attr("data-pit", pits.includes(d) ? 1 : 0);
+      d.lx = Iso.shapeCentre(d, Math.max(0, ztop), F);
+    };
+    pits.forEach(draw); raised.forEach(draw);
+    svg.append("path").attr("class", "outl hl"); svg.append("path").attr("class", "outl sel");
+    if (!top) { // scale band above the map, and a north arrow
+      const rg = svg.append("g").attr("class", "ruler"), x0 = pad + 4, s = 16, yb = pad + 34 + (REL ? 10 : 40) * kz;
+      rg.append("text").attr("class", "lbl").attr("x", x0).attr("y", pad + 10).style("font-size", "11px").text(REL ? "Height = difference from Ontario" : "Height = long-term share");
+      if (REL) {
+        const [tx, ty] = cube(rg, x0, yb, s, 10 * kz, F.c); rg.append("text").attr("class", "lbl").attr("x", tx).attr("y", ty).attr("text-anchor", "middle").style("font-size", "10.5px").text("+10 pp");
+        const [px, py] = pitCube(rg, defs, x0 + 64, yb, s, 10 * kz, F.c); rg.append("text").attr("class", "lbl").attr("x", px).attr("y", py).attr("text-anchor", "middle").style("font-size", "10.5px").text("−10 pp");
+      } else {
+        [20, 40].forEach((v, i) => { const [tx, ty] = cube(rg, x0 + i * (s + 26), yb, s, v * kz, F.c); rg.append("text").attr("class", "lbl").attr("x", tx).attr("y", ty).attr("text-anchor", "middle").style("font-size", "10.5px").text(`${v}%`); });
+        rg.append("text").attr("class", "lbl").attr("x", x0 + 2 * (s + 26) + 4).attr("y", yb - 6).style("font-size", "10.5px").text("- - - Ontario's share, on every block");
+      }
+      const [nx, ny] = Iso.northMap(S.turn, GM, F), cxn = REL ? x0 + 150 : x0 + 2 * (s + 26) + 250, cyn = pad + RB / 2;
+      const ng = svg.append("g").attr("class", "northa");
+      ng.append("line").attr("x1", cxn - nx * 10).attr("y1", cyn - ny * 10).attr("x2", cxn + nx * 12).attr("y2", cyn + ny * 12);
+      ng.append("path").attr("d", `M${cxn + nx * 16},${cyn + ny * 16}L${cxn + nx * 8 - ny * 4},${cyn + ny * 8 + nx * 4}L${cxn + nx * 8 + ny * 4},${cyn + ny * 8 - nx * 4}Z`);
+      ng.append("text").attr("class", "lbl").attr("x", cxn + nx * 24).attr("y", cyn + ny * 24).attr("dy", "0.35em").attr("text-anchor", "middle").style("font-size", "11px").text("N");
+    }
+    const lab = svg.append("g").attr("class", "labels").selectAll("text").data(nodes.slice().sort((a, c) => (c.code === S.cma) - (a.code === S.cma) || c.area - a.area || a.code.localeCompare(c.code)))
+      .join("text").attr("class", "maplbl").attr("text-anchor", "middle").attr("x", d => d.lx[0]).attr("y", d => d.lx[1] - 4).style("font-size", (n ? 10.5 : 11) + "px");
+    lab.append("tspan").attr("x", d => d.lx[0]).attr("dy", "-0.2em").text(d => shortName(d.code));
+    lab.append("tspan").attr("class", "v").attr("x", d => d.lx[0]).attr("dy", "1.15em").text(d => (REL ? pp(d.diff) : pct(d.share)));
+    declutter([...svg.selectAll(".ruler text, .northa text, text.tblbl").nodes(), ...lab.nodes()], 1);
+    wire(gb, per);
     document.getElementById("f2Period").textContent = per;
     renderMapLegend();
   }
@@ -569,7 +667,7 @@
     lg.append("span").attr("class", "ttl").text("Top colour: long-term share minus Ontario's");
     DIV_VARS.forEach((v, i) => lg.append("span").attr("class", "k").html(`<i style="background:var(${v})"></i>${DIV_LABELS[i]}`));
     lg.append("span").text(S.view === "top" ? "· Top view: heights not drawn" : REL ? "· Height: the same difference (raised = higher, sunk = lower than Ontario)"
-      : "· Height: long-term share · dashed line: Ontario's share · Footprint: average OW cases in the period");
+      : `· Height: long-term share · dashed line: Ontario's share · ${S.shape === "map" ? "Shapes: CMA boundaries (location only)" : "Footprint: average OW cases in the period"}`);
   }
 
   // Greedy label placement: 12 directions × 6 distances; the closest position that collides with

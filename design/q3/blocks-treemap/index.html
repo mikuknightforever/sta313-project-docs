@@ -24,7 +24,7 @@
   <div class="pitch" aria-label="Why this version">
     <p><b>Motivation.</b> Keeps both things v2's map shows: how big each CMA's caseload is (now the footprint, area-true like the circles) and its long-term share (now the height, from 0), with Ontario's share marked on every block.</p>
     <p><b>Appeal.</b> The picture looks like the example a teammate shared; footprint × height is exactly each CMA's average number of long-term cases, so the big blocks are where most long-term cases are.</p>
-    <p><b>Cost.</b> Geography becomes four location groups; differences of a few points are small next to the full height (the dashed line and the colour carry them); footprint and height can be misread together.</p>
+    <p><b>Cost.</b> Geography becomes four location groups (Shape → Map shows the real boundaries instead, without caseload); differences of a few points are small next to the full height (the dashed line and the colour carry them); footprint and height can be misread together.</p>
   </div>
 
   <section class="defs" aria-label="Definitions">
@@ -88,13 +88,13 @@
 
     <figure class="fig" id="fig2">
       <figcaption><b>Figure 2a.</b> Long-term share compared with Ontario, <span id="f2Period">selected period</span></figcaption>
-      <div class="toolbar tight block-tools"><span class="lab-t">View</span><div class="seg" id="viewSeg" role="group" aria-label="View"></div><button type="button" class="ghost" id="turnBtn" aria-label="Turn the blocks 90 degrees">Turn 90°</button></div>
+      <div class="toolbar tight block-tools"><span class="lab-t">View</span><div class="seg" id="viewSeg" role="group" aria-label="View"></div><button type="button" class="ghost" id="turnBtn" aria-label="Turn the blocks 90 degrees">Turn 90°</button><span class="lab-t">Shape</span><div class="seg" id="shapeSeg" role="group" aria-label="Shape"></div></div>
       <div class="map-legend" id="mapLegend"></div>
       <div class="map-grid">
         <div class="chart" id="f2map"></div>
         <aside class="card-panel" id="card" aria-live="polite" aria-label="Figure 2b, analysis of one CMA"></aside>
       </div>
-      <p class="note">Footprint = the CMA's average number of OW cases in the selected period, so the area of each top is proportional to its caseload (as the circles in v2); CMAs sit on a base slab for their location group (north, southwest and central, Toronto area, east), which is not an official region. Height = the long-term share, from 0, on one scale for every block (see the reference blocks); the dashed line on each block marks Ontario's share in the same period, so the part above it is how much higher the CMA is (a dashed lid floats above a block that is lower). Footprint × height = average OW cases × long-term share = the CMA's average number of long-term cases. Top colour = difference from Ontario in the five map classes. Side faces only show the shape. A tall block can hide one behind it: use Turn 90°, the top view, Figure 3 or the card. Names are shown where they fit.</p>
+      <p class="note">Footprint = the CMA's average number of OW cases in the selected period, so the area of each top is proportional to its caseload (as the circles in v2); CMAs sit on a base slab for their location group (north, southwest and central, Toronto area, east), which is not an official region. Height = the long-term share, from 0, on one scale for every block (see the reference blocks); the dashed line on each block marks Ontario's share in the same period, so the part above it is how much higher the CMA is (a dashed lid floats above a block that is lower). Footprint × height = average OW cases × long-term share = the CMA's average number of long-term cases. Top colour = difference from Ontario in the five map classes. Side faces only show the shape. A tall block can hide one behind it: use Turn 90°, the top view, Figure 3 or the card. Names are shown where they fit. Shape → Map: each CMA is drawn as its 2021 Census boundary instead of the treemap, on a north-up tilted map (as Part 2's versions K and N), with the same height, dashed line and colour; the footprint then shows location only, so footprint × height no longer counts long-term cases, and Thunder Bay sits in the north-west corner, not in its true position.</p>
       <p class="takeaway" id="mapTakeaway"></p>
     </figure>
 

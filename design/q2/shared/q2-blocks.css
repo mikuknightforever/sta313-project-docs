@@ -15,3 +15,6 @@
 .glbl{fill:var(--ink2);font:650 10.5px var(--sans);letter-spacing:.05em;text-transform:uppercase;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
 .blabels text{pointer-events:none}
 .turn-btn{margin-left:4px}
+.land{fill:var(--land);stroke:var(--land-line);stroke-width:.8px}
+.tbbox{fill:var(--land);stroke:var(--ring);stroke-dasharray:3 2;stroke-width:1px}
+.blk .walls path{stroke:var(--surface);stroke-width:.35px;stroke-opacity:.6}

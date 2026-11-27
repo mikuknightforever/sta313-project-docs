@@ -189,3 +189,5 @@ th{color:var(--ink2);font-weight:600}
 .northa path{fill:var(--ink2)}
 .glbl{fill:var(--ink2);font:650 10.5px var(--sans);letter-spacing:.05em;text-transform:uppercase;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
 .maplbl .v{font-weight:650}
+.tbbox{fill:var(--land);stroke:var(--grid);stroke-dasharray:3 2;stroke-width:1px}
+.blk .wall{stroke-width:.35px}

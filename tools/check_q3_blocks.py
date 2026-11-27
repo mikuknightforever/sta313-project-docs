@@ -18,8 +18,9 @@ SHOTS = "--no-shots" not in sys.argv
 CHANNEL = os.environ.get("BROWSER_CHANNEL", "msedge")
 VERSIONS = {"a": dict(folder="blocks-tiles", rel=True), "b": dict(folder="blocks-treemap", rel=False)}
 pick = [a for a in sys.argv[1:] if a in VERSIONS] or list(VERSIONS)
-STATES = ["period=post", "period=pre", "period=during&cma=535", "period=latest", "period=all&cma=550", "from=2015Q1&to=2019Q4&cma=529", "period=post&view=top", "period=post&turn=1"]
-CROSS = ["period=post", "period=during&cma=535", "from=2015Q1&to=2019Q4&cma=529", "period=pre&cma=559"]
+STATES = ["period=post", "period=pre", "period=during&cma=535", "period=latest", "period=all&cma=550", "from=2015Q1&to=2019Q4&cma=529", "period=post&view=top", "period=post&turn=1",
+          "period=post&shape=map", "period=pre&shape=map&cma=559", "period=during&shape=map&view=top", "period=post&shape=map&turn=2"]
+CROSS = ["period=post", "period=during&cma=535", "from=2015Q1&to=2019Q4&cma=529", "period=pre&cma=559", "period=post&shape=map"]
 
 
 class NoCache(http.server.SimpleHTTPRequestHandler):
@@ -54,7 +55,11 @@ REST_JS = r"""() => ({
   f4Note: document.getElementById('f4Note').innerText, take: document.getElementById('mapTakeaway').innerText, cards: document.getElementById('cards').innerText,
   f2Period: document.getElementById('f2Period').textContent, periodNow: document.getElementById('periodNow').textContent,
 })"""
-ORDER_JS = r"""() => { const g = [...document.querySelectorAll('#f2map g.blk')].map(e => e.__data__).filter(d => !(d.diff < 0 && document.body.dataset.layout === 'tiles' && !document.querySelector('#viewSeg button[aria-pressed="true"]').textContent.startsWith('Top'))), e = 1e-9;
+ORDER_JS = r"""() => { const all = [...document.querySelectorAll('#f2map g.blk')].map(e => e.__data__);
+  if (all.length && all[0].rings) { const r = all.filter(d => !(d.diff < 0 && document.body.dataset.layout === 'tiles' && !document.querySelector('#viewSeg button[aria-pressed="true"]').textContent.startsWith('Top'))); let bad = 0;
+    for (let i = 1; i < r.length; i++) if (r[i].key < r[i - 1].key - 1e-9) bad++;
+    return { n: all.length, bad, walls: document.querySelectorAll('#f2map g.blk path.wall').length, scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth }; }
+  const g = all.filter(d => !(d.diff < 0 && document.body.dataset.layout === 'tiles' && !document.querySelector('#viewSeg button[aria-pressed="true"]').textContent.startsWith('Top'))), e = 1e-9;
   const behind = (a, b) => (a.u1 <= b.u0 + e && a.v0 < b.v1 - e && b.v0 < a.v1 - e) || (a.v1 <= b.v0 + e && a.u0 < b.u1 - e && b.u0 < a.u1 - e) || (a.u1 <= b.u0 + e && a.v1 <= b.v0 + e);
   let bad = 0; for (let i = 0; i < g.length; i++) for (let j = i + 1; j < g.length; j++) if (behind(g[j], g[i])) bad++;
   return { n: document.querySelectorAll('#f2map g.blk').length, bad, walls: document.querySelectorAll('#f2map g.blk path.wall').length, scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth }; }"""
@@ -80,7 +85,7 @@ with sync_playwright() as p:
         out = {"version": v, "layout": [], "states": [], "cross": [], "interactions": {}}
         for w in (1360, 820, 400):
             for theme in ("light", "dark"):
-                for st in ("period=post", "period=pre&view=top"):
+                for st in ("period=post", "period=pre&view=top", "period=post&shape=map"):
                     ctx = br.new_context(viewport={"width": w, "height": 900}); pg = ctx.new_page(); errs = load(pg, f"{BASE}?theme={theme}&{st}")
                     out["layout"].append({"width": w, "theme": theme, "state": st, "errors": errs, **pg.evaluate(LAYOUT_JS)})
                     if SHOTS and w in (1360, 400) and st == "period=post":
@@ -116,13 +121,20 @@ with sync_playwright() as p:
             I["turns"].append(pg.evaluate(ORDER_JS))
             if SHOTS and k == 1: pg.locator("#fig2").screenshot(path=str(SHOTS_DIR / f"blocks-{v}-turn-light.png"))
             pg.click("#turnBtn"); pg.wait_for_timeout(250)
-        pg.locator("#viewSeg button", has_text="Top view").click(); pg.wait_for_timeout(250)
+        pg.locator("#viewSeg button").nth(1).click(); pg.wait_for_timeout(250)
         I["top"] = pg.evaluate(ORDER_JS)
         if SHOTS: pg.locator("#fig2").screenshot(path=str(SHOTS_DIR / f"blocks-{v}-top-light.png"))
-        pg.locator("#viewSeg button", has_text="Isometric").click(); pg.wait_for_timeout(250)
+        pg.locator("#viewSeg button").nth(0).click(); pg.wait_for_timeout(250)
         I["iso"] = pg.evaluate(ORDER_JS)
         pg.get_by_role("button", name="Pandemic", exact=True).click(); pg.wait_for_timeout(500)
         I["period"] = {"query": "period=during (clicked)", **pg.evaluate(DUMP_JS)}
+        pg.locator("#shapeSeg button").nth(1).click(); pg.wait_for_timeout(400)
+        I["mapShape"] = pg.evaluate(ORDER_JS)
+        x, y = center(pg, '#f2map g.blk[data-code="505"] path.sym'); pg.mouse.move(x, y); pg.wait_for_timeout(200)  # (Toronto is selected by now)
+        I["mapHover"] = pg.evaluate("() => ({ card: document.querySelector('#card h3').textContent, outline: !!document.querySelector('#f2map path.outl.hl').getAttribute('d') })")
+        if SHOTS: pg.locator("#fig2").screenshot(path=str(SHOTS_DIR / f"blocks-{v}-mapshape-light.png"))
+        pg.mouse.move(3, 3); pg.click("#turnBtn"); pg.wait_for_timeout(300)
+        I["mapTurn"] = pg.evaluate(ORDER_JS)
         I["errors"] = errs
         ctx.close()
         ctx = br.new_context(viewport={"width": 400, "height": 820}, has_touch=True, is_mobile=True, device_scale_factor=2); pg = ctx.new_page(); terrs = load(pg, f"{BASE}?theme=light&period=post")
@@ -136,15 +148,16 @@ with sync_playwright() as p:
         (ROOT / "design" / "q3" / cfg["folder"] / "browser-verification.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
         L = out["layout"]
         checks = {
-            "no horizontal scroll or console errors (12 layouts)": not [l for l in L if l["scrollW"] > l["clientW"] or l["errors"]],
+            "no horizontal scroll or console errors (18 layouts: 3 widths × 2 themes × tiles/treemap, top view, map shape)": not [l for l in L if l["scrollW"] > l["clientW"] or l["errors"]],
             "no overlapping text in Figure 2a": not [l for l in L if l["overlaps"]],
             "no text past the figure": not [l for l in L if l["outside"]],
-            "everything outside Figure 2a identical to the Q3 prototype (4 states)": all(not c["diff"] for c in out["cross"]),
+            "everything outside Figure 2a identical to the Q3 prototype (5 states, one with the map shape)": all(not c["diff"] for c in out["cross"]),
             "hover: card preview and outline": I["hover"]["card"] == "Toronto" and "Preview" in I["hover"]["mode"] and "block" in I["hover"]["mode"] and I["hover"]["outline"],
             "click: card, Figure 3 and Figure 4 follow": I["click"]["card"] == "Toronto" and I["click"]["f4"].startswith("Toronto") and I["click"]["f3sel"] == ["535"] and I["click"]["outline"],
             "keyboard: 15 blocks reachable, Enter selects and keeps focus": I["keys"]["n"] == 15 and I["keys"]["kept"] and I["keys"]["f4"].startswith(I["keys"]["card"]),
             "blocks drawn back to front after each of 4 turns": all(t["n"] == 15 and t["bad"] == 0 and t["scrollW"] <= t["clientW"] for t in I["turns"]),
             "top view draws no walls; isometric draws them again": I["top"]["walls"] == 0 and I["iso"]["walls"] > 0,
+            "map shape: 15 CMA shapes drawn back to front, before and after a turn; hover previews": I["mapShape"]["n"] == 15 and I["mapShape"]["bad"] == 0 and I["mapTurn"]["bad"] == 0 and I["mapHover"]["card"] == "Ottawa–Gatineau" and I["mapHover"]["outline"],
             "period switch redraws the blocks": I["period"]["f2Period"].startswith("during the pandemic") and len(I["period"]["marks"]) == 15,
             "touch tap selects, no horizontal scroll at 400 px": I["touch"]["card"] == "Windsor" and I["touch"]["scrollW"] <= I["touch"]["clientW"] and not I["touchErrors"],
             "no console errors in states / interactions": not any(s["errors"] for s in out["states"]) and not I["errors"],

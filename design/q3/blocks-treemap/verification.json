@@ -2,8 +2,8 @@
  "summary": {
   "version": "b",
   "folder": "blocks-treemap",
-  "states": 9,
-  "checks": 315,
+  "states": 13,
+  "checks": 451,
   "mismatches": 0
  },
  "mismatches": []

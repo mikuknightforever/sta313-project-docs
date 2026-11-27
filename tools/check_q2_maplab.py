@@ -1,7 +1,7 @@
-"""Browser checks for Q2 extra versions G–M (the map-lab versions; L and M are the isometric block versions), headless Edge or Chrome via Playwright.
+"""Browser checks for Q2 extra versions G–N (the map-lab versions; L, M and N are the block versions), headless Edge or Chrome via Playwright.
 
 Usage (from the repository root):
-    python tools/check_q2_maplab.py                 # all seven versions, checks + screenshots
+    python tools/check_q2_maplab.py                 # all eight versions, checks + screenshots
     python tools/check_q2_maplab.py g h --no-shots  # some versions, checks only
 
 Needs `pip install playwright` and an installed Edge (channel "msedge") or Chrome (BROWSER_CHANNEL=chrome).
@@ -23,6 +23,7 @@ VERSIONS = {
     "k": dict(folder="k-prisms", modes=True, hit="#f1 g.prism", focus="#f1 g.prism", labels=False),
     "l": dict(folder="l-blocks", modes=False, hit="#f1 g.blk", focus="#f1 g.blk", labels=False, blocks=True),
     "m": dict(folder="m-block-treemap", modes=False, hit="#f1 g.blk", focus="#f1 g.blk", labels=False, blocks=True),
+    "n": dict(folder="n-map-blocks", modes=False, hit="#f1 g.blk", focus="#f1 g.blk", labels=False, blocks=True),
 }
 pick = [a for a in sys.argv[1:] if a in VERSIONS] or list(VERSIONS)
 
@@ -92,7 +93,7 @@ def center(page, sel):
 def states_for(v):
     if v == "i": return ["show=level", "show=yoy", "t=2021Q1&cma=550", "t=2030Q4&rule=naive&show=yoy"]
     if v == "j": return ["t=2003Q1", "t=2018Q1", "t=2021Q1&cma=550", "t=2030Q4&rule=trend"]
-    if v in ("l", "m"): return ["t=2003Q1", "t=2019Q4", "t=2021Q1&cma=550", "t=2030Q4&rule=trend&cma=559", "t=2028Q2&cma=535"]
+    if v in ("l", "m", "n"): return ["t=2003Q1", "t=2019Q4", "t=2021Q1&cma=550", "t=2030Q4&rule=trend&cma=559", "t=2028Q2&cma=535"]
     return ["t=2003Q1", "t=2003Q1&show=yoy", "t=2021Q1&show=yoy", "t=2019Q4&cma=532", "t=2030Q4&rule=trend&cma=559", "t=2028Q2&show=yoy&cma=535"]
 
 
@@ -155,6 +156,7 @@ with sync_playwright() as p:
             if SHOTS: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-change-light.png"))
         if cfg.get("blocks"):  # painter's order after every turn, the top view, and back
             ORDER_JS = """() => { const g = [...document.querySelectorAll('#f1 g.blk')].map(e => e.__data__), e = 1e-9;
+              if (g.length && g[0].rings) { let bad = 0; for (let i = 1; i < g.length; i++) if (g[i].key < g[i - 1].key - 1e-9) bad++; return { n: g.length, bad, walls: document.querySelectorAll('#f1 g.blk path.wall[d]').length, scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth }; }
               const behind = (a, b) => (a.u1 <= b.u0 + e && a.v0 < b.v1 - e && b.v0 < a.v1 - e) || (a.v1 <= b.v0 + e && a.u0 < b.u1 - e && b.u0 < a.u1 - e) || (a.u1 <= b.u0 + e && a.v1 <= b.v0 + e);
               let bad = 0; for (let i = 0; i < g.length; i++) for (let j = i + 1; j < g.length; j++) if (behind(g[j], g[i])) bad++;
               return { n: g.length, bad, walls: document.querySelectorAll('#f1 g.blk path.wall[d]').length, scrollW: document.documentElement.scrollWidth, clientW: document.documentElement.clientWidth }; }"""
@@ -163,10 +165,10 @@ with sync_playwright() as p:
                 I["turns"].append(pg.evaluate(ORDER_JS))
                 if SHOTS and k == 1: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-turn-light.png"))
                 pg.click("#turnBtn"); pg.wait_for_timeout(250)
-            pg.locator("#viewSeg button", has_text="Top view").click(); pg.wait_for_timeout(250)
+            pg.locator("#viewSeg button").nth(1).click(); pg.wait_for_timeout(250)
             I["topview"] = pg.evaluate(ORDER_JS)
             if SHOTS: pg.locator("#fig1").screenshot(path=str(SHOTS_DIR / f"{v}-top-light.png"))
-            pg.locator("#viewSeg button", has_text="Isometric").click(); pg.wait_for_timeout(250)
+            pg.locator("#viewSeg button").nth(0).click(); pg.wait_for_timeout(250)
             I["iso"] = pg.evaluate(ORDER_JS)
         pg.click("#playBtn"); pg.wait_for_timeout(1200); playing = pg.evaluate("() => ({ t: +tSlider.value, btn: playBtn.textContent })")
         pg.click("#playBtn"); pg.wait_for_timeout(250)
